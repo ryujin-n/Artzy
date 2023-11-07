@@ -1,7 +1,6 @@
 create database Artzy
 use artzy
 
-drop table artista
 create table art
 (
 	id_artista int not null auto_increment primary key,
