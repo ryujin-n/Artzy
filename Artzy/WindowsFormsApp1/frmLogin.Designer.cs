@@ -102,6 +102,7 @@
             this.btoCadastrar.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Bebas Neue", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btoCadastrar.TabIndex = 5;
             this.btoCadastrar.Values.Text = "Sign Up";
+            this.btoCadastrar.Click += new System.EventHandler(this.btoCadastrar_Click);
             // 
             // label1
             // 

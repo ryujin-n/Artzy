@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -19,6 +20,12 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        public static string stringConexao = "" +
+            "Data Source=localhost;" +
+            "Initial Catalog=artzy;" +
+            "User ID=sa;" +
+            "Password=123456";
 
         private void label2_Click_1(object sender, EventArgs e)
         {
@@ -84,7 +91,7 @@ namespace WindowsFormsApp1
         {
                     
 
-             mask = new string('ඞ', txtSenha.Text.Length);
+             mask = new string('*', txtSenha.Text.Length);
            
 
             if (txtSenha.Text != "Password")
@@ -121,5 +128,11 @@ namespace WindowsFormsApp1
           
         }
 
+        private void btoCadastrar_Click(object sender, EventArgs e)
+        {
+            frmCadastro frm = new frmCadastro();
+            frm.ShowDialog();
+            this.Close();
+        }
     }
 }
