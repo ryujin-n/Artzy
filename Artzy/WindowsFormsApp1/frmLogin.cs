@@ -132,7 +132,8 @@ namespace WindowsFormsApp1
         {
             frmCadastro frm = new frmCadastro();
             frm.ShowDialog();
-            this.Close();
+
+            
         }
     }
 }
