@@ -84,7 +84,7 @@ namespace WindowsFormsApp1
         {
                     
 
-             mask = new string('*', txtSenha.Text.Length);
+             mask = new string('ඞ', txtSenha.Text.Length);
            
 
             if (txtSenha.Text != "Password")
@@ -118,7 +118,7 @@ namespace WindowsFormsApp1
         }
         private void Form1_Load_1(object sender, EventArgs e)
         {
-            
+          
         }
 
     }

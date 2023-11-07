@@ -82,7 +82,7 @@
             this.btoEntrar.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-1, 4, -1, -1);
             this.btoEntrar.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.DimGray;
             this.btoEntrar.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Bebas Neue", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btoEntrar.TabIndex = 4;
+            this.btoEntrar.TabIndex = 0;
             this.btoEntrar.Values.Text = "Sign In";
             // 
             // btoCadastrar
