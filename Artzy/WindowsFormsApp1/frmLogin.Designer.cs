@@ -38,14 +38,12 @@
             this.lblClose = new System.Windows.Forms.Label();
             this.lblMin = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pbOlho = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtUser = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
             this.txtSenha = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbLog)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbOlho)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -113,7 +111,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(162, 246);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(15, 14);
+            this.label1.Size = new System.Drawing.Size(15, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "ou";
             // 
@@ -152,7 +150,6 @@
             this.panel1.Controls.Add(this.btoEntrar);
             this.panel1.Controls.Add(this.btoCadastrar);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pbOlho);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.txtUser);
@@ -161,18 +158,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(333, 341);
             this.panel1.TabIndex = 6;
-            // 
-            // pbOlho
-            // 
-            this.pbOlho.BackColor = System.Drawing.Color.MintCream;
-            this.pbOlho.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbOlho.BackgroundImage")));
-            this.pbOlho.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbOlho.Location = new System.Drawing.Point(262, 188);
-            this.pbOlho.Name = "pbOlho";
-            this.pbOlho.Size = new System.Drawing.Size(20, 21);
-            this.pbOlho.TabIndex = 4;
-            this.pbOlho.TabStop = false;
-            this.pbOlho.Click += new System.EventHandler(this.pbOlho_Click);
             // 
             // pictureBox1
             // 
@@ -211,7 +196,7 @@
             this.txtUser.StateCommon.Border.Rounding = 16;
             this.txtUser.StateCommon.Border.Width = 3;
             this.txtUser.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
-            this.txtUser.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUser.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.StateCommon.Content.Padding = new System.Windows.Forms.Padding(30, 6, 10, 0);
             this.txtUser.TabIndex = 2;
             this.txtUser.Text = "User";
@@ -233,7 +218,7 @@
             this.txtSenha.StateCommon.Border.Rounding = 16;
             this.txtSenha.StateCommon.Border.Width = 3;
             this.txtSenha.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
-            this.txtSenha.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenha.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.StateCommon.Content.Padding = new System.Windows.Forms.Padding(30, 6, 10, 0);
             this.txtSenha.TabIndex = 3;
             this.txtSenha.Text = "Password";
@@ -264,7 +249,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbLog)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbOlho)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -286,7 +270,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox txtSenha;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pbOlho;
     }
 }
 

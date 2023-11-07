@@ -105,12 +105,12 @@ namespace WindowsFormsApp1
 
             if (oio)
             {
-                pbOlho.BackgroundImage = Image.FromFile("C:\\Users\\miles\\Source\\Repos\\Artzy\\WindowsFormsApp1\\WindowsFormsApp1\\ref\\closedd.png");
+                //pbOlho.BackgroundImage = Image.FromFile("C:\\Users\\miles\\Source\\Repos\\Artzy\\WindowsFormsApp1\\WindowsFormsApp1\\ref\\closedd.png");
                 oio = false;
             }
             else
             {
-                pbOlho.BackgroundImage = Image.FromFile("C:\\Users\\miles\\Source\\Repos\\Artzy\\WindowsFormsApp1\\WindowsFormsApp1\\ref\\openn.png");
+                //pbOlho.BackgroundImage = Image.FromFile("C:\\Users\\miles\\Source\\Repos\\Artzy\\WindowsFormsApp1\\WindowsFormsApp1\\ref\\openn.png");
                 oio = true;
 
             }
@@ -118,7 +118,7 @@ namespace WindowsFormsApp1
         }
         private void Form1_Load_1(object sender, EventArgs e)
         {
-           
+            
         }
 
     }
