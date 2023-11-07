@@ -153,7 +153,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(934, 555);
+            this.ClientSize = new System.Drawing.Size(485, 555);
             this.Controls.Add(this.pbLog);
             this.Controls.Add(this.btoEntrar);
             this.Controls.Add(this.txtSenha);
