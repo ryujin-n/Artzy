@@ -2,16 +2,16 @@ create database Artzy
 
 use artzy
 
-
+drop table art
 create table art
 (
 	id_artista int not null identity primary key,
 	nome_artista varchar(50) not null,
 	user_artista varchar(10) not null unique ,
-	senha_artista varchar(50) not null,
-	login_artista varchar(10) not null,
+	senha_artista varchar(20) not null,
+	login_artista varchar(15) not null,
 	email_artista varchar (100) not null,
-	prof_artista varchar (50) not null,
+	prof_artista varchar (100) not null,
 	nasc_artista date not null,
 	data_artista smalldatetime not null default getdate(),
 	cpf_artista char(14) not null,
@@ -82,6 +82,8 @@ create table tipopgto
 )
 select * from tipopgto
 
+
+drop table venda
 create table venda
 (
 	id_venda int not null identity primary key,
@@ -101,6 +103,7 @@ create table venda
 
 select * from venda
 
+drop table contcli
 create table contcli
 (
 	id_contcli int not null identity primary key,
@@ -117,6 +120,7 @@ constraint FK_id_cliente_contcli foreign key (id_cliente_contcli) references cli
 )
 select * from contcli
 
+drop table contart
 create table contart
 (
 	id_contart int not null identity primary key,
