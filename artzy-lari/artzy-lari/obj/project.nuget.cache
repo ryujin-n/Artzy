@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6bTk7WQLsAX7hDEpIsGZpzFY1c7sEmBe2ta1FajR59Hfpd71zUWksnHN2a1aNNYmwL+EzhE164ssXIAxAsbBig==",
+  "dgSpecHash": "qo9qoxJtDP2onvRxhCY1DU4TVKb7mxRevfdW00yQd8/PJPz73oEFZr1s34hq4wQcbaIKpYraz0WhunL8WZSgHA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\laricia.rfnascimento\\source\\repos\\artzy-lari\\artzy-lari\\artzy-lari.csproj",
+  "projectFilePath": "C:\\Users\\laricia.rfnascimento\\Documents\\GitHub\\Artzy\\artzy-lari\\artzy-lari\\artzy-lari.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\laricia.rfnascimento\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\laricia.rfnascimento\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
