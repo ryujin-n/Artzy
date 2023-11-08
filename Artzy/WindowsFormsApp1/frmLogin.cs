@@ -129,10 +129,8 @@ namespace WindowsFormsApp1
 
             frmCadastro frm = new frmCadastro();
             frm.Show();
-
             
         }
-
         private void txtUser_TextChanged(object sender, EventArgs e)
         {
 

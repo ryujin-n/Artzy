@@ -39,9 +39,9 @@
             this.txtSenha = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtSenha2 = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
-            this.btoCombo = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.txtUser = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
             this.lblClose = new System.Windows.Forms.Label();
+            this.kryptonRichTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -93,8 +93,8 @@
             this.panel1.Controls.Add(this.txtSenha);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.txtSenha2);
-            this.panel1.Controls.Add(this.btoCombo);
             this.panel1.Controls.Add(this.btoEntrar);
+            this.panel1.Controls.Add(this.kryptonRichTextBox1);
             this.panel1.Controls.Add(this.txtUser);
             this.panel1.Location = new System.Drawing.Point(100, 95);
             this.panel1.Name = "panel1";
@@ -190,26 +190,6 @@
             this.txtSenha2.Enter += new System.EventHandler(this.txtSenha2_Enter);
             this.txtSenha2.Leave += new System.EventHandler(this.txtSenha2_Leave);
             // 
-            // btoCombo
-            // 
-            this.btoCombo.Location = new System.Drawing.Point(284, 129);
-            this.btoCombo.Name = "btoCombo";
-            this.btoCombo.Size = new System.Drawing.Size(243, 42);
-            this.btoCombo.StateCommon.Back.Color1 = System.Drawing.Color.MintCream;
-            this.btoCombo.StateCommon.Back.Color2 = System.Drawing.Color.White;
-            this.btoCombo.StateCommon.Back.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.CenterMiddle;
-            this.btoCombo.StateCommon.Border.ColorAngle = 135F;
-            this.btoCombo.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btoCombo.StateCommon.Border.Rounding = 16;
-            this.btoCombo.StateCommon.Border.Width = 3;
-            this.btoCombo.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-110, 1, 10, 1);
-            this.btoCombo.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.DarkGray;
-            this.btoCombo.StateCommon.Content.ShortText.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btoCombo.TabIndex = 0;
-            this.btoCombo.Values.Text = "Sign In";
-            // 
             // txtUser
             // 
             this.txtUser.Location = new System.Drawing.Point(35, 129);
@@ -245,12 +225,34 @@
             this.lblClose.Text = "<";
             this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
+            // kryptonRichTextBox1
+            // 
+            this.kryptonRichTextBox1.Location = new System.Drawing.Point(284, 129);
+            this.kryptonRichTextBox1.Multiline = false;
+            this.kryptonRichTextBox1.Name = "kryptonRichTextBox1";
+            this.kryptonRichTextBox1.Size = new System.Drawing.Size(243, 42);
+            this.kryptonRichTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.MintCream;
+            this.kryptonRichTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.kryptonRichTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.kryptonRichTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonRichTextBox1.StateCommon.Border.Rounding = 16;
+            this.kryptonRichTextBox1.StateCommon.Border.Width = 3;
+            this.kryptonRichTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
+            this.kryptonRichTextBox1.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonRichTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(30, 6, 10, 0);
+            this.kryptonRichTextBox1.TabIndex = 2;
+            this.kryptonRichTextBox1.Text = "User";
+            this.kryptonRichTextBox1.Enter += new System.EventHandler(this.txtUser_Enter);
+            this.kryptonRichTextBox1.Leave += new System.EventHandler(this.txtUser_Leave);
+            // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.MintCream;
             this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.Location = new System.Drawing.Point(298, 139);
+            this.pictureBox5.Location = new System.Drawing.Point(294, 139);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(24, 21);
             this.pictureBox5.TabIndex = 6;
@@ -299,7 +301,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btoCombo;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox kryptonRichTextBox1;
     }
 }
