@@ -22,7 +22,8 @@ namespace WindowsFormsApp1
 
         private void frmCadastro_Load(object sender, EventArgs e)
         {
-
+            string[] i = new string[]{ "Animador", "Produtor musical", "Artista Digital", "Artista Tradicional", "Escritor" };
+            cboProf.Items.Add(i);
         }
 
         private void lblClose_Click(object sender, EventArgs e)
@@ -100,41 +101,13 @@ namespace WindowsFormsApp1
             txtSenha.ScrollToCaret();
         }
 
-        private void txtSenha2_Enter(object sender, EventArgs e)
+        private void btoLogin_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(txtSenha2.Text))
-            {
-                txtSenha2.Text = senha2;
-            }
-            else
-            {
-                txtSenha2.Text = "";
-            }
-        }
+            this.Hide();
 
-        private void txtSenha2_Leave(object sender, EventArgs e)
-        {
-            senha2 = txtSenha2.Text;
+            frmLogin frm = new frmLogin();
+            frm.Show();
 
-            if (txtSenha2.Text == "")
-            {
-                txtSenha2.Text = "Password";
-            }
-        }
-
-        private void txtSenha2_TextChanged(object sender, EventArgs e)
-        {
-            mask = new string('*', txtSenha2.Text.Length);
-
-
-            if (txtSenha2.Text != "Password")
-            {
-                txtSenha2.Text = mask;
-            }
-
-
-            txtSenha2.SelectionStart = txtSenha2.Text.Length;
-            txtSenha2.ScrollToCaret();
         }
     }
 }
