@@ -4,5 +4,8 @@
     <Compile Update="frmcadastro.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="roubo2.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

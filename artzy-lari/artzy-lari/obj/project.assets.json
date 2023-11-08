@@ -1991,11 +1991,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\laricia.rfnascimento\\source\\repos\\artzy-lari\\artzy-lari\\artzy-lari.csproj",
+      "projectUniqueName": "C:\\Users\\laricia.rfnascimento\\Documents\\GitHub\\Artzy\\artzy-lari\\artzy-lari\\artzy-lari.csproj",
       "projectName": "artzy-lari",
-      "projectPath": "C:\\Users\\laricia.rfnascimento\\source\\repos\\artzy-lari\\artzy-lari\\artzy-lari.csproj",
+      "projectPath": "C:\\Users\\laricia.rfnascimento\\Documents\\GitHub\\Artzy\\artzy-lari\\artzy-lari\\artzy-lari.csproj",
       "packagesPath": "C:\\Users\\laricia.rfnascimento\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\laricia.rfnascimento\\source\\repos\\artzy-lari\\artzy-lari\\obj\\",
+      "outputPath": "C:\\Users\\laricia.rfnascimento\\Documents\\GitHub\\Artzy\\artzy-lari\\artzy-lari\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
