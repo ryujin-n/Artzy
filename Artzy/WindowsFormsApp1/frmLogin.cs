@@ -32,11 +32,6 @@ namespace WindowsFormsApp1
             Application.Exit();
         }
 
-        private void label3_Click_1(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
         string user;
         string senha;
 
@@ -130,10 +125,17 @@ namespace WindowsFormsApp1
 
         private void btoCadastrar_Click(object sender, EventArgs e)
         {
+            this.Hide();
+
             frmCadastro frm = new frmCadastro();
-            frm.ShowDialog();
+            frm.Show();
 
             
+        }
+
+        private void txtUser_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

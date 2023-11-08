@@ -36,7 +36,6 @@
             this.btoCadastrar = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label1 = new System.Windows.Forms.Label();
             this.lblClose = new System.Windows.Forms.Label();
-            this.lblMin = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -50,10 +49,13 @@
             // 
             // kryptonPalette1
             // 
+            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.Color1 = System.Drawing.Color.Silver;
+            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.Color2 = System.Drawing.Color.Silver;
             this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.Rounding = 26;
+            this.kryptonPalette1.FormStyles.FormMain.StateCommon.Border.Width = 1;
             // 
             // pbLog
             // 
@@ -112,7 +114,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(162, 246);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(15, 13);
+            this.label1.Size = new System.Drawing.Size(15, 14);
             this.label1.TabIndex = 3;
             this.label1.Text = "ou";
             // 
@@ -128,19 +130,6 @@
             this.lblClose.TabIndex = 0;
             this.lblClose.Text = "X";
             this.lblClose.Click += new System.EventHandler(this.label2_Click_1);
-            // 
-            // lblMin
-            // 
-            this.lblMin.AutoSize = true;
-            this.lblMin.BackColor = System.Drawing.Color.Transparent;
-            this.lblMin.Font = new System.Drawing.Font("KG Red Hands", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMin.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblMin.Location = new System.Drawing.Point(417, 19);
-            this.lblMin.Name = "lblMin";
-            this.lblMin.Size = new System.Drawing.Size(21, 26);
-            this.lblMin.TabIndex = 1;
-            this.lblMin.Text = "-";
-            this.lblMin.Click += new System.EventHandler(this.label3_Click_1);
             // 
             // panel1
             // 
@@ -201,6 +190,7 @@
             this.txtUser.StateCommon.Content.Padding = new System.Windows.Forms.Padding(30, 6, 10, 0);
             this.txtUser.TabIndex = 2;
             this.txtUser.Text = "User";
+            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
             this.txtUser.Enter += new System.EventHandler(this.txtUser_Enter);
             this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave);
             // 
@@ -236,16 +226,22 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(478, 555);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblMin);
             this.Controls.Add(this.lblClose);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLogin";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.StateCommon.Border.Color1 = System.Drawing.Color.Silver;
+            this.StateCommon.Border.Color2 = System.Drawing.Color.Silver;
+            this.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.StateCommon.Border.Rounding = 31;
+            this.StateCommon.Border.Width = 1;
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pbLog)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -265,7 +261,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton btoCadastrar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblClose;
-        private System.Windows.Forms.Label lblMin;
         private System.Windows.Forms.Panel panel1;
         private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox txtUser;
         private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox txtSenha;
