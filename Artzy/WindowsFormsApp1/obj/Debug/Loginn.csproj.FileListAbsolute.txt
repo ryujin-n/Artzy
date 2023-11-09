@@ -58,5 +58,4 @@ C:\Users\miles\source\repos\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsA
 C:\Users\miles\source\repos\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\miles\source\repos\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmLog.resources
 C:\Users\miles\source\repos\Artzy\Artzy\WindowsFormsApp1\bin\Debug\Siticone.Desktop.UI.dll
-C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\Siticone.Desktop.UI.dll
 C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmLog.resources

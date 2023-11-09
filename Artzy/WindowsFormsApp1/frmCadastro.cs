@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,9 @@ namespace WindowsFormsApp1
 {
     public partial class frmCadastro : KryptonForm
     {
+
+        string stringConexao = frmLogin.stringConexao;
+
         public frmCadastro()
         {
             InitializeComponent();
@@ -22,8 +26,9 @@ namespace WindowsFormsApp1
 
         private void frmCadastro_Load(object sender, EventArgs e)
         {
-            string[] i = new string[]{ "Animador", "Produtor musical", "Artista Digital", "Artista Tradicional", "Escritor" };
-            cboProf.Items.Add(i);
+            //string[] i = new string[]{"Animador", "Produtor musical", "Artista Digital", "Artista Tradicional", "Escritor"};
+            //string[] j = new string[]{"@gmail.com", "@hotmail.com", "@outlook.com", "@yahoo.com"};
+            //cboProf.Items.Add(i);
         }
 
         private void lblClose_Click(object sender, EventArgs e)
@@ -38,7 +43,6 @@ namespace WindowsFormsApp1
 
         string user;
         string senha;
-        string senha2;
 
         private void txtUser_Enter(object sender, EventArgs e)
         {
@@ -107,6 +111,114 @@ namespace WindowsFormsApp1
 
             frmLogin frm = new frmLogin();
             frm.Show();
+
+        }
+        string email;
+
+        private void txtEmail_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtEmail.Text))
+            {
+                txtEmail.Text = email;
+            }
+            else
+            {
+                txtEmail.Text = "";
+            }
+        }
+
+        private void txtEmail_Leave(object sender, EventArgs e)
+        {
+            email = txtEmail.Text;
+
+            if (txtEmail.Text == "")
+            {
+                txtEmail.Text = "Email";
+            }
+        }
+        string name;
+
+        private void kryptonRichTextBox1_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtName.Text))
+            {
+                txtName.Text = name;
+            }
+            else
+            {
+                txtName.Text = "";
+            }
+        }
+
+        private void txtName_Leave(object sender, EventArgs e)
+        {
+            name = txtName.Text;
+
+            if (txtName.Text == "")
+            {
+                txtName.Text = "Name";
+            }
+        }
+
+        private void btoCadastrar_Click(object sender, EventArgs e)
+        {
+            string sql = "set dateformat dmy insert into art (nome_artista,user_artista,senha_artista,email_artista,prof_artista)" +
+                "values" +
+                    "(" +
+                    "'" + txtName.Text + "'" + "," +
+                    "'" + txtUser.Text + "'" + "," +
+                    "'" + txtSenha.Text + "'" + "," +
+                    "'" + txtEmail.Text + "'" + "," +
+                    "'" + cboArea.Text + "')";
+                
+            SqlConnection conn = new SqlConnection(stringConexao);
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.CommandType = CommandType.Text;
+     
+            conn.Open();
+
+            try
+            {
+                if (txtName.Text == "Name" || txtName.Text == "")
+                {
+                    MessageBox.Show("Must have a Name!");
+                    return;
+                }
+                else if (txtUser.Text == "User" || txtUser.Text == "")
+                {
+                    MessageBox.Show("Must have an User!");
+                    return;
+
+                }
+                else if (txtSenha.Text == "Password" || txtSenha.Text == "")
+                {
+                    MessageBox.Show("Must have a Password!");
+                    return;
+
+                }
+                else if (txtEmail.Text == "Email" || txtEmail.Text == "")
+                {
+                    MessageBox.Show("Must have an Email!");
+                    return;
+
+                }
+
+                int i = cmd.ExecuteNonQuery();
+                if (i == 1)
+                {
+                    MessageBox.Show("Conta criada com sucesso, Seja bem vindo(a)!");
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
 
         }
     }

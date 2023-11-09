@@ -86,6 +86,7 @@
             this.btoEntrar.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Bebas Neue", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btoEntrar.TabIndex = 0;
             this.btoEntrar.Values.Text = "Sign In";
+            this.btoEntrar.Click += new System.EventHandler(this.btoEntrar_Click);
             // 
             // btoCadastrar
             // 
@@ -114,7 +115,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(162, 246);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(15, 14);
+            this.label1.Size = new System.Drawing.Size(15, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "ou";
             // 

@@ -1985,23 +1985,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\laricia.rfnascimento\\.nuget\\packages\\": {},
+    "C:\\Users\\miles.jsantos\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\laricia.rfnascimento\\Documents\\GitHub\\Artzy\\artzy-lari\\artzy-lari\\artzy-lari.csproj",
+      "projectUniqueName": "C:\\Users\\miles.jsantos\\Documents\\GitHub\\Artzy\\artzy-lari\\artzy-lari\\artzy-lari.csproj",
       "projectName": "artzy-lari",
-      "projectPath": "C:\\Users\\laricia.rfnascimento\\Documents\\GitHub\\Artzy\\artzy-lari\\artzy-lari\\artzy-lari.csproj",
-      "packagesPath": "C:\\Users\\laricia.rfnascimento\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\laricia.rfnascimento\\Documents\\GitHub\\Artzy\\artzy-lari\\artzy-lari\\obj\\",
+      "projectPath": "C:\\Users\\miles.jsantos\\Documents\\GitHub\\Artzy\\artzy-lari\\artzy-lari\\artzy-lari.csproj",
+      "packagesPath": "C:\\Users\\miles.jsantos\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\miles.jsantos\\Documents\\GitHub\\Artzy\\artzy-lari\\artzy-lari\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\laricia.rfnascimento\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\miles.jsantos\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
