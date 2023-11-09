@@ -33,22 +33,22 @@
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.btoCadastrar = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cboArea = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.kryptonComboBox1 = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.cboProf = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtSenha = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btoLogin = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.kryptonRichTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
             this.txtUser = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
-            this.txtEmail = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
-            this.txtName = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
             this.lblClose = new System.Windows.Forms.Label();
+            this.kryptonRichTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cboArea)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboProf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -69,7 +69,7 @@
             // 
             // btoCadastrar
             // 
-            this.btoCadastrar.Location = new System.Drawing.Point(250, 274);
+            this.btoCadastrar.Location = new System.Drawing.Point(250, 256);
             this.btoCadastrar.Name = "btoCadastrar";
             this.btoCadastrar.Size = new System.Drawing.Size(68, 31);
             this.btoCadastrar.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -85,15 +85,14 @@
             this.btoCadastrar.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Bebas Neue", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btoCadastrar.TabIndex = 0;
             this.btoCadastrar.Values.Text = "Sign In";
-            this.btoCadastrar.Click += new System.EventHandler(this.btoCadastrar_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel1.Controls.Add(this.cboArea);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox5);
+            this.panel1.Controls.Add(this.kryptonComboBox1);
+            this.panel1.Controls.Add(this.cboProf);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -101,67 +100,106 @@
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.btoLogin);
             this.panel1.Controls.Add(this.btoCadastrar);
+            this.panel1.Controls.Add(this.kryptonRichTextBox1);
             this.panel1.Controls.Add(this.txtUser);
-            this.panel1.Controls.Add(this.txtEmail);
-            this.panel1.Controls.Add(this.txtName);
+            this.panel1.Controls.Add(this.kryptonRichTextBox2);
             this.panel1.Location = new System.Drawing.Point(99, 74);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(557, 393);
             this.panel1.TabIndex = 7;
-            // 
-            // cboArea
-            // 
-            this.cboArea.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.ListItem;
-            this.cboArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboArea.DropDownWidth = 13;
-            this.cboArea.Items.AddRange(new object[] {
-            "Produtor Musical",
-            "Artista Digital",
-            "Artista Tradicional",
-            "Escritor"});
-            this.cboArea.Location = new System.Drawing.Point(284, 165);
-            this.cboArea.Name = "cboArea";
-            this.cboArea.Size = new System.Drawing.Size(243, 39);
-            this.cboArea.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.MintCream;
-            this.cboArea.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.cboArea.StateCommon.ComboBox.Border.Rounding = 28;
-            this.cboArea.StateCommon.ComboBox.Border.Width = 3;
-            this.cboArea.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.DarkGray;
-            this.cboArea.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboArea.StateCommon.ComboBox.Content.Padding = new System.Windows.Forms.Padding(30, 6, 10, 0);
-            this.cboArea.TabIndex = 10;
-            this.cboArea.Text = "Produtor Musical";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(237, 323);
+            this.label1.Location = new System.Drawing.Point(237, 293);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 13);
             this.label1.TabIndex = 8;
             this.label1.Text = "Already a Member?";
             // 
-            // pictureBox5
+            // kryptonComboBox1
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.MintCream;
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.Location = new System.Drawing.Point(45, 175);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(24, 21);
-            this.pictureBox5.TabIndex = 5;
-            this.pictureBox5.TabStop = false;
+            this.kryptonComboBox1.DropDownWidth = 219;
+            this.kryptonComboBox1.Items.AddRange(new object[] {
+            "Produtor musical",
+            "Professor de música",
+            "Bailarino profissional",
+            "Coreógrafo",
+            "Produtor audiovisual",
+            "Animador",
+            "Artista plástico",
+            "Diretor de cena",
+            "Diretor de imagem",
+            "Roteirista",
+            "Escritor",
+            "Revisor",
+            "Ator",
+            "Fotógrafo",
+            "Editor de imagens",
+            "Editor de vídeos"});
+            this.kryptonComboBox1.Location = new System.Drawing.Point(167, 163);
+            this.kryptonComboBox1.Name = "kryptonComboBox1";
+            this.kryptonComboBox1.Size = new System.Drawing.Size(111, 43);
+            this.kryptonComboBox1.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.MintCream;
+            this.kryptonComboBox1.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.kryptonComboBox1.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)(((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonComboBox1.StateCommon.ComboBox.Border.Rounding = 35;
+            this.kryptonComboBox1.StateCommon.ComboBox.Border.Width = 3;
+            this.kryptonComboBox1.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.Silver;
+            this.kryptonComboBox1.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonComboBox1.StateCommon.ComboBox.Content.Padding = new System.Windows.Forms.Padding(0);
+            this.kryptonComboBox1.StateCommon.Item.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)(((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonComboBox1.TabIndex = 7;
+            // 
+            // cboProf
+            // 
+            this.cboProf.DropDownWidth = 219;
+            this.cboProf.Items.AddRange(new object[] {
+            "Produtor musical",
+            "Professor de música",
+            "Bailarino profissional",
+            "Coreógrafo",
+            "Produtor audiovisual",
+            "Animador",
+            "Artista plástico",
+            "Diretor de cena",
+            "Diretor de imagem",
+            "Roteirista",
+            "Escritor",
+            "Revisor",
+            "Ator",
+            "Fotógrafo",
+            "Editor de imagens",
+            "Editor de vídeos"});
+            this.cboProf.Location = new System.Drawing.Point(284, 165);
+            this.cboProf.Name = "cboProf";
+            this.cboProf.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Silver;
+            this.cboProf.Size = new System.Drawing.Size(243, 43);
+            this.cboProf.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.MintCream;
+            this.cboProf.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cboProf.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.cboProf.StateCommon.ComboBox.Border.Rounding = 36;
+            this.cboProf.StateCommon.ComboBox.Border.Width = 3;
+            this.cboProf.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.Silver;
+            this.cboProf.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboProf.StateCommon.ComboBox.Content.Padding = new System.Windows.Forms.Padding(0);
+            this.cboProf.StateCommon.Item.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)(((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.cboProf.TabIndex = 7;
+            this.cboProf.Text = "Area";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.MintCream;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(45, 223);
+            this.pictureBox1.Location = new System.Drawing.Point(45, 218);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(24, 21);
             this.pictureBox1.TabIndex = 5;
@@ -191,7 +229,7 @@
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(35, 213);
+            this.txtSenha.Location = new System.Drawing.Point(35, 208);
             this.txtSenha.Multiline = false;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(243, 42);
@@ -224,7 +262,7 @@
             // 
             // btoLogin
             // 
-            this.btoLogin.Location = new System.Drawing.Point(250, 339);
+            this.btoLogin.Location = new System.Drawing.Point(250, 314);
             this.btoLogin.Name = "btoLogin";
             this.btoLogin.Size = new System.Drawing.Size(68, 31);
             this.btoLogin.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -241,6 +279,28 @@
             this.btoLogin.TabIndex = 0;
             this.btoLogin.Values.Text = "Login";
             this.btoLogin.Click += new System.EventHandler(this.btoLogin_Click);
+            // 
+            // kryptonRichTextBox1
+            // 
+            this.kryptonRichTextBox1.Location = new System.Drawing.Point(35, 117);
+            this.kryptonRichTextBox1.Multiline = false;
+            this.kryptonRichTextBox1.Name = "kryptonRichTextBox1";
+            this.kryptonRichTextBox1.Size = new System.Drawing.Size(243, 42);
+            this.kryptonRichTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.MintCream;
+            this.kryptonRichTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.kryptonRichTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.kryptonRichTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonRichTextBox1.StateCommon.Border.Rounding = 16;
+            this.kryptonRichTextBox1.StateCommon.Border.Width = 3;
+            this.kryptonRichTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
+            this.kryptonRichTextBox1.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonRichTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(30, 6, 10, 0);
+            this.kryptonRichTextBox1.TabIndex = 2;
+            this.kryptonRichTextBox1.Text = "Name";
+            this.kryptonRichTextBox1.Enter += new System.EventHandler(this.txtUser_Enter);
+            this.kryptonRichTextBox1.Leave += new System.EventHandler(this.txtUser_Leave);
             // 
             // txtUser
             // 
@@ -264,50 +324,6 @@
             this.txtUser.Enter += new System.EventHandler(this.txtUser_Enter);
             this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave);
             // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(35, 165);
-            this.txtEmail.Multiline = false;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(243, 42);
-            this.txtEmail.StateCommon.Back.Color1 = System.Drawing.Color.MintCream;
-            this.txtEmail.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtEmail.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtEmail.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtEmail.StateCommon.Border.Rounding = 16;
-            this.txtEmail.StateCommon.Border.Width = 3;
-            this.txtEmail.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
-            this.txtEmail.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.StateCommon.Content.Padding = new System.Windows.Forms.Padding(30, 6, 10, 0);
-            this.txtEmail.TabIndex = 9;
-            this.txtEmail.Text = "Email";
-            this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
-            this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
-            // 
-            // txtName
-            // 
-            this.txtName.Location = new System.Drawing.Point(35, 117);
-            this.txtName.Multiline = false;
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(243, 42);
-            this.txtName.StateCommon.Back.Color1 = System.Drawing.Color.MintCream;
-            this.txtName.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtName.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtName.StateCommon.Border.Rounding = 16;
-            this.txtName.StateCommon.Border.Width = 3;
-            this.txtName.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
-            this.txtName.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.StateCommon.Content.Padding = new System.Windows.Forms.Padding(30, 6, 10, 0);
-            this.txtName.TabIndex = 9;
-            this.txtName.Text = "Name";
-            this.txtName.Enter += new System.EventHandler(this.kryptonRichTextBox1_Enter);
-            this.txtName.Leave += new System.EventHandler(this.txtName_Leave);
-            // 
             // lblClose
             // 
             this.lblClose.AutoSize = true;
@@ -320,6 +336,28 @@
             this.lblClose.TabIndex = 8;
             this.lblClose.Text = "<";
             this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
+            // 
+            // kryptonRichTextBox2
+            // 
+            this.kryptonRichTextBox2.Location = new System.Drawing.Point(35, 163);
+            this.kryptonRichTextBox2.Multiline = false;
+            this.kryptonRichTextBox2.Name = "kryptonRichTextBox2";
+            this.kryptonRichTextBox2.Size = new System.Drawing.Size(243, 42);
+            this.kryptonRichTextBox2.StateCommon.Back.Color1 = System.Drawing.Color.MintCream;
+            this.kryptonRichTextBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.kryptonRichTextBox2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.kryptonRichTextBox2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.kryptonRichTextBox2.StateCommon.Border.Rounding = 16;
+            this.kryptonRichTextBox2.StateCommon.Border.Width = 3;
+            this.kryptonRichTextBox2.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
+            this.kryptonRichTextBox2.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonRichTextBox2.StateCommon.Content.Padding = new System.Windows.Forms.Padding(30, 6, 10, 0);
+            this.kryptonRichTextBox2.TabIndex = 2;
+            this.kryptonRichTextBox2.Text = "User";
+            this.kryptonRichTextBox2.Enter += new System.EventHandler(this.txtUser_Enter);
+            this.kryptonRichTextBox2.Leave += new System.EventHandler(this.txtUser_Leave);
             // 
             // frmCadastro
             // 
@@ -342,8 +380,8 @@
             this.Load += new System.EventHandler(this.frmCadastro_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cboArea)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonComboBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboProf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -364,12 +402,12 @@
         private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox txtUser;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox cboProf;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox kryptonRichTextBox1;
         private System.Windows.Forms.Label label1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btoLogin;
-        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox txtName;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox txtEmail;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox cboArea;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox kryptonComboBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox kryptonRichTextBox2;
     }
 }
