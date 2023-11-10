@@ -34,17 +34,7 @@ namespace WindowsFormsApp1
         string user;
         string senha;
 
-        private void txtUser_Enter(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(txtUser.Text))
-            {
-                txtUser.Text = user;
-            }
-            else
-            {
-                txtUser.Text = "";
-            }
-        }
+       
 
         private void txtUser_Leave(object sender, EventArgs e)
         {

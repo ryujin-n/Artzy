@@ -192,7 +192,6 @@
             this.txtUser.TabIndex = 2;
             this.txtUser.Text = "User";
             this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
-            this.txtUser.Enter += new System.EventHandler(this.txtUser_Enter);
             this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave);
             // 
             // txtSenha

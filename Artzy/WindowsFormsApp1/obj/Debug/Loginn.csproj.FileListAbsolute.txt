@@ -64,7 +64,6 @@ C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\WindowsFo
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\AlphaBlendTextBox.dll
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\MaterialSkin.dll
-C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\Siticone.Desktop.UI.dll
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\ComponentFactory.Krypton.Docking.pdb
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\ComponentFactory.Krypton.Navigator.pdb
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb

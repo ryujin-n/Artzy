@@ -8,8 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using ComponentFactory.Krypton.Toolkit;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace WindowsFormsApp1
 {
@@ -21,6 +23,11 @@ namespace WindowsFormsApp1
         public frmCadastro()
         {
             InitializeComponent();
+
+            if (txtSenha.Text =="Senha")
+            {
+                txtSenha.PasswordChar = '\0';
+            }
 
         }
 
@@ -43,6 +50,8 @@ namespace WindowsFormsApp1
 
         string user;
         string senha;
+        string email;
+        string name;
 
         private void txtUser_Enter(object sender, EventArgs e)
         {
@@ -62,58 +71,9 @@ namespace WindowsFormsApp1
 
             if (txtUser.Text == "")
             {
-                txtUser.Text = "User";
+                txtUser.Text = "Usuário";
             }
         }
-
-        private void txtSenha_Enter(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(txtSenha.Text))
-            {
-                txtSenha.Text = senha;
-            }
-            else
-            {
-                txtSenha.Text = "";
-            }
-        }
-
-        private void txtSenha_Leave(object sender, EventArgs e)
-        {
-            senha = txtSenha.Text;
-
-            if (txtSenha.Text == "")
-            {
-                txtSenha.Text = "Password";
-            }
-        }
-
-        string mask;
-
-        private void txtSenha_TextChanged(object sender, EventArgs e)
-        {
-            mask = new string('*', txtSenha.Text.Length);
-
-
-            if (txtSenha.Text != "Password")
-            {
-                txtSenha.Text = mask;
-            }
-
-
-            txtSenha.SelectionStart = txtSenha.Text.Length;
-            txtSenha.ScrollToCaret();
-        }
-
-        private void btoLogin_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-
-            frmLogin frm = new frmLogin();
-            frm.Show();
-
-        }
-        string email;
 
         private void txtEmail_Enter(object sender, EventArgs e)
         {
@@ -136,9 +96,31 @@ namespace WindowsFormsApp1
                 txtEmail.Text = "Email";
             }
         }
-        string name;
 
-        private void kryptonRichTextBox1_Enter(object sender, EventArgs e)
+        private void txtSenha_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtSenha.Text))
+            {
+                txtSenha.Text = senha;
+                txtSenha.PasswordChar = '*';
+            }
+            else
+            {
+                txtSenha.Text = "";
+            }
+        }
+
+        private void txtSenha_Leave(object sender, EventArgs e)
+        {
+            senha = txtSenha.Text;
+
+            if (txtSenha.Text == "")
+            {
+                txtSenha.Text = "Senha";
+            }
+        }
+
+        private void txtName_Enter(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(txtName.Text))
             {
@@ -156,9 +138,10 @@ namespace WindowsFormsApp1
 
             if (txtName.Text == "")
             {
-                txtName.Text = "Name";
+                txtName.Text = "Nome";
             }
         }
+       
 
         private void btoCadastrar_Click(object sender, EventArgs e)
         {
@@ -168,7 +151,7 @@ namespace WindowsFormsApp1
                     "'" + txtName.Text + "'" + "," +
                     "'" + txtUser.Text + "'" + "," +
                     "'" + txtSenha.Text + "'" + "," +
-                    "'" + txtEmail.Text + "'" + "," +
+                    "'" + txtEmail.Text + cboEmail.Text + "'" + "," +
                     "'" + cboArea.Text + "')";
                 
             SqlConnection conn = new SqlConnection(stringConexao);
@@ -179,26 +162,26 @@ namespace WindowsFormsApp1
 
             try
             {
-                if (txtName.Text == "Name" || txtName.Text == "")
+                if (txtName.Text == "Nome" || txtName.Text == "")
                 {
-                    MessageBox.Show("Must have a Name!");
+                    MessageBox.Show("Deve conter um Nome!");
                     return;
                 }
-                else if (txtUser.Text == "User" || txtUser.Text == "")
+                else if (txtUser.Text == "Usuário" || txtUser.Text == "")
                 {
-                    MessageBox.Show("Must have an User!");
+                    MessageBox.Show("Deve conter um Usuário!");
                     return;
 
                 }
-                else if (txtSenha.Text == "Password" || txtSenha.Text == "")
+                else if (txtSenha.Text == "Senha" || txtSenha.Text == "")
                 {
-                    MessageBox.Show("Must have a Password!");
+                    MessageBox.Show("Deve conter uma Senha!");
                     return;
 
                 }
                 else if (txtEmail.Text == "Email" || txtEmail.Text == "")
                 {
-                    MessageBox.Show("Must have an Email!");
+                    MessageBox.Show("Deve conter um Email!");
                     return;
 
                 }
@@ -206,7 +189,7 @@ namespace WindowsFormsApp1
                 int i = cmd.ExecuteNonQuery();
                 if (i == 1)
                 {
-                    MessageBox.Show("Conta criada com sucesso, Seja bem vindo(a)!");
+                    MessageBox.Show("Conta criada com sucesso, Seja bem vindo(a)! :)");
                 }
 
 
@@ -220,6 +203,16 @@ namespace WindowsFormsApp1
                 conn.Close();
             }
 
+        }
+
+        private void cboArea_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lblarea.Visible = false;
+        }
+
+        private void lblarea_Click(object sender, EventArgs e)
+        {
+            cboArea.DroppedDown = !cboArea.DroppedDown;
         }
     }
 }
