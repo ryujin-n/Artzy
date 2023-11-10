@@ -39,8 +39,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.txtUser = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
-            this.txtSenha = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
+            this.txtSenha = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.txtUser = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbLog)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -85,7 +85,7 @@
             this.btoEntrar.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.DimGray;
             this.btoEntrar.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Bebas Neue", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btoEntrar.TabIndex = 0;
-            this.btoEntrar.Values.Text = "Sign In";
+            this.btoEntrar.Values.Text = "Entrar";
             this.btoEntrar.Click += new System.EventHandler(this.btoEntrar_Click);
             // 
             // btoCadastrar
@@ -104,7 +104,7 @@
             this.btoCadastrar.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.DimGray;
             this.btoCadastrar.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Bebas Neue", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btoCadastrar.TabIndex = 5;
-            this.btoCadastrar.Values.Text = "Sign Up";
+            this.btoCadastrar.Values.Text = "Cadastrar";
             this.btoCadastrar.Click += new System.EventHandler(this.btoCadastrar_Click);
             // 
             // label1
@@ -113,9 +113,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Bebas Neue", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(162, 246);
+            this.label1.Location = new System.Drawing.Point(163, 246);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(15, 13);
+            this.label1.Size = new System.Drawing.Size(15, 14);
             this.label1.TabIndex = 3;
             this.label1.Text = "ou";
             // 
@@ -143,8 +143,8 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.txtUser);
             this.panel1.Controls.Add(this.txtSenha);
+            this.panel1.Controls.Add(this.txtUser);
             this.panel1.Location = new System.Drawing.Point(75, 122);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(333, 341);
@@ -155,7 +155,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.MintCream;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(63, 187);
+            this.pictureBox1.Location = new System.Drawing.Point(63, 193);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(24, 21);
             this.pictureBox1.TabIndex = 4;
@@ -172,50 +172,44 @@
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
-            // txtUser
-            // 
-            this.txtUser.Location = new System.Drawing.Point(51, 130);
-            this.txtUser.Multiline = false;
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(243, 42);
-            this.txtUser.StateCommon.Back.Color1 = System.Drawing.Color.MintCream;
-            this.txtUser.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtUser.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtUser.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtUser.StateCommon.Border.Rounding = 16;
-            this.txtUser.StateCommon.Border.Width = 3;
-            this.txtUser.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
-            this.txtUser.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.StateCommon.Content.Padding = new System.Windows.Forms.Padding(30, 6, 10, 0);
-            this.txtUser.TabIndex = 2;
-            this.txtUser.Text = "User";
-            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
-            this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave);
-            // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(51, 178);
-            this.txtSenha.Multiline = false;
+            this.txtSenha.Location = new System.Drawing.Point(53, 179);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(243, 42);
+            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.Size = new System.Drawing.Size(233, 47);
             this.txtSenha.StateCommon.Back.Color1 = System.Drawing.Color.MintCream;
-            this.txtSenha.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtSenha.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtSenha.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtSenha.StateCommon.Border.Rounding = 16;
+            this.txtSenha.StateCommon.Border.Rounding = 32;
             this.txtSenha.StateCommon.Border.Width = 3;
             this.txtSenha.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
-            this.txtSenha.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.StateCommon.Content.Padding = new System.Windows.Forms.Padding(30, 6, 10, 0);
-            this.txtSenha.TabIndex = 3;
-            this.txtSenha.Text = "Password";
-            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
+            this.txtSenha.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F);
+            this.txtSenha.StateCommon.Content.Padding = new System.Windows.Forms.Padding(30, 5, 10, 3);
+            this.txtSenha.TabIndex = 6;
+            this.txtSenha.Text = "Senha";
             this.txtSenha.Enter += new System.EventHandler(this.txtSenha_Enter);
             this.txtSenha.Leave += new System.EventHandler(this.txtSenha_Leave);
+            // 
+            // txtUser
+            // 
+            this.txtUser.Location = new System.Drawing.Point(53, 126);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(233, 47);
+            this.txtUser.StateCommon.Back.Color1 = System.Drawing.Color.MintCream;
+            this.txtUser.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtUser.StateCommon.Border.Rounding = 32;
+            this.txtUser.StateCommon.Border.Width = 3;
+            this.txtUser.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
+            this.txtUser.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F);
+            this.txtUser.StateCommon.Content.Padding = new System.Windows.Forms.Padding(30, 5, 10, 3);
+            this.txtUser.TabIndex = 6;
+            this.txtUser.Text = "Usuário";
+            this.txtUser.Enter += new System.EventHandler(this.txtUser_Enter);
+            this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave_1);
             // 
             // frmLogin
             // 
@@ -242,7 +236,6 @@
             this.StateCommon.Border.Rounding = 31;
             this.StateCommon.Border.Width = 1;
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Form1_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pbLog)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -262,10 +255,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.Panel panel1;
-        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox txtUser;
-        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox txtSenha;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtUser;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtSenha;
     }
 }
 

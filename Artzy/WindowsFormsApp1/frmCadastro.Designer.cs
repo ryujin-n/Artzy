@@ -45,9 +45,9 @@
             this.txtSenha = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.txtEmail = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.txtUser = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.lblClose = new System.Windows.Forms.Label();
-            this.cboArea = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.lblarea = new System.Windows.Forms.Label();
+            this.cboArea = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
+            this.lblClose = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cboEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -127,7 +127,7 @@
             this.cboEmail.Location = new System.Drawing.Point(154, 164);
             this.cboEmail.Name = "cboEmail";
             this.cboEmail.Size = new System.Drawing.Size(124, 47);
-            this.cboEmail.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.MintCream;
+            this.cboEmail.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.Azure;
             this.cboEmail.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cboEmail.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)(((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -229,7 +229,7 @@
             this.txtName.Location = new System.Drawing.Point(284, 112);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(243, 47);
-            this.txtName.StateCommon.Back.Color1 = System.Drawing.Color.MintCream;
+            this.txtName.StateCommon.Back.Color1 = System.Drawing.Color.Azure;
             this.txtName.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtName.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtName.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -251,7 +251,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(243, 47);
-            this.txtSenha.StateCommon.Back.Color1 = System.Drawing.Color.MintCream;
+            this.txtSenha.StateCommon.Back.Color1 = System.Drawing.Color.Azure;
             this.txtSenha.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtSenha.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtSenha.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -272,7 +272,7 @@
             this.txtEmail.Location = new System.Drawing.Point(35, 164);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(121, 47);
-            this.txtEmail.StateCommon.Back.Color1 = System.Drawing.Color.MintCream;
+            this.txtEmail.StateCommon.Back.Color1 = System.Drawing.Color.Azure;
             this.txtEmail.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtEmail.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtEmail.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)(((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -299,7 +299,7 @@
             this.txtUser.StateActive.Border.Width = 3;
             this.txtUser.StateActive.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F);
             this.txtUser.StateActive.Content.Padding = new System.Windows.Forms.Padding(30, 5, 10, 3);
-            this.txtUser.StateCommon.Back.Color1 = System.Drawing.Color.MintCream;
+            this.txtUser.StateCommon.Back.Color1 = System.Drawing.Color.Azure;
             this.txtUser.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtUser.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtUser.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -320,18 +320,18 @@
             this.txtUser.Enter += new System.EventHandler(this.txtUser_Enter);
             this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave);
             // 
-            // lblClose
+            // lblarea
             // 
-            this.lblClose.AutoSize = true;
-            this.lblClose.BackColor = System.Drawing.Color.Transparent;
-            this.lblClose.Font = new System.Drawing.Font("KG Red Hands", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClose.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblClose.Location = new System.Drawing.Point(14, 21);
-            this.lblClose.Name = "lblClose";
-            this.lblClose.Size = new System.Drawing.Size(24, 26);
-            this.lblClose.TabIndex = 8;
-            this.lblClose.Text = "<";
-            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
+            this.lblarea.AutoSize = true;
+            this.lblarea.BackColor = System.Drawing.Color.MintCream;
+            this.lblarea.Font = new System.Drawing.Font("KG Red Hands", 6.75F);
+            this.lblarea.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblarea.Location = new System.Drawing.Point(323, 182);
+            this.lblarea.Name = "lblarea";
+            this.lblarea.Size = new System.Drawing.Size(31, 13);
+            this.lblarea.TabIndex = 11;
+            this.lblarea.Text = "Area";
+            this.lblarea.Click += new System.EventHandler(this.lblarea_Click);
             // 
             // cboArea
             // 
@@ -350,7 +350,7 @@
             this.cboArea.Location = new System.Drawing.Point(284, 164);
             this.cboArea.Name = "cboArea";
             this.cboArea.Size = new System.Drawing.Size(243, 47);
-            this.cboArea.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.MintCream;
+            this.cboArea.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.Azure;
             this.cboArea.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cboArea.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -365,18 +365,18 @@
             this.cboArea.TabIndex = 10;
             this.cboArea.SelectedIndexChanged += new System.EventHandler(this.cboArea_SelectedIndexChanged);
             // 
-            // lblarea
+            // lblClose
             // 
-            this.lblarea.AutoSize = true;
-            this.lblarea.BackColor = System.Drawing.Color.MintCream;
-            this.lblarea.Font = new System.Drawing.Font("KG Red Hands", 6.75F);
-            this.lblarea.ForeColor = System.Drawing.Color.DarkGray;
-            this.lblarea.Location = new System.Drawing.Point(323, 182);
-            this.lblarea.Name = "lblarea";
-            this.lblarea.Size = new System.Drawing.Size(31, 13);
-            this.lblarea.TabIndex = 11;
-            this.lblarea.Text = "Area";
-            this.lblarea.Click += new System.EventHandler(this.lblarea_Click);
+            this.lblClose.AutoSize = true;
+            this.lblClose.BackColor = System.Drawing.Color.Transparent;
+            this.lblClose.Font = new System.Drawing.Font("KG Red Hands", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClose.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblClose.Location = new System.Drawing.Point(14, 21);
+            this.lblClose.Name = "lblClose";
+            this.lblClose.Size = new System.Drawing.Size(24, 26);
+            this.lblClose.TabIndex = 8;
+            this.lblClose.Text = "<";
+            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
             // frmCadastro
             // 

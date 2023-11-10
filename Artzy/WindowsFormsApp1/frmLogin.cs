@@ -19,6 +19,11 @@ namespace WindowsFormsApp1
         public frmLogin()
         {
             InitializeComponent();
+
+            if (txtSenha.Text == "Senha")
+            {
+                txtSenha.PasswordChar = '\0';
+            }
         }
 
             public static string stringConexao = "Data Source=localhost;Initial Catalog=Artzy;User ID=sa;Password=123456";
@@ -34,30 +39,39 @@ namespace WindowsFormsApp1
         string user;
         string senha;
 
-       
-
-        private void txtUser_Leave(object sender, EventArgs e)
+        private void txtUser_Enter(object sender, EventArgs e)
         {
+            if (!string.IsNullOrWhiteSpace(txtUser.Text))
+            {
+                txtUser.Text = user;
+            }
+            else
+            {
+                txtUser.Text = "";
+            }
+        }
 
+        private void txtUser_Leave_1(object sender, EventArgs e)
+        {
             user = txtUser.Text;
 
             if (txtUser.Text == "")
             {
-                txtUser.Text = "User";
+                txtUser.Text = "Usuário";
             }
         }
 
         private void txtSenha_Enter(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(txtUser.Text))
+            if (!string.IsNullOrWhiteSpace(txtSenha.Text))
             {
                 txtSenha.Text = senha;
+                txtSenha.PasswordChar = '*';
             }
             else
             {
                 txtSenha.Text = "";
             }
-
         }
 
         private void txtSenha_Leave(object sender, EventArgs e)
@@ -66,52 +80,10 @@ namespace WindowsFormsApp1
 
             if (txtSenha.Text == "")
             {
-                txtSenha.Text = "Password";
+                txtSenha.Text = "Senha";
             }
         }
-        string mask;
 
-        private void txtSenha_TextChanged(object sender, EventArgs e)
-        {
-                    
-
-             mask = new string('*', txtSenha.Text.Length);
-           
-
-            if (txtSenha.Text != "Password")
-            {
-                txtSenha.Text = mask;
-            }
-
-            
-            txtSenha.SelectionStart = txtSenha.Text.Length;
-            txtSenha.ScrollToCaret();
-        }
-
-        //bool oio = true;
-
-        //private void pbOlho_Click(object sender, EventArgs e)
-        //{
-
-
-        //    if (oio)
-        //    {
-        //        //pbOlho.BackgroundImage = Image.FromFile("C:\\Users\\miles\\Source\\Repos\\Artzy\\WindowsFormsApp1\\WindowsFormsApp1\\ref\\closedd.png");
-        //        oio = false;
-        //    }
-        //    else
-        //    {
-        //        //pbOlho.BackgroundImage = Image.FromFile("C:\\Users\\miles\\Source\\Repos\\Artzy\\WindowsFormsApp1\\WindowsFormsApp1\\ref\\openn.png");
-        //        oio = true;
-
-        //    }
-
-        //}
-
-        private void Form1_Load_1(object sender, EventArgs e)
-        {
-          
-        }
 
         private void btoCadastrar_Click(object sender, EventArgs e)
         {
@@ -163,5 +135,6 @@ namespace WindowsFormsApp1
                 conn.Close();
             }
         }
+
     }
 }
