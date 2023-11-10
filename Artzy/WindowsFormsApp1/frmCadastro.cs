@@ -143,7 +143,18 @@ namespace WindowsFormsApp1
         }
        
 
-        private void btoCadastrar_Click(object sender, EventArgs e)
+
+        private void cboArea_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lblarea.Visible = false;
+        }
+
+        private void lblarea_Click(object sender, EventArgs e)
+        {
+            cboArea.DroppedDown = !cboArea.DroppedDown;
+        }
+
+        private void btoEntrar_Click(object sender, EventArgs e)
         {
             string sql = "set dateformat dmy insert into art (nome_artista,user_artista,senha_artista,email_artista,prof_artista)" +
                 "values" +
@@ -153,23 +164,29 @@ namespace WindowsFormsApp1
                     "'" + txtSenha.Text + "'" + "," +
                     "'" + txtEmail.Text + cboEmail.Text + "'" + "," +
                     "'" + cboArea.Text + "')";
-                
+
             SqlConnection conn = new SqlConnection(stringConexao);
             SqlCommand cmd = new SqlCommand(sql, conn);
             cmd.CommandType = CommandType.Text;
-     
+
             conn.Open();
 
             try
             {
-                if (txtName.Text == "Nome" || txtName.Text == "")
+                if (txtUser.Text == "Usuário" || txtUser.Text == "")
+                {
+                    MessageBox.Show("Deve conter um Usuário!");
+                    return;
+
+                }
+                else if (txtName.Text == "Nome" || txtName.Text == "")
                 {
                     MessageBox.Show("Deve conter um Nome!");
                     return;
                 }
-                else if (txtUser.Text == "Usuário" || txtUser.Text == "")
+                else if (txtEmail.Text == "Email" || txtEmail.Text == "" || cboEmail.Text == "")
                 {
-                    MessageBox.Show("Deve conter um Usuário!");
+                    MessageBox.Show("Deve conter um Email!");
                     return;
 
                 }
@@ -179,11 +196,10 @@ namespace WindowsFormsApp1
                     return;
 
                 }
-                else if (txtEmail.Text == "Email" || txtEmail.Text == "")
+                else if (cboArea.Text == "")
                 {
-                    MessageBox.Show("Deve conter um Email!");
+                    MessageBox.Show("Deve conter uma Profissão!");
                     return;
-
                 }
 
                 int i = cmd.ExecuteNonQuery();
@@ -202,17 +218,6 @@ namespace WindowsFormsApp1
             {
                 conn.Close();
             }
-
-        }
-
-        private void cboArea_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            lblarea.Visible = false;
-        }
-
-        private void lblarea_Click(object sender, EventArgs e)
-        {
-            cboArea.DroppedDown = !cboArea.DroppedDown;
         }
     }
 }

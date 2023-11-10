@@ -88,6 +88,7 @@
             this.btoEntrar.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Bebas Neue", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btoEntrar.TabIndex = 0;
             this.btoEntrar.Values.Text = "Entrar";
+            this.btoEntrar.Click += new System.EventHandler(this.btoEntrar_Click);
             // 
             // panel1
             // 
