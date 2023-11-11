@@ -217,6 +217,8 @@ namespace WindowsFormsApp1
             finally
             {
                 conn.Close();
+                frmDashboard frm = new frmDashboard();
+                frm.Show();
                 this.Hide();
             }
         }

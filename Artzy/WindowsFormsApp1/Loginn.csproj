@@ -88,6 +88,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="testse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testse.Designer.cs">
+      <DependentUpon>testse.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmCadastro.resx">
       <DependentUpon>frmCadastro.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,6 +113,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="testse.resx">
+      <DependentUpon>testse.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
