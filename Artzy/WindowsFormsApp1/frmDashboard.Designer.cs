@@ -161,6 +161,8 @@
             this.btoHome.Size = new System.Drawing.Size(223, 60);
             this.btoHome.TabIndex = 5;
             this.btoHome.TabStop = false;
+            this.btoHome.MouseEnter += new System.EventHandler(this.btoHome_MouseEnter);
+            this.btoHome.MouseLeave += new System.EventHandler(this.btoHome_MouseLeave);
             // 
             // frmDashboard
             // 

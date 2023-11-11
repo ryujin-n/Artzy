@@ -24,14 +24,12 @@ namespace WindowsFormsApp1
             InitializeComponent();
             InitializeTimers();
 
-            btoHome.MouseEnter += BtoHome_MouseEnter;
-            btoHome.MouseLeave += BtoHome_MouseLeave;
         }
 
         private void InitializeTimers()
         {
             slideTimer = new Timer();
-            slideTimer.Interval = 16; // Aproximadamente 60 FPS
+            slideTimer.Interval = 16; // +- 60 FPS
             slideTimer.Tick += SlideTimer_Tick;
 
             slideTimer1 = new Timer();
@@ -51,17 +49,7 @@ namespace WindowsFormsApp1
             slideTimer4.Tick += SlideTimer4_Tick;
         }
 
-        private void BtoHome_MouseEnter(object sender, EventArgs e)
-        {
-            slideTimer.Start();
-        }
-
-        private void BtoHome_MouseLeave(object sender, EventArgs e)
-        {
-            StopAllTimers();
-            // reinicia a posição 
-            btoHome.Location = new Point(-73, 215);
-        }
+        
 
         private void StopAllTimers()
         {
@@ -126,6 +114,18 @@ namespace WindowsFormsApp1
             slideTimer1.Start();
         }
 
+        private void btoHome_MouseEnter(object sender, EventArgs e)
+        {
+            slideTimer.Start();
+        }
+
+        private void btoHome_MouseLeave(object sender, EventArgs e)
+        {
+            StopAllTimers();
+            // reinicia a posição 
+            btoHome.Location = new Point(-73, 215);
+        }
+
         private void btoLista_MouseLeave(object sender, EventArgs e)
         {
             StopAllTimers();
@@ -173,6 +173,7 @@ namespace WindowsFormsApp1
             frmLogin frm = new frmLogin();
             frm.Show();
         }
+
     }
 
 }
