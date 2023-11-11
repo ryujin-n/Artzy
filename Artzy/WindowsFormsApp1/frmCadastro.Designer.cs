@@ -223,6 +223,7 @@
             this.btoLogin.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Bebas Neue", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btoLogin.TabIndex = 0;
             this.btoLogin.Values.Text = "Login";
+            this.btoLogin.Click += new System.EventHandler(this.btoLogin_Click);
             // 
             // txtName
             // 

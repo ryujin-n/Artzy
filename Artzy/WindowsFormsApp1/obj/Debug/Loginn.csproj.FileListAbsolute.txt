@@ -79,3 +79,4 @@ C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\Loginn.cs
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\Loginn.csproj.CopyComplete
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmDashboard.resources

@@ -133,6 +133,7 @@ namespace WindowsFormsApp1
             finally
             {
                 conn.Close();
+                this.Hide();
             }
         }
 
