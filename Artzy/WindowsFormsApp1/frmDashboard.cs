@@ -174,6 +174,63 @@ namespace WindowsFormsApp1
             frm.Show();
         }
 
+        private void ItemMove(KryptonListBox sourceListBox, KryptonListBox destinationListBox)
+        {
+            foreach (int selectedIndex in sourceListBox.SelectedIndices)
+            {
+                if (selectedIndex >= 0 && selectedIndex < sourceListBox.Items.Count)
+                {
+                    object selectedItem = sourceListBox.Items[selectedIndex];
+
+                    // próximo index disponivel
+                    int nextIndex = destinationListBox.Items.Count;
+
+                    // adiciona no doing
+                    destinationListBox.Items.Insert(nextIndex, selectedItem);
+                }
+            }
+
+                    
+            for (int i = sourceListBox.SelectedIndices.Count - 1; i >= 0; i--) 
+                //remove do todo
+            {
+                int selectedIndex = sourceListBox.SelectedIndices[i];
+                if (selectedIndex >= 0 && selectedIndex < sourceListBox.Items.Count)
+                {
+                    sourceListBox.Items.RemoveAt(selectedIndex);
+                }
+            }
+        }
+
+        private void btnTodoToDoing_Click(object sender, EventArgs e)
+        {
+            ItemMove(lstTodo, lstDoing);
+        }
+
+        private void btnDoingToTodo_Click(object sender, EventArgs e)
+        {
+            ItemMove(lstDoing,lstTodo );
+        }
+
+        private void btnTodoToDone_Click(object sender, EventArgs e)
+        {
+            ItemMove(lstTodo, lstDone);
+        }
+
+        private void btnDoneToTodo_Click(object sender, EventArgs e)
+        {
+            ItemMove(lstDone,lstTodo );
+        }
+
+        private void btnDoingToDone_Click(object sender, EventArgs e)
+        {
+            ItemMove(lstDoing, lstDone );
+        }
+
+        private void btnDoneToDoing_Click(object sender, EventArgs e)
+        {
+            ItemMove(lstDone,lstDoing );
+        }
     }
 
 }
