@@ -31,12 +31,6 @@ namespace WindowsFormsApp1
 
         }
 
-        private void frmCadastro_Load(object sender, EventArgs e)
-        {
-            //string[] i = new string[]{"Animador", "Produtor musical", "Artista Digital", "Artista Tradicional", "Escritor"};
-            //string[] j = new string[]{"@gmail.com", "@hotmail.com", "@outlook.com", "@yahoo.com"};
-            //cboProf.Items.Add(i);
-        }
 
         private void lblClose_Click(object sender, EventArgs e)
         {

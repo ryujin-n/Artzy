@@ -98,10 +98,7 @@ namespace WindowsFormsApp1
             frm.Show();
             
         }
-        private void txtUser_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+  
 
         private void btoEntrar_Click(object sender, EventArgs e)
         {
