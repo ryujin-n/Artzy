@@ -82,6 +82,11 @@ namespace WindowsFormsApp1
             {
                 txtSenha.Text = "Senha";
             }
+
+            if (txtSenha.Text == "Senha")
+            {
+                txtSenha.PasswordChar = '\0';
+            }
         }
 
 
