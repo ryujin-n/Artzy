@@ -294,7 +294,7 @@
             // 
             // txtBloco2
             // 
-            this.txtBloco2.Location = new System.Drawing.Point(298, 58);
+            this.txtBloco2.Location = new System.Drawing.Point(304, 60);
             this.txtBloco2.Name = "txtBloco2";
             this.txtBloco2.Size = new System.Drawing.Size(159, 23);
             this.txtBloco2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -311,7 +311,7 @@
             // 
             // txtBloco1
             // 
-            this.txtBloco1.Location = new System.Drawing.Point(38, 58);
+            this.txtBloco1.Location = new System.Drawing.Point(46, 60);
             this.txtBloco1.Name = "txtBloco1";
             this.txtBloco1.Size = new System.Drawing.Size(141, 23);
             this.txtBloco1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -774,7 +774,7 @@
             // 
             this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
             this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox10.Location = new System.Drawing.Point(123, 317);
+            this.pictureBox10.Location = new System.Drawing.Point(123, 302);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(81, 24);
             this.pictureBox10.TabIndex = 3;
