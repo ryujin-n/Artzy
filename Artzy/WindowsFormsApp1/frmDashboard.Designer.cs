@@ -189,16 +189,16 @@
             this.panel1.Location = new System.Drawing.Point(208, 28);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(625, 779);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 0;
             // 
             // btoOK3
             // 
             this.btoOK3.Font = new System.Drawing.Font("KG Red Hands", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btoOK3.ForeColor = System.Drawing.Color.DimGray;
-            this.btoOK3.Location = new System.Drawing.Point(547, 391);
+            this.btoOK3.Location = new System.Drawing.Point(544, 391);
             this.btoOK3.Name = "btoOK3";
             this.btoOK3.Size = new System.Drawing.Size(28, 25);
-            this.btoOK3.TabIndex = 23;
+            this.btoOK3.TabIndex = 8;
             this.btoOK3.Text = "OK";
             this.btoOK3.UseVisualStyleBackColor = true;
             this.btoOK3.Click += new System.EventHandler(this.btoOK3_Click);
@@ -207,10 +207,10 @@
             // 
             this.btoOK2.Font = new System.Drawing.Font("KG Red Hands", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btoOK2.ForeColor = System.Drawing.Color.DimGray;
-            this.btoOK2.Location = new System.Drawing.Point(351, 391);
+            this.btoOK2.Location = new System.Drawing.Point(348, 391);
             this.btoOK2.Name = "btoOK2";
             this.btoOK2.Size = new System.Drawing.Size(28, 25);
-            this.btoOK2.TabIndex = 23;
+            this.btoOK2.TabIndex = 6;
             this.btoOK2.Text = "OK";
             this.btoOK2.UseVisualStyleBackColor = true;
             this.btoOK2.Click += new System.EventHandler(this.btoOK2_Click);
@@ -222,14 +222,14 @@
             this.btoOK.Location = new System.Drawing.Point(155, 391);
             this.btoOK.Name = "btoOK";
             this.btoOK.Size = new System.Drawing.Size(28, 25);
-            this.btoOK.TabIndex = 23;
+            this.btoOK.TabIndex = 4;
             this.btoOK.Text = "OK";
             this.btoOK.UseVisualStyleBackColor = true;
             this.btoOK.Click += new System.EventHandler(this.btoOK_Click);
             // 
             // txtDone
             // 
-            this.txtDone.Location = new System.Drawing.Point(446, 391);
+            this.txtDone.Location = new System.Drawing.Point(443, 391);
             this.txtDone.Name = "txtDone";
             this.txtDone.Size = new System.Drawing.Size(100, 25);
             this.txtDone.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -239,14 +239,14 @@
             this.txtDone.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
             this.txtDone.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDone.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 3);
-            this.txtDone.TabIndex = 17;
+            this.txtDone.TabIndex = 7;
             this.txtDone.Text = "Adicionar";
             this.txtDone.Enter += new System.EventHandler(this.txtDone_Enter);
             this.txtDone.Leave += new System.EventHandler(this.txtDone_Leave);
             // 
             // txtDoing
             // 
-            this.txtDoing.Location = new System.Drawing.Point(251, 391);
+            this.txtDoing.Location = new System.Drawing.Point(248, 391);
             this.txtDoing.Name = "txtDoing";
             this.txtDoing.Size = new System.Drawing.Size(100, 25);
             this.txtDoing.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -256,7 +256,7 @@
             this.txtDoing.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
             this.txtDoing.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDoing.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 3);
-            this.txtDoing.TabIndex = 17;
+            this.txtDoing.TabIndex = 5;
             this.txtDoing.Text = "Adicionar";
             this.txtDoing.Enter += new System.EventHandler(this.txtDoing_Enter);
             this.txtDoing.Leave += new System.EventHandler(this.txtDoing_Leave);
@@ -273,7 +273,7 @@
             this.txtToDo.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
             this.txtToDo.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtToDo.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 3);
-            this.txtToDo.TabIndex = 17;
+            this.txtToDo.TabIndex = 3;
             this.txtToDo.Text = "Adicionar";
             this.txtToDo.Enter += new System.EventHandler(this.txtToDo_Enter);
             this.txtToDo.Leave += new System.EventHandler(this.txtToDo_Leave);
@@ -290,7 +290,7 @@
             this.panel2.Location = new System.Drawing.Point(23, 440);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(579, 321);
-            this.panel2.TabIndex = 0;
+            this.panel2.TabIndex = 9;
             // 
             // txtBloco2
             // 
@@ -304,8 +304,8 @@
             this.txtBloco2.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
             this.txtBloco2.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBloco2.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5, 3, -1, 3);
-            this.txtBloco2.TabIndex = 2;
-            this.txtBloco2.Text = "Bloco 2";
+            this.txtBloco2.TabIndex = 12;
+            this.txtBloco2.Text = "Título";
             this.txtBloco2.Enter += new System.EventHandler(this.txtBloco2_Enter);
             this.txtBloco2.Leave += new System.EventHandler(this.txtBloco2_Leave);
             // 
@@ -321,8 +321,8 @@
             this.txtBloco1.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
             this.txtBloco1.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBloco1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5, 3, -1, 3);
-            this.txtBloco1.TabIndex = 2;
-            this.txtBloco1.Text = "Bloco 1";
+            this.txtBloco1.TabIndex = 10;
+            this.txtBloco1.Text = "Título";
             this.txtBloco1.Enter += new System.EventHandler(this.txtBloco1_Enter);
             this.txtBloco1.Leave += new System.EventHandler(this.txtBloco1_Leave);
             // 
@@ -338,7 +338,7 @@
             this.kryptonRichTextBox2.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
             this.kryptonRichTextBox2.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonRichTextBox2.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5, 6, -1, -1);
-            this.kryptonRichTextBox2.TabIndex = 1;
+            this.kryptonRichTextBox2.TabIndex = 13;
             this.kryptonRichTextBox2.Text = "";
             // 
             // kryptonRichTextBox1
@@ -353,7 +353,7 @@
             this.kryptonRichTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
             this.kryptonRichTextBox1.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonRichTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5, 6, -1, -1);
-            this.kryptonRichTextBox1.TabIndex = 1;
+            this.kryptonRichTextBox1.TabIndex = 11;
             this.kryptonRichTextBox1.Text = "";
             // 
             // label3
@@ -574,7 +574,7 @@
             this.label2.Location = new System.Drawing.Point(103, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(420, 20);
-            this.label2.TabIndex = 0;
+            this.label2.TabIndex = 2;
             this.label2.Text = "Aqui estão suas tarefas diárias, tenha um bom trabalho :)\r\n";
             // 
             // kryptonPanel2
@@ -613,7 +613,7 @@
             this.label1.Location = new System.Drawing.Point(46, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(180, 36);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 1;
             this.label1.Text = "Olá, Alysson!";
             // 
             // kryptonPanel1

@@ -262,7 +262,7 @@ namespace WindowsFormsApp1
 
             if (txtBloco1.Text == "")
             {
-                txtBloco1.Text = "Bloco1";
+                txtBloco1.Text = "Título";
             }
         }
 
@@ -284,8 +284,9 @@ namespace WindowsFormsApp1
 
             if (txtBloco2.Text == "")
             {
-                txtBloco2.Text = "Bloco2";
+                txtBloco2.Text = "Título";
             }
+            
         }
 
         private void btoChat_Click(object sender, EventArgs e)
