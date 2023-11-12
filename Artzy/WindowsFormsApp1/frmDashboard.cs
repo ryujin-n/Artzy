@@ -96,7 +96,7 @@ namespace WindowsFormsApp1
             pnSla.BackColor = Color.Transparent;
             pnSla.Parent = pictureBox1;
 
-            int x = -3;
+            int x = 0;
             int y = -4; 
 
             pnSla.Location = new Point(x, y);
