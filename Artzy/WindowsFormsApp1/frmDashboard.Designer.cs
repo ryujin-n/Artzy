@@ -81,6 +81,11 @@
             this.btoHome = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.excluir = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.roundedPB1 = new WindowsFormsApp1.RoundedPB();
             ((System.ComponentModel.ISupportInitialize)(this.btoConf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -103,12 +108,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.pnSla.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoSair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoLoja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoChat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoHome)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPB1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -603,7 +614,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(180, 36);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Olá, Admin ";
+            this.label1.Text = "Olá, Alysson!";
             // 
             // kryptonPanel1
             // 
@@ -639,6 +650,11 @@
             this.pnSla.BackColor = System.Drawing.Color.Transparent;
             this.pnSla.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnSla.BackgroundImage")));
             this.pnSla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnSla.Controls.Add(this.pictureBox9);
+            this.pnSla.Controls.Add(this.pictureBox10);
+            this.pnSla.Controls.Add(this.pictureBox8);
+            this.pnSla.Controls.Add(this.pictureBox7);
+            this.pnSla.Controls.Add(this.roundedPB1);
             this.pnSla.Location = new System.Drawing.Point(854, -1);
             this.pnSla.Name = "pnSla";
             this.pnSla.Size = new System.Drawing.Size(308, 368);
@@ -724,6 +740,55 @@
             this.excluir.Text = "Excluir";
             this.excluir.Click += new System.EventHandler(this.excluir_Click);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox7.Location = new System.Drawing.Point(68, 248);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(189, 33);
+            this.pictureBox7.TabIndex = 3;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox8.Location = new System.Drawing.Point(111, 273);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(113, 24);
+            this.pictureBox8.TabIndex = 3;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
+            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox9.Location = new System.Drawing.Point(253, 248);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(28, 24);
+            this.pictureBox9.TabIndex = 3;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox10.BackgroundImage")));
+            this.pictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox10.Location = new System.Drawing.Point(123, 317);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(81, 24);
+            this.pictureBox10.TabIndex = 3;
+            this.pictureBox10.TabStop = false;
+            // 
+            // roundedPB1
+            // 
+            this.roundedPB1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedPB1.BackgroundImage")));
+            this.roundedPB1.Location = new System.Drawing.Point(69, 55);
+            this.roundedPB1.Name = "roundedPB1";
+            this.roundedPB1.Size = new System.Drawing.Size(186, 187);
+            this.roundedPB1.TabIndex = 2;
+            this.roundedPB1.TabStop = false;
+            // 
             // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -749,7 +814,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.StateCommon.Border.Width = 3;
-            this.Text = "Admin";
+            this.Text = " Alysson";
             this.Load += new System.EventHandler(this.frmDashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btoConf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -778,12 +843,18 @@
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.pnSla.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoSair)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoLoja)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoChat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoHome)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPB1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -841,5 +912,10 @@
         private System.Windows.Forms.Button btoOK2;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem excluir;
+        private RoundedPB roundedPB1;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox10;
     }
 }

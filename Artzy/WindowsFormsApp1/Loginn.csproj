@@ -68,6 +68,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Droplabel.cs" />
     <Compile Include="frmChat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +107,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundPB.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="testse.cs">
       <SubType>Form</SubType>
     </Compile>

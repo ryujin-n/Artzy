@@ -337,7 +337,8 @@ namespace WindowsFormsApp1
             if (!string.IsNullOrWhiteSpace(txtToDo.Text) & txtToDo.Text.Trim().ToLower() != "adicionar")
             {
                 lstTodo.Items.Add(txtToDo.Text);
-                txtToDo.Text = "Adicionar";
+                txtToDo.Text = "";
+                txtToDo.Focus();
             }
            
         }
@@ -414,7 +415,8 @@ namespace WindowsFormsApp1
             if (!string.IsNullOrWhiteSpace(txtDoing.Text) & txtDoing.Text.Trim().ToLower() != "adicionar")
             {
                 lstDoing.Items.Add(txtDoing.Text);
-                txtDoing.Text = "Adicionar";
+                txtDoing.Text = "";
+                txtDoing.Focus();
             }
         }
 
@@ -424,7 +426,8 @@ namespace WindowsFormsApp1
             if (!string.IsNullOrWhiteSpace(txtDone.Text) & txtDone.Text.Trim().ToLower() != "adicionar")
             {
                 lstDone.Items.Add(txtDone.Text);
-                txtDone.Text = "Adicionar";
+                txtDone.Text = "";
+                txtDone.Focus();
             }
         }
 
