@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDashboard));
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.btoConf = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pbClebio = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btoOK3 = new System.Windows.Forms.Button();
             this.btoOK2 = new System.Windows.Forms.Button();
@@ -87,7 +87,7 @@
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.roundedPB1 = new WindowsFormsApp1.RoundedPB();
             ((System.ComponentModel.ISupportInitialize)(this.btoConf)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnDoneToTodo)).BeginInit();
@@ -143,15 +143,15 @@
             this.btoConf.TabStop = false;
             this.btoConf.Click += new System.EventHandler(this.btoConf_Click);
             // 
-            // pictureBox2
+            // pbClebio
             // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Location = new System.Drawing.Point(11, 65);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(191, 88);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
+            this.pbClebio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbClebio.BackgroundImage")));
+            this.pbClebio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbClebio.Location = new System.Drawing.Point(11, 65);
+            this.pbClebio.Name = "pbClebio";
+            this.pbClebio.Size = new System.Drawing.Size(191, 88);
+            this.pbClebio.TabIndex = 2;
+            this.pbClebio.TabStop = false;
             // 
             // panel1
             // 
@@ -796,7 +796,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1160, 825);
             this.Controls.Add(this.btoConf);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pbClebio);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnSla);
             this.Controls.Add(this.pictureBox1);
@@ -817,7 +817,7 @@
             this.Text = " Alysson";
             this.Load += new System.EventHandler(this.frmDashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btoConf)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -865,7 +865,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pnSla;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pbClebio;
         private System.Windows.Forms.PictureBox btoHome;
         private System.Windows.Forms.PictureBox btoChat;
         private System.Windows.Forms.PictureBox btoSair;

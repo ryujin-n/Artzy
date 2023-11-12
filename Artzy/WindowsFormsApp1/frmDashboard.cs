@@ -93,6 +93,7 @@ namespace WindowsFormsApp1
         }
         private void frmDashboard_Load(object sender, EventArgs e)
         {
+            pbClebio.Focus();
             pnSla.BackColor = Color.Transparent;
             pnSla.Parent = pictureBox1;
 
