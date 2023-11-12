@@ -81,3 +81,6 @@ C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFo
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmDashboard.resources
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.testse.resources
+C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmChat.resources
+C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmConfiguracao.resources
+C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmLoja.resources

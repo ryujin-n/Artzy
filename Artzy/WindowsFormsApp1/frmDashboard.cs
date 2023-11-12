@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using ComponentFactory.Krypton.Toolkit;
 
 namespace WindowsFormsApp1
@@ -32,10 +33,6 @@ namespace WindowsFormsApp1
             slideTimer.Interval = 16; // +- 60 FPS
             slideTimer.Tick += SlideTimer_Tick;
 
-            slideTimer1 = new Timer();
-            slideTimer1.Interval = 16;
-            slideTimer1.Tick += SlideTimer1_Tick;
-
             slideTimer2 = new Timer();
             slideTimer2.Interval = 16;
             slideTimer2.Tick += SlideTimer2_Tick;
@@ -54,7 +51,6 @@ namespace WindowsFormsApp1
         private void StopAllTimers()
         {
             slideTimer.Stop();
-            slideTimer1.Stop();
             slideTimer2.Stop();
             slideTimer3.Stop();
             slideTimer4.Stop();
@@ -63,11 +59,6 @@ namespace WindowsFormsApp1
         private void SlideTimer_Tick(object sender, EventArgs e)
         {
             AnimateButton(btoHome, slideTimer);
-        }
-
-        private void SlideTimer1_Tick(object sender, EventArgs e)
-        {
-            AnimateButton(btoLista, slideTimer1);
         }
 
         private void SlideTimer2_Tick(object sender, EventArgs e)
@@ -104,8 +95,30 @@ namespace WindowsFormsApp1
         {
             pnSla.BackColor = Color.Transparent;
             pnSla.Parent = pictureBox1;
-            pnSla.Location = new Point(-4, -3);
+
+            int x = -3;
+            int y = -4; 
+
+            pnSla.Location = new Point(x, y);
             pnSla.BringToFront();
+
+            //////////////////////////////////////////////////////////////////
+
+            btoConf.BackColor = Color.Transparent;
+            btoConf.Parent = pictureBox1;
+
+            int offsetX = -10; 
+            int offsetY = -10; 
+
+            int x1 = pictureBox1.Width - btoConf.Width + offsetX;
+            int y1 = pictureBox1.Height - btoConf.Height + offsetY;
+
+            btoConf.Location = new Point(x1, y1);
+            btoConf.BringToFront();
+
+            lstTodo.ContextMenuStrip = contextMenuStrip1;
+            lstDoing.ContextMenuStrip = contextMenuStrip1;
+            lstDone.ContextMenuStrip = contextMenuStrip1;
 
         }
 
@@ -126,12 +139,6 @@ namespace WindowsFormsApp1
             btoHome.Location = new Point(-73, 215);
         }
 
-        private void btoLista_MouseLeave(object sender, EventArgs e)
-        {
-            StopAllTimers();
-            btoLista.Location = new Point(-73,281);
-        }
-
         private void btoChat_MouseEnter(object sender, EventArgs e)
         {
             slideTimer4.Start();
@@ -140,7 +147,7 @@ namespace WindowsFormsApp1
         private void btoChat_MouseLeave(object sender, EventArgs e)
         {
             StopAllTimers();
-            btoChat.Location = new Point(-73, 347);
+            btoChat.Location = new Point(-73, 281);
         }
 
         private void btoLoja_MouseEnter(object sender, EventArgs e)
@@ -151,7 +158,7 @@ namespace WindowsFormsApp1
         private void btoLoja_MouseLeave(object sender, EventArgs e)
         {
             StopAllTimers();
-            btoLoja.Location = new Point(-73, 413);
+            btoLoja.Location = new Point(-73, 347);
 
         }
 
@@ -230,6 +237,217 @@ namespace WindowsFormsApp1
         private void btnDoneToDoing_Click(object sender, EventArgs e)
         {
             ItemMove(lstDone,lstDoing );
+        }
+
+
+        string bloco1;
+        string bloco2;
+
+        private void txtBloco1_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtBloco1.Text))
+            {
+                txtBloco1.Text = bloco1;
+            }
+            else
+            {
+                txtBloco1.Text = "";
+            }
+        }
+
+        private void txtBloco1_Leave(object sender, EventArgs e)
+        {
+            bloco1 = txtBloco1.Text;
+
+            if (txtBloco1.Text == "")
+            {
+                txtBloco1.Text = "Bloco1";
+            }
+        }
+
+        private void txtBloco2_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtBloco1.Text))
+            {
+                txtBloco2.Text = bloco2;
+            }
+            else
+            {
+                txtBloco2.Text = "";
+            }
+        }
+
+        private void txtBloco2_Leave(object sender, EventArgs e)
+        {
+            bloco2 = txtBloco2.Text;
+
+            if (txtBloco2.Text == "")
+            {
+                txtBloco2.Text = "Bloco2";
+            }
+        }
+
+        private void btoChat_Click(object sender, EventArgs e)
+        {
+            frmChat frm = new frmChat();
+            frm.Show();
+        }
+
+        private void btoLoja_Click(object sender, EventArgs e)
+        {
+            frmLoja frm = new frmLoja();
+            frm.Show();
+        }
+
+        private void btoConf_Click(object sender, EventArgs e)
+        {
+            frmConfiguracao frm = new frmConfiguracao();
+            frm.Show();
+        }
+
+        string todo;
+        string doing;
+        string done;
+
+        private void txtToDo_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtToDo.Text))
+            {
+                txtToDo.Text = todo;
+            }
+            else
+            {
+                txtToDo.Text = "";
+            }
+        }
+
+        private void txtToDo_Leave(object sender, EventArgs e)
+        {
+
+            todo = txtToDo.Text;
+
+            if (txtToDo.Text == "")
+            {
+                txtToDo.Text = "Adicionar";
+            }
+        }
+
+        private void btoOK_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtToDo.Text) & txtToDo.Text.Trim().ToLower() != "adicionar")
+            {
+                lstTodo.Items.Add(txtToDo.Text);
+                txtToDo.Text = "Adicionar";
+            }
+           
+        }
+
+        private void lstTodo_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                int index = lstTodo.IndexFromPoint(e.Location);
+                if (index != -1)
+                {
+                    lstTodo.SelectedIndex = index;
+                }
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                int index = lstDoing.IndexFromPoint(e.Location);
+                if (index != -1)
+                {
+                    lstDoing.SelectedIndex = index;
+                }
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                int index = lstDone.IndexFromPoint(e.Location);
+                if (index != -1)
+                {
+                    lstDone.SelectedIndex = index;
+                }
+            }
+        }
+
+        private void excluir_Click(object sender, EventArgs e)
+        {
+            if (lstTodo.SelectedIndex != -1)
+            {
+                lstTodo.Items.RemoveAt(lstTodo.SelectedIndex);
+            }
+            else if (lstDoing.SelectedIndex != -1)
+            {
+                lstDoing.Items.RemoveAt(lstDoing.SelectedIndex);
+            }
+            else if (lstDone.SelectedIndex != -1)
+            {
+                lstDone.Items.RemoveAt(lstDone.SelectedIndex);
+            }
+        }
+
+        private void txtDoing_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtDoing.Text))
+            {
+                txtDoing.Text = doing;
+            }
+            else
+            {
+                txtDoing.Text = "";
+            }
+        }
+
+        private void txtDoing_Leave(object sender, EventArgs e)
+        {
+
+            doing = txtDoing.Text;
+
+            if (txtDoing.Text == "")
+            {
+                txtDoing.Text = "Adicionar";
+            }
+        }
+
+        private void btoOK2_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtDoing.Text) & txtDoing.Text.Trim().ToLower() != "adicionar")
+            {
+                lstDoing.Items.Add(txtDoing.Text);
+                txtDoing.Text = "Adicionar";
+            }
+        }
+
+        private void btoOK3_Click(object sender, EventArgs e)
+        {
+
+            if (!string.IsNullOrWhiteSpace(txtDone.Text) & txtDone.Text.Trim().ToLower() != "adicionar")
+            {
+                lstDone.Items.Add(txtDone.Text);
+                txtDone.Text = "Adicionar";
+            }
+        }
+
+        private void txtDone_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtDone.Text))
+            {
+                txtDone.Text = done;
+            }
+            else
+            {
+                txtDone.Text = "";
+            }
+        }
+
+        private void txtDone_Leave(object sender, EventArgs e)
+        {
+            done = txtDone.Text;
+
+            if (txtDone.Text == "")
+            {
+                txtDone.Text = "Adicionar";
+            }
         }
     }
 
