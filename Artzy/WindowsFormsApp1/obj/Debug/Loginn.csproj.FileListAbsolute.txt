@@ -19,11 +19,6 @@ C:\Users\miles\Source\Repos\Artzy\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Wi
 C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
 C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
 C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
-C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\ComponentFactory.Krypton.Docking.pdb
-C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\ComponentFactory.Krypton.Navigator.pdb
-C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
-C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
-C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
 C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\Loginn.csproj.AssemblyReference.cache
 C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\Loginn.csproj.SuggestedBindingRedirects.cache
 C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.g.resources
@@ -58,7 +53,6 @@ C:\Users\miles\source\repos\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsA
 C:\Users\miles\source\repos\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\miles\source\repos\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmLog.resources
 C:\Users\miles\source\repos\Artzy\Artzy\WindowsFormsApp1\bin\Debug\Siticone.Desktop.UI.dll
-C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmLog.resources
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
@@ -79,3 +73,8 @@ C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFo
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmChat.resources
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmConfiguracao.resources
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmLoja.resources
+C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmChat.resources
+C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmConfiguracao.resources
+C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmDashboard.resources
+C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmLoja.resources
+C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.testse.resources
