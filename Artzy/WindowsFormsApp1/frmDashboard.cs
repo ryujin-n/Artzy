@@ -243,6 +243,7 @@ namespace WindowsFormsApp1
 
         string bloco1;
         string bloco2;
+        string bloco3;
 
         private void txtBloco1_Enter(object sender, EventArgs e)
         {
@@ -268,7 +269,7 @@ namespace WindowsFormsApp1
 
         private void txtBloco2_Enter(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(txtBloco1.Text))
+            if (!string.IsNullOrWhiteSpace(txtBloco2.Text))
             {
                 txtBloco2.Text = bloco2;
             }
@@ -452,6 +453,28 @@ namespace WindowsFormsApp1
             if (txtDone.Text == "")
             {
                 txtDone.Text = "Adicionar";
+            }
+        }
+
+        private void txtBloco3_Leave(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtBloco3.Text))
+            {
+                txtBloco3.Text = bloco3;
+            }
+            else
+            {
+                txtBloco3.Text = "";
+            }
+        }
+
+        private void txtBloco3_Enter(object sender, EventArgs e)
+        {
+            bloco3 = txtBloco3.Text;
+
+            if (txtBloco3.Text == "")
+            {
+                txtBloco3.Text = "Título";
             }
         }
     }
