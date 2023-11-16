@@ -38,6 +38,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btoLogin = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -47,18 +48,18 @@
             this.txtUser = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lblarea = new System.Windows.Forms.Label();
             this.cboArea = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.lblClose = new System.Windows.Forms.Label();
             this.txtSobr = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cboEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboArea)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -188,6 +189,17 @@
             this.pictureBox4.Size = new System.Drawing.Size(24, 21);
             this.pictureBox4.TabIndex = 6;
             this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.MintCream;
+            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox6.Location = new System.Drawing.Point(294, 178);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(24, 21);
+            this.pictureBox6.TabIndex = 6;
+            this.pictureBox6.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -371,19 +383,6 @@
             this.cboArea.TabIndex = 10;
             this.cboArea.SelectedIndexChanged += new System.EventHandler(this.cboArea_SelectedIndexChanged);
             // 
-            // lblClose
-            // 
-            this.lblClose.AutoSize = true;
-            this.lblClose.BackColor = System.Drawing.Color.Transparent;
-            this.lblClose.Font = new System.Drawing.Font("KG Red Hands", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClose.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblClose.Location = new System.Drawing.Point(14, 21);
-            this.lblClose.Name = "lblClose";
-            this.lblClose.Size = new System.Drawing.Size(24, 26);
-            this.lblClose.TabIndex = 8;
-            this.lblClose.Text = "<";
-            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
-            // 
             // txtSobr
             // 
             this.txtSobr.Location = new System.Drawing.Point(284, 165);
@@ -403,16 +402,17 @@
             this.txtSobr.TabIndex = 12;
             this.txtSobr.Text = "Sobrenome";
             // 
-            // pictureBox6
+            // pictureBox7
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.MintCream;
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(294, 178);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(24, 21);
-            this.pictureBox6.TabIndex = 6;
-            this.pictureBox6.TabStop = false;
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox7.Location = new System.Drawing.Point(-6, 12);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(90, 50);
+            this.pictureBox7.TabIndex = 8;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // frmCadastro
             // 
@@ -422,8 +422,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(747, 555);
+            this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblClose);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -438,12 +438,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboArea)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -452,7 +452,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btoEntrar;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -469,5 +468,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox cboArea;
         private System.Windows.Forms.PictureBox pictureBox6;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtSobr;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

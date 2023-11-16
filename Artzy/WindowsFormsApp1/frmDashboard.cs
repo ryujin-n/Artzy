@@ -46,7 +46,7 @@ namespace WindowsFormsApp1
             slideTimer4.Tick += SlideTimer4_Tick;
         }
 
-        
+
 
         private void StopAllTimers()
         {
@@ -73,8 +73,8 @@ namespace WindowsFormsApp1
 
         private void SlideTimer4_Tick(object sender, EventArgs e)
         {
-  
-            AnimateButton(btoChat, slideTimer4);
+
+            AnimateButton(btoConf, slideTimer4);
         }
 
         private void AnimateButton(PictureBox pictureBox, Timer timer)
@@ -105,17 +105,17 @@ namespace WindowsFormsApp1
 
             //////////////////////////////////////////////////////////////////
 
-            btoConf.BackColor = Color.Transparent;
-            btoConf.Parent = pictureBox1;
+            //btoConf.BackColor = Color.Transparent;
+            //btoConf.Parent = pictureBox1;
 
-            int offsetX = -10; 
-            int offsetY = -10; 
+            //int offsetX = -10; 
+            //int offsetY = -10; 
 
-            int x1 = pictureBox1.Width - btoConf.Width + offsetX;
-            int y1 = pictureBox1.Height - btoConf.Height + offsetY;
+            //int x1 = pictureBox1.Width - btoConf.Width + offsetX;
+            //int y1 = pictureBox1.Height - btoConf.Height + offsetY;
 
-            btoConf.Location = new Point(x1, y1);
-            btoConf.BringToFront();
+            //btoConf.Location = new Point(x1, y1);
+            //btoConf.BringToFront();
 
             lstTodo.ContextMenuStrip = contextMenuStrip1;
             lstDoing.ContextMenuStrip = contextMenuStrip1;
@@ -148,7 +148,7 @@ namespace WindowsFormsApp1
         private void btoChat_MouseLeave(object sender, EventArgs e)
         {
             StopAllTimers();
-            btoChat.Location = new Point(-73, 281);
+            btoConf.Location = new Point(-73, 281);
         }
 
         private void btoLoja_MouseEnter(object sender, EventArgs e)
@@ -180,6 +180,17 @@ namespace WindowsFormsApp1
 
             frmLogin frm = new frmLogin();
             frm.Show();
+        }
+
+        private void btoConf_MouseEnter(object sender, EventArgs e)
+        {
+            slideTimer4.Start();
+        }
+
+        private void btoConf_MouseLeave(object sender, EventArgs e)
+        {
+            StopAllTimers();
+            btoConf.Location = new Point(-73, 281);
         }
 
         private void ItemMove(KryptonListBox sourceListBox, KryptonListBox destinationListBox)
@@ -288,24 +299,6 @@ namespace WindowsFormsApp1
                 txtBloco2.Text = "Título";
             }
             
-        }
-
-        private void btoChat_Click(object sender, EventArgs e)
-        {
-            frmChat frm = new frmChat();
-            frm.Show();
-        }
-
-        private void btoLoja_Click(object sender, EventArgs e)
-        {
-            frmLoja frm = new frmLoja();
-            frm.Show();
-        }
-
-        private void btoConf_Click(object sender, EventArgs e)
-        {
-            frmConfiguracao frm = new frmConfiguracao();
-            frm.Show();
         }
 
         string todo;
@@ -476,6 +469,26 @@ namespace WindowsFormsApp1
             {
                 txtBloco3.Text = "Título";
             }
+        }
+
+        private void btoHome_Click(object sender, EventArgs e)
+        {
+            pnDashboard.Visible = true;
+        }
+
+        private void btoLoja_Click(object sender, EventArgs e)
+        {
+            frmLoja frm = new frmLoja();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btoConf_Click(object sender, EventArgs e)
+        {
+            frmConf frm = new frmConf();
+            frm.Show();
+
+            this.Hide();
         }
     }
 

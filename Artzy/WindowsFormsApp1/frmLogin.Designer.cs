@@ -35,16 +35,17 @@
             this.btoEntrar = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.btoCadastrar = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblClose = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtSenha = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.txtUser = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbLog)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -118,19 +119,6 @@
             this.label1.Size = new System.Drawing.Size(15, 14);
             this.label1.TabIndex = 3;
             this.label1.Text = "ou";
-            // 
-            // lblClose
-            // 
-            this.lblClose.AutoSize = true;
-            this.lblClose.BackColor = System.Drawing.Color.Transparent;
-            this.lblClose.Font = new System.Drawing.Font("KG Red Hands", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClose.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblClose.Location = new System.Drawing.Point(443, 21);
-            this.lblClose.Name = "lblClose";
-            this.lblClose.Size = new System.Drawing.Size(23, 22);
-            this.lblClose.TabIndex = 0;
-            this.lblClose.Text = "X";
-            this.lblClose.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // panel1
             // 
@@ -211,6 +199,18 @@
             this.txtUser.Enter += new System.EventHandler(this.txtUser_Enter);
             this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave_1);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox3.Location = new System.Drawing.Point(394, 12);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(86, 50);
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -219,8 +219,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(478, 555);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblClose);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -241,8 +241,8 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -253,12 +253,12 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton btoEntrar;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btoCadastrar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtUser;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtSenha;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

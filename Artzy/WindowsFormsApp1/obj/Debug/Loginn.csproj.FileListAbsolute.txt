@@ -70,9 +70,6 @@ C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFo
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmDashboard.resources
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.testse.resources
-C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmChat.resources
-C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmConfiguracao.resources
-C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmLoja.resources
 C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmChat.resources
 C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmConfiguracao.resources
 C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmDashboard.resources
@@ -98,3 +95,5 @@ C:\Users\miles.jsantos\Source\Repos\Artzy\Artzy\WindowsFormsApp1\obj\Debug\Login
 C:\Users\miles.jsantos\Source\Repos\Artzy\Artzy\WindowsFormsApp1\obj\Debug\Loginn.csproj.CopyComplete
 C:\Users\miles.jsantos\Source\Repos\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\miles.jsantos\Source\Repos\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmLoja.resources
+C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmConf.resources

@@ -32,13 +32,7 @@ namespace WindowsFormsApp1
         }
 
 
-        private void lblClose_Click(object sender, EventArgs e)
-        {
-            frmLogin frm = new frmLogin();
-            frm.Show();
 
-            this.Close();
-        }
 
   
 
@@ -228,6 +222,14 @@ namespace WindowsFormsApp1
             frm.Show();
 
             this.Hide();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            frmLogin frm = new frmLogin();
+            frm.Show();
+
+            this.Close();
         }
     }
 }
