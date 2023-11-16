@@ -93,6 +93,9 @@ namespace WindowsFormsApp1
         }
         private void frmDashboard_Load(object sender, EventArgs e)
         {
+
+            lblNome.Text = "Olá, " + frmLogin.NomeUser.ToString();
+
             pbClebio.Focus();
             pnSla.BackColor = Color.Transparent;
             pnSla.Parent = pictureBox1;

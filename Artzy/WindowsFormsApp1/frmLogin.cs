@@ -26,10 +26,14 @@ namespace WindowsFormsApp1
             }
         }
 
-            public static string stringConexao = "Data Source=localhost;Initial Catalog=Artzy;User ID=sa;Password=123456";
-            public static string idUser;
-            public static string LoginUser;
-            public static string NomeUser;
+        public static string stringConexao = "Data Source=localhost;Initial Catalog=Artzy;User ID=sa;Password=123456";
+        public static string idUser;
+        public static string NomeUser;
+        public static string SenhaUser;
+        public static string SobrenomeUser;
+        public static string EmailUser;
+        public static string Usuario;
+        public static string ProfUser;
 
         private void label2_Click_1(object sender, EventArgs e)
         {
@@ -119,9 +123,14 @@ namespace WindowsFormsApp1
                 if (reader.Read())
                 {
                     idUser = reader[0].ToString();
-                    NomeUser = reader[2].ToString();
-                    LoginUser = reader[3].ToString();
-                    this.Close();
+                    NomeUser = reader[1].ToString();
+                    SobrenomeUser = reader[2].ToString();
+                    Usuario = reader[3].ToString();
+                    SenhaUser = reader[4].ToString();
+                    EmailUser = reader[5].ToString();
+                    ProfUser = reader[6].ToString();
+
+                    this.Hide();
                 }
                 else
                 {

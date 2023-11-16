@@ -30,16 +30,11 @@ namespace WindowsFormsApp1
             }
 
         }
-
-
-
-
-  
-
         string user;
         string senha;
         string email;
         string name;
+        string subname;
 
         private void txtUser_Enter(object sender, EventArgs e)
         {
@@ -149,10 +144,45 @@ namespace WindowsFormsApp1
 
         private void btoEntrar_Click(object sender, EventArgs e)
         {
-            string sql = "set dateformat dmy insert into art (nome_artista,user_artista,senha_artista,email_artista,prof_artista)" +
+            if (txtUser.Text == "Usuário" || txtUser.Text == "")
+            {
+                MessageBox.Show("Deve conter um Usuário!");
+                return;
+
+            }
+            else if (txtName.Text == "Nome" || txtName.Text == "")
+            {
+                MessageBox.Show("Deve conter um Nome!");
+                return;
+            }
+            else if (txtEmail.Text == "Email" || txtEmail.Text == "" || cboEmail.Text == "")
+            {
+                MessageBox.Show("Deve conter um Email!");
+                return;
+
+            }
+            else if (txtSobr.Text == "Sobrenome")
+            {
+                MessageBox.Show("Deve conter um Sobrenome!");
+                return;
+            }
+            else if (txtSenha.Text == "Senha" || txtSenha.Text == "")
+            {
+                MessageBox.Show("Deve conter uma Senha!");
+                return;
+
+            }
+            else if (lblarea.Visible == true)
+            {
+                MessageBox.Show("Deve conter uma Profissão!");
+                return;
+            }
+
+            string sql = "set dateformat dmy insert into art (nome_artista,sobrenome_artista,user_artista,senha_artista,email_artista,prof_artista)" +
                 "values" +
                     "(" +
                     "'" + txtName.Text + "'" + "," +
+                    "'" + txtSobr.Text + "'" + "," +
                     "'" + txtUser.Text + "'" + "," +
                     "'" + txtSenha.Text + "'" + "," +
                     "'" + txtEmail.Text + cboEmail.Text + "'" + "," +
@@ -161,46 +191,16 @@ namespace WindowsFormsApp1
             SqlConnection conn = new SqlConnection(stringConexao);
             SqlCommand cmd = new SqlCommand(sql, conn);
             cmd.CommandType = CommandType.Text;
-
             conn.Open();
 
             try
             {
-                if (txtUser.Text == "Usuário" || txtUser.Text == "")
-                {
-                    MessageBox.Show("Deve conter um Usuário!");
-                    return;
-
-                }
-                else if (txtName.Text == "Nome" || txtName.Text == "")
-                {
-                    MessageBox.Show("Deve conter um Nome!");
-                    return;
-                }
-                else if (txtEmail.Text == "Email" || txtEmail.Text == "" || cboEmail.Text == "")
-                {
-                    MessageBox.Show("Deve conter um Email!");
-                    return;
-
-                }
-                else if (txtSenha.Text == "Senha" || txtSenha.Text == "")
-                {
-                    MessageBox.Show("Deve conter uma Senha!");
-                    return;
-
-                }
-                else if (cboArea.Text == "")
-                {
-                    MessageBox.Show("Deve conter uma Profissão!");
-                    return;
-                }
-
+    
                 int i = cmd.ExecuteNonQuery();
                 if (i == 1)
                 {
                     MessageBox.Show("Conta criada com sucesso, Seja bem vindo(a)! :)");
                 }
-
 
             }
             catch (Exception ex)
@@ -230,6 +230,28 @@ namespace WindowsFormsApp1
             frm.Show();
 
             this.Close();
+        }
+
+        private void txtSobr_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtSobr.Text))
+            {
+                txtSobr.Text = subname;
+            }
+            else
+            {
+                txtSobr.Text = "";
+            }
+        }
+
+        private void txtSobr_Leave(object sender, EventArgs e)
+        {
+            subname = txtSobr.Text;
+
+            if (txtSobr.Text == "")
+            {
+                txtSobr.Text = "Sobrenome";
+            }
         }
     }
 }

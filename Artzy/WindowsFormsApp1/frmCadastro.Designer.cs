@@ -90,7 +90,7 @@
             this.btoEntrar.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-1, 4, -1, -1);
             this.btoEntrar.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.DimGray;
             this.btoEntrar.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Bebas Neue", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btoEntrar.TabIndex = 0;
+            this.btoEntrar.TabIndex = 9;
             this.btoEntrar.Values.Text = "Entrar";
             this.btoEntrar.Click += new System.EventHandler(this.btoEntrar_Click);
             // 
@@ -118,7 +118,7 @@
             this.panel1.Location = new System.Drawing.Point(99, 97);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(560, 358);
-            this.panel1.TabIndex = 7;
+            this.panel1.TabIndex = 0;
             // 
             // cboEmail
             // 
@@ -144,7 +144,7 @@
             this.cboEmail.StateCommon.ComboBox.Content.Padding = new System.Windows.Forms.Padding(30, 5, 10, 3);
             this.cboEmail.StateCommon.Item.Content.ShortText.Color1 = System.Drawing.Color.DimGray;
             this.cboEmail.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("KG Red Hands", 6.75F);
-            this.cboEmail.TabIndex = 10;
+            this.cboEmail.TabIndex = 5;
             // 
             // label1
             // 
@@ -154,7 +154,7 @@
             this.label1.Location = new System.Drawing.Point(237, 306);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 13);
-            this.label1.TabIndex = 8;
+            this.label1.TabIndex = 1;
             this.label1.Text = "Já um membro?";
             // 
             // pictureBox1
@@ -238,7 +238,7 @@
             this.btoLogin.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-1, 4, -1, -1);
             this.btoLogin.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.DimGray;
             this.btoLogin.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Bebas Neue", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btoLogin.TabIndex = 0;
+            this.btoLogin.TabIndex = 10;
             this.btoLogin.Values.Text = "Login";
             this.btoLogin.Click += new System.EventHandler(this.btoLogin_Click);
             // 
@@ -258,7 +258,7 @@
             this.txtName.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
             this.txtName.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.StateCommon.Content.Padding = new System.Windows.Forms.Padding(30, 5, 10, 3);
-            this.txtName.TabIndex = 9;
+            this.txtName.TabIndex = 3;
             this.txtName.Text = "Nome";
             this.txtName.Enter += new System.EventHandler(this.txtName_Enter);
             this.txtName.Leave += new System.EventHandler(this.txtName_Leave);
@@ -280,7 +280,7 @@
             this.txtSenha.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
             this.txtSenha.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.StateCommon.Content.Padding = new System.Windows.Forms.Padding(30, 5, 10, 3);
-            this.txtSenha.TabIndex = 9;
+            this.txtSenha.TabIndex = 7;
             this.txtSenha.Text = "Senha";
             this.txtSenha.Enter += new System.EventHandler(this.txtSenha_Enter);
             this.txtSenha.Leave += new System.EventHandler(this.txtSenha_Leave);
@@ -300,7 +300,7 @@
             this.txtEmail.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
             this.txtEmail.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.StateCommon.Content.Padding = new System.Windows.Forms.Padding(30, 5, 10, 3);
-            this.txtEmail.TabIndex = 9;
+            this.txtEmail.TabIndex = 4;
             this.txtEmail.Text = "Email";
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
             this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
@@ -333,7 +333,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtUser.StateNormal.Border.Rounding = 32;
             this.txtUser.StateNormal.Border.Width = 3;
-            this.txtUser.TabIndex = 9;
+            this.txtUser.TabIndex = 2;
             this.txtUser.Text = "Usuário";
             this.txtUser.Enter += new System.EventHandler(this.txtUser_Enter);
             this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave);
@@ -380,7 +380,7 @@
             this.cboArea.StateCommon.ComboBox.Content.Padding = new System.Windows.Forms.Padding(30, 5, 10, 3);
             this.cboArea.StateCommon.Item.Content.ShortText.Color1 = System.Drawing.Color.DimGray;
             this.cboArea.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("KG Red Hands", 6.75F);
-            this.cboArea.TabIndex = 10;
+            this.cboArea.TabIndex = 8;
             this.cboArea.SelectedIndexChanged += new System.EventHandler(this.cboArea_SelectedIndexChanged);
             // 
             // txtSobr
@@ -399,8 +399,10 @@
             this.txtSobr.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
             this.txtSobr.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSobr.StateCommon.Content.Padding = new System.Windows.Forms.Padding(30, 5, 10, 3);
-            this.txtSobr.TabIndex = 12;
+            this.txtSobr.TabIndex = 6;
             this.txtSobr.Text = "Sobrenome";
+            this.txtSobr.Enter += new System.EventHandler(this.txtSobr_Enter);
+            this.txtSobr.Leave += new System.EventHandler(this.txtSobr_Leave);
             // 
             // pictureBox7
             // 
