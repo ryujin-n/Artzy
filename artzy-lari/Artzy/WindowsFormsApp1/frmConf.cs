@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace WindowsFormsApp1
 {
     public partial class frmConf : KryptonForm
@@ -188,6 +189,99 @@ namespace WindowsFormsApp1
             seg.Visible = false ;
             pref.Visible = false;
 
+        }
+
+        string senha;
+        string email;
+        string nome;
+        string apelido;
+
+        private void txtMsenha_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtMsenha.Text))
+            {
+                txtMsenha.Text = senha;
+            }
+            else
+            {
+                txtMsenha.Text = "";
+            }
+        }
+
+        private void txtMsenha_Leave(object sender, EventArgs e)
+        {
+            senha = txtMsenha.Text;
+
+            if (txtMsenha.Text == "")
+            {
+                txtMsenha.Text = "Mudar Senha";
+            }
+        }
+
+        private void txtMemail_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtMemail.Text))
+            {
+                txtMemail.Text = email;
+            }
+            else
+            {
+                txtMemail.Text = "";
+            }
+        }
+
+        private void txtMemail_Leave(object sender, EventArgs e)
+        {
+            email = txtMemail.Text;
+
+            if (txtMemail.Text == "")
+            {
+                txtMemail.Text = "Mudar Email";
+            }
+        }
+
+        private void txtMnome_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtMnome.Text))
+            {
+                txtMnome.Text = nome;
+            }
+            else
+            {
+                txtMnome.Text = "";
+            }
+        }
+
+        private void txtMnome_Leave(object sender, EventArgs e)
+        {
+           nome = txtMnome.Text;
+
+            if (txtMnome.Text == "")
+            {
+                txtMnome.Text = "Mudar Nome";
+            }
+        }
+
+        private void txtapeli_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtapeli.Text))
+            {
+                txtapeli.Text = apelido;
+            }
+            else
+            {
+                txtapeli.Text = "";
+            }
+        }
+
+        private void txtapeli_Leave(object sender, EventArgs e)
+        {
+            apelido = txtapeli.Text;
+
+            if (txtapeli.Text == "")
+            {
+                txtapeli.Text = "Adicionar Apelido";
+            }
         }
     }
 }

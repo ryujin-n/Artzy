@@ -32,27 +32,33 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConf));
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cont = new System.Windows.Forms.Panel();
+            this.seg = new System.Windows.Forms.Panel();
+            this.btoSalvar = new System.Windows.Forms.Button();
+            this.txtMnome = new System.Windows.Forms.TextBox();
+            this.txtMemail = new System.Windows.Forms.TextBox();
+            this.txtMsenha = new System.Windows.Forms.TextBox();
             this.pbPref = new System.Windows.Forms.PictureBox();
             this.pbSec = new System.Windows.Forms.PictureBox();
             this.pbConta = new System.Windows.Forms.PictureBox();
+            this.pref = new System.Windows.Forms.Panel();
             this.btoConf = new System.Windows.Forms.PictureBox();
             this.pbClebio = new System.Windows.Forms.PictureBox();
             this.btoSair = new System.Windows.Forms.PictureBox();
             this.btoLoja = new System.Windows.Forms.PictureBox();
             this.btoHome = new System.Windows.Forms.PictureBox();
-            this.seg = new System.Windows.Forms.Panel();
-            this.pref = new System.Windows.Forms.Panel();
+            this.cont = new System.Windows.Forms.Panel();
+            this.txtapeli = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
+            this.seg.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPref)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSec)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbConta)).BeginInit();
+            this.pref.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btoConf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoSair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoLoja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoHome)).BeginInit();
-            this.seg.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -68,7 +74,6 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.seg);
             this.panel1.Controls.Add(this.cont);
             this.panel1.Controls.Add(this.pbPref);
             this.panel1.Controls.Add(this.pbSec);
@@ -78,14 +83,57 @@
             this.panel1.Size = new System.Drawing.Size(987, 791);
             this.panel1.TabIndex = 15;
             // 
-            // cont
+            // seg
             // 
-            this.cont.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cont.BackgroundImage")));
-            this.cont.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.cont.Location = new System.Drawing.Point(457, 31);
-            this.cont.Name = "cont";
-            this.cont.Size = new System.Drawing.Size(508, 711);
-            this.cont.TabIndex = 1;
+            this.seg.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("seg.BackgroundImage")));
+            this.seg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.seg.Controls.Add(this.btoSalvar);
+            this.seg.Controls.Add(this.txtMnome);
+            this.seg.Controls.Add(this.txtMemail);
+            this.seg.Controls.Add(this.txtMsenha);
+            this.seg.Location = new System.Drawing.Point(668, 65);
+            this.seg.Name = "seg";
+            this.seg.Size = new System.Drawing.Size(508, 711);
+            this.seg.TabIndex = 2;
+            // 
+            // btoSalvar
+            // 
+            this.btoSalvar.Location = new System.Drawing.Point(372, 663);
+            this.btoSalvar.Name = "btoSalvar";
+            this.btoSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btoSalvar.TabIndex = 1;
+            this.btoSalvar.Text = "Salvar";
+            this.btoSalvar.UseVisualStyleBackColor = true;
+            // 
+            // txtMnome
+            // 
+            this.txtMnome.Location = new System.Drawing.Point(34, 608);
+            this.txtMnome.Name = "txtMnome";
+            this.txtMnome.Size = new System.Drawing.Size(291, 20);
+            this.txtMnome.TabIndex = 0;
+            this.txtMnome.Text = "Mudar Nome";
+            this.txtMnome.Enter += new System.EventHandler(this.txtMnome_Enter);
+            this.txtMnome.Leave += new System.EventHandler(this.txtMnome_Leave);
+            // 
+            // txtMemail
+            // 
+            this.txtMemail.Location = new System.Drawing.Point(34, 411);
+            this.txtMemail.Name = "txtMemail";
+            this.txtMemail.Size = new System.Drawing.Size(291, 20);
+            this.txtMemail.TabIndex = 0;
+            this.txtMemail.Text = "Mudar Email";
+            this.txtMemail.Enter += new System.EventHandler(this.txtMemail_Enter);
+            this.txtMemail.Leave += new System.EventHandler(this.txtMemail_Leave);
+            // 
+            // txtMsenha
+            // 
+            this.txtMsenha.Location = new System.Drawing.Point(34, 141);
+            this.txtMsenha.Name = "txtMsenha";
+            this.txtMsenha.Size = new System.Drawing.Size(291, 20);
+            this.txtMsenha.TabIndex = 0;
+            this.txtMsenha.Text = "Mudar Senha";
+            this.txtMsenha.Enter += new System.EventHandler(this.txtMsenha_Enter);
+            this.txtMsenha.Leave += new System.EventHandler(this.txtMsenha_Leave);
             // 
             // pbPref
             // 
@@ -119,6 +167,16 @@
             this.pbConta.TabIndex = 0;
             this.pbConta.TabStop = false;
             this.pbConta.Click += new System.EventHandler(this.pbConta_Click);
+            // 
+            // pref
+            // 
+            this.pref.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pref.BackgroundImage")));
+            this.pref.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pref.Controls.Add(this.txtapeli);
+            this.pref.Location = new System.Drawing.Point(662, 65);
+            this.pref.Name = "pref";
+            this.pref.Size = new System.Drawing.Size(509, 711);
+            this.pref.TabIndex = 3;
             // 
             // btoConf
             // 
@@ -185,24 +243,24 @@
             this.btoHome.MouseEnter += new System.EventHandler(this.btoHome_MouseEnter);
             this.btoHome.MouseLeave += new System.EventHandler(this.btoHome_MouseLeave);
             // 
-            // seg
+            // cont
             // 
-            this.seg.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("seg.BackgroundImage")));
-            this.seg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.seg.Controls.Add(this.pref);
-            this.seg.Location = new System.Drawing.Point(459, 31);
-            this.seg.Name = "seg";
-            this.seg.Size = new System.Drawing.Size(508, 711);
-            this.seg.TabIndex = 2;
+            this.cont.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cont.BackgroundImage")));
+            this.cont.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cont.Location = new System.Drawing.Point(457, 31);
+            this.cont.Name = "cont";
+            this.cont.Size = new System.Drawing.Size(508, 711);
+            this.cont.TabIndex = 1;
             // 
-            // pref
+            // txtapeli
             // 
-            this.pref.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pref.BackgroundImage")));
-            this.pref.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pref.Location = new System.Drawing.Point(-1, 0);
-            this.pref.Name = "pref";
-            this.pref.Size = new System.Drawing.Size(508, 711);
-            this.pref.TabIndex = 3;
+            this.txtapeli.Location = new System.Drawing.Point(40, 347);
+            this.txtapeli.Name = "txtapeli";
+            this.txtapeli.Size = new System.Drawing.Size(310, 20);
+            this.txtapeli.TabIndex = 0;
+            this.txtapeli.Text = "Adicionar Apelido";
+            this.txtapeli.Enter += new System.EventHandler(this.txtapeli_Enter);
+            this.txtapeli.Leave += new System.EventHandler(this.txtapeli_Leave);
             // 
             // frmConf
             // 
@@ -210,6 +268,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1226, 825);
+            this.Controls.Add(this.pref);
+            this.Controls.Add(this.seg);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btoConf);
             this.Controls.Add(this.pbClebio);
@@ -223,15 +283,18 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmConf";
             this.panel1.ResumeLayout(false);
+            this.seg.ResumeLayout(false);
+            this.seg.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPref)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSec)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbConta)).EndInit();
+            this.pref.ResumeLayout(false);
+            this.pref.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btoConf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoSair)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoLoja)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoHome)).EndInit();
-            this.seg.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -248,8 +311,13 @@
         private System.Windows.Forms.PictureBox pbPref;
         private System.Windows.Forms.PictureBox pbSec;
         private System.Windows.Forms.PictureBox pbConta;
-        private System.Windows.Forms.Panel cont;
         private System.Windows.Forms.Panel seg;
         private System.Windows.Forms.Panel pref;
+        private System.Windows.Forms.Button btoSalvar;
+        private System.Windows.Forms.TextBox txtMnome;
+        private System.Windows.Forms.TextBox txtMemail;
+        private System.Windows.Forms.TextBox txtMsenha;
+        private System.Windows.Forms.Panel cont;
+        private System.Windows.Forms.TextBox txtapeli;
     }
 }
