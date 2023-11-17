@@ -210,7 +210,7 @@ namespace WindowsFormsApp1
             finally
             {
                 conn.Close();
-                frmDashboard frm = new frmDashboard();
+                frmLogin frm = new frmLogin();
                 frm.Show();
                 this.Hide();
             }
@@ -253,5 +253,11 @@ namespace WindowsFormsApp1
                 txtSobr.Text = "Sobrenome";
             }
         }
+
+        private void frmCadastro_Load(object sender, EventArgs e)
+        {
+            cboEmail.SelectedIndex = 0;
+        }
     }
 }
+ 

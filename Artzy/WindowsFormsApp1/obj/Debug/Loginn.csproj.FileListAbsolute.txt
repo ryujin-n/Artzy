@@ -125,3 +125,4 @@ C:\Users\miles.jsantos\source\repos\Artzy\WindowsFormsApp1\obj\Debug\Loginn.cspr
 C:\Users\miles.jsantos\source\repos\Artzy\WindowsFormsApp1\obj\Debug\Loginn.csproj.CopyComplete
 C:\Users\miles.jsantos\source\repos\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\miles.jsantos\source\repos\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\miles.jsantos\source\repos\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmPerfil.resources

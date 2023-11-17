@@ -34,6 +34,11 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.excluir = new System.Windows.Forms.ToolStripMenuItem();
             this.pnDashboard = new System.Windows.Forms.Panel();
+            this.btoConf = new System.Windows.Forms.PictureBox();
+            this.pbClebio = new System.Windows.Forms.PictureBox();
+            this.btoSair = new System.Windows.Forms.PictureBox();
+            this.btoLoja = new System.Windows.Forms.PictureBox();
+            this.btoHome = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btoOK3 = new System.Windows.Forms.Button();
             this.btoOK2 = new System.Windows.Forms.Button();
@@ -77,19 +82,18 @@
             this.kryptonBorderEdge2 = new ComponentFactory.Krypton.Toolkit.KryptonBorderEdge();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pnSla = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.btoPerfil = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.roundedPB1 = new WindowsFormsApp1.RoundedPB();
+            this.lblprof = new System.Windows.Forms.Label();
+            this.lblname = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btoConf = new System.Windows.Forms.PictureBox();
-            this.pbClebio = new System.Windows.Forms.PictureBox();
-            this.btoSair = new System.Windows.Forms.PictureBox();
-            this.btoLoja = new System.Windows.Forms.PictureBox();
-            this.btoHome = new System.Windows.Forms.PictureBox();
+            this.roundedPB1 = new WindowsFormsApp1.RoundedPB();
             this.contextMenuStrip1.SuspendLayout();
             this.pnDashboard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btoConf)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btoSair)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btoLoja)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btoHome)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnDoneToTodo)).BeginInit();
@@ -111,17 +115,9 @@
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.pnSla.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoPerfil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPB1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btoConf)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btoSair)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btoLoja)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btoHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPB1)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -158,6 +154,72 @@
             this.pnDashboard.Name = "pnDashboard";
             this.pnDashboard.Size = new System.Drawing.Size(1020, 826);
             this.pnDashboard.TabIndex = 7;
+            // 
+            // btoConf
+            // 
+            this.btoConf.BackColor = System.Drawing.Color.Transparent;
+            this.btoConf.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btoConf.BackgroundImage")));
+            this.btoConf.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btoConf.Location = new System.Drawing.Point(-73, 281);
+            this.btoConf.Name = "btoConf";
+            this.btoConf.Size = new System.Drawing.Size(191, 60);
+            this.btoConf.TabIndex = 9;
+            this.btoConf.TabStop = false;
+            this.btoConf.Click += new System.EventHandler(this.btoConf_Click);
+            this.btoConf.MouseEnter += new System.EventHandler(this.btoConf_MouseEnter);
+            this.btoConf.MouseLeave += new System.EventHandler(this.btoConf_MouseLeave);
+            // 
+            // pbClebio
+            // 
+            this.pbClebio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbClebio.BackgroundImage")));
+            this.pbClebio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbClebio.Location = new System.Drawing.Point(11, 65);
+            this.pbClebio.Name = "pbClebio";
+            this.pbClebio.Size = new System.Drawing.Size(191, 88);
+            this.pbClebio.TabIndex = 2;
+            this.pbClebio.TabStop = false;
+            // 
+            // btoSair
+            // 
+            this.btoSair.BackColor = System.Drawing.Color.Transparent;
+            this.btoSair.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btoSair.BackgroundImage")));
+            this.btoSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btoSair.Location = new System.Drawing.Point(-73, 713);
+            this.btoSair.Name = "btoSair";
+            this.btoSair.Size = new System.Drawing.Size(191, 60);
+            this.btoSair.TabIndex = 5;
+            this.btoSair.TabStop = false;
+            this.btoSair.Click += new System.EventHandler(this.btoSair_Click);
+            this.btoSair.MouseEnter += new System.EventHandler(this.btoSair_MouseEnter);
+            this.btoSair.MouseLeave += new System.EventHandler(this.btoSair_MouseLeave);
+            // 
+            // btoLoja
+            // 
+            this.btoLoja.BackColor = System.Drawing.Color.Transparent;
+            this.btoLoja.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btoLoja.BackgroundImage")));
+            this.btoLoja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btoLoja.Location = new System.Drawing.Point(-73, 347);
+            this.btoLoja.Name = "btoLoja";
+            this.btoLoja.Size = new System.Drawing.Size(191, 60);
+            this.btoLoja.TabIndex = 5;
+            this.btoLoja.TabStop = false;
+            this.btoLoja.Click += new System.EventHandler(this.btoLoja_Click);
+            this.btoLoja.MouseEnter += new System.EventHandler(this.btoLoja_MouseEnter);
+            this.btoLoja.MouseLeave += new System.EventHandler(this.btoLoja_MouseLeave);
+            // 
+            // btoHome
+            // 
+            this.btoHome.BackColor = System.Drawing.Color.Transparent;
+            this.btoHome.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btoHome.BackgroundImage")));
+            this.btoHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btoHome.Location = new System.Drawing.Point(-73, 215);
+            this.btoHome.Name = "btoHome";
+            this.btoHome.Size = new System.Drawing.Size(191, 60);
+            this.btoHome.TabIndex = 5;
+            this.btoHome.TabStop = false;
+            this.btoHome.Click += new System.EventHandler(this.btoHome_Click);
+            this.btoHome.MouseEnter += new System.EventHandler(this.btoHome_MouseEnter);
+            this.btoHome.MouseLeave += new System.EventHandler(this.btoHome_MouseLeave);
             // 
             // panel1
             // 
@@ -690,64 +752,47 @@
             this.pnSla.BackColor = System.Drawing.Color.Transparent;
             this.pnSla.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnSla.BackgroundImage")));
             this.pnSla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnSla.Controls.Add(this.pictureBox9);
             this.pnSla.Controls.Add(this.btoPerfil);
-            this.pnSla.Controls.Add(this.pictureBox8);
-            this.pnSla.Controls.Add(this.pictureBox7);
             this.pnSla.Controls.Add(this.roundedPB1);
+            this.pnSla.Controls.Add(this.lblprof);
+            this.pnSla.Controls.Add(this.lblname);
             this.pnSla.Location = new System.Drawing.Point(712, 0);
             this.pnSla.Name = "pnSla";
             this.pnSla.Size = new System.Drawing.Size(308, 368);
             this.pnSla.TabIndex = 1;
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox9.Location = new System.Drawing.Point(244, 246);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(28, 24);
-            this.pictureBox9.TabIndex = 3;
-            this.pictureBox9.TabStop = false;
-            // 
             // btoPerfil
             // 
             this.btoPerfil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btoPerfil.BackgroundImage")));
             this.btoPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btoPerfil.Location = new System.Drawing.Point(114, 300);
+            this.btoPerfil.Location = new System.Drawing.Point(114, 290);
             this.btoPerfil.Name = "btoPerfil";
             this.btoPerfil.Size = new System.Drawing.Size(81, 24);
             this.btoPerfil.TabIndex = 3;
             this.btoPerfil.TabStop = false;
+            this.btoPerfil.Click += new System.EventHandler(this.btoPerfil_Click);
             // 
-            // pictureBox8
+            // lblprof
             // 
-            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox8.Location = new System.Drawing.Point(102, 271);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(113, 24);
-            this.pictureBox8.TabIndex = 3;
-            this.pictureBox8.TabStop = false;
+            this.lblprof.Font = new System.Drawing.Font("Momcake Pro Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblprof.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblprof.Location = new System.Drawing.Point(99, 263);
+            this.lblprof.Name = "lblprof";
+            this.lblprof.Size = new System.Drawing.Size(113, 24);
+            this.lblprof.TabIndex = 4;
+            this.lblprof.Text = "Alysson Klebber";
+            this.lblprof.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox7
+            // lblname
             // 
-            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox7.Location = new System.Drawing.Point(59, 246);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(189, 33);
-            this.pictureBox7.TabIndex = 3;
-            this.pictureBox7.TabStop = false;
-            // 
-            // roundedPB1
-            // 
-            this.roundedPB1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedPB1.BackgroundImage")));
-            this.roundedPB1.Location = new System.Drawing.Point(60, 53);
-            this.roundedPB1.Name = "roundedPB1";
-            this.roundedPB1.Size = new System.Drawing.Size(186, 187);
-            this.roundedPB1.TabIndex = 2;
-            this.roundedPB1.TabStop = false;
+            this.lblname.Font = new System.Drawing.Font("Momcake Pro Bold", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblname.ForeColor = System.Drawing.Color.White;
+            this.lblname.Location = new System.Drawing.Point(60, 234);
+            this.lblname.Name = "lblname";
+            this.lblname.Size = new System.Drawing.Size(186, 33);
+            this.lblname.TabIndex = 4;
+            this.lblname.Text = "Alysson Klebber";
+            this.lblname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
@@ -759,71 +804,14 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btoConf
+            // roundedPB1
             // 
-            this.btoConf.BackColor = System.Drawing.Color.Transparent;
-            this.btoConf.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btoConf.BackgroundImage")));
-            this.btoConf.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btoConf.Location = new System.Drawing.Point(-73, 281);
-            this.btoConf.Name = "btoConf";
-            this.btoConf.Size = new System.Drawing.Size(191, 60);
-            this.btoConf.TabIndex = 9;
-            this.btoConf.TabStop = false;
-            this.btoConf.Click += new System.EventHandler(this.btoConf_Click);
-            this.btoConf.MouseEnter += new System.EventHandler(this.btoConf_MouseEnter);
-            this.btoConf.MouseLeave += new System.EventHandler(this.btoConf_MouseLeave);
-            // 
-            // pbClebio
-            // 
-            this.pbClebio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbClebio.BackgroundImage")));
-            this.pbClebio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbClebio.Location = new System.Drawing.Point(11, 65);
-            this.pbClebio.Name = "pbClebio";
-            this.pbClebio.Size = new System.Drawing.Size(191, 88);
-            this.pbClebio.TabIndex = 2;
-            this.pbClebio.TabStop = false;
-            // 
-            // btoSair
-            // 
-            this.btoSair.BackColor = System.Drawing.Color.Transparent;
-            this.btoSair.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btoSair.BackgroundImage")));
-            this.btoSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btoSair.Location = new System.Drawing.Point(-73, 713);
-            this.btoSair.Name = "btoSair";
-            this.btoSair.Size = new System.Drawing.Size(191, 60);
-            this.btoSair.TabIndex = 5;
-            this.btoSair.TabStop = false;
-            this.btoSair.Click += new System.EventHandler(this.btoSair_Click);
-            this.btoSair.MouseEnter += new System.EventHandler(this.btoSair_MouseEnter);
-            this.btoSair.MouseLeave += new System.EventHandler(this.btoSair_MouseLeave);
-            // 
-            // btoLoja
-            // 
-            this.btoLoja.BackColor = System.Drawing.Color.Transparent;
-            this.btoLoja.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btoLoja.BackgroundImage")));
-            this.btoLoja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btoLoja.Location = new System.Drawing.Point(-73, 347);
-            this.btoLoja.Name = "btoLoja";
-            this.btoLoja.Size = new System.Drawing.Size(191, 60);
-            this.btoLoja.TabIndex = 5;
-            this.btoLoja.TabStop = false;
-            this.btoLoja.Click += new System.EventHandler(this.btoLoja_Click);
-            this.btoLoja.MouseEnter += new System.EventHandler(this.btoLoja_MouseEnter);
-            this.btoLoja.MouseLeave += new System.EventHandler(this.btoLoja_MouseLeave);
-            // 
-            // btoHome
-            // 
-            this.btoHome.BackColor = System.Drawing.Color.Transparent;
-            this.btoHome.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btoHome.BackgroundImage")));
-            this.btoHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btoHome.Location = new System.Drawing.Point(-73, 215);
-            this.btoHome.Name = "btoHome";
-            this.btoHome.Size = new System.Drawing.Size(191, 60);
-            this.btoHome.TabIndex = 5;
-            this.btoHome.TabStop = false;
-            this.btoHome.Click += new System.EventHandler(this.btoHome_Click);
-            this.btoHome.MouseEnter += new System.EventHandler(this.btoHome_MouseEnter);
-            this.btoHome.MouseLeave += new System.EventHandler(this.btoHome_MouseLeave);
+            this.roundedPB1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedPB1.BackgroundImage")));
+            this.roundedPB1.Location = new System.Drawing.Point(60, 53);
+            this.roundedPB1.Name = "roundedPB1";
+            this.roundedPB1.Size = new System.Drawing.Size(186, 187);
+            this.roundedPB1.TabIndex = 2;
+            this.roundedPB1.TabStop = false;
             // 
             // frmDashboard
             // 
@@ -851,6 +839,11 @@
             this.Load += new System.EventHandler(this.frmDashboard_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.pnDashboard.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btoConf)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btoSair)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btoLoja)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btoHome)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -877,17 +870,9 @@
             this.kryptonPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.pnSla.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoPerfil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPB1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btoConf)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btoSair)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btoLoja)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btoHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPB1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -945,12 +930,11 @@
         private System.Windows.Forms.Button btoOK2;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtDone;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtDoing;
-        private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox btoPerfil;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox7;
         private RoundedPB roundedPB1;
         private System.Windows.Forms.Panel pnDashboard;
         private System.Windows.Forms.PictureBox btoConf;
+        private System.Windows.Forms.Label lblname;
+        private System.Windows.Forms.Label lblprof;
     }
 }

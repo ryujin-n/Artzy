@@ -107,7 +107,7 @@ namespace WindowsFormsApp1
         private void btoEntrar_Click(object sender, EventArgs e)
         {
             string sql = "select * from art where " +
-                "user_artista = '" + txtUser.Text + "' or email_artista = '" + txtUser.Text + "' and " +
+                "user_artista = '" + txtUser.Text + "' and " +
                 "senha_artista = '" + txtSenha.Text + "'";
 
             SqlConnection conn = new SqlConnection(stringConexao);
@@ -130,6 +130,8 @@ namespace WindowsFormsApp1
                     EmailUser = reader[5].ToString();
                     ProfUser = reader[6].ToString();
 
+                    frmDashboard frm = new frmDashboard();
+                    frm.Show();
                     this.Hide();
                 }
                 else
@@ -144,11 +146,6 @@ namespace WindowsFormsApp1
             finally
             {
                 conn.Close();
-
-                frmDashboard frm = new frmDashboard();
-                frm.Show();
-                this.Hide();
-
             }
         }
 
