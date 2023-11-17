@@ -3,13 +3,18 @@ create database Artzy
 use artzy
 
 drop table art
+drop table assinart
+drop table contart
+drop table venda
+
 create table art
 (
 	id_artista int not null identity primary key,
-	nome_artista varchar(50) null,
-	user_artista varchar(10) not null unique ,
+	nome_artista varchar(50) not null,
+	sobrenome_artista varchar (50) not null,
+	user_artista varchar(50) not null unique ,
 	senha_artista varchar(20) not null,
-	email_artista varchar (100) null,
+	email_artista varchar (100) not null,
 	prof_artista varchar (100) not null,
 	data_artista smalldatetime not null default getdate(),
 	status_artista varchar(20) not null default 'ATIVO' 

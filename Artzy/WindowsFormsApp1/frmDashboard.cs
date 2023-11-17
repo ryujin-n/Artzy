@@ -93,9 +93,16 @@ namespace WindowsFormsApp1
         }
         private void frmDashboard_Load(object sender, EventArgs e)
         {
+
+            lblNome.Text = "Olá, " + frmLogin.NomeUser.ToString();
+            lblname.Text = frmLogin.NomeUser.ToUpper() + " " + frmLogin.SobrenomeUser.ToUpper();
+            lblprof.Text = frmLogin.ProfUser.ToString();
+
             pbClebio.Focus();
             pnSla.BackColor = Color.Transparent;
             pnSla.Parent = pictureBox1;
+
+         
 
             int x = 0;
             int y = -4; 
@@ -489,6 +496,12 @@ namespace WindowsFormsApp1
             frm.Show();
 
             this.Hide();
+        }
+
+        private void btoPerfil_Click(object sender, EventArgs e)
+        {
+            frmPerfil frm = new frmPerfil();
+            frm.ShowDialog();
         }
     }
 

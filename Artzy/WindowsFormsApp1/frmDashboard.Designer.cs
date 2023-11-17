@@ -77,15 +77,14 @@
             this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonBorderEdge3 = new ComponentFactory.Krypton.Toolkit.KryptonBorderEdge();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonBorderEdge2 = new ComponentFactory.Krypton.Toolkit.KryptonBorderEdge();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pnSla = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.btoPerfil = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.lblprof = new System.Windows.Forms.Label();
+            this.lblname = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.roundedPB1 = new WindowsFormsApp1.RoundedPB();
             this.contextMenuStrip1.SuspendLayout();
@@ -116,10 +115,7 @@
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.pnSla.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoPerfil)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPB1)).BeginInit();
             this.SuspendLayout();
@@ -256,7 +252,7 @@
             this.panel1.Controls.Add(this.kryptonPanel3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.kryptonPanel2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblNome);
             this.panel1.Controls.Add(this.kryptonPanel1);
             this.panel1.Location = new System.Drawing.Point(3, 34);
             this.panel1.Name = "panel1";
@@ -712,15 +708,15 @@
             this.pictureBox4.TabIndex = 2;
             this.pictureBox4.TabStop = false;
             // 
-            // label1
+            // lblNome
             // 
-            this.label1.Font = new System.Drawing.Font("KG Red Hands", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(188)))), ((int)(((byte)(164)))));
-            this.label1.Location = new System.Drawing.Point(46, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 36);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Olá, Alysson!";
+            this.lblNome.Font = new System.Drawing.Font("KG Red Hands", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(188)))), ((int)(((byte)(164)))));
+            this.lblNome.Location = new System.Drawing.Point(46, 80);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(180, 36);
+            this.lblNome.TabIndex = 1;
+            this.lblNome.Text = "Olá, Alysson!";
             // 
             // kryptonPanel1
             // 
@@ -756,55 +752,47 @@
             this.pnSla.BackColor = System.Drawing.Color.Transparent;
             this.pnSla.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnSla.BackgroundImage")));
             this.pnSla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnSla.Controls.Add(this.pictureBox9);
             this.pnSla.Controls.Add(this.btoPerfil);
-            this.pnSla.Controls.Add(this.pictureBox8);
-            this.pnSla.Controls.Add(this.pictureBox7);
             this.pnSla.Controls.Add(this.roundedPB1);
+            this.pnSla.Controls.Add(this.lblprof);
+            this.pnSla.Controls.Add(this.lblname);
             this.pnSla.Location = new System.Drawing.Point(712, 0);
             this.pnSla.Name = "pnSla";
             this.pnSla.Size = new System.Drawing.Size(308, 368);
             this.pnSla.TabIndex = 1;
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox9.Location = new System.Drawing.Point(244, 246);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(28, 24);
-            this.pictureBox9.TabIndex = 3;
-            this.pictureBox9.TabStop = false;
-            // 
             // btoPerfil
             // 
             this.btoPerfil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btoPerfil.BackgroundImage")));
             this.btoPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btoPerfil.Location = new System.Drawing.Point(114, 300);
+            this.btoPerfil.Location = new System.Drawing.Point(114, 290);
             this.btoPerfil.Name = "btoPerfil";
             this.btoPerfil.Size = new System.Drawing.Size(81, 24);
             this.btoPerfil.TabIndex = 3;
             this.btoPerfil.TabStop = false;
+            this.btoPerfil.Click += new System.EventHandler(this.btoPerfil_Click);
             // 
-            // pictureBox8
+            // lblprof
             // 
-            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox8.Location = new System.Drawing.Point(102, 271);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(113, 24);
-            this.pictureBox8.TabIndex = 3;
-            this.pictureBox8.TabStop = false;
+            this.lblprof.Font = new System.Drawing.Font("Momcake Pro Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblprof.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblprof.Location = new System.Drawing.Point(99, 263);
+            this.lblprof.Name = "lblprof";
+            this.lblprof.Size = new System.Drawing.Size(113, 24);
+            this.lblprof.TabIndex = 4;
+            this.lblprof.Text = "Alysson Klebber";
+            this.lblprof.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox7
+            // lblname
             // 
-            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox7.Location = new System.Drawing.Point(59, 246);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(189, 33);
-            this.pictureBox7.TabIndex = 3;
-            this.pictureBox7.TabStop = false;
+            this.lblname.Font = new System.Drawing.Font("Momcake Pro Bold", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblname.ForeColor = System.Drawing.Color.White;
+            this.lblname.Location = new System.Drawing.Point(60, 234);
+            this.lblname.Name = "lblname";
+            this.lblname.Size = new System.Drawing.Size(186, 33);
+            this.lblname.TabIndex = 4;
+            this.lblname.Text = "Alysson Klebber";
+            this.lblname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
@@ -882,10 +870,7 @@
             this.kryptonPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.pnSla.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoPerfil)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPB1)).EndInit();
             this.ResumeLayout(false);
@@ -902,7 +887,7 @@
         private System.Windows.Forms.PictureBox btoHome;
         private System.Windows.Forms.PictureBox btoSair;
         private System.Windows.Forms.PictureBox btoLoja;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label label2;
         private ComponentFactory.Krypton.Toolkit.KryptonListBox lstTodo;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -945,12 +930,11 @@
         private System.Windows.Forms.Button btoOK2;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtDone;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtDoing;
-        private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox btoPerfil;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox7;
         private RoundedPB roundedPB1;
         private System.Windows.Forms.Panel pnDashboard;
         private System.Windows.Forms.PictureBox btoConf;
+        private System.Windows.Forms.Label lblname;
+        private System.Windows.Forms.Label lblprof;
     }
 }
