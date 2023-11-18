@@ -126,3 +126,8 @@ C:\Users\miles.jsantos\source\repos\Artzy\WindowsFormsApp1\obj\Debug\Loginn.cspr
 C:\Users\miles.jsantos\source\repos\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\miles.jsantos\source\repos\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\miles.jsantos\source\repos\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmPerfil.resources
+C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\ComponentFactory.Krypton.Docking.pdb
+C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\ComponentFactory.Krypton.Navigator.pdb
+C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
+C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\bin\Debug\ComponentFactory.Krypton.Workspace.pdb

@@ -33,7 +33,6 @@
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.btoEntrar = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cboEmail = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -50,8 +49,8 @@
             this.cboArea = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.txtSobr = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cboEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -60,6 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboArea)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -98,7 +98,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel1.Controls.Add(this.cboEmail);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.pictureBox5);
@@ -118,33 +117,7 @@
             this.panel1.Location = new System.Drawing.Point(99, 97);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(560, 358);
-            this.panel1.TabIndex = 0;
-            // 
-            // cboEmail
-            // 
-            this.cboEmail.DropButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.NavigatorStack;
-            this.cboEmail.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboEmail.DropDownWidth = 243;
-            this.cboEmail.Items.AddRange(new object[] {
-            "@gmail.com",
-            "@outlook.com",
-            "@yahoo.com",
-            "@hotmail.com"});
-            this.cboEmail.Location = new System.Drawing.Point(154, 164);
-            this.cboEmail.Name = "cboEmail";
-            this.cboEmail.Size = new System.Drawing.Size(124, 47);
-            this.cboEmail.StateCommon.ComboBox.Back.Color1 = System.Drawing.Color.Azure;
-            this.cboEmail.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cboEmail.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)(((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.cboEmail.StateCommon.ComboBox.Border.Rounding = 43;
-            this.cboEmail.StateCommon.ComboBox.Border.Width = 3;
-            this.cboEmail.StateCommon.ComboBox.Content.Color1 = System.Drawing.Color.DarkGray;
-            this.cboEmail.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F);
-            this.cboEmail.StateCommon.ComboBox.Content.Padding = new System.Windows.Forms.Padding(30, 5, 10, 3);
-            this.cboEmail.StateCommon.Item.Content.ShortText.Color1 = System.Drawing.Color.DimGray;
-            this.cboEmail.StateCommon.Item.Content.ShortText.Font = new System.Drawing.Font("KG Red Hands", 6.75F);
-            this.cboEmail.TabIndex = 4;
+            this.panel1.TabIndex = 6;
             // 
             // label1
             // 
@@ -289,12 +262,13 @@
             // 
             this.txtEmail.Location = new System.Drawing.Point(35, 164);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(121, 47);
+            this.txtEmail.Size = new System.Drawing.Size(243, 47);
             this.txtEmail.StateCommon.Back.Color1 = System.Drawing.Color.Azure;
             this.txtEmail.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtEmail.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtEmail.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)(((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)));
+            this.txtEmail.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtEmail.StateCommon.Border.Rounding = 32;
             this.txtEmail.StateCommon.Border.Width = 3;
             this.txtEmail.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
@@ -304,6 +278,7 @@
             this.txtEmail.Text = "Email";
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
             this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
+            this.txtEmail.Validating += new System.ComponentModel.CancelEventHandler(this.txtEmail_Validating);
             // 
             // txtUser
             // 
@@ -416,6 +391,10 @@
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
             // frmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -434,10 +413,8 @@
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro";
-            this.Load += new System.EventHandler(this.frmCadastro_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cboEmail)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -446,6 +423,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cboArea)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -466,11 +444,11 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtSenha;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtEmail;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox cboEmail;
         private System.Windows.Forms.Label lblarea;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox cboArea;
         private System.Windows.Forms.PictureBox pictureBox6;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtSobr;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }

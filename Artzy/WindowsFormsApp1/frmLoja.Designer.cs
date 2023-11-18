@@ -135,11 +135,12 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(209, 34);
+            this.panel1.Location = new System.Drawing.Point(208, 22);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(987, 791);
             this.panel1.TabIndex = 10;
@@ -283,7 +284,7 @@
             // 
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel4.Location = new System.Drawing.Point(209, 495);
+            this.panel4.Location = new System.Drawing.Point(0, 461);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(280, 66);
             this.panel4.TabIndex = 2;
@@ -308,7 +309,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1226, 825);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pbClebio);
             this.Controls.Add(this.btoSair);
@@ -316,6 +316,7 @@
             this.Controls.Add(this.btoLoja);
             this.Controls.Add(this.btoHome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLoja";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;

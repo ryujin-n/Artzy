@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using ComponentFactory.Krypton.Toolkit;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApp1
 {
@@ -20,6 +22,10 @@ namespace WindowsFormsApp1
         private Timer slideTimer3;
         private Timer slideTimer4;
 
+        string stringConexao = frmLogin.stringConexao;
+        int id = int.Parse(frmLogin.idUser);
+
+
         public frmDashboard()
         {
             InitializeComponent();
@@ -27,7 +33,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void InitializeTimers()
+        private void InitializeTimers() // miles do passado: NAO APAGA OS OUTROS TIMERS Q ELES SAO IMPORTANTES
         {
             slideTimer = new Timer();
             slideTimer.Interval = 16; // +- 60 FPS
@@ -98,36 +104,80 @@ namespace WindowsFormsApp1
             lblname.Text = frmLogin.NomeUser.ToUpper() + " " + frmLogin.SobrenomeUser.ToUpper();
             lblprof.Text = frmLogin.ProfUser.ToString();
 
+            /////////////////////////////////////////
+
+            byte[] imagemBinaria = imagemDoBanco(id);
+
+            if (imagemBinaria != null && imagemBinaria.Length > 0)
+            {
+                pbFotoP.Image = ByteArrayParaImagem(imagemBinaria);
+            }
+            else
+            {
+                // Se não houver imagem no banco, carrega a imagem padrão
+                pbFotoP.Image = CarregarImagemPadrao();
+            }
+
+            ////////////////////////////////////////
+
             pbClebio.Focus();
             pnSla.BackColor = Color.Transparent;
-            pnSla.Parent = pictureBox1;
-
+            pnSla.Parent = header;
          
-
             int x = 0;
             int y = -4; 
 
             pnSla.Location = new Point(x, y);
             pnSla.BringToFront();
 
-            //////////////////////////////////////////////////////////////////
-
-            //btoConf.BackColor = Color.Transparent;
-            //btoConf.Parent = pictureBox1;
-
-            //int offsetX = -10; 
-            //int offsetY = -10; 
-
-            //int x1 = pictureBox1.Width - btoConf.Width + offsetX;
-            //int y1 = pictureBox1.Height - btoConf.Height + offsetY;
-
-            //btoConf.Location = new Point(x1, y1);
-            //btoConf.BringToFront();
-
             lstTodo.ContextMenuStrip = contextMenuStrip1;
             lstDoing.ContextMenuStrip = contextMenuStrip1;
             lstDone.ContextMenuStrip = contextMenuStrip1;
 
+        }
+
+        private byte[] imagemDoBanco(int idUsuario)
+        {
+            byte[] imagemBinaria = null;
+
+            using (SqlConnection conn = new SqlConnection(stringConexao))
+            {
+                conn.Open();
+
+                // obter a imagem do banco
+                string sql = "select fotoP_artista from art where id_artista = @UsuarioID";
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@UsuarioID", idUsuario);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            // obtem a imagem binária da coluna do banco
+                            imagemBinaria = (byte[])reader["fotoP_artista"];
+                        }
+                    }
+                }
+
+                return imagemBinaria;
+            }
+        }
+
+        private Image CarregarImagemPadrao()
+        {
+            // Carrega a imagem padrão como PNG
+            return Properties.Resources._21;
+        }
+
+        private Image ByteArrayParaImagem(byte[] byteArray)
+        {
+            using (MemoryStream ms = new MemoryStream(byteArray))
+            {
+                // Carrega a imagem mantendo a transparência
+                Image imagem = Image.FromStream(ms);
+                return imagem;
+            }
         }
 
         private void btoLista_MouseEnter(object sender, EventArgs e)
@@ -498,10 +548,58 @@ namespace WindowsFormsApp1
             this.Hide();
         }
 
-        private void btoPerfil_Click(object sender, EventArgs e)
+
+        private void pbFoto_Click(object sender, EventArgs e)
         {
-            frmPerfil frm = new frmPerfil();
-            frm.ShowDialog();
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Arquivos de Imagem|*.jpg;*.jpeg;*.png;*.bmp|Todos os arquivos|*.*";
+            openFileDialog.Title = "Escolha uma imagem";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string caminhoDaImagem = openFileDialog.FileName;
+
+                // atualiza a imagem 
+                if (File.Exists(caminhoDaImagem))
+                {
+                    Image imagem = Image.FromFile(caminhoDaImagem);
+                    pbFotoP.Image = imagem;
+                }
+                ////////////////////////////////////
+                
+                // converte 
+                byte[] image;
+
+                MemoryStream stream = new MemoryStream();
+                pbFotoP.Image.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
+                image = stream.ToArray();
+                
+                //////////////////////////////////
+                
+                // atualiza no banco de dados
+                caminho(id, image);
+            }
+
+        }
+
+        private void caminho(int perfilID, byte[] perfil)
+        {
+
+            using (SqlConnection conn = new SqlConnection(stringConexao))
+            {
+                conn.Open();
+
+                // atualiza o caminho da imagem na tabela
+                string sql = "update art set fotoP_artista = @fotoP_artista where id_artista = @PerfilID";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@fotoP_artista", perfil);
+                        cmd.Parameters.AddWithValue("@PerfilID", perfilID);
+                        cmd.ExecuteNonQuery();
+                    }
+            }
+
         }
     }
 

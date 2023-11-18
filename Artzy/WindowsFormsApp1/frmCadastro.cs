@@ -4,8 +4,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
@@ -147,28 +149,33 @@ namespace WindowsFormsApp1
             if (txtUser.Text == "Usuário" || txtUser.Text == "")
             {
                 MessageBox.Show("Deve conter um Usuário!");
+                txtUser.Focus();
                 return;
 
             }
             else if (txtName.Text == "Nome" || txtName.Text == "")
             {
                 MessageBox.Show("Deve conter um Nome!");
+                txtName.Focus();
                 return;
             }
-            else if (txtEmail.Text == "Email" || txtEmail.Text == "" || cboEmail.Text == "")
+            else if (txtEmail.Text == "Email" || txtEmail.Text == "")
             {
                 MessageBox.Show("Deve conter um Email!");
+                txtEmail.Focus();
                 return;
 
             }
             else if (txtSobr.Text == "Sobrenome")
             {
                 MessageBox.Show("Deve conter um Sobrenome!");
+                txtSobr.Focus();
                 return;
             }
             else if (txtSenha.Text == "Senha" || txtSenha.Text == "")
             {
                 MessageBox.Show("Deve conter uma Senha!");
+                txtSenha.Focus();
                 return;
 
             }
@@ -178,24 +185,31 @@ namespace WindowsFormsApp1
                 return;
             }
 
-            string sql = "set dateformat dmy insert into art (nome_artista,sobrenome_artista,user_artista,senha_artista,email_artista,prof_artista)" +
+            Image imagemPadrao = Properties.Resources._21;
+            byte[] imagemPadraoB = ImageToByteArray(imagemPadrao);
+
+            string sql = "set dateformat dmy insert into art (nome_artista, sobrenome_artista, user_artista, senha_artista, email_artista, prof_artista, fotoP_artista)" +
                 "values" +
                     "(" +
                     "'" + txtName.Text + "'" + "," +
                     "'" + txtSobr.Text + "'" + "," +
                     "'" + txtUser.Text + "'" + "," +
                     "'" + txtSenha.Text + "'" + "," +
-                    "'" + txtEmail.Text + cboEmail.Text + "'" + "," +
-                    "'" + cboArea.Text + "')";
+                    "'" + txtEmail.Text + "'" + "," +
+                    "'" + cboArea.Text +  "'" + "," +
+                    "@ImagemPadrao)";
 
             SqlConnection conn = new SqlConnection(stringConexao);
             SqlCommand cmd = new SqlCommand(sql, conn);
             cmd.CommandType = CommandType.Text;
+
+            cmd.Parameters.AddWithValue("@ImagemPadrao", imagemPadraoB);
+
             conn.Open();
 
             try
             {
-    
+
                 int i = cmd.ExecuteNonQuery();
                 if (i == 1)
                 {
@@ -214,8 +228,19 @@ namespace WindowsFormsApp1
                 frm.Show();
                 this.Hide();
             }
+
+            
         }
 
+        private byte[] ImageToByteArray(Image image)
+        {
+            using (MemoryStream stream = new MemoryStream())
+            {
+                image.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
+                return stream.ToArray();
+            }
+        }
+       
         private void btoLogin_Click(object sender, EventArgs e)
         {
             frmLogin frm = new frmLogin();
@@ -254,10 +279,29 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void frmCadastro_Load(object sender, EventArgs e)
+
+        private void txtEmail_Validating(object sender, CancelEventArgs e)
         {
-            cboEmail.SelectedIndex = 0;
+            string eemail = txtEmail.Text;
+
+            if (!IsValidEmail(eemail))
+            {
+                MessageBox.Show("Insira um email válido!");
+                e.Cancel = true;
+            }
+          
         }
+
+        private bool IsValidEmail(string eemail)
+        {
+            string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+
+            Regex regex = new Regex(pattern);
+            return regex.IsMatch(eemail);
+        }
+
     }
 }
+    
+
  

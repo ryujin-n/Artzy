@@ -26,7 +26,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        public static string stringConexao = "Data Source=localhost;Initial Catalog=Artzy;User ID=sa;Password=123456";
+        public static string stringConexao = "Server=localhost;Database=Artzy;Trusted_Connection=True;";
         public static string idUser;
         public static string NomeUser;
         public static string SenhaUser;
@@ -128,7 +128,7 @@ namespace WindowsFormsApp1
                     Usuario = reader[3].ToString();
                     SenhaUser = reader[4].ToString();
                     EmailUser = reader[5].ToString();
-                    ProfUser = reader[6].ToString();
+                    ProfUser = reader[7].ToString();
 
                     frmDashboard frm = new frmDashboard();
                     frm.Show();

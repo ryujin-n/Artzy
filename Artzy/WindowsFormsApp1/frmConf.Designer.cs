@@ -37,19 +37,19 @@
             this.btoLoja = new System.Windows.Forms.PictureBox();
             this.btoHome = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pbConta = new System.Windows.Forms.PictureBox();
-            this.pbSec = new System.Windows.Forms.PictureBox();
-            this.pbPref = new System.Windows.Forms.PictureBox();
             this.cont = new System.Windows.Forms.Panel();
+            this.pbPref = new System.Windows.Forms.PictureBox();
+            this.pbSec = new System.Windows.Forms.PictureBox();
+            this.pbConta = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btoConf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoSair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoLoja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoHome)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbConta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSec)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPref)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSec)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbConta)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -139,26 +139,14 @@
             this.panel1.Size = new System.Drawing.Size(987, 791);
             this.panel1.TabIndex = 15;
             // 
-            // pbConta
+            // cont
             // 
-            this.pbConta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbConta.BackgroundImage")));
-            this.pbConta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbConta.Location = new System.Drawing.Point(45, 128);
-            this.pbConta.Name = "pbConta";
-            this.pbConta.Size = new System.Drawing.Size(372, 64);
-            this.pbConta.TabIndex = 0;
-            this.pbConta.TabStop = false;
-            // 
-            // pbSec
-            // 
-            this.pbSec.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbSec.BackgroundImage")));
-            this.pbSec.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbSec.Location = new System.Drawing.Point(45, 195);
-            this.pbSec.Name = "pbSec";
-            this.pbSec.Size = new System.Drawing.Size(372, 64);
-            this.pbSec.TabIndex = 0;
-            this.pbSec.TabStop = false;
-            this.pbSec.Click += new System.EventHandler(this.pbSec_Click);
+            this.cont.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cont.BackgroundImage")));
+            this.cont.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cont.Location = new System.Drawing.Point(457, 36);
+            this.cont.Name = "cont";
+            this.cont.Size = new System.Drawing.Size(508, 711);
+            this.cont.TabIndex = 1;
             // 
             // pbPref
             // 
@@ -171,14 +159,26 @@
             this.pbPref.TabStop = false;
             this.pbPref.Click += new System.EventHandler(this.pbPref_Click);
             // 
-            // cont
+            // pbSec
             // 
-            this.cont.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cont.BackgroundImage")));
-            this.cont.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.cont.Location = new System.Drawing.Point(457, 36);
-            this.cont.Name = "cont";
-            this.cont.Size = new System.Drawing.Size(508, 711);
-            this.cont.TabIndex = 1;
+            this.pbSec.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbSec.BackgroundImage")));
+            this.pbSec.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbSec.Location = new System.Drawing.Point(45, 195);
+            this.pbSec.Name = "pbSec";
+            this.pbSec.Size = new System.Drawing.Size(372, 64);
+            this.pbSec.TabIndex = 0;
+            this.pbSec.TabStop = false;
+            this.pbSec.Click += new System.EventHandler(this.pbSec_Click);
+            // 
+            // pbConta
+            // 
+            this.pbConta.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbConta.BackgroundImage")));
+            this.pbConta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbConta.Location = new System.Drawing.Point(45, 128);
+            this.pbConta.Name = "pbConta";
+            this.pbConta.Size = new System.Drawing.Size(372, 64);
+            this.pbConta.TabIndex = 0;
+            this.pbConta.TabStop = false;
             // 
             // frmConf
             // 
@@ -193,6 +193,7 @@
             this.Controls.Add(this.btoLoja);
             this.Controls.Add(this.btoHome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmConf";
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
@@ -204,9 +205,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.btoLoja)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoHome)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbConta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSec)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPref)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSec)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbConta)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -175,7 +175,7 @@
             this.txtSenha.StateCommon.Content.Color1 = System.Drawing.Color.DarkGray;
             this.txtSenha.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F);
             this.txtSenha.StateCommon.Content.Padding = new System.Windows.Forms.Padding(30, 5, 10, 3);
-            this.txtSenha.TabIndex = 6;
+            this.txtSenha.TabIndex = 7;
             this.txtSenha.Text = "Senha";
             this.txtSenha.Enter += new System.EventHandler(this.txtSenha_Enter);
             this.txtSenha.Leave += new System.EventHandler(this.txtSenha_Leave);
