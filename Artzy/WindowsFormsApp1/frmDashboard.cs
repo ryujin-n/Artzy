@@ -25,6 +25,10 @@ namespace WindowsFormsApp1
         string stringConexao = frmLogin.stringConexao;
         int id = int.Parse(frmLogin.idUser);
 
+        public int Id { get; set; }
+        public int UsuarioId { get; set; }
+        public string Descricao { get; set; }
+        public string Estado { get; set; }
 
         public frmDashboard()
         {

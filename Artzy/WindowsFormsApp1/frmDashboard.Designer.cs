@@ -35,6 +35,9 @@
             this.excluir = new System.Windows.Forms.ToolStripMenuItem();
             this.pnDashboard = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnDoingToTodo = new System.Windows.Forms.PictureBox();
+            this.btnTodoToDone = new System.Windows.Forms.PictureBox();
+            this.kryptonBorderEdge6 = new ComponentFactory.Krypton.Toolkit.KryptonBorderEdge();
             this.btoOK3 = new System.Windows.Forms.Button();
             this.btoOK2 = new System.Windows.Forms.Button();
             this.btoOK = new System.Windows.Forms.Button();
@@ -53,8 +56,6 @@
             this.btnDoingToDone = new System.Windows.Forms.PictureBox();
             this.btnTodoToDoing = new System.Windows.Forms.PictureBox();
             this.btnDoneToDoing = new System.Windows.Forms.PictureBox();
-            this.btnDoingToTodo = new System.Windows.Forms.PictureBox();
-            this.btnTodoToDone = new System.Windows.Forms.PictureBox();
             this.kryptonBorderEdge4 = new ComponentFactory.Krypton.Toolkit.KryptonBorderEdge();
             this.kryptonBorderEdge7 = new ComponentFactory.Krypton.Toolkit.KryptonBorderEdge();
             this.kryptonBorderEdge5 = new ComponentFactory.Krypton.Toolkit.KryptonBorderEdge();
@@ -66,16 +67,18 @@
             this.lstDoing = new ComponentFactory.Krypton.Toolkit.KryptonListBox();
             this.lstTodo = new ComponentFactory.Krypton.Toolkit.KryptonListBox();
             this.kryptonPanel3 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
-            this.kryptonBorderEdge6 = new ComponentFactory.Krypton.Toolkit.KryptonBorderEdge();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.kryptonPanel2 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonBorderEdge3 = new ComponentFactory.Krypton.Toolkit.KryptonBorderEdge();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonBorderEdge2 = new ComponentFactory.Krypton.Toolkit.KryptonBorderEdge();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pnSla = new System.Windows.Forms.Panel();
             this.pbFoto = new System.Windows.Forms.PictureBox();
+            this.pbFotoP = new WindowsFormsApp1.RoundedPB();
             this.lblprof = new System.Windows.Forms.Label();
             this.lblname = new System.Windows.Forms.Label();
             this.header = new System.Windows.Forms.PictureBox();
@@ -84,40 +87,37 @@
             this.btoSair = new System.Windows.Forms.PictureBox();
             this.btoLoja = new System.Windows.Forms.PictureBox();
             this.btoHome = new System.Windows.Forms.PictureBox();
-            this.pbFotoP = new WindowsFormsApp1.RoundedPB();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1.SuspendLayout();
             this.pnDashboard.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDoingToTodo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTodoToDone)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnDoneToTodo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDoingToDone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnTodoToDoing)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDoneToDoing)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDoingToTodo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnTodoToDone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
             this.kryptonPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).BeginInit();
             this.kryptonPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.pnSla.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFotoP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoConf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoSair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoLoja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoHome)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFotoP)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -193,6 +193,37 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(686, 779);
             this.panel1.TabIndex = 0;
+            // 
+            // btnDoingToTodo
+            // 
+            this.btnDoingToTodo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDoingToTodo.BackgroundImage")));
+            this.btnDoingToTodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnDoingToTodo.Location = new System.Drawing.Point(239, 390);
+            this.btnDoingToTodo.Name = "btnDoingToTodo";
+            this.btnDoingToTodo.Size = new System.Drawing.Size(24, 30);
+            this.btnDoingToTodo.TabIndex = 7;
+            this.btnDoingToTodo.TabStop = false;
+            this.btnDoingToTodo.Click += new System.EventHandler(this.btnDoingToTodo_Click);
+            // 
+            // btnTodoToDone
+            // 
+            this.btnTodoToDone.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTodoToDone.BackgroundImage")));
+            this.btnTodoToDone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnTodoToDone.Location = new System.Drawing.Point(23, 390);
+            this.btnTodoToDone.Name = "btnTodoToDone";
+            this.btnTodoToDone.Size = new System.Drawing.Size(24, 30);
+            this.btnTodoToDone.TabIndex = 7;
+            this.btnTodoToDone.TabStop = false;
+            this.btnTodoToDone.Click += new System.EventHandler(this.btnTodoToDone_Click);
+            // 
+            // kryptonBorderEdge6
+            // 
+            this.kryptonBorderEdge6.Location = new System.Drawing.Point(662, 200);
+            this.kryptonBorderEdge6.Name = "kryptonBorderEdge6";
+            this.kryptonBorderEdge6.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.kryptonBorderEdge6.Size = new System.Drawing.Size(1, 18);
+            this.kryptonBorderEdge6.StateCommon.Color1 = System.Drawing.Color.Silver;
+            this.kryptonBorderEdge6.Text = "kryptonBorderEdge2";
             // 
             // btoOK3
             // 
@@ -447,28 +478,6 @@
             this.btnDoneToDoing.TabStop = false;
             this.btnDoneToDoing.Click += new System.EventHandler(this.btnDoneToDoing_Click);
             // 
-            // btnDoingToTodo
-            // 
-            this.btnDoingToTodo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDoingToTodo.BackgroundImage")));
-            this.btnDoingToTodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnDoingToTodo.Location = new System.Drawing.Point(239, 390);
-            this.btnDoingToTodo.Name = "btnDoingToTodo";
-            this.btnDoingToTodo.Size = new System.Drawing.Size(24, 30);
-            this.btnDoingToTodo.TabIndex = 7;
-            this.btnDoingToTodo.TabStop = false;
-            this.btnDoingToTodo.Click += new System.EventHandler(this.btnDoingToTodo_Click);
-            // 
-            // btnTodoToDone
-            // 
-            this.btnTodoToDone.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTodoToDone.BackgroundImage")));
-            this.btnTodoToDone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnTodoToDone.Location = new System.Drawing.Point(23, 390);
-            this.btnTodoToDone.Name = "btnTodoToDone";
-            this.btnTodoToDone.Size = new System.Drawing.Size(24, 30);
-            this.btnTodoToDone.TabIndex = 7;
-            this.btnTodoToDone.TabStop = false;
-            this.btnTodoToDone.Click += new System.EventHandler(this.btnTodoToDone_Click);
-            // 
             // kryptonBorderEdge4
             // 
             this.kryptonBorderEdge4.Location = new System.Drawing.Point(237, 200);
@@ -584,14 +593,15 @@
             this.kryptonPanel3.StateCommon.Color1 = System.Drawing.Color.White;
             this.kryptonPanel3.TabIndex = 3;
             // 
-            // kryptonBorderEdge6
+            // pictureBox2
             // 
-            this.kryptonBorderEdge6.Location = new System.Drawing.Point(662, 200);
-            this.kryptonBorderEdge6.Name = "kryptonBorderEdge6";
-            this.kryptonBorderEdge6.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.kryptonBorderEdge6.Size = new System.Drawing.Size(1, 18);
-            this.kryptonBorderEdge6.StateCommon.Color1 = System.Drawing.Color.Silver;
-            this.kryptonBorderEdge6.Text = "kryptonBorderEdge2";
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox2.Location = new System.Drawing.Point(35, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(142, 15);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
             // 
             // label2
             // 
@@ -621,6 +631,16 @@
             this.kryptonBorderEdge3.Size = new System.Drawing.Size(1, 18);
             this.kryptonBorderEdge3.StateCommon.Color1 = System.Drawing.Color.Silver;
             this.kryptonBorderEdge3.Text = "kryptonBorderEdge2";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Location = new System.Drawing.Point(33, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(142, 15);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // lblNome
             // 
@@ -665,32 +685,41 @@
             // 
             this.pnSla.BackColor = System.Drawing.Color.Transparent;
             this.pnSla.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnSla.BackgroundImage")));
-            this.pnSla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnSla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pnSla.Controls.Add(this.pbFoto);
             this.pnSla.Controls.Add(this.pbFotoP);
             this.pnSla.Controls.Add(this.lblprof);
             this.pnSla.Controls.Add(this.lblname);
             this.pnSla.Location = new System.Drawing.Point(712, 0);
             this.pnSla.Name = "pnSla";
-            this.pnSla.Size = new System.Drawing.Size(308, 368);
+            this.pnSla.Size = new System.Drawing.Size(308, 363);
             this.pnSla.TabIndex = 1;
             // 
             // pbFoto
             // 
             this.pbFoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbFoto.BackgroundImage")));
             this.pbFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbFoto.Location = new System.Drawing.Point(113, 293);
+            this.pbFoto.Location = new System.Drawing.Point(112, 299);
             this.pbFoto.Name = "pbFoto";
             this.pbFoto.Size = new System.Drawing.Size(84, 26);
             this.pbFoto.TabIndex = 9;
             this.pbFoto.TabStop = false;
             this.pbFoto.Click += new System.EventHandler(this.pbFoto_Click);
             // 
+            // pbFotoP
+            // 
+            this.pbFotoP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbFotoP.Location = new System.Drawing.Point(60, 46);
+            this.pbFotoP.Name = "pbFotoP";
+            this.pbFotoP.Size = new System.Drawing.Size(190, 190);
+            this.pbFotoP.TabIndex = 2;
+            this.pbFotoP.TabStop = false;
+            // 
             // lblprof
             // 
             this.lblprof.Font = new System.Drawing.Font("Momcake Pro Medium", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblprof.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblprof.Location = new System.Drawing.Point(0, 263);
+            this.lblprof.Location = new System.Drawing.Point(0, 272);
             this.lblprof.Name = "lblprof";
             this.lblprof.Size = new System.Drawing.Size(308, 24);
             this.lblprof.TabIndex = 4;
@@ -699,11 +728,11 @@
             // 
             // lblname
             // 
-            this.lblname.Font = new System.Drawing.Font("Momcake Pro Bold", 21F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblname.Font = new System.Drawing.Font("Momcake Pro Bold", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblname.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.lblname.Location = new System.Drawing.Point(0, 236);
             this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(308, 33);
+            this.lblname.Size = new System.Drawing.Size(308, 39);
             this.lblname.TabIndex = 4;
             this.lblname.Text = "Nome Completo";
             this.lblname.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -784,35 +813,6 @@
             this.btoHome.MouseEnter += new System.EventHandler(this.btoHome_MouseEnter);
             this.btoHome.MouseLeave += new System.EventHandler(this.btoHome_MouseLeave);
             // 
-            // pbFotoP
-            // 
-            this.pbFotoP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbFotoP.Location = new System.Drawing.Point(60, 46);
-            this.pbFotoP.Name = "pbFotoP";
-            this.pbFotoP.Size = new System.Drawing.Size(190, 190);
-            this.pbFotoP.TabIndex = 2;
-            this.pbFotoP.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(142, 15);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox2.Location = new System.Drawing.Point(35, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(142, 15);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            // 
             // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -841,37 +841,37 @@
             this.pnDashboard.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnDoingToTodo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnTodoToDone)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnDoneToTodo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDoingToDone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnTodoToDoing)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnDoneToDoing)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnDoingToTodo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnTodoToDone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
             this.kryptonPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel2)).EndInit();
             this.kryptonPanel2.ResumeLayout(false);
             this.kryptonPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.pnSla.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFotoP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.header)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoConf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoSair)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoLoja)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoHome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFotoP)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
