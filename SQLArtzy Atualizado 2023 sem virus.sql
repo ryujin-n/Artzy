@@ -7,6 +7,7 @@ drop table assinart
 drop table contart
 drop table venda
 
+
 create table art
 (
 	id_artista int not null identity primary key,
@@ -14,6 +15,7 @@ create table art
 	sobrenome_artista varchar (50) not null,
 	user_artista varchar(50) not null unique ,
 	senha_artista varchar(20) not null,
+	fotoP_artista varbinary (max) not null ,
 	email_artista varchar (100) not null,
 	prof_artista varchar (100) not null,
 	data_artista smalldatetime not null default getdate(),
@@ -21,10 +23,6 @@ create table art
 )
 
 select * from art
-
-insert into art (nome_artista,user_artista,senha_artista,email_artista,prof_artista)
-values
-	('admin','adm','123','adm@gmail.com','Administrador')
 
 drop table cliente
 create table cliente
@@ -119,6 +117,6 @@ create table contart
 	status_contar varchar(20) not null default 'ATIVO', 
     
     constraint FK_id_assiantura_contart foreign key (id_assiantura_contart) references assinart (id_assinart),
-    constraint FK_id_cliente_contart foreign key (id_cliente_contart) references cliente (id_cliente)
+    constraint FK_id_cliente_contart foreign key (id_cliente_contart) references art (id_artista)
 )
 select * from contart
