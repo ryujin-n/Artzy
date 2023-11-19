@@ -261,47 +261,49 @@ namespace WindowsFormsApp1
 
         private void ItemMove(KryptonListBox sourceListBox, KryptonListBox destinationListBox, string novoStatus)
         {
-            foreach (int selectedIndex in sourceListBox.SelectedIndices)
-            {
-                if (selectedIndex >= 0 && selectedIndex < sourceListBox.Items.Count)
-                {
-                    object selectedItem = sourceListBox.Items[selectedIndex];
-
-                    // adiciona ao Doing ou Done
-                    destinationListBox.Items.Add(selectedItem);
-
-                    // muda o status e a ordem no banco
-                    MoverTarefaNoBanco(selectedItem.ToString(), novoStatus, destinationListBox.Items.Count - 1);
-                }
-            }
-
-            // remove da lista de origem
-            for (int i = sourceListBox.SelectedIndices.Count - 1; i >= 0; i--)
-            {
-                int selectedIndex = sourceListBox.SelectedIndices[i];
-                sourceListBox.Items.RemoveAt(selectedIndex);
-            }
-        }
-
-        private void MoverTarefaNoBanco(string nomeTarefa, string novoStatus, int novaOrdem)
-        {
             using (SqlConnection conn = new SqlConnection(stringConexao))
             {
                 conn.Open();
 
-                // atualiza o status e a ordem da tarefa no banco
-                string sql = "update tarefa set status_tarefa = @NovoStatus, ordem_tarefa = @NovaOrdem " +
-                             "where nome_tarefa = @NomeTarefa and id_usuario_tarefa = @UsuarioID";
-
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                for (int i = 0; i < sourceListBox.SelectedIndices.Count; i++)
                 {
-                    cmd.Parameters.AddWithValue("@NovoStatus", novoStatus);
-                    cmd.Parameters.AddWithValue("@NomeTarefa", nomeTarefa);
-                    cmd.Parameters.AddWithValue("@UsuarioID", id);
-                    cmd.Parameters.AddWithValue("@NovaOrdem", novaOrdem);
+                    int selectedIndex = sourceListBox.SelectedIndices[i];
 
-                    cmd.ExecuteNonQuery();
+                    if (selectedIndex >= 0 && selectedIndex < sourceListBox.Items.Count)
+                    {
+                        object selectedItem = sourceListBox.Items[selectedIndex];
+
+                        // Adiciona ao Doing ou Done
+                        destinationListBox.Items.Add(selectedItem);
+
+                        // Obtém o novo índice na lista de destino
+                        int novoIndice = destinationListBox.Items.Count - 1;
+
+                        // Move a tarefa no banco de dados
+                        MoverTarefaNoBanco(conn, selectedItem.ToString(), novoStatus, novoIndice);
+
+                        // Remove da lista de origem
+                        sourceListBox.Items.RemoveAt(selectedIndex);
+                    }
                 }
+            }
+        }
+
+
+        private void MoverTarefaNoBanco(SqlConnection conn, string nomeTarefa, string novoStatus, int novoIndice)
+        {
+            // Atualiza o status e a ordem da tarefa no banco
+            string sql = "UPDATE tarefa SET status_tarefa = @NovoStatus, ordem_tarefa = @NovaOrdem " +
+                         "WHERE nome_tarefa = @NomeTarefa AND id_usuario_tarefa = @UsuarioID";
+
+            using (SqlCommand cmd = new SqlCommand(sql, conn))
+            {
+                cmd.Parameters.AddWithValue("@NovoStatus", novoStatus);
+                cmd.Parameters.AddWithValue("@NomeTarefa", nomeTarefa);
+                cmd.Parameters.AddWithValue("@UsuarioID", id);
+                cmd.Parameters.AddWithValue("@NovaOrdem", novoIndice);  // Use o novo índice diretamente
+
+                cmd.ExecuteNonQuery();
             }
         }
 
@@ -416,25 +418,28 @@ namespace WindowsFormsApp1
 
         private void btoOK_Click(object sender, EventArgs e)
         {
-            AdicionarTarefa(txtToDo.Text, lstTodo, StatusToDo);
-            LimparEAtualizar(txtToDo);
+            if (!string.IsNullOrWhiteSpace(txtToDo.Text) && txtToDo.Text.Trim().ToLower() != "adicionar")
+            {
+                AdicionarTarefa(txtToDo.Text, lstTodo, StatusToDo);
+                LimparEAtualizar(txtToDo);
+            }
         }
 
-        private void SalvarTarefaNoBanco(string nomeTarefa, string status, int indice)
+        private void SalvarTarefaNoBanco(string nomeTarefa, string status, int ordem)
         {
             using (SqlConnection conn = new SqlConnection(stringConexao))
             {
                 conn.Open();
 
-                string sql = "insert into tarefa (status_tarefa, id_usuario_tarefa, nome_tarefa, ordem_tarefa) " +
-                             "values (@status, @idUsuario, @nomeTarefa, @ordemTarefa)";
+                string sql = "INSERT INTO tarefa (status_tarefa, id_usuario_tarefa, nome_tarefa, ordem_tarefa) " +
+                             "VALUES (@status, @idUsuario, @nomeTarefa, @ordemTarefa)";
 
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
                 {
                     cmd.Parameters.AddWithValue("@status", status);
                     cmd.Parameters.AddWithValue("@idUsuario", id);
                     cmd.Parameters.AddWithValue("@nomeTarefa", nomeTarefa);
-                    cmd.Parameters.AddWithValue("@ordemTarefa", ObterProximaOrdemTarefa(conn, id, status));
+                    cmd.Parameters.AddWithValue("@ordemTarefa", ordem);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -444,7 +449,7 @@ namespace WindowsFormsApp1
 
         private int ObterProximaOrdemTarefa(SqlConnection conn, int idUsuario, string status)
         {
-            string sql = "select max(ordem_tarefa) from tarefa where id_usuario_tarefa = @idUsuario and status_tarefa = @status";
+            string sql = "SELECT MAX(ordem_tarefa) FROM tarefa WHERE id_usuario_tarefa = @idUsuario AND status_tarefa = @status";
 
             using (SqlCommand cmd = new SqlCommand(sql, conn))
             {
@@ -563,24 +568,46 @@ namespace WindowsFormsApp1
 
         private void btoOK2_Click(object sender, EventArgs e)
         {
-            AdicionarTarefa(txtDoing.Text, lstDoing, StatusDoing);
-            LimparEAtualizar(txtDoing);
+
+            if (!string.IsNullOrWhiteSpace(txtDoing.Text) && txtDoing.Text.Trim().ToLower() != "adicionar")
+            {
+                AdicionarTarefa(txtDoing.Text, lstDoing, StatusDoing);
+                LimparEAtualizar(txtDoing);
+            }
         }
 
         private void btoOK3_Click(object sender, EventArgs e)
         {
-            AdicionarTarefa(txtDone.Text, lstDone, StatusDone);
-            LimparEAtualizar(txtDone);
+            if (!string.IsNullOrWhiteSpace(txtDone.Text) && txtDone.Text.Trim().ToLower() != "adicionar")
+            {
+                AdicionarTarefa(txtDone.Text, lstDone, StatusDone);
+                LimparEAtualizar(txtDone);
+            }
+               
         }
 
         private void AdicionarTarefa(string nomeTarefa, KryptonListBox lista, string status)
         {
-            if (!string.IsNullOrWhiteSpace(nomeTarefa) && nomeTarefa.Trim().ToLower() != "adicionar")
+            using (SqlConnection conn = new SqlConnection(stringConexao))
             {
-                lista.Items.Add(nomeTarefa);
+                conn.Open();
 
-                // adiciona a tarefa ao banco
-                SalvarTarefaNoBanco(nomeTarefa, status, lista.Items.Count - 1);
+                int novaOrdem = ObterProximaOrdemTarefa(conn, id, status);
+
+                string sql = "INSERT INTO tarefa (status_tarefa, id_usuario_tarefa, nome_tarefa, ordem_tarefa) " +
+                             "VALUES (@status, @idUsuario, @nomeTarefa, @ordemTarefa)";
+
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@status", status);
+                    cmd.Parameters.AddWithValue("@idUsuario", id);
+                    cmd.Parameters.AddWithValue("@nomeTarefa", nomeTarefa);
+                    cmd.Parameters.AddWithValue("@ordemTarefa", novaOrdem);
+
+                    cmd.ExecuteNonQuery();
+                }
+
+                lista.Items.Add(nomeTarefa);
             }
         }
 
@@ -612,27 +639,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void txtBloco3_Leave(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(txtBloco3.Text))
-            {
-                txtBloco3.Text = bloco3;
-            }
-            else
-            {
-                txtBloco3.Text = "";
-            }
-        }
 
-        private void txtBloco3_Enter(object sender, EventArgs e)
-        {
-            bloco3 = txtBloco3.Text;
-
-            if (txtBloco3.Text == "")
-            {
-                txtBloco3.Text = "Título";
-            }
-        }
 
         private void btoHome_Click(object sender, EventArgs e)
         {
@@ -716,7 +723,7 @@ namespace WindowsFormsApp1
             {
                 conn.Open();
 
-                string sql = "select nome_tarefa, ordem_tarefa from tarefa where status_tarefa = @Status and id_usuario_tarefa = @UsuarioID order by ordem_tarefa";
+                string sql = "SELECT nome_tarefa FROM tarefa WHERE status_tarefa = @Status AND id_usuario_tarefa = @UsuarioID ORDER BY ordem_tarefa";
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
                 {
                     cmd.Parameters.AddWithValue("@Status", status);
@@ -734,6 +741,27 @@ namespace WindowsFormsApp1
             }
         }
 
+        private void txtBloco3_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtBloco3.Text))
+            {
+                txtBloco3.Text = bloco3;
+            }
+            else
+            {
+                txtBloco3.Text = "";
+            }
+        }
+
+        private void txtBloco3_Leave(object sender, EventArgs e)
+        {
+            bloco3 = txtBloco3.Text;
+
+            if (txtBloco3.Text == "")
+            {
+                txtBloco3.Text = "Título";
+            }
+        }
     }
 
 }

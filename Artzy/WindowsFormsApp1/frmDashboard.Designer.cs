@@ -48,9 +48,9 @@
             this.txtBloco3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.txtBloco2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.txtBloco1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.kryptonRichTextBox3 = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
-            this.kryptonRichTextBox2 = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
-            this.kryptonRichTextBox1 = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
+            this.txtAnot3 = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
+            this.txtAnot2 = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
+            this.txtAnot = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnDoneToTodo = new System.Windows.Forms.PictureBox();
             this.btnDoingToDone = new System.Windows.Forms.PictureBox();
@@ -319,9 +319,9 @@
             this.panel2.Controls.Add(this.txtBloco3);
             this.panel2.Controls.Add(this.txtBloco2);
             this.panel2.Controls.Add(this.txtBloco1);
-            this.panel2.Controls.Add(this.kryptonRichTextBox3);
-            this.panel2.Controls.Add(this.kryptonRichTextBox2);
-            this.panel2.Controls.Add(this.kryptonRichTextBox1);
+            this.panel2.Controls.Add(this.txtAnot3);
+            this.panel2.Controls.Add(this.txtAnot2);
+            this.panel2.Controls.Add(this.txtAnot);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(12, 436);
             this.panel2.Name = "panel2";
@@ -330,7 +330,7 @@
             // 
             // txtBloco3
             // 
-            this.txtBloco3.Location = new System.Drawing.Point(452, 46);
+            this.txtBloco3.Location = new System.Drawing.Point(450, 46);
             this.txtBloco3.Name = "txtBloco3";
             this.txtBloco3.Size = new System.Drawing.Size(159, 23);
             this.txtBloco3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -338,9 +338,9 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtBloco3.StateCommon.Border.Rounding = 4;
             this.txtBloco3.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
-            this.txtBloco3.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBloco3.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F);
             this.txtBloco3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5, 3, -1, 3);
-            this.txtBloco3.TabIndex = 12;
+            this.txtBloco3.TabIndex = 14;
             this.txtBloco3.Text = "Título";
             this.txtBloco3.Enter += new System.EventHandler(this.txtBloco3_Enter);
             this.txtBloco3.Leave += new System.EventHandler(this.txtBloco3_Leave);
@@ -379,50 +379,50 @@
             this.txtBloco1.Enter += new System.EventHandler(this.txtBloco1_Enter);
             this.txtBloco1.Leave += new System.EventHandler(this.txtBloco1_Leave);
             // 
-            // kryptonRichTextBox3
+            // txtAnot3
             // 
-            this.kryptonRichTextBox3.Location = new System.Drawing.Point(441, 75);
-            this.kryptonRichTextBox3.Name = "kryptonRichTextBox3";
-            this.kryptonRichTextBox3.Size = new System.Drawing.Size(203, 212);
-            this.kryptonRichTextBox3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtAnot3.Location = new System.Drawing.Point(441, 75);
+            this.txtAnot3.Name = "txtAnot3";
+            this.txtAnot3.Size = new System.Drawing.Size(203, 212);
+            this.txtAnot3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonRichTextBox3.StateCommon.Border.Rounding = 8;
-            this.kryptonRichTextBox3.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
-            this.kryptonRichTextBox3.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonRichTextBox3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5, 6, -1, -1);
-            this.kryptonRichTextBox3.TabIndex = 13;
-            this.kryptonRichTextBox3.Text = "";
+            this.txtAnot3.StateCommon.Border.Rounding = 8;
+            this.txtAnot3.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
+            this.txtAnot3.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAnot3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5, 6, -1, -1);
+            this.txtAnot3.TabIndex = 13;
+            this.txtAnot3.Text = "";
             // 
-            // kryptonRichTextBox2
+            // txtAnot2
             // 
-            this.kryptonRichTextBox2.Location = new System.Drawing.Point(232, 75);
-            this.kryptonRichTextBox2.Name = "kryptonRichTextBox2";
-            this.kryptonRichTextBox2.Size = new System.Drawing.Size(203, 212);
-            this.kryptonRichTextBox2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtAnot2.Location = new System.Drawing.Point(232, 75);
+            this.txtAnot2.Name = "txtAnot2";
+            this.txtAnot2.Size = new System.Drawing.Size(203, 212);
+            this.txtAnot2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonRichTextBox2.StateCommon.Border.Rounding = 8;
-            this.kryptonRichTextBox2.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
-            this.kryptonRichTextBox2.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonRichTextBox2.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5, 6, -1, -1);
-            this.kryptonRichTextBox2.TabIndex = 13;
-            this.kryptonRichTextBox2.Text = "";
+            this.txtAnot2.StateCommon.Border.Rounding = 8;
+            this.txtAnot2.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
+            this.txtAnot2.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAnot2.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5, 6, -1, -1);
+            this.txtAnot2.TabIndex = 13;
+            this.txtAnot2.Text = "";
             // 
-            // kryptonRichTextBox1
+            // txtAnot
             // 
-            this.kryptonRichTextBox1.Location = new System.Drawing.Point(19, 75);
-            this.kryptonRichTextBox1.Name = "kryptonRichTextBox1";
-            this.kryptonRichTextBox1.Size = new System.Drawing.Size(207, 212);
-            this.kryptonRichTextBox1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtAnot.Location = new System.Drawing.Point(19, 75);
+            this.txtAnot.Name = "txtAnot";
+            this.txtAnot.Size = new System.Drawing.Size(207, 212);
+            this.txtAnot.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonRichTextBox1.StateCommon.Border.Rounding = 8;
-            this.kryptonRichTextBox1.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
-            this.kryptonRichTextBox1.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonRichTextBox1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5, 6, -1, -1);
-            this.kryptonRichTextBox1.TabIndex = 11;
-            this.kryptonRichTextBox1.Text = "";
+            this.txtAnot.StateCommon.Border.Rounding = 8;
+            this.txtAnot.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
+            this.txtAnot.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAnot.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5, 6, -1, -1);
+            this.txtAnot.TabIndex = 11;
+            this.txtAnot.Text = "";
             // 
             // label3
             // 
@@ -912,16 +912,15 @@
         private ComponentFactory.Krypton.Toolkit.KryptonBorderEdge kryptonBorderEdge3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
-        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox kryptonRichTextBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox kryptonRichTextBox2;
+        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox txtAnot;
+        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox txtAnot2;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtBloco2;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtBloco1;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtToDo;
         private System.Windows.Forms.Button btoOK;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem excluir;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtBloco3;
-        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox kryptonRichTextBox3;
+        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox txtAnot3;
         private System.Windows.Forms.Button btoOK3;
         private System.Windows.Forms.Button btoOK2;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtDone;
@@ -935,5 +934,6 @@
         private RoundedPB pbFotoP;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtBloco3;
     }
 }

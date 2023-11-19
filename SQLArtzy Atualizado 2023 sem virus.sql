@@ -8,9 +8,19 @@ drop table assinart
 drop table contart
 drop table venda
 
+create table anotacoes
+(
+    id_anotacao INT PRIMARY KEY IDENTITY(1,1),
+    id_usuario_anotacao INT NOT NULL,
+    titulo_anotacao NVARCHAR(255),
+	bloco_anotacao NVARCHAR(255),
+
+    constraint FK_id_usuario_anotacao foreign key (id_usuario_anotacao) references art (id_artista)
+)
+
 create table tarefa
 (
-   id_tarefa INT PRIMARY KEY IDENTITY(1,1),
+   id_tarefa INT PRIMARY KEY IDENTITY,
     status_tarefa VARCHAR(50),
     id_usuario_tarefa INT,
     ordem_tarefa INT,
