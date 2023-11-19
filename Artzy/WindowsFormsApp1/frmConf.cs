@@ -15,7 +15,6 @@ namespace WindowsFormsApp1
     {
 
         private Timer slideTimer;
-        private Timer slideTimer1;
         private Timer slideTimer2;
         private Timer slideTimer3;
         private Timer slideTimer4;

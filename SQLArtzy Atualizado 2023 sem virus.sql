@@ -3,10 +3,22 @@ create database Artzy
 use artzy
 
 drop table art
+drop table tarefa
 drop table assinart
 drop table contart
 drop table venda
 
+create table tarefa
+(
+   id_tarefa INT PRIMARY KEY IDENTITY(1,1),
+    status_tarefa VARCHAR(50),
+    id_usuario_tarefa INT,
+    ordem_tarefa INT,
+    nome_tarefa VARCHAR(255)
+    CONSTRAINT FK_id_usuario_tarefa FOREIGN KEY (id_usuario_tarefa) REFERENCES art (id_artista)
+)
+
+select * from tarefa
 
 create table art
 (
