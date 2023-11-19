@@ -258,44 +258,24 @@ namespace WindowsFormsApp1
             btoConf.Location = new Point(-73, 281);
         }
 
-        //private void ItemMove(KryptonListBox sourceListBox, KryptonListBox destinationListBox)
-        //{
-        //    foreach (int selectedIndex in sourceListBox.SelectedIndices)
-        //    {
-        //        if (selectedIndex >= 0 && selectedIndex < sourceListBox.Items.Count)
-        //        {
-        //            object selectedItem = sourceListBox.Items[selectedIndex];
-
-        //            // próximo index disponivel
-        //            int nextIndex = destinationListBox.Items.Count;
-
-        //            // adiciona no doing
-        //            destinationListBox.Items.Insert(nextIndex, selectedItem);
-        //        }
-        //    }
-
-
-        //    for (int i = sourceListBox.SelectedIndices.Count - 1; i >= 0; i--) 
-        //        //remove do todo
-        //    {
-        //        int selectedIndex = sourceListBox.SelectedIndices[i];
-        //        if (selectedIndex >= 0 && selectedIndex < sourceListBox.Items.Count)
-        //        {
-        //            sourceListBox.Items.RemoveAt(selectedIndex);
-        //        }
-        //    }
-        //}
 
         private void ItemMove(KryptonListBox sourceListBox, KryptonListBox destinationListBox, string novoStatus)
         {
-            foreach (string selectedItem in sourceListBox.SelectedItems)
+            foreach (int selectedIndex in sourceListBox.SelectedIndices)
             {
-                destinationListBox.Items.Add(selectedItem);
+                if (selectedIndex >= 0 && selectedIndex < sourceListBox.Items.Count)
+                {
+                    object selectedItem = sourceListBox.Items[selectedIndex];
 
-                MoverTarefaNoBanco(selectedItem, novoStatus);
+                    // adiciona ao Doing ou Done
+                    destinationListBox.Items.Add(selectedItem);
+
+                    // muda o status e a ordem no banco
+                    MoverTarefaNoBanco(selectedItem.ToString(), novoStatus, destinationListBox.Items.Count - 1);
+                }
             }
 
-            // remove as tarefas da lista de origem
+            // remove da lista de origem
             for (int i = sourceListBox.SelectedIndices.Count - 1; i >= 0; i--)
             {
                 int selectedIndex = sourceListBox.SelectedIndices[i];
@@ -303,48 +283,28 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void MoverTarefaNoBanco(string nomeTarefa, string novoStatus)
+        private void MoverTarefaNoBanco(string nomeTarefa, string novoStatus, int novaOrdem)
         {
             using (SqlConnection conn = new SqlConnection(stringConexao))
             {
                 conn.Open();
 
-                string sql = "update tarefa set status_tarefa = @NovoStatus where nome_tarefa = @NomeTarefa and id_usuario_tarefa = @UsuarioID";
+                // atualiza o status e a ordem da tarefa no banco
+                string sql = "update tarefa set status_tarefa = @NovoStatus, ordem_tarefa = @NovaOrdem " +
+                             "where nome_tarefa = @NomeTarefa and id_usuario_tarefa = @UsuarioID";
 
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
                 {
                     cmd.Parameters.AddWithValue("@NovoStatus", novoStatus);
                     cmd.Parameters.AddWithValue("@NomeTarefa", nomeTarefa);
                     cmd.Parameters.AddWithValue("@UsuarioID", id);
+                    cmd.Parameters.AddWithValue("@NovaOrdem", novaOrdem);
+
                     cmd.ExecuteNonQuery();
                 }
             }
         }
 
-        private void CarregarTarefas(int idUsuario, string status, KryptonListBox listBox)
-        {
-            using (SqlConnection conn = new SqlConnection(stringConexao))
-            {
-                conn.Open();
-
-                string sql = "select nome_tarefa from tarefa where id_usuario_tarefa = @UsuarioID and status_tarefa = @Status";
-
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
-                {
-                    cmd.Parameters.AddWithValue("@UsuarioID", idUsuario);
-                    cmd.Parameters.AddWithValue("@Status", status);
-
-                    using (SqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            string nomeTarefa = reader.GetString(0);
-                            listBox.Items.Add(nomeTarefa);
-                        }
-                    }
-                }
-            }
-        }
 
         private void btnTodoToDoing_Click(object sender, EventArgs e)
         {
@@ -456,77 +416,40 @@ namespace WindowsFormsApp1
 
         private void btoOK_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(txtToDo.Text) & txtToDo.Text.Trim().ToLower() != "adicionar")
-            {
-                lstTodo.Items.Add(txtToDo.Text);
-                txtToDo.Text = "";
-                txtToDo.Focus();
-
-                SalvarTarefasNoBanco(lstTodo, "ToDo");
-            }
-           
+            AdicionarTarefa(txtToDo.Text, lstTodo, StatusToDo);
+            LimparEAtualizar(txtToDo);
         }
 
-        private void SalvarTodasTarefasNoBanco()
-        {
-            SalvarTarefasNoBanco(lstTodo, "ToDo");
-            SalvarTarefasNoBanco(lstDoing, "Doing");
-            SalvarTarefasNoBanco(lstDone, "Done");
-        }
-
-        private void SalvarTarefasNoBanco(KryptonListBox lista, string status)
+        private void SalvarTarefaNoBanco(string nomeTarefa, string status, int indice)
         {
             using (SqlConnection conn = new SqlConnection(stringConexao))
             {
                 conn.Open();
 
-                // Verifica se o usuário já possui tarefas
-                if (!TarefaExiste(conn, id))
+                string sql = "insert into tarefa (status_tarefa, id_usuario_tarefa, nome_tarefa, ordem_tarefa) " +
+                             "values (@status, @idUsuario, @nomeTarefa, @ordemTarefa)";
+
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
                 {
-                    for (int i = 0; i < lista.Items.Count; i++)
-                    {
-                        string nomeTarefa = lista.Items[i].ToString();
+                    cmd.Parameters.AddWithValue("@status", status);
+                    cmd.Parameters.AddWithValue("@idUsuario", id);
+                    cmd.Parameters.AddWithValue("@nomeTarefa", nomeTarefa);
+                    cmd.Parameters.AddWithValue("@ordemTarefa", ObterProximaOrdemTarefa(conn, id, status));
 
-                        string sql = "INSERT INTO tarefa (status_tarefa, id_usuario_tarefa, nome_tarefa, ordem_tarefa) " +
-                                     "VALUES (@status, @idUsuario, @nomeTarefa, @ordemTarefa)";
-
-                        using (SqlCommand cmd = new SqlCommand(sql, conn))
-                        {
-                            cmd.Parameters.AddWithValue("@status", status);
-                            cmd.Parameters.AddWithValue("@idUsuario", id);
-                            cmd.Parameters.AddWithValue("@nomeTarefa", nomeTarefa);
-                            cmd.Parameters.AddWithValue("@ordemTarefa", i + 1); // +1 porque os índices do SQL começam em 1
-
-                            cmd.ExecuteNonQuery();
-                        }
-                    }
+                    cmd.ExecuteNonQuery();
                 }
             }
         }
 
-        private bool TarefaExiste(SqlConnection conn, int idUsuario)
+
+        private int ObterProximaOrdemTarefa(SqlConnection conn, int idUsuario, string status)
         {
-            // Verifica se o usuário já possui tarefas
-            string sql = "SELECT COUNT(*) FROM tarefa WHERE id_usuario_tarefa = @idUsuario";
+            string sql = "select max(ordem_tarefa) from tarefa where id_usuario_tarefa = @idUsuario and status_tarefa = @status";
 
             using (SqlCommand cmd = new SqlCommand(sql, conn))
             {
                 cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
-
-                int count = Convert.ToInt32(cmd.ExecuteScalar());
-
-                return count > 0;
-            }
-        }
-
-
-        private int ObterProximaOrdemTarefa(SqlConnection conn, int idUsuario)
-        {
-            string sql = "SELECT MAX(ordem_tarefa) FROM tarefa WHERE id_usuario_tarefa = @idUsuario";
-
-            using (SqlCommand cmd = new SqlCommand(sql, conn))
-            {
-                cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
+                cmd.Parameters.AddWithValue("@status", status);
 
                 object result = cmd.ExecuteScalar();
 
@@ -573,15 +496,41 @@ namespace WindowsFormsApp1
         {
             if (lstTodo.SelectedIndex != -1)
             {
-                lstTodo.Items.RemoveAt(lstTodo.SelectedIndex);
+                RemoverTarefa(lstTodo, "ToDo");
             }
             else if (lstDoing.SelectedIndex != -1)
             {
-                lstDoing.Items.RemoveAt(lstDoing.SelectedIndex);
+                RemoverTarefa(lstDoing, "Doing");
             }
             else if (lstDone.SelectedIndex != -1)
             {
-                lstDone.Items.RemoveAt(lstDone.SelectedIndex);
+                RemoverTarefa(lstDone, "Done");
+            }
+        }
+
+        private void RemoverTarefa(KryptonListBox listBox, string status)
+        {
+            if (listBox.SelectedIndex != -1)
+            {
+                string nomeTarefa = listBox.SelectedItem.ToString();
+
+                using (SqlConnection conn = new SqlConnection(stringConexao))
+                {
+                    conn.Open();
+
+                    string sql = "delete from tarefa where nome_tarefa = @NomeTarefa and id_usuario_tarefa = @UsuarioID and status_tarefa = @Status";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@NomeTarefa", nomeTarefa);
+                        cmd.Parameters.AddWithValue("@UsuarioID", id);
+                        cmd.Parameters.AddWithValue("@Status", status);
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+
+                listBox.Items.RemoveAt(listBox.SelectedIndex);
             }
         }
 
@@ -629,7 +578,9 @@ namespace WindowsFormsApp1
             if (!string.IsNullOrWhiteSpace(nomeTarefa) && nomeTarefa.Trim().ToLower() != "adicionar")
             {
                 lista.Items.Add(nomeTarefa);
-                SalvarTarefasNoBanco(lista, status);
+
+                // adiciona a tarefa ao banco
+                SalvarTarefaNoBanco(nomeTarefa, status, lista.Items.Count - 1);
             }
         }
 
@@ -757,15 +708,15 @@ namespace WindowsFormsApp1
 
         }
 
- 
-
         private void CarregarTarefasDoBanco(KryptonListBox listBox, string status)
         {
+            listBox.Items.Clear(); // limpa a lista antes de recarregar
+
             using (SqlConnection conn = new SqlConnection(stringConexao))
             {
                 conn.Open();
 
-                string sql = "select nome_tarefa from tarefa where status_tarefa = @Status and id_usuario_tarefa = @UsuarioID";
+                string sql = "select nome_tarefa, ordem_tarefa from tarefa where status_tarefa = @Status and id_usuario_tarefa = @UsuarioID order by ordem_tarefa";
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
                 {
                     cmd.Parameters.AddWithValue("@Status", status);
@@ -776,8 +727,6 @@ namespace WindowsFormsApp1
                         while (reader.Read())
                         {
                             string nomeTarefa = reader["nome_tarefa"].ToString();
-
-                            // Adiciona um item à lista com base no nome
                             listBox.Items.Add(nomeTarefa);
                         }
                     }
