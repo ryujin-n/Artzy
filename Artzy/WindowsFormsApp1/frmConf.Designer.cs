@@ -37,10 +37,10 @@
             this.btoLoja = new System.Windows.Forms.PictureBox();
             this.btoHome = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cont = new System.Windows.Forms.Panel();
             this.pbPref = new System.Windows.Forms.PictureBox();
             this.pbSec = new System.Windows.Forms.PictureBox();
             this.pbConta = new System.Windows.Forms.PictureBox();
+            this.cont = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btoConf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoSair)).BeginInit();
@@ -139,15 +139,6 @@
             this.panel1.Size = new System.Drawing.Size(987, 791);
             this.panel1.TabIndex = 15;
             // 
-            // cont
-            // 
-            this.cont.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cont.BackgroundImage")));
-            this.cont.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.cont.Location = new System.Drawing.Point(457, 36);
-            this.cont.Name = "cont";
-            this.cont.Size = new System.Drawing.Size(508, 711);
-            this.cont.TabIndex = 1;
-            // 
             // pbPref
             // 
             this.pbPref.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbPref.BackgroundImage")));
@@ -179,6 +170,15 @@
             this.pbConta.Size = new System.Drawing.Size(372, 64);
             this.pbConta.TabIndex = 0;
             this.pbConta.TabStop = false;
+            // 
+            // cont
+            // 
+            this.cont.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cont.BackgroundImage")));
+            this.cont.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.cont.Location = new System.Drawing.Point(452, 19);
+            this.cont.Name = "cont";
+            this.cont.Size = new System.Drawing.Size(508, 711);
+            this.cont.TabIndex = 1;
             // 
             // frmConf
             // 

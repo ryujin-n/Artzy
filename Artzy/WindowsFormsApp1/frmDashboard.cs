@@ -107,10 +107,16 @@ namespace WindowsFormsApp1
             lblNome.Text = "Olá, " + frmLogin.NomeUser.ToString();
             lblname.Text = frmLogin.NomeUser.ToUpper() + " " + frmLogin.SobrenomeUser.ToUpper();
             lblprof.Text = frmLogin.ProfUser.ToString();
+            this.Text = frmLogin.NomeUser + " - Artzy";
 
             CarregarTarefasDoBanco(lstTodo, "ToDo");
             CarregarTarefasDoBanco(lstDoing, "Doing");
             CarregarTarefasDoBanco(lstDone, "Done");
+
+            CriarAnotacaoInicial();
+            CarregarAnotacaoDoBanco();
+
+
 
             /////////////////////////////////////////
 
@@ -143,6 +149,7 @@ namespace WindowsFormsApp1
             lstDone.ContextMenuStrip = contextMenuStrip1;
 
         }
+
 
         private byte[] imagemDoBanco(int idUsuario)
         {
@@ -241,7 +248,7 @@ namespace WindowsFormsApp1
 
         private void btoSair_Click(object sender, EventArgs e)
         {
-           this.Hide();
+           this.Close();
 
             frmLogin frm = new frmLogin();
             frm.Show();
@@ -273,6 +280,9 @@ namespace WindowsFormsApp1
                     {
                         object selectedItem = sourceListBox.Items[selectedIndex];
 
+                        // Atualiza os índices na lista de origem
+                        AtualizarIndices(conn, sourceListBox, selectedIndex, sourceListBox.Items.Count - 1);
+
                         // Adiciona ao Doing ou Done
                         destinationListBox.Items.Add(selectedItem);
 
@@ -286,6 +296,30 @@ namespace WindowsFormsApp1
                         sourceListBox.Items.RemoveAt(selectedIndex);
                     }
                 }
+            }
+        }
+
+        private void AtualizarIndices(SqlConnection conn, KryptonListBox listBox, int indiceRemovido, int ultimoIndice)
+        {
+            for (int i = indiceRemovido + 1; i <= ultimoIndice; i++)
+            {
+                // Atualiza o índice no banco de dados
+                AtualizarIndiceNoBanco(conn, listBox.Items[i].ToString(), i - 1);
+            }
+        }
+
+        private void AtualizarIndiceNoBanco(SqlConnection conn, string nomeTarefa, int novoIndice)
+        {
+            string sql = "UPDATE tarefa SET ordem_tarefa = @NovoIndice " +
+                         "WHERE nome_tarefa = @NomeTarefa AND id_usuario_tarefa = @UsuarioID";
+
+            using (SqlCommand cmd = new SqlCommand(sql, conn))
+            {
+                cmd.Parameters.AddWithValue("@NovoIndice", novoIndice);
+                cmd.Parameters.AddWithValue("@NomeTarefa", nomeTarefa);
+                cmd.Parameters.AddWithValue("@UsuarioID", id);
+
+                cmd.ExecuteNonQuery();
             }
         }
 
@@ -315,7 +349,7 @@ namespace WindowsFormsApp1
 
         private void btnDoingToTodo_Click(object sender, EventArgs e)
         {
-            ItemMove(lstDoing, lstTodo, "Todo");
+            ItemMove(lstDoing, lstTodo, "ToDo");
         }
 
         private void btnTodoToDone_Click(object sender, EventArgs e)
@@ -325,7 +359,7 @@ namespace WindowsFormsApp1
 
         private void btnDoneToTodo_Click(object sender, EventArgs e)
         {
-            ItemMove(lstDone,lstTodo, "Todo" );
+            ItemMove(lstDone,lstTodo, "ToDo" );
         }
 
         private void btnDoingToDone_Click(object sender, EventArgs e)
@@ -338,56 +372,6 @@ namespace WindowsFormsApp1
             ItemMove(lstDone,lstDoing , "Doing");
         }
 
-       
-
-        string bloco1;
-        string bloco2;
-        string bloco3;
-
-        private void txtBloco1_Enter(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(txtBloco1.Text))
-            {
-                txtBloco1.Text = bloco1;
-            }
-            else
-            {
-                txtBloco1.Text = "";
-            }
-        }
-
-        private void txtBloco1_Leave(object sender, EventArgs e)
-        {
-            bloco1 = txtBloco1.Text;
-
-            if (txtBloco1.Text == "")
-            {
-                txtBloco1.Text = "Título";
-            }
-        }
-
-        private void txtBloco2_Enter(object sender, EventArgs e)
-        {
-            if (!string.IsNullOrWhiteSpace(txtBloco2.Text))
-            {
-                txtBloco2.Text = bloco2;
-            }
-            else
-            {
-                txtBloco2.Text = "";
-            }
-        }
-
-        private void txtBloco2_Leave(object sender, EventArgs e)
-        {
-            bloco2 = txtBloco2.Text;
-
-            if (txtBloco2.Text == "")
-            {
-                txtBloco2.Text = "Título";
-            }
-            
-        }
 
         string todo;
         string doing;
@@ -425,28 +409,6 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void SalvarTarefaNoBanco(string nomeTarefa, string status, int ordem)
-        {
-            using (SqlConnection conn = new SqlConnection(stringConexao))
-            {
-                conn.Open();
-
-                string sql = "INSERT INTO tarefa (status_tarefa, id_usuario_tarefa, nome_tarefa, ordem_tarefa) " +
-                             "VALUES (@status, @idUsuario, @nomeTarefa, @ordemTarefa)";
-
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
-                {
-                    cmd.Parameters.AddWithValue("@status", status);
-                    cmd.Parameters.AddWithValue("@idUsuario", id);
-                    cmd.Parameters.AddWithValue("@nomeTarefa", nomeTarefa);
-                    cmd.Parameters.AddWithValue("@ordemTarefa", ordem);
-
-                    cmd.ExecuteNonQuery();
-                }
-            }
-        }
-
-
         private int ObterProximaOrdemTarefa(SqlConnection conn, int idUsuario, string status)
         {
             string sql = "SELECT MAX(ordem_tarefa) FROM tarefa WHERE id_usuario_tarefa = @idUsuario AND status_tarefa = @status";
@@ -460,11 +422,12 @@ namespace WindowsFormsApp1
 
                 if (result != DBNull.Value)
                 {
-                    return Convert.ToInt32(result) + 1;
+                    int maxOrdem = Convert.ToInt32(result);
+                    return maxOrdem + 1;
                 }
                 else
                 {
-                    return 1;
+                    return 0; // Comece a partir do índice 0 se não houver tarefas existentes
                 }
             }
         }
@@ -650,7 +613,7 @@ namespace WindowsFormsApp1
         {
             frmLoja frm = new frmLoja();
             frm.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void btoConf_Click(object sender, EventArgs e)
@@ -658,7 +621,7 @@ namespace WindowsFormsApp1
             frmConf frm = new frmConf();
             frm.Show();
 
-            this.Hide();
+            this.Close();
         }
 
 
@@ -741,25 +704,93 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void txtBloco3_Enter(object sender, EventArgs e)
+        private void CriarAnotacaoInicial()
         {
-            if (!string.IsNullOrWhiteSpace(txtBloco3.Text))
+            using (SqlConnection conn = new SqlConnection(stringConexao))
             {
-                txtBloco3.Text = bloco3;
-            }
-            else
-            {
-                txtBloco3.Text = "";
+                conn.Open();
+
+                // Verifica se já existe uma anotação para o usuário
+                string sqlVerificar = "SELECT COUNT(*) FROM anotacoes WHERE id_usuario_anotacao = @idUsuario";
+                using (SqlCommand cmdVerificar = new SqlCommand(sqlVerificar, conn))
+                {
+                    cmdVerificar.Parameters.AddWithValue("@idUsuario", id);
+
+                    int count = Convert.ToInt32(cmdVerificar.ExecuteScalar());
+
+                    if (count == 0)
+                    {
+                        // Se não existir, cria uma anotação inicial
+                        string sqlCriar = "INSERT INTO anotacoes (id_usuario_anotacao, titulo_anotacao, bloco_anotacao) " +
+                                          "VALUES (@idUsuario, @titulo, @bloco)";
+                        using (SqlCommand cmdCriar = new SqlCommand(sqlCriar, conn))
+                        {
+                            cmdCriar.Parameters.AddWithValue("@idUsuario", id);
+                            cmdCriar.Parameters.AddWithValue("@titulo", "Título");
+                            cmdCriar.Parameters.AddWithValue("@bloco", string.Empty);
+
+                            cmdCriar.ExecuteNonQuery();
+                        }
+                    }
+                }
             }
         }
 
-        private void txtBloco3_Leave(object sender, EventArgs e)
+        private void CarregarAnotacaoDoBanco()
         {
-            bloco3 = txtBloco3.Text;
-
-            if (txtBloco3.Text == "")
+            using (SqlConnection conn = new SqlConnection(stringConexao))
             {
-                txtBloco3.Text = "Título";
+                conn.Open();
+
+                string sql = "SELECT titulo_anotacao, bloco_anotacao FROM anotacoes " +
+                             "WHERE id_usuario_anotacao = @idUsuario";
+
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@idUsuario", id);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            string titulo = reader["titulo_anotacao"].ToString();
+                            string bloco = reader["bloco_anotacao"].ToString();
+
+                            // Atualiza os campos correspondentes com as anotações carregadas
+                            txtBloco1.Text = titulo;
+                            txtAnot1.Text = bloco;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void AtualizarAnotacaoNoBanco(string titulo, string bloco)
+        {
+            using (SqlConnection conn = new SqlConnection(stringConexao))
+            {
+                conn.Open();
+
+                string sql = "UPDATE anotacoes SET titulo_anotacao = @titulo, bloco_anotacao = @bloco " +
+                             "WHERE id_usuario_anotacao = @idUsuario";
+
+                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@titulo", titulo);
+                    cmd.Parameters.AddWithValue("@bloco", bloco);
+                    cmd.Parameters.AddWithValue("@idUsuario", id);
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        private void frmDashboard_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (txtBloco1.Text.Trim() != "Título")
+            {
+                // Realize ações antes do fechamento, como salvar dados
+                AtualizarAnotacaoNoBanco(txtBloco1.Text, txtAnot1.Text);
             }
         }
     }

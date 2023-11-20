@@ -45,13 +45,9 @@
             this.txtDoing = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.txtToDo = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtBloco3 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtBloco2 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtBloco1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtAnot3 = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
-            this.txtAnot2 = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
-            this.txtAnot = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
+            this.txtAnot1 = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtBloco1 = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.btnDoneToTodo = new System.Windows.Forms.PictureBox();
             this.btnDoingToDone = new System.Windows.Forms.PictureBox();
             this.btnTodoToDoing = new System.Windows.Forms.PictureBox();
@@ -78,7 +74,6 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pnSla = new System.Windows.Forms.Panel();
             this.pbFoto = new System.Windows.Forms.PictureBox();
-            this.pbFotoP = new WindowsFormsApp1.RoundedPB();
             this.lblprof = new System.Windows.Forms.Label();
             this.lblname = new System.Windows.Forms.Label();
             this.header = new System.Windows.Forms.PictureBox();
@@ -87,6 +82,7 @@
             this.btoSair = new System.Windows.Forms.PictureBox();
             this.btoLoja = new System.Windows.Forms.PictureBox();
             this.btoHome = new System.Windows.Forms.PictureBox();
+            this.pbFotoP = new WindowsFormsApp1.RoundedPB();
             this.contextMenuStrip1.SuspendLayout();
             this.pnDashboard.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -111,13 +107,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.pnSla.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFotoP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoConf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoSair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoLoja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFotoP)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -316,113 +312,28 @@
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Controls.Add(this.txtBloco3);
-            this.panel2.Controls.Add(this.txtBloco2);
-            this.panel2.Controls.Add(this.txtBloco1);
-            this.panel2.Controls.Add(this.txtAnot3);
-            this.panel2.Controls.Add(this.txtAnot2);
-            this.panel2.Controls.Add(this.txtAnot);
+            this.panel2.Controls.Add(this.txtAnot1);
             this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.txtBloco1);
             this.panel2.Location = new System.Drawing.Point(12, 436);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(660, 322);
             this.panel2.TabIndex = 9;
             // 
-            // txtBloco3
+            // txtAnot1
             // 
-            this.txtBloco3.Location = new System.Drawing.Point(450, 46);
-            this.txtBloco3.Name = "txtBloco3";
-            this.txtBloco3.Size = new System.Drawing.Size(159, 23);
-            this.txtBloco3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtAnot1.Location = new System.Drawing.Point(19, 77);
+            this.txtAnot1.Name = "txtAnot1";
+            this.txtAnot1.Size = new System.Drawing.Size(622, 223);
+            this.txtAnot1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtBloco3.StateCommon.Border.Rounding = 4;
-            this.txtBloco3.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
-            this.txtBloco3.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F);
-            this.txtBloco3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5, 3, -1, 3);
-            this.txtBloco3.TabIndex = 14;
-            this.txtBloco3.Text = "Título";
-            this.txtBloco3.Enter += new System.EventHandler(this.txtBloco3_Enter);
-            this.txtBloco3.Leave += new System.EventHandler(this.txtBloco3_Leave);
-            // 
-            // txtBloco2
-            // 
-            this.txtBloco2.Location = new System.Drawing.Point(241, 46);
-            this.txtBloco2.Name = "txtBloco2";
-            this.txtBloco2.Size = new System.Drawing.Size(159, 23);
-            this.txtBloco2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtBloco2.StateCommon.Border.Rounding = 4;
-            this.txtBloco2.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
-            this.txtBloco2.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBloco2.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5, 3, -1, 3);
-            this.txtBloco2.TabIndex = 12;
-            this.txtBloco2.Text = "Título";
-            this.txtBloco2.Enter += new System.EventHandler(this.txtBloco2_Enter);
-            this.txtBloco2.Leave += new System.EventHandler(this.txtBloco2_Leave);
-            // 
-            // txtBloco1
-            // 
-            this.txtBloco1.Location = new System.Drawing.Point(30, 46);
-            this.txtBloco1.Name = "txtBloco1";
-            this.txtBloco1.Size = new System.Drawing.Size(141, 23);
-            this.txtBloco1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtBloco1.StateCommon.Border.Rounding = 4;
-            this.txtBloco1.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
-            this.txtBloco1.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBloco1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5, 3, -1, 3);
-            this.txtBloco1.TabIndex = 10;
-            this.txtBloco1.Text = "Título";
-            this.txtBloco1.Enter += new System.EventHandler(this.txtBloco1_Enter);
-            this.txtBloco1.Leave += new System.EventHandler(this.txtBloco1_Leave);
-            // 
-            // txtAnot3
-            // 
-            this.txtAnot3.Location = new System.Drawing.Point(441, 75);
-            this.txtAnot3.Name = "txtAnot3";
-            this.txtAnot3.Size = new System.Drawing.Size(203, 212);
-            this.txtAnot3.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtAnot3.StateCommon.Border.Rounding = 8;
-            this.txtAnot3.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
-            this.txtAnot3.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAnot3.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5, 6, -1, -1);
-            this.txtAnot3.TabIndex = 13;
-            this.txtAnot3.Text = "";
-            // 
-            // txtAnot2
-            // 
-            this.txtAnot2.Location = new System.Drawing.Point(232, 75);
-            this.txtAnot2.Name = "txtAnot2";
-            this.txtAnot2.Size = new System.Drawing.Size(203, 212);
-            this.txtAnot2.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtAnot2.StateCommon.Border.Rounding = 8;
-            this.txtAnot2.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
-            this.txtAnot2.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAnot2.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5, 6, -1, -1);
-            this.txtAnot2.TabIndex = 13;
-            this.txtAnot2.Text = "";
-            // 
-            // txtAnot
-            // 
-            this.txtAnot.Location = new System.Drawing.Point(19, 75);
-            this.txtAnot.Name = "txtAnot";
-            this.txtAnot.Size = new System.Drawing.Size(207, 212);
-            this.txtAnot.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtAnot.StateCommon.Border.Rounding = 8;
-            this.txtAnot.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
-            this.txtAnot.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAnot.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5, 6, -1, -1);
-            this.txtAnot.TabIndex = 11;
-            this.txtAnot.Text = "";
+            this.txtAnot1.StateCommon.Border.Rounding = 8;
+            this.txtAnot1.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
+            this.txtAnot1.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAnot1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(5, 6, -1, -1);
+            this.txtAnot1.TabIndex = 11;
+            this.txtAnot1.Text = "";
             // 
             // label3
             // 
@@ -433,6 +344,20 @@
             this.label3.Size = new System.Drawing.Size(420, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Anotações:";
+            // 
+            // txtBloco1
+            // 
+            this.txtBloco1.Location = new System.Drawing.Point(35, 46);
+            this.txtBloco1.Name = "txtBloco1";
+            this.txtBloco1.Size = new System.Drawing.Size(125, 24);
+            this.txtBloco1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txtBloco1.StateCommon.Border.Rounding = 4;
+            this.txtBloco1.StateCommon.Content.Color1 = System.Drawing.Color.DimGray;
+            this.txtBloco1.StateCommon.Content.Font = new System.Drawing.Font("KG Red Hands", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBloco1.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, 5, 10, 3);
+            this.txtBloco1.TabIndex = 3;
             // 
             // btnDoneToTodo
             // 
@@ -706,15 +631,6 @@
             this.pbFoto.TabStop = false;
             this.pbFoto.Click += new System.EventHandler(this.pbFoto_Click);
             // 
-            // pbFotoP
-            // 
-            this.pbFotoP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbFotoP.Location = new System.Drawing.Point(60, 46);
-            this.pbFotoP.Name = "pbFotoP";
-            this.pbFotoP.Size = new System.Drawing.Size(190, 190);
-            this.pbFotoP.TabIndex = 2;
-            this.pbFotoP.TabStop = false;
-            // 
             // lblprof
             // 
             this.lblprof.Font = new System.Drawing.Font("Momcake Pro Medium", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -813,6 +729,15 @@
             this.btoHome.MouseEnter += new System.EventHandler(this.btoHome_MouseEnter);
             this.btoHome.MouseLeave += new System.EventHandler(this.btoHome_MouseLeave);
             // 
+            // pbFotoP
+            // 
+            this.pbFotoP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbFotoP.Location = new System.Drawing.Point(60, 46);
+            this.pbFotoP.Name = "pbFotoP";
+            this.pbFotoP.Size = new System.Drawing.Size(190, 190);
+            this.pbFotoP.TabIndex = 2;
+            this.pbFotoP.TabStop = false;
+            // 
             // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -836,6 +761,7 @@
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.StateCommon.Border.Width = 3;
             this.Text = " Alysson";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDashboard_FormClosing);
             this.Load += new System.EventHandler(this.frmDashboard_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.pnDashboard.ResumeLayout(false);
@@ -865,13 +791,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.pnSla.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFotoP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.header)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoConf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoSair)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoLoja)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFotoP)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -912,15 +838,11 @@
         private ComponentFactory.Krypton.Toolkit.KryptonBorderEdge kryptonBorderEdge3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
-        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox txtAnot;
-        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox txtAnot2;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtBloco2;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtBloco1;
+        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox txtAnot1;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtToDo;
         private System.Windows.Forms.Button btoOK;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem excluir;
-        private ComponentFactory.Krypton.Toolkit.KryptonRichTextBox txtAnot3;
         private System.Windows.Forms.Button btoOK3;
         private System.Windows.Forms.Button btoOK2;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtDone;
@@ -934,6 +856,6 @@
         private RoundedPB pbFotoP;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtBloco3;
+        public ComponentFactory.Krypton.Toolkit.KryptonTextBox txtBloco1;
     }
 }

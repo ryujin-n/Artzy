@@ -32,10 +32,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLoja));
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
             this.pbClebio = new System.Windows.Forms.PictureBox();
-            this.btoSair = new System.Windows.Forms.PictureBox();
+            this.btoVal = new System.Windows.Forms.PictureBox();
             this.btoLoja = new System.Windows.Forms.PictureBox();
             this.btoHome = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.bto9 = new System.Windows.Forms.PictureBox();
             this.bto7 = new System.Windows.Forms.PictureBox();
@@ -49,10 +50,10 @@
             this.bto3 = new System.Windows.Forms.PictureBox();
             this.bto2 = new System.Windows.Forms.PictureBox();
             this.bto1 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.btoConf = new System.Windows.Forms.PictureBox();
+            this.btoSair = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btoSair)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btoVal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoLoja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoHome)).BeginInit();
             this.panel1.SuspendLayout();
@@ -69,6 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bto2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bto1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoConf)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btoSair)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -89,19 +91,17 @@
             this.pbClebio.TabIndex = 6;
             this.pbClebio.TabStop = false;
             // 
-            // btoSair
+            // btoVal
             // 
-            this.btoSair.BackColor = System.Drawing.Color.Transparent;
-            this.btoSair.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btoSair.BackgroundImage")));
-            this.btoSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btoSair.Location = new System.Drawing.Point(-73, 713);
-            this.btoSair.Name = "btoSair";
-            this.btoSair.Size = new System.Drawing.Size(191, 60);
-            this.btoSair.TabIndex = 7;
-            this.btoSair.TabStop = false;
-            this.btoSair.Click += new System.EventHandler(this.btoSair_Click);
-            this.btoSair.MouseEnter += new System.EventHandler(this.btoSair_MouseEnter);
-            this.btoSair.MouseLeave += new System.EventHandler(this.btoSair_MouseLeave);
+            this.btoVal.BackColor = System.Drawing.Color.Transparent;
+            this.btoVal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btoVal.BackgroundImage")));
+            this.btoVal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btoVal.Location = new System.Drawing.Point(1058, 712);
+            this.btoVal.Name = "btoVal";
+            this.btoVal.Size = new System.Drawing.Size(172, 71);
+            this.btoVal.TabIndex = 7;
+            this.btoVal.TabStop = false;
+            this.btoVal.Click += new System.EventHandler(this.btoVal_Click);
             // 
             // btoLoja
             // 
@@ -145,6 +145,15 @@
             this.panel1.Size = new System.Drawing.Size(987, 791);
             this.panel1.TabIndex = 10;
             // 
+            // panel4
+            // 
+            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel4.Location = new System.Drawing.Point(0, 461);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(280, 66);
+            this.panel4.TabIndex = 2;
+            // 
             // panel5
             // 
             this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
@@ -152,40 +161,43 @@
             this.panel5.Controls.Add(this.bto9);
             this.panel5.Controls.Add(this.bto7);
             this.panel5.Controls.Add(this.bto8);
-            this.panel5.Location = new System.Drawing.Point(134, 533);
+            this.panel5.Location = new System.Drawing.Point(108, 533);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(688, 235);
+            this.panel5.Size = new System.Drawing.Size(714, 241);
             this.panel5.TabIndex = 2;
             // 
             // bto9
             // 
             this.bto9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bto9.BackgroundImage")));
             this.bto9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bto9.Location = new System.Drawing.Point(514, 164);
+            this.bto9.Location = new System.Drawing.Point(550, 164);
             this.bto9.Name = "bto9";
             this.bto9.Size = new System.Drawing.Size(100, 42);
             this.bto9.TabIndex = 0;
             this.bto9.TabStop = false;
+            this.bto9.Click += new System.EventHandler(this.bto9_Click);
             // 
             // bto7
             // 
             this.bto7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bto7.BackgroundImage")));
             this.bto7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bto7.Location = new System.Drawing.Point(71, 164);
+            this.bto7.Location = new System.Drawing.Point(62, 164);
             this.bto7.Name = "bto7";
             this.bto7.Size = new System.Drawing.Size(100, 42);
             this.bto7.TabIndex = 0;
             this.bto7.TabStop = false;
+            this.bto7.Click += new System.EventHandler(this.bto7_Click);
             // 
             // bto8
             // 
             this.bto8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bto8.BackgroundImage")));
             this.bto8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bto8.Location = new System.Drawing.Point(292, 164);
+            this.bto8.Location = new System.Drawing.Point(311, 164);
             this.bto8.Name = "bto8";
             this.bto8.Size = new System.Drawing.Size(100, 42);
             this.bto8.TabIndex = 0;
             this.bto8.TabStop = false;
+            this.bto8.Click += new System.EventHandler(this.bto8_Click);
             // 
             // panel3
             // 
@@ -280,15 +292,6 @@
             this.bto1.TabIndex = 0;
             this.bto1.TabStop = false;
             // 
-            // panel4
-            // 
-            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel4.Location = new System.Drawing.Point(0, 461);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(280, 66);
-            this.panel4.TabIndex = 2;
-            // 
             // btoConf
             // 
             this.btoConf.BackColor = System.Drawing.Color.Transparent;
@@ -303,16 +306,31 @@
             this.btoConf.MouseEnter += new System.EventHandler(this.btoConf_MouseEnter);
             this.btoConf.MouseLeave += new System.EventHandler(this.btoConf_MouseLeave);
             // 
+            // btoSair
+            // 
+            this.btoSair.BackColor = System.Drawing.Color.Transparent;
+            this.btoSair.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btoSair.BackgroundImage")));
+            this.btoSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btoSair.Location = new System.Drawing.Point(-73, 713);
+            this.btoSair.Name = "btoSair";
+            this.btoSair.Size = new System.Drawing.Size(191, 60);
+            this.btoSair.TabIndex = 8;
+            this.btoSair.TabStop = false;
+            this.btoSair.Click += new System.EventHandler(this.btoSair_Click);
+            this.btoSair.MouseEnter += new System.EventHandler(this.btoSair_MouseEnter);
+            this.btoSair.MouseLeave += new System.EventHandler(this.btoSair_MouseLeave);
+            // 
             // frmLoja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1226, 825);
+            this.Controls.Add(this.btoVal);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pbClebio);
-            this.Controls.Add(this.btoSair);
             this.Controls.Add(this.btoConf);
+            this.Controls.Add(this.btoSair);
             this.Controls.Add(this.btoLoja);
             this.Controls.Add(this.btoHome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -321,9 +339,9 @@
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frnLoja";
+            this.Text = "   ";
             ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btoSair)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btoVal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoLoja)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoHome)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -340,6 +358,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bto2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bto1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoConf)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btoSair)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -348,7 +367,7 @@
 
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
         private System.Windows.Forms.PictureBox pbClebio;
-        private System.Windows.Forms.PictureBox btoSair;
+        private System.Windows.Forms.PictureBox btoVal;
         private System.Windows.Forms.PictureBox btoLoja;
         private System.Windows.Forms.PictureBox btoHome;
         private System.Windows.Forms.Panel panel1;
@@ -367,5 +386,6 @@
         private System.Windows.Forms.PictureBox bto4;
         private System.Windows.Forms.PictureBox bto7;
         private System.Windows.Forms.PictureBox btoConf;
+        private System.Windows.Forms.PictureBox btoSair;
     }
 }

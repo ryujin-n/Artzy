@@ -115,12 +115,12 @@ namespace WindowsFormsApp1
         {
             frmDashboard frm = new frmDashboard();
             frm.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void btoSair_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
 
             frmLogin frm = new frmLogin();
             frm.Show();
@@ -151,6 +151,44 @@ namespace WindowsFormsApp1
         private void btoConf_Click(object sender, EventArgs e)
         {
             frmConf frm = new frmConf();
+            frm.Show();
+
+            this.Close();
+        }
+
+        private void btoVal_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            frmValores frm = new frmValores();
+            frm.Show();
+        }
+        public static float preco;
+
+        private void bto7_Click(object sender, EventArgs e)
+        {
+            preco = 16;
+
+            frmPag frm = new frmPag();
+            frm.Show();
+
+            this.Hide();
+        }
+
+        private void bto8_Click(object sender, EventArgs e)
+        {
+            preco = 30;
+            frmPag frm = new frmPag();
+            frm.Show();
+
+            this.Hide();
+        }
+
+        private void bto9_Click(object sender, EventArgs e)
+        {
+            preco = 50.90F;
+
+            frmPag frm = new frmPag();
             frm.Show();
 
             this.Hide();

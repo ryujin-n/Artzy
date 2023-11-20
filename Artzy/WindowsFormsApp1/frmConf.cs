@@ -137,7 +137,7 @@ namespace WindowsFormsApp1
 
         private void btoSair_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
 
             frmLogin frm = new frmLogin();
             frm.Show();
@@ -148,7 +148,7 @@ namespace WindowsFormsApp1
             frmDashboard frm = new frmDashboard();
             frm.Show();
 
-            this.Hide();
+            this.Close();
         }
 
         private void btoLoja_Click(object sender, EventArgs e)
@@ -156,7 +156,8 @@ namespace WindowsFormsApp1
             frmLoja frm = new frmLoja();
             frm.Show();
 
-            this.Hide();
+            this.Close();
+
         }
 
         private void btoSair_Click_1(object sender, EventArgs e)
@@ -164,7 +165,7 @@ namespace WindowsFormsApp1
             frmLogin frm = new frmLogin();
             frm.Show();
 
-            this.Hide();
+            this.Close();
         }
 
         private void pbSec_Click(object sender, EventArgs e)

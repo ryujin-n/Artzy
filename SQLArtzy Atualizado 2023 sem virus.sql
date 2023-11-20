@@ -3,7 +3,14 @@ create database Artzy
 use artzy
 
 drop table art
+select * from art
+
+drop table anotacoes
+select * from anotacoes
+
 drop table tarefa
+select * from tarefa
+
 drop table assinart
 drop table contart
 drop table venda
@@ -13,10 +20,11 @@ create table anotacoes
     id_anotacao INT PRIMARY KEY IDENTITY(1,1),
     id_usuario_anotacao INT NOT NULL,
     titulo_anotacao NVARCHAR(255),
-	bloco_anotacao NVARCHAR(255),
+	bloco_anotacao NVARCHAR(MAX),
 
     constraint FK_id_usuario_anotacao foreign key (id_usuario_anotacao) references art (id_artista)
 )
+
 
 create table tarefa
 (
@@ -28,7 +36,6 @@ create table tarefa
     CONSTRAINT FK_id_usuario_tarefa FOREIGN KEY (id_usuario_tarefa) REFERENCES art (id_artista)
 )
 
-select * from tarefa
 
 create table art
 (
@@ -44,7 +51,6 @@ create table art
 	status_artista varchar(20) not null default 'ATIVO' 
 )
 
-select * from art
 
 drop table cliente
 create table cliente

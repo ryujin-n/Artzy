@@ -105,11 +105,17 @@
     <Compile Include="frmLoja.Designer.cs">
       <DependentUpon>frmLoja.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUser.cs">
+    <Compile Include="frmPag.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmUser.Designer.cs">
-      <DependentUpon>frmUser.cs</DependentUpon>
+    <Compile Include="frmPag.Designer.cs">
+      <DependentUpon>frmPag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmValores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmValores.Designer.cs">
+      <DependentUpon>frmValores.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -139,6 +145,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLoja.resx">
       <DependentUpon>frmLoja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPag.resx">
+      <DependentUpon>frmPag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmValores.resx">
+      <DependentUpon>frmValores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
