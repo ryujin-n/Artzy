@@ -35,11 +35,11 @@
             this.btoPix = new System.Windows.Forms.PictureBox();
             this.btoBoleto = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoSair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoCartao)).BeginInit();
@@ -66,7 +66,7 @@
             this.btoSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btoSair.Location = new System.Drawing.Point(-73, 713);
             this.btoSair.Name = "btoSair";
-            this.btoSair.Size = new System.Drawing.Size(191, 60);
+            this.btoSair.Size = new System.Drawing.Size(243, 60);
             this.btoSair.TabIndex = 9;
             this.btoSair.TabStop = false;
             this.btoSair.Click += new System.EventHandler(this.btoSair_Click);
@@ -114,50 +114,10 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Location = new System.Drawing.Point(654, 41);
+            this.panel1.Location = new System.Drawing.Point(653, 61);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(509, 712);
             this.panel1.TabIndex = 11;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.Location = new System.Drawing.Point(1, 598);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(506, 113);
-            this.pictureBox5.TabIndex = 12;
-            this.pictureBox5.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Squashy Flow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(78, 154);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 37);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "subtotal";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Squashy Flow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(75, 207);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(174, 37);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "subtotal";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Squashy Flow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(255, 207);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(152, 37);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "r$ 00,00";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -169,12 +129,52 @@
             this.label4.Text = "r$ 00,00";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Squashy Flow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(255, 207);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(152, 37);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "r$ 00,00";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Squashy Flow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(75, 207);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(174, 37);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "subtotal";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Squashy Flow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(78, 154);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(171, 37);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "subtotal";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
+            this.pictureBox5.Location = new System.Drawing.Point(1, 598);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(506, 113);
+            this.pictureBox5.TabIndex = 12;
+            this.pictureBox5.TabStop = false;
+            // 
             // frmPag
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1210, 786);
+            this.ClientSize = new System.Drawing.Size(1226, 825);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btoBoleto);
             this.Controls.Add(this.btoPix);

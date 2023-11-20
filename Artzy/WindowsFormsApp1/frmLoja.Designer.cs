@@ -52,6 +52,7 @@
             this.bto1 = new System.Windows.Forms.PictureBox();
             this.btoConf = new System.Windows.Forms.PictureBox();
             this.btoSair = new System.Windows.Forms.PictureBox();
+            this.pnLoja = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoVal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoLoja)).BeginInit();
@@ -71,6 +72,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bto1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoConf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoSair)).BeginInit();
+            this.pnLoja.SuspendLayout();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -96,7 +98,7 @@
             this.btoVal.BackColor = System.Drawing.Color.Transparent;
             this.btoVal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btoVal.BackgroundImage")));
             this.btoVal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btoVal.Location = new System.Drawing.Point(1058, 712);
+            this.btoVal.Location = new System.Drawing.Point(851, 712);
             this.btoVal.Name = "btoVal";
             this.btoVal.Size = new System.Drawing.Size(172, 71);
             this.btoVal.TabIndex = 7;
@@ -110,7 +112,7 @@
             this.btoLoja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btoLoja.Location = new System.Drawing.Point(-73, 347);
             this.btoLoja.Name = "btoLoja";
-            this.btoLoja.Size = new System.Drawing.Size(191, 60);
+            this.btoLoja.Size = new System.Drawing.Size(243, 60);
             this.btoLoja.TabIndex = 8;
             this.btoLoja.TabStop = false;
             this.btoLoja.MouseEnter += new System.EventHandler(this.btoLoja_MouseEnter);
@@ -123,7 +125,7 @@
             this.btoHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btoHome.Location = new System.Drawing.Point(-73, 215);
             this.btoHome.Name = "btoHome";
-            this.btoHome.Size = new System.Drawing.Size(191, 60);
+            this.btoHome.Size = new System.Drawing.Size(243, 60);
             this.btoHome.TabIndex = 9;
             this.btoHome.TabStop = false;
             this.btoHome.Click += new System.EventHandler(this.btoHome_Click);
@@ -140,7 +142,7 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(208, 22);
+            this.panel1.Location = new System.Drawing.Point(1, 22);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(987, 791);
             this.panel1.TabIndex = 10;
@@ -299,7 +301,7 @@
             this.btoConf.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btoConf.Location = new System.Drawing.Point(-73, 281);
             this.btoConf.Name = "btoConf";
-            this.btoConf.Size = new System.Drawing.Size(191, 60);
+            this.btoConf.Size = new System.Drawing.Size(243, 60);
             this.btoConf.TabIndex = 8;
             this.btoConf.TabStop = false;
             this.btoConf.Click += new System.EventHandler(this.btoConf_Click);
@@ -313,12 +315,22 @@
             this.btoSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btoSair.Location = new System.Drawing.Point(-73, 713);
             this.btoSair.Name = "btoSair";
-            this.btoSair.Size = new System.Drawing.Size(191, 60);
+            this.btoSair.Size = new System.Drawing.Size(243, 60);
             this.btoSair.TabIndex = 8;
             this.btoSair.TabStop = false;
             this.btoSair.Click += new System.EventHandler(this.btoSair_Click);
             this.btoSair.MouseEnter += new System.EventHandler(this.btoSair_MouseEnter);
             this.btoSair.MouseLeave += new System.EventHandler(this.btoSair_MouseLeave);
+            // 
+            // pnLoja
+            // 
+            this.pnLoja.BackColor = System.Drawing.Color.Transparent;
+            this.pnLoja.Controls.Add(this.btoVal);
+            this.pnLoja.Controls.Add(this.panel1);
+            this.pnLoja.Location = new System.Drawing.Point(208, 0);
+            this.pnLoja.Name = "pnLoja";
+            this.pnLoja.Size = new System.Drawing.Size(1023, 827);
+            this.pnLoja.TabIndex = 11;
             // 
             // frmLoja
             // 
@@ -326,13 +338,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1226, 825);
-            this.Controls.Add(this.btoVal);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pbClebio);
             this.Controls.Add(this.btoConf);
             this.Controls.Add(this.btoSair);
             this.Controls.Add(this.btoLoja);
             this.Controls.Add(this.btoHome);
+            this.Controls.Add(this.pnLoja);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLoja";
@@ -359,6 +370,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bto1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoConf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoSair)).EndInit();
+            this.pnLoja.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -387,5 +399,6 @@
         private System.Windows.Forms.PictureBox bto7;
         private System.Windows.Forms.PictureBox btoConf;
         private System.Windows.Forms.PictureBox btoSair;
+        private System.Windows.Forms.Panel pnLoja;
     }
 }

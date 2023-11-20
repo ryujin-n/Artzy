@@ -602,25 +602,18 @@ namespace WindowsFormsApp1
             }
         }
 
-
-
-        private void btoHome_Click(object sender, EventArgs e)
-        {
-            pnDashboard.Visible = true;
-        }
-
         private void btoLoja_Click(object sender, EventArgs e)
         {
             frmLoja frm = new frmLoja();
             frm.Show();
             this.Close();
+
         }
 
         private void btoConf_Click(object sender, EventArgs e)
         {
             frmConf frm = new frmConf();
             frm.Show();
-
             this.Close();
         }
 

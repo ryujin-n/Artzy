@@ -74,6 +74,7 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pnSla = new System.Windows.Forms.Panel();
             this.pbFoto = new System.Windows.Forms.PictureBox();
+            this.pbFotoP = new WindowsFormsApp1.RoundedPB();
             this.lblprof = new System.Windows.Forms.Label();
             this.lblname = new System.Windows.Forms.Label();
             this.header = new System.Windows.Forms.PictureBox();
@@ -82,7 +83,6 @@
             this.btoSair = new System.Windows.Forms.PictureBox();
             this.btoLoja = new System.Windows.Forms.PictureBox();
             this.btoHome = new System.Windows.Forms.PictureBox();
-            this.pbFotoP = new WindowsFormsApp1.RoundedPB();
             this.contextMenuStrip1.SuspendLayout();
             this.pnDashboard.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -107,13 +107,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.pnSla.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFotoP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.header)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoConf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoSair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoLoja)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoHome)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFotoP)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -631,6 +631,16 @@
             this.pbFoto.TabStop = false;
             this.pbFoto.Click += new System.EventHandler(this.pbFoto_Click);
             // 
+            // pbFotoP
+            // 
+            this.pbFotoP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbFotoP.Location = new System.Drawing.Point(60, 46);
+            this.pbFotoP.Name = "pbFotoP";
+            this.pbFotoP.Size = new System.Drawing.Size(190, 190);
+            this.pbFotoP.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbFotoP.TabIndex = 2;
+            this.pbFotoP.TabStop = false;
+            // 
             // lblprof
             // 
             this.lblprof.Font = new System.Drawing.Font("Momcake Pro Medium", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -670,7 +680,7 @@
             this.btoConf.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btoConf.Location = new System.Drawing.Point(-73, 281);
             this.btoConf.Name = "btoConf";
-            this.btoConf.Size = new System.Drawing.Size(191, 60);
+            this.btoConf.Size = new System.Drawing.Size(243, 60);
             this.btoConf.TabIndex = 9;
             this.btoConf.TabStop = false;
             this.btoConf.Click += new System.EventHandler(this.btoConf_Click);
@@ -694,7 +704,7 @@
             this.btoSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btoSair.Location = new System.Drawing.Point(-73, 713);
             this.btoSair.Name = "btoSair";
-            this.btoSair.Size = new System.Drawing.Size(191, 60);
+            this.btoSair.Size = new System.Drawing.Size(243, 60);
             this.btoSair.TabIndex = 5;
             this.btoSair.TabStop = false;
             this.btoSair.Click += new System.EventHandler(this.btoSair_Click);
@@ -708,7 +718,7 @@
             this.btoLoja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btoLoja.Location = new System.Drawing.Point(-73, 347);
             this.btoLoja.Name = "btoLoja";
-            this.btoLoja.Size = new System.Drawing.Size(191, 60);
+            this.btoLoja.Size = new System.Drawing.Size(243, 60);
             this.btoLoja.TabIndex = 5;
             this.btoLoja.TabStop = false;
             this.btoLoja.Click += new System.EventHandler(this.btoLoja_Click);
@@ -722,21 +732,11 @@
             this.btoHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btoHome.Location = new System.Drawing.Point(-73, 215);
             this.btoHome.Name = "btoHome";
-            this.btoHome.Size = new System.Drawing.Size(191, 60);
+            this.btoHome.Size = new System.Drawing.Size(243, 60);
             this.btoHome.TabIndex = 5;
             this.btoHome.TabStop = false;
-            this.btoHome.Click += new System.EventHandler(this.btoHome_Click);
             this.btoHome.MouseEnter += new System.EventHandler(this.btoHome_MouseEnter);
             this.btoHome.MouseLeave += new System.EventHandler(this.btoHome_MouseLeave);
-            // 
-            // pbFotoP
-            // 
-            this.pbFotoP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbFotoP.Location = new System.Drawing.Point(60, 46);
-            this.pbFotoP.Name = "pbFotoP";
-            this.pbFotoP.Size = new System.Drawing.Size(190, 190);
-            this.pbFotoP.TabIndex = 2;
-            this.pbFotoP.TabStop = false;
             // 
             // frmDashboard
             // 
@@ -791,13 +791,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.pnSla.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFotoP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.header)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoConf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClebio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoSair)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoLoja)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btoHome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFotoP)).EndInit();
             this.ResumeLayout(false);
 
         }

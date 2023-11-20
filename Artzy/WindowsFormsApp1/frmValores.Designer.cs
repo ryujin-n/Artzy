@@ -164,7 +164,7 @@
             this.btoConf.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btoConf.Location = new System.Drawing.Point(-73, 281);
             this.btoConf.Name = "btoConf";
-            this.btoConf.Size = new System.Drawing.Size(191, 60);
+            this.btoConf.Size = new System.Drawing.Size(243, 60);
             this.btoConf.TabIndex = 14;
             this.btoConf.TabStop = false;
             this.btoConf.Click += new System.EventHandler(this.btoConf_Click);
@@ -188,7 +188,7 @@
             this.btoSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btoSair.Location = new System.Drawing.Point(-73, 713);
             this.btoSair.Name = "btoSair";
-            this.btoSair.Size = new System.Drawing.Size(191, 60);
+            this.btoSair.Size = new System.Drawing.Size(243, 60);
             this.btoSair.TabIndex = 11;
             this.btoSair.TabStop = false;
             this.btoSair.Click += new System.EventHandler(this.btoSair_Click);
@@ -202,7 +202,7 @@
             this.btoLoja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btoLoja.Location = new System.Drawing.Point(-73, 347);
             this.btoLoja.Name = "btoLoja";
-            this.btoLoja.Size = new System.Drawing.Size(191, 60);
+            this.btoLoja.Size = new System.Drawing.Size(243, 60);
             this.btoLoja.TabIndex = 12;
             this.btoLoja.TabStop = false;
             this.btoLoja.Click += new System.EventHandler(this.btoLoja_Click);
@@ -216,7 +216,7 @@
             this.btoHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btoHome.Location = new System.Drawing.Point(-73, 215);
             this.btoHome.Name = "btoHome";
-            this.btoHome.Size = new System.Drawing.Size(191, 60);
+            this.btoHome.Size = new System.Drawing.Size(243, 60);
             this.btoHome.TabIndex = 13;
             this.btoHome.TabStop = false;
             this.btoHome.Click += new System.EventHandler(this.btoHome_Click);

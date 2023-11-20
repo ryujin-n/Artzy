@@ -170,12 +170,239 @@ namespace WindowsFormsApp1
 
         private void pbSec_Click(object sender, EventArgs e)
         {
-     
+            cont.Visible = false;
+            preff.Visible = false;
+            secc.Visible = true;
         }
 
         private void pbPref_Click(object sender, EventArgs e)
         {
+            cont.Visible = false;
+            secc.Visible = false;
+            preff.Visible=true;
+        }
 
+        private void pbConta_Click(object sender, EventArgs e)
+        {
+            cont.Visible = true;
+            secc.Visible = false;
+            preff.Visible=false;
+
+        }
+
+        private void frmConf_Load(object sender, EventArgs e)
+        {
+            cont.Visible = true;
+            secc.Visible = false;
+            preff.Visible = false;
+        }
+
+        //string nome;
+        //string sobr;
+        //string prof;
+        //string user;
+        //string senha;
+        //string novasenha;
+
+        string teste;
+
+
+        private void txtNome_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtNome.Text))
+            {
+                txtNome.Text = teste;
+            }
+            else
+            {
+                txtNome.Text = "";
+            }
+        }
+
+        private void txtNome_Leave(object sender, EventArgs e)
+        {
+            teste = txtNome.Text;
+
+            if (txtNome.Text == "")
+            {
+                txtNome.Text = "Novo Nome";
+            }
+        }
+
+        private void txtSobr_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtSobr.Text))
+            {
+                txtSobr.Text = teste;
+            }
+            else
+            {
+                txtSobr.Text = "";
+            }
+        }
+
+        private void txtSobr_Leave(object sender, EventArgs e)
+        {
+            teste = txtSobr.Text;
+
+            if (txtSobr.Text == "")
+            {
+                txtSobr.Text = "Novo Sobrenome";
+            }
+        }
+
+        private void txtProf_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtProf.Text))
+            {
+                txtProf.Text = teste;
+            }
+            else
+            {
+                txtProf.Text = "";
+            }
+        }
+
+        private void txtProf_Leave(object sender, EventArgs e)
+        {
+            teste = txtProf.Text;
+
+            if (txtProf.Text == "")
+            {
+                txtProf.Text = "Nova Profissão";
+            }
+        }
+
+        private void txtSenha_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtSenha.Text))
+            {
+                txtSenha.Text = teste;
+            }
+            else
+            {
+                txtSenha.Text = "";
+            }
+        }
+
+        private void txtSenha_Leave(object sender, EventArgs e)
+        {
+            teste = txtSenha.Text;
+
+            if (txtSenha.Text == "")
+            {
+                txtSenha.Text = "Nova Senha";
+            }
+        }
+
+        private void txtSenha2_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtSenha2.Text))
+            {
+                txtSenha2.Text = teste;
+            }
+            else
+            {
+                txtSenha2.Text = "";
+            }
+        }
+
+        private void txtSenha2_Leave(object sender, EventArgs e)
+        {
+            teste = txtSenha2.Text;
+
+            if (txtSenha2.Text == "")
+            {
+                txtSenha2.Text = "Digite Novamente";
+            }
+        }
+
+        private void txtNovaSenha_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtNovaSenha.Text))
+            {
+                txtNovaSenha.Text = teste;
+            }
+            else
+            {
+                txtNovaSenha.Text = "";
+            }
+        }
+
+        private void txtNovaSenha_Leave(object sender, EventArgs e)
+        {
+            teste = txtNovaSenha.Text;
+
+            if (txtNovaSenha.Text == "")
+            {
+                txtNovaSenha.Text = "Senha Atual";
+            }
+        }
+
+        private void txtEmail_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtEmail.Text))
+            {
+                txtEmail.Text = teste;
+            }
+            else
+            {
+                txtEmail.Text = "";
+            }
+        }
+
+        private void txtEmail_Leave(object sender, EventArgs e)
+        {
+            teste = txtEmail.Text;
+
+            if (txtEmail.Text == "")
+            {
+                txtEmail.Text = "Novo Email";
+            }
+        }
+
+        private void txtConfirm_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtConfirm.Text))
+            {
+                txtConfirm.Text = teste;
+            }
+            else
+            {
+                txtConfirm.Text = "";
+            }
+        }
+
+        private void txtConfirm_Leave(object sender, EventArgs e)
+        {
+            teste = txtConfirm.Text;
+
+            if (txtConfirm.Text == "")
+            {
+                txtConfirm.Text = "Digite sua Senha";
+            }
+        }
+
+        private void txtUser_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrWhiteSpace(txtUser.Text))
+            {
+                txtUser.Text = teste;
+            }
+            else
+            {
+                txtUser.Text = "";
+            }
+        }
+
+        private void txtUser_Leave(object sender, EventArgs e)
+        {
+            teste = txtUser.Text;
+
+            if (txtUser.Text == "")
+            {
+                txtUser.Text = "Novo Nome de Usuário";
+            }
         }
     }
 }
