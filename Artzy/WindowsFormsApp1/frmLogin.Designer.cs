@@ -84,7 +84,7 @@
             this.btoEntrar.StateCommon.Border.Rounding = 10;
             this.btoEntrar.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-1, 4, -1, -1);
             this.btoEntrar.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.DimGray;
-            this.btoEntrar.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Bebas Neue", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btoEntrar.StateCommon.Content.ShortText.Font = new System.Drawing.Font("KG Red Hands", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btoEntrar.TabIndex = 0;
             this.btoEntrar.Values.Text = "Entrar";
             this.btoEntrar.Click += new System.EventHandler(this.btoEntrar_Click);
@@ -103,7 +103,7 @@
             this.btoCadastrar.StateCommon.Border.Rounding = 10;
             this.btoCadastrar.StateCommon.Content.Padding = new System.Windows.Forms.Padding(-1, 4, -1, -1);
             this.btoCadastrar.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.DimGray;
-            this.btoCadastrar.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Bebas Neue", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btoCadastrar.StateCommon.Content.ShortText.Font = new System.Drawing.Font("KG Red Hands", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btoCadastrar.TabIndex = 5;
             this.btoCadastrar.Values.Text = "Cadastrar";
             this.btoCadastrar.Click += new System.EventHandler(this.btoCadastrar_Click);
@@ -112,11 +112,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Bebas Neue", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(163, 246);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(15, 14);
+            this.label1.Size = new System.Drawing.Size(19, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "ou";
             // 
