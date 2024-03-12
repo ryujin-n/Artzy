@@ -129,3 +129,6 @@ C:\Users\miles.jsantos\source\repos\Artzy\WindowsFormsApp1\obj\Debug\WindowsForm
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmDesc.resources
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmValores.resources
 C:\Users\miles\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmPag.resources
+C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmDesc.resources
+C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmPag.resources
+C:\Users\miles.jsantos\Documents\GitHub\Artzy\Artzy\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmValores.resources
