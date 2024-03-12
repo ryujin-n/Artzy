@@ -26,7 +26,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        public static string stringConexao = "Server=localhost;Database=Artzy;Trusted_Connection=True;";
+        public static string stringConexao = "Server=localhost;Database=Artzy;User Id=sa;Password=123456;";
         public static string idUser;
         public static string NomeUser;
         public static string SenhaUser;
