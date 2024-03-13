@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8BA0DFAB-777B-4A9C-8172-DC23238073AE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AlphaBlendTextBox">
+      <HintPath>..\..\..\..\..\Downloads\AlphaBlendTextBox_demo\AlphaBlendTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>..\..\..\..\OneDrive - SENAC - SP\Área de Trabalho\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator">
+      <HintPath>..\..\..\..\OneDrive - SENAC - SP\Área de Trabalho\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>..\..\..\..\OneDrive - SENAC - SP\Área de Trabalho\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\..\..\..\OneDrive - SENAC - SP\Área de Trabalho\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace">
+      <HintPath>..\..\..\..\OneDrive - SENAC - SP\Área de Trabalho\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmConf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConf.Designer.cs">
+      <DependentUpon>frmConf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastro.Designer.cs">
+      <DependentUpon>frmCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDesc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDesc.Designer.cs">
+      <DependentUpon>frmDesc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoja.Designer.cs">
+      <DependentUpon>frmLoja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPag.Designer.cs">
+      <DependentUpon>frmPag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmValores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmValores.Designer.cs">
+      <DependentUpon>frmValores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundPB.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="testse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testse.Designer.cs">
+      <DependentUpon>testse.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmCadastro.resx">
+      <DependentUpon>frmCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConf.resx">
+      <DependentUpon>frmConf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDesc.resx">
+      <DependentUpon>frmDesc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoja.resx">
+      <DependentUpon>frmLoja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPag.resx">
+      <DependentUpon>frmPag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmValores.resx">
+      <DependentUpon>frmValores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="testse.resx">
+      <DependentUpon>testse.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ref\closedd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closed-eyes 1sadassa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ref\openn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.png" />
+    <Content Include="Resources\2666435.png" />
+    <Content Include="Resources\30.png" />
+    <Content Include="Resources\58605.png" />
+    <Content Include="Resources\709612.png" />
+    <Content Include="Resources\748035.png" />
+    <Content Include="Resources\a1.png" />
+    <Content Include="Resources\a2.png" />
+    <Content Include="Resources\AAAAAAAAAAAAAAAA.png" />
+    <Content Include="Resources\aaasdasdsa.png" />
+    <Content Include="Resources\adews.png" />
+    <Content Include="Resources\Alysson kleberr.png" />
+    <Content Include="Resources\arroba.png" />
+    <Content Include="Resources\avatar.png" />
+    <Content Include="Resources\bb.png" />
+    <Content Include="Resources\bf3ef309fa4690de8a1c813a503a2b73e913f0c0.png" />
+    <Content Include="Resources\cadsad.png" />
+    <Content Include="Resources\casd.png" />
+    <Content Include="Resources\casq.png" />
+    <Content Include="Resources\checklist 1.png" />
+    <Content Include="Resources\Component 1.png" />
+    <Content Include="Resources\Component 16.png" />
+    <Content Include="Resources\Component 17 testes.png" />
+    <Content Include="Resources\Component 17.png" />
+    <Content Include="Resources\Component 18.png" />
+    <Content Include="Resources\Component 19.png" />
+    <Content Include="Resources\Component 2.png" />
+    <Content Include="Resources\Component 20.png" />
+    <Content Include="Resources\Component 27.png" />
+    <Content Include="Resources\Component 28.png" />
+    <Content Include="Resources\Component 29.png" />
+    <Content Include="Resources\Component 30.png" />
+    <Content Include="Resources\Component 31.png" />
+    <Content Include="Resources\Component 32.png" />
+    <Content Include="Resources\Component 33.png" />
+    <Content Include="Resources\Component 34.png" />
+    <Content Include="Resources\Component 35.png" />
+    <Content Include="Resources\Component 36.png" />
+    <Content Include="Resources\Component 37.png" />
+    <Content Include="Resources\Component 37s.png" />
+    <Content Include="Resources\Component 38.png" />
+    <Content Include="Resources\d.png" />
+    <Content Include="Resources\d2.png" />
+    <Content Include="Resources\d3.png" />
+    <Content Include="Resources\ds1.png" />
+    <Content Include="Resources\dsaaaaa.png" />
+    <Content Include="Resources\dsaaaaaaaaaa.png" />
+    <Content Include="Resources\dsaaaasd.png" />
+    <Content Include="Resources\dsadca.png" />
+    <Content Include="Resources\DSASAD.png" />
+    <Content Include="Resources\dssaas.png" />
+    <Content Include="Resources\Ellipse 6.png" />
+    <Content Include="Resources\Ellipse 7.png" />
+    <Content Include="Resources\Ellipse 8.png" />
+    <Content Include="Resources\f1.png" />
+    <Content Include="Resources\f2.png" />
+    <Content Include="Resources\f3.png" />
+    <Content Include="Resources\fim.png" />
+    <Content Include="Resources\Frame 3.png" />
+    <Content Include="Resources\Frame 4.png" />
+    <Content Include="Resources\Frame 5.png" />
+    <Content Include="Resources\Group 10.png" />
+    <Content Include="Resources\Group 9.png" />
+    <Content Include="Resources\Group 9a.png" />
+    <Content Include="Resources\hihih.png" />
+    <Content Include="Resources\hmmmmm.png" />
+    <Content Include="Resources\home 1.png" />
+    <Content Include="Resources\lock.png" />
+    <Content Include="Resources\Produtor musical.png" />
+    <Content Include="Resources\Property 1=closed-eyes 1.png" />
+    <Content Include="Resources\Property 1=eyeball-icon-png-eye-icon-1 1.png" />
+    <Content Include="Resources\Property 1=eyeball-icon-png-eye-icon-1 1sadassa.png" />
+    <Content Include="Resources\Rectangle 100.png" />
+    <Content Include="Resources\Rectangle 104.png" />
+    <Content Include="Resources\Rectangle 14.png" />
+    <Content Include="Resources\Rectangle 18.png" />
+    <Content Include="Resources\Rectangle 2.png" />
+    <Content Include="Resources\Rectangle 24.png" />
+    <Content Include="Resources\Rectangle 3.png" />
+    <Content Include="Resources\Rectangle 6.png" />
+    <Content Include="Resources\Rectangle 7.png" />
+    <Content Include="Resources\Rectangle 83.png" />
+    <Content Include="Resources\Rectangle 84.png" />
+    <Content Include="Resources\Rectangle 85.png" />
+    <Content Include="Resources\Rectangle 93.png" />
+    <Content Include="Resources\sdaqw.png" />
+    <Content Include="Resources\sdasdsasa.png" />
+    <Content Include="Resources\ss.png" />
+    <Content Include="Resources\Untitled 2.png" />
+    <Content Include="Resources\Variant2.png" />
+    <Content Include="Resources\Variant22.png" />
+    <Content Include="Resources\Vector 2.png" />
+    <Content Include="Resources\Vector 3.png" />
+    <Content Include="Resources\Vector 4.png" />
+    <Content Include="Resources\_-1.png" />
+    <Content Include="Resources\_-11.png" />
+    <Content Include="Resources\_-2.png" />
+    <Content Include="Resources\_-21.png" />
+    <Content Include="Resources\_.png" />
+    <Content Include="Resources\_1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
