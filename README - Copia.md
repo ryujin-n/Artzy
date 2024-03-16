@@ -1,2 +1,0 @@
-# Artzy
-Projeto Integrador Senac
