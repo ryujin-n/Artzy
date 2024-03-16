@@ -1,0 +1,186 @@
+{
+  "main": {
+    "id": "5ccab1cf0da55182",
+    "type": "split",
+    "children": [
+      {
+        "id": "80fe656e09943485",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "19ff63742f18eb7e",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Untitled 1.canvas",
+                "viewState": {
+                  "x": 2059.6688151602552,
+                  "y": 2341.3709928038234,
+                  "zoom": -0.6822407085227531
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a495cfeb92d0e4c6",
+    "type": "split",
+    "children": [
+      {
+        "id": "9006613591b48c9d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "836d4cbcf07f8c3b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8a748cceb7294c70",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "dcc85c4921f40426",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cedbfaa21936717c",
+    "type": "split",
+    "children": [
+      {
+        "id": "93d3b9c36ee0170b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cfb7fc4cd1d80148",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Untitled 1.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "aee20bc4253d43c8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Untitled 1.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b7aaccd4f2a58d65",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ad618f5e179bba93",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Untitled 1.canvas"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "19ff63742f18eb7e",
+  "lastOpenFiles": [
+    "QCoins.md",
+    "Entidades.md",
+    "Contabilidade.md",
+    "Assinaturas.md",
+    "Regras de Negócio.md",
+    "Gestão.md",
+    "Recursos.md",
+    "Funcionário.md",
+    "Untitled 1.canvas",
+    "Pasted image 20230901143942.png",
+    "Pasted image 20230901143930.png",
+    "Pasted image 20230901143847.png",
+    "Pasted image 20230901143808.png",
+    "Pasted image 20230901143709.png",
+    "Pasted image 20230901142833.png",
+    "Pasted image 20230901142740.png",
+    "Pasted image 20230901142706.png",
+    "Finanças.md",
+    "Parceria.md",
+    "Fornecedor.md",
+    "Ordem de Serviço.md",
+    "Nível Hierárquico.md",
+    "Ideia.md",
+    "Funcionários.md",
+    "Mapa Mental.canvas",
+    "Recursos do Site/Recursos Premium.md",
+    "Ideias de Nome.md",
+    "Untitled.canvas",
+    "Pasted image 20230815163628.png",
+    "Pasted image 20230815163544.png",
+    "Recursos do Site"
+  ]
+}
