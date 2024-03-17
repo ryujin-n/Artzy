@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Assinaturas.md",
+                "file": "Gestão.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Assinaturas.md",
+                "file": "Gestão.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Assinaturas.md",
+                "file": "Gestão.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Assinaturas.md"
+                "file": "Gestão.md"
               }
             }
           }
@@ -148,16 +148,21 @@
   },
   "active": "19ff63742f18eb7e",
   "lastOpenFiles": [
+    "Ideia.md",
+    "Nível Hierárquico.md",
+    "Ordem de Serviço.md",
+    "Parceria.md",
+    "QCoins.md",
+    "Pasted image 20230901143942.png",
+    "Recursos.md",
+    "Untitled 1.canvas",
+    "Regras de Negócio.md",
+    "Finanças.md",
+    "Entidades.md",
     "Contabilidade.md",
     "Assinaturas.md",
-    "Untitled 1.canvas",
-    "QCoins.md",
-    "Entidades.md",
-    "Regras de Negócio.md",
     "Gestão.md",
-    "Recursos.md",
     "Funcionário.md",
-    "Pasted image 20230901143942.png",
     "Pasted image 20230901143930.png",
     "Pasted image 20230901143847.png",
     "Pasted image 20230901143808.png",
@@ -165,12 +170,7 @@
     "Pasted image 20230901142833.png",
     "Pasted image 20230901142740.png",
     "Pasted image 20230901142706.png",
-    "Finanças.md",
-    "Parceria.md",
     "Fornecedor.md",
-    "Ordem de Serviço.md",
-    "Nível Hierárquico.md",
-    "Ideia.md",
     "Funcionários.md",
     "Mapa Mental.canvas",
     "Recursos do Site/Recursos Premium.md",

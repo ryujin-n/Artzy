@@ -11,8 +11,6 @@
 
 - Área para Portfolio: Uma área onde o artista pode colocar suas artes (Música, Scripts, Desenhos, Trailers, etc.) para poder mostrar para o público o seu trabalho.
 
-- Amigos: Um recurso onde o artista ou o cliente pode ser amigo de outros clientes ou artistas, assim criando uma rede maior, possibilitando até colaborações entre artistas.
-
 - QCoins próprio, para poder usar como forma alternativa de pagamento.
 
 - Filtro de pesquisa por estilo/preferencias.
