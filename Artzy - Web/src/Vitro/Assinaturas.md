@@ -6,7 +6,7 @@
 - 250 QCoins mensais.
 - QBox com itens com base no seu trabalho.
 
-## Recurso Creative R$ 50,00 Mensais / R$ 120,00 Trimestral / R$ 360,00 Anual
+## Recurso Artztic R$ 50,00 Mensais / R$ 120,00 Trimestral / R$ 360,00 Anual
 
 -  Customização Avançada do perfil
 -  GIF como foto de perfil e banner
