@@ -1,0 +1,98 @@
+@font-face {
+    font-family: HeyComic ;
+    src: url(src/hey_comic.);
+}
+@font-face {
+    font-family: ;
+    src: url();
+}
+@font-face {
+    font-family: ;
+    src: url();
+}
+@font-face {
+    font-family: ;
+    src: url();
+}
+@font-face {
+    font-family: ;
+    src: url();
+}
+@font-face {
+    font-family: ;
+    src: url();
+}
+@font-face {
+    font-family: ;
+    src: url();
+}
+@font-face {
+    font-family: ;
+    src: url();
+}
+@font-face {
+    font-family: ;
+    src: url();
+}
+@font-face {
+    font-family: ;
+    src: url();
+}
+
+
+
+
+
+
+.menu{
+    background-color: #543838 ;
+    height: 78px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: #543838;
+}
+.logo {
+    width: 53.1px;
+    height: 53.1px;
+    margin: 12px 53.9px 0.9px 0;
+    transform: rotate(-354.94deg);
+  }
+  .menu-logo{
+    list-style-type:none;
+  }
+  .menu-nav{
+    align-items: center;
+    background: 0 0;
+    border: 0;
+    color: #96969a;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    height: 100%;
+    justify-content: flex-start;
+    outline: 0;
+    padding: 12px 0;
+    text-decoration: none;
+    transition: color .2s linear, background-color .2s linear;
+    z-index: 992;
+  }
+  .menu_{
+    display: flex;
+  }
+
+  .Explorar {
+    width: 94px;
+    height: 27px;
+    margin: 3px 45px 14px 53.9px;
+    font-family: HeyComic;
+    font-size: 21px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.84px;
+    text-align: left;
+    color: #fcfcfc;
+  }
