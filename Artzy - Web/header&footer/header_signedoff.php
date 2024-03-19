@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>header</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
@@ -23,95 +24,34 @@
 
             <nav class="menu_">
                 <li class="menu-logo">
-                    <a href="http://localhost/T14_PHP/Artzy%20-%20Web/header&footer/header.php">
-                        <img src="../src/logo.png" class="logo">
+                    <a href="http://localhost/T14_PHP/Artzy%20-%20Web/home.php">
+                        <img src="src/logo.png" class="logo" onerror="this.onerror=null; this.src='../src/logo.png';">
+                        
                     </a>
                 </li>
                 <li id="exp" class="menu-nav">
-                    <button class="menu-nav dropdown" style="height: 50px; width:5.5rem; margin-right:30px;">
+                    <button class="menu-nav dropdown">
                         <p class="Explorar">
                             Explorar
                         </p>
                     </button>
-                    <div class="dp" id="exps"> <!--style="display:none;" -->
-                        <ul class="dropdown-menu">
-                            <li style="margin-top: 12px;" class="dropdown-item">
-                                <div class="item-content">
-                                    <i class="fi fi-br-apartment"></i>
-                                    <span>Sobre Artzy</span>
-                                </div>
-                            </li>
-                            <li>
-                                <hr style="margin-bottom: 10px;margin-top: 20px;">
-                            </li>
-                            <li style="margin-top: 12px;" class="dropdown-item">
-                                <div class="item-content">
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                    <span>Twitter</span>
-                                </div>
-                            </li>
-                            <li style="margin-top: 10px;" class="dropdown-item">
-                                <div class="item-content">
-                                    <i class="fa-brands fa-instagram"></i>
-                                    <span style="margin-left: 6px;">Instagram</span>
-                                </div>
-                            </li>
-                            <li>
-                                <hr style="margin-bottom: 20px;margin-top: 20px;">
-                            </li>
-                            <li style="margin-top: 12px;" class="dropdown-item">
-                                <div class="item-content">
-                                    <i class="fi fi-br-auction"></i>
-                                    <span>ToS</span>
-                                </div>
-                            </li>
-                            <li style="margin-top: 12px;" class="dropdown-item">
-                                <div class="item-content">
-                                    <i class="fi fi-sr-lock"></i>
-                                    <span>Privacidade</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
                 </li>
-                <li id="lj" class="menu-nav">
-                    <button class="menu-nav" style="height: 50px; width:100%;margin-left:30px;margin-right:30px;">
-                        <span class="Loja">
-                            Loja
-                        </span>
-                    </button>
-                    <div class="dp2" id="ljs"> <!--style="display:none;" -->
-                        <ul class="dropdown-menu">
-                            <li style="margin-top: 12px;" class="dropdown-item">
-                                <div class="item-content">
-                                    <i class="fi fi-br-shop"></i>
-                                    <span>Marketplace</span>
-                                </div>
-                            </li>
-                            <li style="margin-top: 12px;" class="dropdown-item">
-                                <div class="item-content">
-                                    <i class="fi fi-br-apartment"></i>
-                                    <span>Prints</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+               
                 <li id="jb" class="menu-nav">
-                    <button class="menu-nav" style="height: 50px;margin-left:20px;margin-right:20px;">
+                    <button class="menu-nav">
                         <span class="Servios">
                             Serviços
                         </span>
                     </button>
                     <div class="dp3" id="jbs"> <!--style="display:none;" -->
-                        <ul class="dropdown-menu">
-                            <li style="margin-top: 12px;" class="dropdown-item">
+                        <ul class="dp-menu">
+                            <li style="margin-top: 12px;" class="dp-item">
                                 <div class="item-content">
                                     <i class="fi fi-br-shop"></i>
                                     <span>Encontrar um Artista</span>
                                 </div>
                             </li>
-                            <li style="margin-top: 12px;" class="dropdown-item">
+                            <li style="margin-top: 12px;" class="dp-item">
                                 <div class="item-content">
                                     <i class="fi fi-br-apartment"></i>
                                     <span>Encontrar um Estúdio</span>
@@ -123,11 +63,13 @@
 
                 <li class="menu-search">
                     <i class="fas fa-search search-icon"></i>
-                    <input type="search" class="search-bar" placeholder="Pesquisar">
+                    <input type="text" role="search" class="search-bar" placeholder="Pesquisar">
                 </li>
 
                 <li>
-                    <i class="fi fi-sr-shopping-cart icons shop"></i>
+                    <a href="" style="text-decoration:none;">
+                        <i class="fi fi-sr-shopping-cart icons shop"></i>
+                    </a>
                 </li>
 
                 <li>
@@ -144,7 +86,47 @@
                 </li>
 
                 <li>
-                    <i class="fi fi-br-menu-burger m-icon"></i>
+                    <button id="menu-b" onclick="toggleMenu()"><i class="fi fi-br-menu-burger m-icon" id="men"></i></button>
+                    <div class="dp" id="exps"> <!--style="display:none;" -->
+                        <ul class="dp-menu">
+                            <li style="margin-top: 12px;" class="dp-item">
+                                <div class="item-content">
+                                    <i class="fi fi-br-apartment"></i>
+                                    <span>Sobre Artzy</span>
+                                </div>
+                            </li>
+                            <li>
+                                <hr style="margin-bottom: 10px;margin-top: 20px;">
+                            </li>
+                            <li style="margin-top: 12px;" class="dp-item">
+                                <div class="item-content">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                    <span>Twitter</span>
+                                </div>
+                            </li>
+                            <li style="margin-top: 10px;" class="dp-item">
+                                <div class="item-content">
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <span style="margin-left: 6px;">Instagram</span>
+                                </div>
+                            </li>
+                            <li>
+                                <hr style="margin-bottom: 20px;margin-top: 20px;">
+                            </li>
+                            <li style="margin-top: 12px;" class="dp-item">
+                                <div class="item-content">
+                                    <i class="fi fi-br-auction"></i>
+                                    <span>ToS</span>
+                                </div>
+                            </li>
+                            <li style="margin-top: 12px;" class="dp-item">
+                                <div class="item-content">
+                                    <i class="fi fi-sr-lock"></i>
+                                    <span>Privacidade</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
             </nav>
             <br>
@@ -154,8 +136,8 @@
         </div>
     </nav>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
+ <script>
+      document.addEventListener("DOMContentLoaded", function () {
             function controlDropdown(dropdownButton, dropdownMenu) {
                 dropdownButton.addEventListener("mouseenter", function () {
                     dropdownMenu.style.display = "inline-block";
@@ -183,8 +165,25 @@
             });
         });
     </script>
-    <script src="https://kit.fontawesome.com/aa824ffc0c.js" crossorigin="anonymous"></script>
 
+    <script>
+        
+        function toggleMenu() {
+    const dropdown = document.querySelector('.dp');
+    if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+        dropdown.style.display = 'inline-block';
+        document.getElementById("menu-b").addEventListener("focusout", function(event) {
+            if (!dropdown.contains(event.relatedTarget)) {
+                dropdown.style.display = 'none';
+            }
+        });
+    } else {
+        dropdown.style.display = 'none';
+    }
+}
+    </script>
+    
+    <script src="https://kit.fontawesome.com/aa824ffc0c.js" crossorigin="anonymous"></script>
 
 </body>
 

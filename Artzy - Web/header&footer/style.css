@@ -19,7 +19,7 @@
 .menu{
     height: 79px;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 0rem 0rem 1rem 1rem;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     background-color: #543838;
     position: relative;
@@ -53,25 +53,9 @@
   }
 
   .Explorar {
-    width: 94px;
-    height: 27px;
-    margin: 15px 25px 14px 5px;
+    margin-top: 1rem;
     font-family: HeyComic;
-    font-size: 21px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.84px;
-    text-align: left;
-    color: #fcfcfc;
-  }
-  .Loja {
-    width: 50px;
-    height: 27px;
-    padding: 1.3rem;
-    font-family: HeyComic;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -80,28 +64,26 @@
     text-align: center;
     color: #fcfcfc;
   }
+
   .Servios {
-    width: 95px;
-    height: 27px;
-    margin: 15px 35px 14px 0px;
     font-family: HeyComic;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.84px;
-    text-align: left;
+    text-align: center;
     color: #fcfcfc;
   }
   .search-icon{
     color: white;
     font-size: 15pt;
-    padding: 5px 0px 0px 0px;
+    padding: 0.45rem 0px 0px 0px;
   }
 .menu-search{
-    height: 2rem;
-    width: 8rem;
+    height: 3rem;
+    width: 1rem;
     flex-grow: 0;
     margin: 15px 22px;
     padding: 5px 634.8px 4px 34px;
@@ -148,15 +130,16 @@
     flex-direction: row;
     justify-content: flex-start;
     padding: 12px 0;
-    margin: 10px 0.2rem 0 1rem;
+    margin-top: 0.9rem;
+    margin-left: 1rem; 
     text-decoration: none;
-    font-size: 25pt;
+    font-size: 20pt;
 }
 .login{
-    width: 85px;
-    height: 30px;
+    width: 100px;
+    height: 33px;
     flex-grow: 0;
-    margin: 1rem 1rem 9px 3rem;
+    margin: 1.3rem 1rem 9px 3rem;
     padding: 8px 9.3px 8px 6px;
     border-radius: 9px;
     /* box-shadow: -4px 4px 0 0 #311b1b; */
@@ -167,13 +150,14 @@
 .icon-login{
     position: absolute;
     color: #543838;
-    font-size: 15pt;
-    padding: 0.3rem 0rem 0rem 0.3rem;
+    font-size: 12pt;
+    margin-top: -0.1rem;
+    margin-left: 0.5rem;
 }
 .login-btn{
     position: absolute;
     flex-grow: 0;
-    margin: 7px 0px 8px 32px;
+    margin: 0 0px 8px 32px;
     font-family: KGRedHands;
     font-size: 13px;
     font-stretch: normal;
@@ -182,12 +166,14 @@
     letter-spacing: 0.4px;
     text-align: left;
     color: #543838;
+    position: absolute;
 }
 .cad{
-    width: 115px;
-    height: 30px;
+    width: 140px;
+    height: 33px;
     flex-grow: 0;
-    margin: 1rem 38.7px 9px 19px;
+    margin-top: 1.3rem;
+    margin-right: 2.3rem;
     padding: 8px 9.3px 8px 6px;
     border-radius: 9px;
     background-color: #ffc369;
@@ -197,13 +183,14 @@
 .icon-cad{
     position: absolute;
     color: #543838;
-    font-size: 15pt;
-    padding: 0.3rem 0rem 0rem 0.2rem;
+    font-size: 12pt;
+    margin-top: -0.1rem;
+    margin-left: 0.5rem;
 }
 .cad-btn{
     position: absolute;
     flex-grow: 0;
-    margin: 7px 0px 7.4px 30px;
+    margin: 0 0px 8px 32px;
     font-family: KGRedHands;
     font-size: 13px;
     font-stretch: normal;
@@ -212,6 +199,7 @@
     letter-spacing: 0.4px;
     text-align: left;
     color: #543838;
+    position: absolute;
 }
 .m-icon{
     align-items: center;
@@ -220,14 +208,17 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding: 12px 0;
-    margin: 10px 6px 0 34px;
+    margin: 0.6rem 0;
+    margin-top: 0.8rem;
     text-decoration: none;
     font-size: 25pt;
 }
+#men button{
+    margin-top: 1rem;
+}
 .dp{
     top: 4.9rem;
-    left: 6.5rem;
+    left: 87.5rem;
     width: 11rem;
     height: 20rem;
     border-radius: 0rem 0rem 1rem 1rem;
@@ -237,7 +228,7 @@
     cursor: cell;
 }
 
-#exps .dropdown-item {
+#exps .dp-item {
     display: flex;
     align-items: center; /* Alinha verticalmente os itens */
 }
@@ -267,107 +258,50 @@
 #exps  a{
     text-decoration: none;
 }
-#exps .dropdown-menu{
-    margin-top: -0.01em;
-   padding: 1rem 1rem 0rem 1rem;
+#exps .dp-menu{
+    margin-top: -0.01rem;
+    padding: 0.3rem 1rem 0rem 1rem;
 }
 #exps hr{
     height: 2px; 
     background-color: #726262;
     border: none;
 }
-#exp button:hover + .dp {
+#men:active + .dp {
     display: inline-block;
 }
 #exps {
     cursor: default; 
 }
-.dropdown-menu a {
+.dp-menu a {
     cursor: pointer; 
+}
+#menu-b{
+    background-color: #ffffff00;
+    border: none;
+    outline: none;
+    margin-top: 0.5rem;
 }
 
 #exps li:hover i,
 #exps li:hover span {
     color: white;
+    cursor: pointer;
 }
-
-
-.dp2{
-    top: 4.9rem;
-    left: 15.5rem;
-    width: 11rem;
-    height: 8rem;
-    border-radius: 0rem 0rem 1rem 1rem;
-    background-color: #442d2df3;
-    position:absolute;
-    display:none;
-    cursor: cell;
-}
-
-#ljs .dropdown-item {
-    display: flex;
-    align-items: center; /* Alinha verticalmente os itens */
-}
-
-#ljs .item-content {
-    display: flex;
-    align-items: center;
-}
-
-#ljs .item-content i {
-    margin-right: 10px; /* Adiciona um espaço entre o ícone e o texto */
-}
-
-#ljs i {
-    margin: 10px;
-    font-size: 23px; 
-    color: #ffc369;
-}
-
-#ljs span {
-    font-family: MomcakePro;
-    font-size: 22px; 
-    line-height: 1rem;
-    letter-spacing: 0.76px;
-    text-align: left;
-    color: #ffc369;
-}
-#ljs  a{
-    text-decoration: none;
-}
-#ljs .dropdown-menu{
-    margin-top: -0.01em;
-   padding: 0.5rem 0.5rem 0rem 0.5rem;
-}
-#lj button:hover + .dp2 {
-    display: inline-block;
-}
-#ljs {
-    cursor: default; 
-}
-.dropdown-menu a {
-    cursor: pointer; 
-}
-
-#ljs li:hover i,
-#ljs li:hover span {
-    color: white;
-}
-
 
 .dp3{
     top: 4.9rem;
-    left: 24.2rem;
+    left: 13.3rem;
     width: 11rem;
     height: 9rem;
     border-radius: 0rem 0rem 1rem 1rem;
-    background-color: #442d2df3;
+    background-color: #442d2d;
     position:absolute;
     display:none;
     cursor: cell;
 }
 
-#jbs .dropdown-item {
+#jbs .dp-item {
     display: flex;
     align-items: center; /* Alinha verticalmente os itens */
 }
@@ -375,6 +309,8 @@
 #jbs .item-content {
     display: flex;
     align-items: center;
+    margin-left: -1rem;
+    width: 135px;
 }
 
 #jbs .item-content i {
@@ -398,9 +334,9 @@
 #jbs  a{
     text-decoration: none;
 }
-#jbs .dropdown-menu{
+#jbs .dp-menu{
     margin-top: -0.01em;
-   padding: 0.5rem 0.5rem 0rem 0.5rem;
+   padding-left: -0.2rem;
 }
 #jb button:hover + .dp3 {
     display: inline-block;
@@ -408,11 +344,20 @@
 #jbs {
     cursor: default; 
 }
-.dropdown-menu a {
+.dp-menu a {
     cursor: pointer; 
 }
 
 #jbs li:hover i,
 #jbs li:hover span {
     color: white;
+    cursor: pointer;
+}
+
+#exp button{
+    height: 50px; width:5.5rem; margin-right:2.5rem;
+}
+
+#jb button{
+    height: 50px; width:5.5rem; margin-right:30px;
 }
