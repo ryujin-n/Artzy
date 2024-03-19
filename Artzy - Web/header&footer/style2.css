@@ -27,7 +27,7 @@
 .logo {
     width: 53.1px;
     height: 53.1px;
-    margin: 12px 53.9px 0.9px 1rem;
+    margin: 12px 53.9px 0.9px 0;
     transform: rotate(-354.94deg);
   }
   .menu-logo{
@@ -225,37 +225,4 @@
     margin: 10px 6px 0 34px;
     text-decoration: none;
     font-size: 25pt;
-}
-.dp{
-    width: 10rem;
-    height: 16rem;
-    flex-grow: 0;
-    padding: 1rem 2rem 0rem 0rem;
-    border-radius: 10px;
-    background-color: #543838;
-}
-#exp  i{
-    margin: 0 14px 19px 10px;
-    font-size: 25px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.76px;
-    text-align: left;
-    color: #ffc369;
-    text-decoration: none;
-}
-#exp  span{
-    margin: 0 14px 19px 10px;
-    font-family: MomcakePro;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.76px;
-    text-align: left;
-    color: #ffc369;
-    text-decoration: none;
 }
