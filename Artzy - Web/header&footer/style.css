@@ -27,8 +27,7 @@
 .logo {
     width: 53.1px;
     height: 53.1px;
-    margin: 12px 53.9px 0.9px 1rem;
-    transform: rotate(-354.94deg);
+    margin: 12px 53.9px 0.9px 2rem;
   }
   .menu-logo{
     list-style-type:none;
@@ -56,7 +55,7 @@
   .Explorar {
     width: 94px;
     height: 27px;
-    margin: 15px 25px 14px 25px;
+    margin: 15px 25px 14px 5px;
     font-family: HeyComic;
     font-size: 21px;
     font-weight: normal;
@@ -70,7 +69,7 @@
   .Loja {
     width: 50px;
     height: 27px;
-    margin: 15px 45px 14px 20px;
+    padding: 1.3rem;
     font-family: HeyComic;
     font-size: 21px;
     font-weight: normal;
@@ -78,7 +77,7 @@
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.84px;
-    text-align: left;
+    text-align: center;
     color: #fcfcfc;
   }
   .Servios {
@@ -227,35 +226,193 @@
     font-size: 25pt;
 }
 .dp{
-    width: 10rem;
-    height: 16rem;
-    flex-grow: 0;
-    padding: 1rem 2rem 0rem 0rem;
-    border-radius: 10px;
-    background-color: #543838;
+    top: 4.9rem;
+    left: 6.5rem;
+    width: 11rem;
+    height: 20rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+    background-color: #442d2df3;
+    position:absolute;
+    display:none;
+    cursor: cell;
 }
-#exp  i{
-    margin: 0 14px 19px 10px;
-    font-size: 25px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.76px;
-    text-align: left;
+
+#exps .dropdown-item {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+#exps .item-content {
+    display: flex;
+    align-items: center;
+}
+
+#exps .item-content i {
+    margin-right: 10px; /* Adiciona um espaço entre o ícone e o texto */
+}
+#exps i {
+    margin: 3px;
+    font-size: 23px; /* Altere este valor para ajustar o tamanho da fonte */
     color: #ffc369;
-    text-decoration: none;
 }
-#exp  span{
-    margin: 0 14px 19px 10px;
+
+#exps span {
     font-family: MomcakePro;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
+    font-size: 22px; /* Altere este valor para ajustar o tamanho da fonte */
+    line-height: 1rem;
     letter-spacing: 0.76px;
     text-align: left;
     color: #ffc369;
+}
+#exps  a{
     text-decoration: none;
+}
+#exps .dropdown-menu{
+    margin-top: -0.01em;
+   padding: 1rem 1rem 0rem 1rem;
+}
+#exps hr{
+    height: 2px; 
+    background-color: #726262;
+    border: none;
+}
+#exp button:hover + .dp {
+    display: inline-block;
+}
+#exps {
+    cursor: default; 
+}
+.dropdown-menu a {
+    cursor: pointer; 
+}
+
+#exps li:hover i,
+#exps li:hover span {
+    color: white;
+}
+
+
+.dp2{
+    top: 4.9rem;
+    left: 15.5rem;
+    width: 11rem;
+    height: 8rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+    background-color: #442d2df3;
+    position:absolute;
+    display:none;
+    cursor: cell;
+}
+
+#ljs .dropdown-item {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+#ljs .item-content {
+    display: flex;
+    align-items: center;
+}
+
+#ljs .item-content i {
+    margin-right: 10px; /* Adiciona um espaço entre o ícone e o texto */
+}
+
+#ljs i {
+    margin: 10px;
+    font-size: 23px; 
+    color: #ffc369;
+}
+
+#ljs span {
+    font-family: MomcakePro;
+    font-size: 22px; 
+    line-height: 1rem;
+    letter-spacing: 0.76px;
+    text-align: left;
+    color: #ffc369;
+}
+#ljs  a{
+    text-decoration: none;
+}
+#ljs .dropdown-menu{
+    margin-top: -0.01em;
+   padding: 0.5rem 0.5rem 0rem 0.5rem;
+}
+#lj button:hover + .dp2 {
+    display: inline-block;
+}
+#ljs {
+    cursor: default; 
+}
+.dropdown-menu a {
+    cursor: pointer; 
+}
+
+#ljs li:hover i,
+#ljs li:hover span {
+    color: white;
+}
+
+
+.dp3{
+    top: 4.9rem;
+    left: 24.2rem;
+    width: 11rem;
+    height: 9rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+    background-color: #442d2df3;
+    position:absolute;
+    display:none;
+    cursor: cell;
+}
+
+#jbs .dropdown-item {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+#jbs .item-content {
+    display: flex;
+    align-items: center;
+}
+
+#jbs .item-content i {
+    margin-right: 10px; /* Adiciona um espaço entre o ícone e o texto */
+}
+
+#jbs i {
+    margin: 10px;
+    font-size: 23px; 
+    color: #ffc369;
+}
+
+#jbs span {
+    font-family: MomcakePro;
+    font-size: 22px; 
+    line-height: 1rem;
+    letter-spacing: 0.76px;
+    text-align: left;
+    color: #ffc369;
+}
+#jbs  a{
+    text-decoration: none;
+}
+#jbs .dropdown-menu{
+    margin-top: -0.01em;
+   padding: 0.5rem 0.5rem 0rem 0.5rem;
+}
+#jb button:hover + .dp3 {
+    display: inline-block;
+}
+#jbs {
+    cursor: default; 
+}
+.dropdown-menu a {
+    cursor: pointer; 
+}
+
+#jbs li:hover i,
+#jbs li:hover span {
+    color: white;
 }
