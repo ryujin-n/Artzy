@@ -129,12 +129,22 @@ body{
     position: absolute;
     top: 21rem;
 }
+
+#btn{
+    display: block;
+    position: relative;
+    height: 50px;
+    width: 432px;
+    /* background-color: aqua; */
+    top: 29rem ;
+    left: 0.5rem ;
+}
 .login{
 
     width: 138px;
     height: 42px;
     flex-grow: 0;
-    margin: 29rem 0rem 0rem 3rem;
+    margin: 0rem 0rem 0rem 3rem;
     padding: 10px 42px 12px 44px;
     border: none;
     border-radius: 37px;
@@ -157,7 +167,7 @@ body{
     width: 153px;
     height: 42px;
     flex-grow: 0;
-    margin: 29rem 0rem 0rem 15rem;
+    margin: 0rem 0rem 0rem 15rem;
     padding: 11px 32px 12px 31px;
     border-radius: 37px;
     background-color: #ffc369;
@@ -177,7 +187,7 @@ body{
 }
 
 #oua{
-    margin: 29.6rem 0rem 0rem 12.8rem;
+    margin: 0.5rem 0rem 0rem 12.8rem ;
     position: absolute;
     opacity: 70%
 }
@@ -210,7 +220,64 @@ body{
 
 @media (max-width: 1800px) {
     .fundo{
-        margin:115px 223px 0 180px;
+        margin: 38px 223px 0px 374px;
+        width: 884px;
+        height: 698px;
+        flex-grow: 0;
+        padding: 57px 41.19999999999999px 61px 32px;
+    }
+    .fundo2 {
+        width: 373px;
+        height: 636px;
+    }
+    #p2{
+        margin:34rem 0rem 0rem 18rem;
+    }
+    .log-fund {
+        width: 402px;
+        height: 546px;
+        margin-top: -0.3rem;
+        margin-left: 26rem;
+        position: relative;
+    }
+    .login_p {
+        margin: 110px 63.8px 78px 11px;
+    -webkit-text-stroke: 4px #000;
+    font-size: 70pt;
+    }
+    .Email{
+        width: 344.8px;
+        height: 57px;
+        left: 0rem;
+        top: 16.5rem;
+        font-size: 15px;
+    }
+    .Senha{
+        width: 344.8px;
+        height: 57px;
+        left: 0rem;
+        font-size: 15px;
+    }
+    .miss_pass{
+        margin-left: 12rem;
+    }
+    #btn{
+        top: 29rem ;
+        left: -2.5rem ;
+    }
+    .login{
+    
+        margin: 0rem 0rem 0rem 3rem;
+        padding: 10px 42px 12px 44px;
+    }
+    .cad{
+    
+        margin: 0rem 0rem 0rem 15rem;
+        padding: 11px 32px 12px 31px;
+    }
+    
+    #oua{
+        margin: 0.5rem 0rem 0rem 12.8rem ;
     }
 
 }

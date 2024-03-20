@@ -24,13 +24,12 @@
                 <input type="password" name="" id=""class="Senha" placeholder="Insira sua Senha">
 
                 <a class="miss_pass" href="">Esqueci minha senha :c</a>
-
-                <button class="login">Login</button>
-                <span style="font-family: KGRedHands; font-size: 10pt;" id="oua">ou</span>
-                <button class="cad">Cadastrar</button>
-
-                
-
+            
+                <span id="btn">
+                    <button class="login">Login</button>
+                    <span style="font-family: KGRedHands; font-size: 10pt;" id="oua">ou</span>
+                    <button class="cad">Cadastrar</button>
+                </span>
             </div>
         </div>
     </div>
