@@ -163,7 +163,7 @@ body{
     background-color: #ffc369;
     font-family: KGRedHands;
     border: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -203,6 +203,8 @@ body{
     letter-spacing: 0.48px;
     text-align: left;
     color: #543838;
+    text-decoration-thickness: 2.3px;
+    text-underline-offset: 2px;
     position: absolute;
 }
 
