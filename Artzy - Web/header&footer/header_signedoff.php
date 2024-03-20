@@ -66,7 +66,7 @@
                     <input type="text" role="search" class="search-bar" placeholder="Pesquisar">
                 </li>
 
-                <li>
+                <li id="loj">
                     <a href="" style="text-decoration:none;">
                         <i class="fi fi-sr-shopping-cart icons shop"></i>
                     </a>
@@ -78,14 +78,14 @@
                         <span class="login-btn">Entrar</span>
                     </div>
                 </li>
-                <li>
+                <li id="cadbt">
                     <div class="cad">
                         <i class="fi fi-br-address-card icon-cad"></i>
                         <span class="cad-btn">Criar Conta</span>
                     </div>
                 </li>
 
-                <li>
+                <li id="borger">
                     <button id="menu-b" onclick="toggleMenu()"><i class="fi fi-br-menu-burger m-icon" id="men"></i></button>
                     <div class="dp" id="exps"> <!--style="display:none;" -->
                         <ul class="dp-menu">
@@ -136,8 +136,8 @@
         </div>
     </nav>
 
- <script>
-      document.addEventListener("DOMContentLoaded", function () {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
             function controlDropdown(dropdownButton, dropdownMenu) {
                 dropdownButton.addEventListener("mouseenter", function () {
                     dropdownMenu.style.display = "inline-block";
@@ -167,20 +167,20 @@
     </script>
 
     <script>
-        
+
         function toggleMenu() {
-    const dropdown = document.querySelector('.dp');
-    if (dropdown.style.display === 'none' || dropdown.style.display === '') {
-        dropdown.style.display = 'inline-block';
-        document.getElementById("menu-b").addEventListener("focusout", function(event) {
-            if (!dropdown.contains(event.relatedTarget)) {
+            const dropdown = document.querySelector('.dp');
+            if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                dropdown.style.display = 'inline-block';
+                document.getElementById("menu-b").addEventListener("focusout", function (event) {
+                    if (!dropdown.contains(event.relatedTarget)) {
+                        dropdown.style.display = 'none';
+                    }
+                });
+            } else {
                 dropdown.style.display = 'none';
             }
-        });
-    } else {
-        dropdown.style.display = 'none';
-    }
-}
+        }
     </script>
     
     <script src="https://kit.fontawesome.com/aa824ffc0c.js" crossorigin="anonymous"></script>

@@ -24,6 +24,9 @@
     background-color: #543838;
     position: relative;
 }
+#men{
+    margin-right: 1.5rem;
+}
 .logo {
     width: 53.1px;
     height: 53.1px;
@@ -46,11 +49,15 @@
     outline: 0;
     padding: 12px 0;
     text-decoration: none;
-    transition: color .2s linear, background-color .2s linear;
   }
+
   .menu_{
     display: flex;
-  }
+    flex-shrink: 0;
+}
+.menu_ li {
+    flex-grow: 1;
+}
 
   .Explorar {
     margin-top: 1rem;
@@ -84,7 +91,7 @@
 .menu-search{
     height: 3rem;
     width: 1rem;
-    flex-grow: 0;
+    flex-grow: 1;
     margin: 15px 22px;
     padding: 5px 634.8px 4px 34px;
     border-radius: 50px;
@@ -95,7 +102,6 @@
     flex-direction: row;
     justify-content: flex-start;
     outline: 0;
-    transition: color .2s linear, background-color .2s linear;
     position: relative;
 }
 .search-bar{
@@ -133,13 +139,13 @@
     margin-top: 0.9rem;
     margin-left: 1rem; 
     text-decoration: none;
-    font-size: 20pt;
+    font-size: 19.5pt;
 }
 .login{
     width: 100px;
     height: 33px;
-    flex-grow: 0;
-    margin: 1.3rem 1rem 9px 3rem;
+    flex-grow: 1;
+    margin: 1.4rem 1rem 9px 3rem;
     padding: 8px 9.3px 8px 6px;
     border-radius: 9px;
     /* box-shadow: -4px 4px 0 0 #311b1b; */
@@ -156,7 +162,7 @@
 }
 .login-btn{
     position: absolute;
-    flex-grow: 0;
+    flex-grow: 1;
     margin: 0 0px 8px 32px;
     font-family: KGRedHands;
     font-size: 13px;
@@ -171,8 +177,8 @@
 .cad{
     width: 140px;
     height: 33px;
-    flex-grow: 0;
-    margin-top: 1.3rem;
+    flex-grow: 1;
+    margin-top: 1.4rem;
     margin-right: 2.3rem;
     padding: 8px 9.3px 8px 6px;
     border-radius: 9px;
@@ -189,7 +195,7 @@
 }
 .cad-btn{
     position: absolute;
-    flex-grow: 0;
+    flex-grow: 1;
     margin: 0 0px 8px 32px;
     font-family: KGRedHands;
     font-size: 13px;
@@ -213,9 +219,7 @@
     text-decoration: none;
     font-size: 25pt;
 }
-#men button{
-    margin-top: 1rem;
-}
+
 .dp{
     top: 4.9rem;
     left: 87.5rem;
@@ -361,3 +365,38 @@
 #jb button{
     height: 50px; width:5.5rem; margin-right:30px;
 }
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1900px) {
+
+    .dp{
+        margin-left: 20rem;
+    }
+    .dp3{
+        margin-left: 1.5rem;
+    }
+    .login{
+        margin-left: -0.1rem;
+    }
+    #loj{
+        margin-left: -0.1rem;
+        margin-right: 1.5rem;
+    }
+    #cadbt{
+        width: 9rem;
+        margin-right: 1rem;
+    }
+
+    .menu-search{
+        padding-right: 60rem;
+    }
+
+}
+

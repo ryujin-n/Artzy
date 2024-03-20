@@ -1,0 +1,214 @@
+@font-face {
+    font-family: KGRedHands ;
+    src: url(../src//font/kg_red_hands/KGRedHands.ttf);
+}
+@font-face {
+    font-family: SuperFoods ;
+    src: url(../src//font/super_foods/Super\ Foods.ttf);
+}
+@font-face {
+    font-family: Papernotes ;
+    src: url(../src//font/papernotes/Papernotes.ttf);
+}
+
+
+body{
+    background-color: #ecd9d1 ;
+}
+.fundo {
+    display: flex;
+    width: 1241px;
+    height: 838px;
+    flex-grow: 0;
+    margin: 70px auto;
+    padding: 61px 41.19999999999999px 61px 32px;
+    border-radius: 41px;
+    border: solid 5px #000;
+    background-color: rgba(255, 216, 194, 0.92);
+    box-shadow: -10px 16px 0px 4px rgba(84, 56, 56, 1);
+    position: relative;
+}
+.lado-esquerdo {
+    flex: 1; /* Ocupa todo o espaço disponível */
+}
+
+.lado-direito {
+    flex: 1;
+}
+.fundo2{
+    width: 490px;
+    height: 786px;
+    flex-grow: 0;
+    margin: -2.2rem 118px 0 0;
+    padding: 11px 16px 18px 12px;
+    border-radius: 43px;
+    box-shadow: -11px 10px 0 0 rgba(0, 0, 0, 0.25);
+    border: solid 5px #000;
+    background-image: url("../src/anna2.png");
+    background-position: center;
+    background-size:150%;
+    background-repeat: no-repeat ;
+    position: absolute;
+}
+
+.log-fund{
+    width: 522px;
+    height: 573px;
+    /* background-color: aqua; */
+    margin-left: 2rem;
+    margin-top: 4rem;
+    position: relative;
+}
+.login_p{
+    flex-grow: 0;
+    margin: 65px 70.8px 78px 1px;
+    -webkit-text-stroke: 5px #000;
+    font-family: SuperFoods;
+    font-size: 128px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 5.12px;
+    text-align: left;
+    color: #ffc369;
+    position: absolute;
+    cursor: default;
+    text-shadow: -12px 9px 0px rgba(84, 56, 56, 1);
+    
+}
+
+.selecione-none {
+    -webkit-touch-callout: none; /* Desativar o menu de contexto para dispositivos móveis */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Padrão */
+}
+
+.Email {
+    width: 446.8px;
+    height: 63px;
+    padding: 24px 31.8px 23px 31.8px; /* Ajustado o padding */
+    border-radius: 28px;
+    border: solid 5px #000;
+    background-color: #fff;
+    box-shadow: -10px 8px 0 0 #543838;
+    outline: none;
+    font-family: Papernotes;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 16rem;
+}
+.Senha{
+    width: 446.8px;
+    height: 63px;
+    padding: 24px 31.8px 23px 31.8px; /* Ajustado o padding */
+    border-radius: 28px;
+    border: solid 5px #000;
+    background-color: #fff;
+    box-shadow: -10px 8px 0 0 #543838;
+    outline: none;
+    font-family: Papernotes;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 21rem;
+}
+.login{
+
+    width: 138px;
+    height: 42px;
+    flex-grow: 0;
+    margin: 29rem 0rem 0rem 3rem;
+    padding: 10px 42px 12px 44px;
+    border: none;
+    border-radius: 37px;
+    background-color: #ffc369;
+    font-family: KGRedHands;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    text-align: left;
+    color: #543838;
+    outline: none;
+    position: absolute;
+
+}
+.cad{
+
+    width: 153px;
+    height: 42px;
+    flex-grow: 0;
+    margin: 29rem 0rem 0rem 15rem;
+    padding: 11px 32px 12px 31px;
+    border-radius: 37px;
+    background-color: #ffc369;
+    font-family: KGRedHands;
+    border: none;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    text-align: left;
+    color: #543838;
+    outline: none;
+    position: absolute;
+
+}
+
+#oua{
+    margin: 29.6rem 0rem 0rem 12.8rem;
+    position: absolute;
+    opacity: 70%
+}
+#p1{
+    position:absolute;
+}
+#p2{
+    margin: 43rem 0rem 0rem 25rem;
+    position:absolute;
+}
+
+.miss_pass{
+    height: 11px;
+    flex-grow: 0;
+    margin: 25.3rem 0rem 0rem 17rem;
+    padding: 10px 0 0;
+    font-family: Papernotes;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    text-align: left;
+    color: #543838;
+    position: absolute;
+}
+
+@media (max-width: 1800px) {
+    .fundo{
+        margin:115px 223px 0 180px;
+    }
+
+}
