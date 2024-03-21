@@ -12,6 +12,18 @@
 <div class="fundo">
         <div class="lado-esquerdo">
             <div class="fundo2">
+
+            <div class="log-men">
+            <span class="p-log">
+                já possui uma conta?
+            </span>
+            <a href="http://localhost/T14_PHP/Artzy%20-%20Web/sign_in.php">
+            <button class="btn-log" onclick="">
+                Entrar
+            </button>
+            </a>
+            
+            </div>
                 <!-- <img src="src/pijm.png" class="pin" alt="" id="p1">
                 <img src="src/pijm.png" class="pin" alt="" id="p2"> -->
             </div>
@@ -25,8 +37,11 @@
                         <input type="text" name="" id="" class="nome" placeholder="Insira seu Nome Completo">
                     </div>
                     <div class="col-sm-6">
-                        <input type="text" name="" id="" class="user" placeholder="Insira seu Usuário">
+                        <input type="text" name="" id="" class="email" placeholder="Insira seu Email">
                     </div>
+                </div>
+                <div class="col-sm-12 cad-men">
+                    <button class="btn-cad selecione-none" >Cadastrar</button>
                 </div>
                 <div class="col-sm-12 tos" id="tos">
                         <i class="fa-regular fa-square check_b" id="off" onclick="toggleCheck()"></i>
@@ -49,30 +64,31 @@
                             <ul class="dp-menu">
                                 <li class="dp-item">
                                     <div class="item-content">
-                                        <div class="hov" id="da">Arte Digital</div>
+                                        <div class="hov" name="da" id="da">Arte Digital</div>
                                     </div>
                                 </li>
                                 
                                 <li class="dp-item">
                                     <div class="item-content">
-                                        <div class="hov" id="ta">Arte Tradicional</div>
+                                        <div class="hov" name="ta" id="ta">Arte Tradicional</div>
                                     </div>
                                 </li>
                                 <li class="dp-item">
                                     <div class="item-content">
-                                        <div class="hov" id="av">Audiovisual</div>
+                                        <div class="hov" name="av" id="av">Audiovisual</div>
                                     </div>
                                 </li>
                                
                                 <li class="dp-item">
-                                        <div class="hov" id="wr">Escrita</div>
+                                        <div class="hov" name="wr" id="wr">Escrita</div>
                                 </li>
                             </ul>
                         </div>
-
                     </div>
-                  
+
                 </div>
+             
+              
             </div>
         </div>
     </div>
@@ -112,7 +128,7 @@ function resetDropdown() {
 
     setTimeout(function() {
         dropdown.classList.remove('show');
-    }, 290); // Tempo de espera em milissegundos, ajuste conforme necessário
+    }, 237); // Tempo de espera em milissegundos, ajuste conforme necessário
 }
 </script>
 
@@ -138,23 +154,29 @@ function resetDropdown() {
 
 <script>
     function toggleCheck() {
-        var offIcon = document.getElementById('off');
-        var onIcon = document.getElementById('on');
-        var okIcon = document.getElementById('ok');
+        const offIcon = document.getElementById('off');
+        const onIcon = document.getElementById('on');
+        const okIcon = document.getElementById('ok');
+        const cad = document.querySelector('.btn-cad');
 
         if (offIcon.style.display === 'none') {
             offIcon.style.display = 'inline-block';
             onIcon.style.display = 'none';
             okIcon.style.display = 'none';
+            cad.classList.remove('btn-cad-on');
+            cad.style.pointerEvents = 'none';
         } else {
             offIcon.style.display = 'none';
             onIcon.style.display = 'inline-block';
             okIcon.style.display = 'inline-block';
+            cad.classList.add('btn-cad-on'); 
+            cad.style.pointerEvents = 'auto';
         }
     }
 
     document.getElementById('on').addEventListener('click', function() {
         toggleCheck();
+
     });
 
     document.getElementById('ok').addEventListener('click', function() {
