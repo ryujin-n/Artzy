@@ -62,7 +62,7 @@ body{
 .login_p{
     flex-grow: 0;
     margin: 65px 70.8px 78px 1px;
-    -webkit-text-stroke: 5px #000;
+    -webkit-text-stroke: 13px #000;
     font-family: SuperFoods;
     font-size: 128px;
     font-weight: normal;
@@ -74,6 +74,7 @@ body{
     color: #ffc369;
     position: absolute;
     cursor: default;
+    paint-order:stroke  fill ;
     text-shadow: -12px 9px 0px rgba(84, 56, 56, 1);
     
 }
@@ -242,7 +243,7 @@ body{
     }
     .login_p {
         margin: 110px 63.8px 78px 11px;
-    -webkit-text-stroke: 4px #000;
+    -webkit-text-stroke: 13px #000;
     font-size: 70pt;
     }
     .Email{
