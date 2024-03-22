@@ -114,8 +114,31 @@ body{
     border-radius: 43px;
     -webkit-backdrop-filter: blur(28.8px);
     backdrop-filter: blur(28.8px);
-    box-shadow: -7px 11px 0 0 #1d2c56;
+    box-shadow: -4px 5px 0px rgba(3, 8, 32, 0.2);
 }
+
+.alerta{
+    width: 100rem;
+    position: relative;
+    left: 36rem;
+    top: 21rem;
+
+}
+.waa{
+    height: 4.9rem;
+    --bs-alert-padding-x: 1rem;
+    --bs-alert-padding-y: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
 .p-log{
     width: 250px;
     height: 83px;
@@ -130,7 +153,7 @@ body{
     letter-spacing: 0.88px;
     text-align: left;
     color: #ffffff;
-    text-shadow: -4px 2px 0px rgb(102, 125, 190);
+    text-shadow: -4px 2px 0px rgba(145, 165, 202, 0.438);
 
 }
 .btn-log{
@@ -140,7 +163,7 @@ body{
     margin: 22px 15px 0 25px;
     padding: 13px 65px 10px;
     border-radius: 40px;
-    background-color: #5079b6;
+    background-color: #ffffff;
     outline: none;
     border: none;
     font-family: KGRedHands;
@@ -151,9 +174,22 @@ body{
     line-height: normal;
     letter-spacing: 0.56px;
     text-align: left;
-    color: rgba(255, 255, 255, 0.85);
-    box-shadow: -7px 11px 0 0 #1d2c56;
+    color: #5270c4;
 }
+
+.btn-log:hover{
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: -7px 8px 0 0 #2d3c7e9f;
+    transform: translate(3px, -3px);
+}
+
+.btn-log:not(:hover){
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: 0px 0px 0 0 #ffffff9f;
+    transform: translate(0px, 0px);
+}
+
+
 .nome{
     width: 317.8px;
     height: 63px;
@@ -161,7 +197,6 @@ body{
     border-radius: 28px;
     border: solid 5px #000;
     background-color: #fff;
-    box-shadow: -10px 8px 0 0 rgba(57, 72, 109, 1);
     outline: none;
     font-family: PinkChicken;
     font-size: 18px;
@@ -182,7 +217,6 @@ body{
     border-radius: 28px;
     border: solid 5px #000;
     background-color: #fff;
-    box-shadow: -10px 8px 0 0 rgba(57, 72, 109, 1);
     outline: none;
     font-family: PinkChicken;
     font-size: 18px;
@@ -203,7 +237,6 @@ body{
     border-radius: 28px;
     border: solid 5px #000;
     background-color: #fff;
-    box-shadow: -10px 8px 0 0 rgba(57, 72, 109, 1);
     outline: none;
     font-family: PinkChicken;
     font-size: 18px;
@@ -232,7 +265,6 @@ body{
     text-align: left;
     color: rgba(0, 0, 0, 0.527);
     background-color: #fff;
-    box-shadow: -10px 8px 0 0 rgba(57, 72, 109, 1);
     outline: none;
     position: absolute;
     left: 21.3rem;
@@ -260,7 +292,7 @@ body{
     
 }
 
-.olho{
+.olho {
     font-size: 17pt;
     position: absolute;
     top: 1.4rem;
@@ -269,7 +301,7 @@ body{
 }
 
 #olho2{
-    display: none;
+    visibility:hidden;
 }
 .arrow-rotated {
     transform: rotate(180deg);
@@ -286,10 +318,9 @@ body{
 .dp {
     width: 264px;
     height: 0px;
-    left: 2.8rem;
-    bottom: -3.96rem;
+    left: -0.4rem;
+    bottom: -1.36rem;
     padding: 15px 12px 0px; 
-    box-shadow: -13px 6px 0 0 #39486d;
     border-left: 5px solid #000;
     border-right: 5px solid #000;
     border-bottom: 5px solid #000;
@@ -306,12 +337,36 @@ body{
     visibility: visible;
     height: 166px; 
     padding-bottom: 232px; 
+    animation: visib 0.4s ease forwards;
 }
+
+@keyframes visib {
+    0% {
+        box-shadow: 0px 0px 0 0 #39486d;
+
+    }
+    100% {
+        box-shadow: -13px 6px 0 0 #39486d;
+    }
+}
+
 
 .dp.hide {
     height: 0px; 
     padding-bottom: 0px; 
+    animation: off 0.4s ease forwards;
 }
+
+@keyframes off {
+    0% {
+        box-shadow: -13px 6px 0 0 #39486d;
+    }
+    100% {
+        box-shadow: 0px 0px 0 0 #39486d;
+    }
+}
+
+
 .scrollbar {
     overflow-y: scroll;
     right: 20px; 
@@ -363,7 +418,7 @@ body{
     position: absolute;
     margin-left:  -1.5rem;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.7s ease, transform 0.6s ease;
     
 }
 
@@ -381,7 +436,7 @@ body{
 #ddp div:hover{
 
     background-color: hsl(222, 58%, 87%);
-    box-shadow: 0 5px 0 0 #39486d;
+    box-shadow: -3px 5px 0 0 #39486d;
     transform: translateX(5px);
 
 }
@@ -451,7 +506,6 @@ body{
     background-color: #a1adc0;
     outline: none;
     border: none;
-    box-shadow: -10px 8px 0 0 #595d68;
     font-family: KGRedHands;
     font-size: 21px;
     font-weight: normal;
@@ -464,13 +518,99 @@ body{
     pointer-events: none;
 }
 
+.btn-cad:hover{
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: -10px 8px 0 0 #39486d;
+    transform: translate(7px, -7px);
+}
+
+.btn-cad:not(:hover){
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: 0px 0px 0 0 #a1adc0;
+    transform: translate(0px, 0px);
+}
+
+
+
 .btn-cad-on{
     color: rgba(255, 255, 255, 0.85);
-    box-shadow: -10px 8px 0 0 #39486d;
     background-color: #6188c1;
     pointer-events: auto;
 }
 
+input:focus {
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: -10px 8px 0 0 rgba(57, 72, 109, 1);
+    transform: translate(5px, -5px);
+}
+
+
+
+#senha:focus + .olho,
+#senha:focus + .olho + .olho {
+    transition: transform 0.4s ease;
+    transform: translate(5px, -5px);
+    animation: moveOlho 0.36s ease forwards;
+}
+
+@keyframes moveOlho {
+    0% {
+        top: 1.4rem;
+    }
+    100% {
+        top: 1.3rem;
+    }
+}
+
+@keyframes moveOlhoReverse {
+    0% {
+        top: 1.3rem;
+    }
+    100% {
+        top: 1.4rem;
+    }
+}
+
+#senha:not(:focus) + .olho,
+#senha:not(:focus) + .olho + .olho {
+    transition: transform 0.4s ease;
+    transform: none; /* Remove a transformação */
+    animation: moveOlhoReverse 0.36s ease forwards;
+}
+
+input:not(:focus)
+{
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: 0px 0px 0px 0px rgba(57, 72, 109, 1); /* Sombra inicial */
+    transform: translate(0px, 0px); /* Nenhuma transformação */
+
+}
+
+
+#areaa:focus {
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: -10px 8px 0 0 rgba(57, 72, 109, 1);
+    transform: translate(5px, -5px);
+}
+
+
+#areaa:not(:focus),#area:active
+{
+    transition: box-shadow 0.7s ease, transform 0.7s ease;
+    box-shadow: 0px 0px 0px 0px rgba(57, 72, 109, 1); /* Sombra inicial */
+    transform: translate(0px, 0px); /* Nenhuma transformação */
+    
+}
+
+#tos a:hover{
+    transition: color 0.2s ease;
+    color: #5270c4;
+}
+
+#tos a:not(hover){
+    transition: color 0.2s ease;
+    color: #39486d;
+}
 
 
 @media (max-width: 1900px) {
@@ -524,7 +664,7 @@ body{
     .area{
         width: 257.8px;
         height: 57px;
-        padding: 0px 0 0 31.8px;
+        padding: 14px 0 0 31.8px;
         font-size: 15px;
         left: 17.8rem;
     }
@@ -573,8 +713,8 @@ body{
     .dp{
         width: 210px;
         height: 0px;
-        left: -0.99rem;
-        bottom: -3.5rem;
+        left: -0.77rem;
+        bottom: -1.2rem;
     }
     .dp-item{
         font-size: 11pt;

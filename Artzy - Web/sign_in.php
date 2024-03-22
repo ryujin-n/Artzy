@@ -26,10 +26,14 @@
                 <a class="miss_pass" href="">Esqueci minha senha :c</a>
             
                 <span id="btn">
-                    <button class="login">Login</button>
-                    <span style="font-family: KGRedHands; font-size: 10pt;" id="oua">ou</span>
+                    <button class="login">Entrar</button>
+                    <span id="oua">ou</span>
                     <button class="cad">Cadastrar</button>
                 </span>
+
+                <div class="user-nf">
+                    <span>Usuário Não Encontrado :(</span>
+                </div>
             </div>
         </div>
     </div>
