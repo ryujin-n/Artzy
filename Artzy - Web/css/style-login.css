@@ -10,6 +10,10 @@
     font-family: Papernotes ;
     src: url(../src//font/papernotes/Papernotes.ttf);
 }
+@font-face {
+    font-family: Daydream ;
+    src: url(../src//font/daydream_3/Daydream.ttf);
+}
 
 
 body{
@@ -49,6 +53,32 @@ body{
     background-size:150%;
     background-repeat: no-repeat ;
     position: absolute;
+}
+
+.user-nf{
+    width: 199px;
+    height: 69.7px;
+    padding: 10px 0 0 19px;
+    border-radius: 12px;
+    box-shadow: -5px 6px 0 0 #440929;
+    background-color: #543838;
+    position: relative;
+    left: 7.8rem;
+    top: 31rem;
+}
+
+
+.nf-text{
+    font-family: Daydream;
+    font-size: 11px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.66px;
+    text-align: center;
+    color: #e8a542;
+
 }
 
 .log-fund{
@@ -238,25 +268,26 @@ input:not(:focus)
 }
 
 
-.login:hover{
+#login:hover{
     transition: box-shadow 0.4s ease, transform 0.4s ease;
     box-shadow: -10px 8px 0 0 #543838;
     transform: translate(7px, -7px);
 }
 
-.login:not(:hover){
+#login:not(:hover){
     transition: box-shadow 0.4s ease, transform 0.4s ease;
     box-shadow: 0px 0px 0 0 #ffc369;
     transform: translate(0px, 0px);
 }
 
-.cad:hover{
+
+#cad:hover,.cad:active{
     transition: box-shadow 0.4s ease, transform 0.4s ease;
     box-shadow: -10px 8px 0 0 #543838;
     transform: translate(7px, -7px);
 }
 
-.cad:not(:hover){
+#cad:not(:hover){
     transition: box-shadow 0.4s ease, transform 0.4s ease;
     box-shadow: 0px 0px 0 0 #ffc369;
     transform: translate(0px, 0px);
@@ -329,8 +360,19 @@ input:not(:focus)
     }
     
     #oua{
-        margin: 0.8rem 0rem 0rem 12.9rem;
+        margin: 1.2rem 0rem 0rem 12.9rem;
         font-size: 7pt;
+    }
+
+    .user-nf{
+        width: 198.2px;
+        height: 52.6px;
+        left: 5.2rem;
+        top: 31rem;
+        padding: 0px 0 0px 30px;
+    }
+    .nf-text{
+        font-size: 9px;
     }
 
 }

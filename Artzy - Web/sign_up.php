@@ -9,6 +9,10 @@
     <title>Artzy - Cadastro</title>
 </head>
 <body>
+
+    <?php include_once("php/cad.php")?>
+
+<form action="" method="post" onsubmit="return false;" name="frmCad" id="frmCad">
         <div class="fundo">
                 <div class="lado-esquerdo">
                     <div class="fundo2">
@@ -17,11 +21,9 @@
                         <span class="p-log">
                             já possui uma conta?
                         </span>
-                        <a href="../Artzy - Web/sign_in.php">
-                        <button class="btn-log" id="login" onclick="">
+                        <button class="btn-log" id="login" onclick="logn()">
                             Entrar
                         </button>
-                        </a>
                     </div>
                       
                     </div>
@@ -39,7 +41,7 @@
                             </div>
                         </div>
                         <div class="col-sm-12 cad-men">
-                            <button class="btn-cad selecione-none" onclick="cad()" >Cadastrar</button>
+                            <button class="btn-cad selecione-none" id="cad" onclick="cads()" >Cadastrar</button>
                         </div>
                         <div class="col-sm-12 tos" id="tos">
                                 <i class="fa-regular fa-square check_b" id="off" onclick="toggleCheck()"></i>
@@ -54,50 +56,62 @@
                                 <i class="fa-solid fa-eye olho" id="olho1"></i>
                             </div>
 
-
-                                <div class="col-sm-6">
-                                    <button name="area" id="areaa" class="area" onclick="rotateArrow()" onblur="resetArrow()">
-                                         <span id="bt_n">Selecione sua Área</span>
-                                         <i class="fi fi-br-caret-down" id="seta"></i>
-                                         <div class="dp scrollbar" id="ddp"> <!--style="display:none;" -->
-                                             <ul class="dp-menu">
-                                                 <li class="dp-item">
-                                                     <div class="item-content">
-                                                         <div class="hov" id="da" onclick="area_sel('da')">Arte Digital</div>
-                                                     </div>
-                                                 </li>
-                                                 
-                                                 <li class="dp-item">
-                                                     <div class="item-content">
-                                                         <div class="hov" id="ta" onclick="area_sel('ta')">Arte Tradicional</div>
-                                                     </div>
-                                                 </li>
-                                                 <li class="dp-item">
-                                                     <div class="item-content">
-                                                         <div class="hov" id="av"onclick="area_sel('av')">Audiovisual</div>
-                                                     </div>
-                                                 </li>
+                            <div class="col-sm-6">
+                                <button name="area" id="areaa" class="area" onclick="rotateArrow()" onblur="resetArrow()">
+                                    <span id="bt_n">Selecione sua Área</span>
+                                        <i class="fi fi-br-caret-down" id="seta"></i>
+                                            <div class="dp scrollbar" id="ddp"> <!--style="display:none;" -->
+                                                <ul class="dp-menu">
+                                                    <li class="dp-item">
+                                                        <div class="item-content">
+                                                            <div class="hov" id="da" onclick="area_sel('da')">Arte Digital</div>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                    <li class="dp-item">
+                                                        <div class="item-content">
+                                                            <div class="hov" id="ta" onclick="area_sel('ta')">Arte Tradicional</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="dp-item">
+                                                        <div class="item-content">
+                                                            <div class="hov" id="av"onclick="area_sel('av')">Audiovisual</div>
+                                                        </div>
+                                                    </li>
                                                 
-                                                 <li class="dp-item">
-                                                         <div class="hov" id="wr" onclick="area_sel('wr')">Escrita</div>
-                                                 </li>
-                                             </ul>
-                                         </div>
-                                    </button>
-                                </div>
+                                                    <li class="dp-item">
+                                                            <div class="hov" id="wr" onclick="area_sel('wr')">Escrita</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                </button>
+                            </div>
                         </div>
                         <input type="text" 
                             style="
                                 position: absolute; 
                                 top: 40rem;
-                                /* display: none ; */
+                                visibility: hidden ;
                                 
                             "
+                            name="tipo"
                             id="tipo">
+                    </div>
+                        <input type="text" 
+                            style="
+                                position: absolute; 
+                                top: 47.6rem;
+                                left: 50rem;
+                                visibility: hidden ;
+                                
+                            "
+                            name="ook"
+                            id="ook">
                     </div>
                 </div>
             </div>
         </div>
+    </form>
 
 
         
@@ -137,35 +151,54 @@
 
     <script>
 
-        
-        function cad() {
-
             const nome = document.getElementById('nome');
             const email = document.getElementById('email');
             const senha = document.getElementById('senha');
             const btn = document.getElementById('bt_n');
             const area = document.getElementById('areaa');
             const tipo = document.getElementById('tipo');
+            const ook = document.getElementById('ook');
+            const form = document.getElementById('frmCad');
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        function logn(){
+            const destino = "/PHP/Artzy%20-%20Web/sign_in.php"
+            form.submit();
+            window.location.href = destino;
+        }
+
+
+        function cads() {
+          
+            if (verify()) {
+                alert("Conta criada com Sucesso!");
+                ook.value = "ok"
+                form.submit();
+            }
+        }
+
+        function verify() {
 
             if (nome.value == "") {
                 alert("Preencha um nome válido");
                 nome.focus();
-                return;
-            }
-            else if (email.value == "" || !emailRegex.test(email.value)) {
+                return false;
+            } else if (email.value == "" || !emailRegex.test(email.value)) {
                 alert("Preencha um e-mail válido");
                 email.focus();
-                return;
-            }
-            else if (senha.value == "") {
+                return false;
+            } else if (senha.value == "") {
                 alert("Preencha uma Senha válido");
                 senha.focus();
-                return;
-            }
-            else if (btn.innerText == "Selecione sua Área" || btn.innerText == "" ) {
+                return false;
+            } else if (tipo.value == "") {
                 alert("Preencha uma Área válida");
-                area.focus()
+                setTimeout(function() {
+                    area.focus();
+                }, 0);
+                return false;
+            } else {
+                return true;
             }
         }
     </script>
@@ -265,11 +298,6 @@
             toggleCheck();
         });
     </script>
-
-    <!-- Verificações -->
-
-
-
 
 
     <script src="js/bootstrap.js"></script>

@@ -594,7 +594,7 @@ input:not(:focus)
 }
 
 
-#areaa:not(:focus),#area:active
+#areaa:not(:focus)
 {
     transition: box-shadow 0.7s ease, transform 0.7s ease;
     box-shadow: 0px 0px 0px 0px rgba(57, 72, 109, 1); /* Sombra inicial */
