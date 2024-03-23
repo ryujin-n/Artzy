@@ -1,9 +1,5 @@
-#tela-cadastro{
-    display: none;
-}
-
 body{
-    background-color: #ecd9d1 ;
+    background-image: url("../src/download.jpg");
+    background-repeat: no-repeat;
+    background-size: 120rem 62.5rem;
 }
-
-/* background-color: #E1EEF5 ; */

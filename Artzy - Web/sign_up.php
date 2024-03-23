@@ -50,13 +50,21 @@
                                  <span>Li e concordo com os <a href="">Termos de Serviço</a></span>
                         </div>
                         <div class="row linha2">
+
+               
                             <div class="col-sm-6 " id="sen">
                                 <input type="password" name="senha" id="senha" class="senha" placeholder="Insira uma Senha">
                                 <i class="fa-solid fa-eye-slash olho" id="olho2"></i>
                                 <i class="fa-solid fa-eye olho" id="olho1"></i>
                             </div>
 
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 ">
+                                <input type="text" name="user" id="user" class="user" placeholder="Insira um usuário legal :)">
+                            </div>
+
+                        <div class="row">
+
+                            <div class="col-sm-12">
                                 <button name="area" id="areaa" class="area" onclick="rotateArrow()" onblur="resetArrow()">
                                     <span id="bt_n">Selecione sua Área</span>
                                         <i class="fi fi-br-caret-down" id="seta"></i>
@@ -87,11 +95,12 @@
                                 </button>
                             </div>
                         </div>
+                        </div>
                         <input type="text" 
                             style="
                                 position: absolute; 
                                 top: 40rem;
-                                visibility: hidden ;
+                                display:none;
                                 
                             "
                             name="tipo"
@@ -102,7 +111,7 @@
                                 position: absolute; 
                                 top: 47.6rem;
                                 left: 50rem;
-                                visibility: hidden ;
+                                display:none;
                                 
                             "
                             name="ook"
@@ -154,6 +163,7 @@
             const nome = document.getElementById('nome');
             const email = document.getElementById('email');
             const senha = document.getElementById('senha');
+            const user = document.getElementById('user');
             const btn = document.getElementById('bt_n');
             const area = document.getElementById('areaa');
             const tipo = document.getElementById('tipo');
@@ -162,7 +172,7 @@
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         function logn(){
-            const destino = "/PHP/Artzy%20-%20Web/sign_in.php"
+            const destino = "sign_in.php"
             form.submit();
             window.location.href = destino;
         }
@@ -191,10 +201,15 @@
                 alert("Preencha uma Senha válido");
                 senha.focus();
                 return false;
+            } else if (user.value == "") {
+                alert("Preencha um Usuário válido");
+                user.focus();
+                return false;
             } else if (tipo.value == "") {
                 alert("Preencha uma Área válida");
                 setTimeout(function() {
                     area.focus();
+                    toggleDropdown()
                 }, 0);
                 return false;
             } else {

@@ -69,11 +69,11 @@ body{
     width: 601px;
     height: 605px;
     margin-left: 34rem;
-    margin-top: 3rem;
+    margin-top: -2.4rem;
     position: relative;
 }
 .cad_p {
-    margin: 60px 96.2px 54px -15px;
+    margin: 60px 96.2px 40.7px -15px;
     -webkit-text-stroke: 10px #000;
     font-family: SquashyFlow;
     font-size: 54px;
@@ -249,6 +249,26 @@ body{
     color: rgb(0, 0, 0);
     position: absolute;
 }
+.user{
+    width: 317.8px;
+    height: 63px;
+    padding: 24px 31.8px 23px 31.8px;
+    border-radius: 28px;
+    border: solid 5px #000;
+    background-color: #fff;
+    outline: none;
+    font-family: PinkChicken;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 21.3rem;
+}
 .area{
     width: 317.8px;
     height: 63px;
@@ -267,7 +287,8 @@ body{
     background-color: #fff;
     outline: none;
     position: absolute;
-    left: 21.3rem;
+    left: 0.8rem;
+    top: 5.7rem;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -335,8 +356,7 @@ body{
 
 .dp.show {
     visibility: visible;
-    height: 166px; 
-    padding-bottom: 232px; 
+    height: 227px; 
     animation: visib 0.4s ease forwards;
 }
 
@@ -394,7 +414,7 @@ body{
 }
 .dp-item{
     font-family: Minecraft;
-    font-size: 12pt;
+    font-size: 13pt;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -410,9 +430,9 @@ body{
     top: -0.5rem;
 }
 .hov {
-    width: 203px;
-    height: 32px;
-    padding: 22px 16px 31px 18px;
+    width: 195px;
+    height: 51px;
+    padding: 19px 0px 0px 18px;
     border-radius: 14px;
     border: solid 0 #000;
     position: absolute;
@@ -444,7 +464,7 @@ body{
 .tos{
     width: 476px;
     left: 2rem;
-    top: 12.2rem;
+    top: 17.2rem;
     position: relative;
 }
 
@@ -493,7 +513,7 @@ body{
     width: 376px;
     position: absolute;
     left: 5.7rem;
-    bottom: 0.97rem;
+    bottom: -4.33rem;
 }
 
 .btn-cad{
@@ -666,6 +686,12 @@ input:not(:focus)
         height: 57px;
         padding: 14px 0 0 31.8px;
         font-size: 15px;
+        top: 4.9rem;
+    }
+    .user{
+        width: 257.8px;
+        height: 57px;
+        font-size: 15px;
         left: 17.8rem;
     }
     #seta{
@@ -676,8 +702,8 @@ input:not(:focus)
     }
     .tos{
         width: 476px;
-        left: -8rem;
-        top: 11.2rem; 
+        left: -6.4rem;
+        top: 14.6rem;
     }
     .check_b{
         text-shadow: -1px 2px 0px rgb(28, 38, 63);
@@ -693,7 +719,11 @@ input:not(:focus)
     }
     .cad-men{
         left: -6.3rem;
-        bottom: 5.97rem;
+        bottom: 2.77rem;
+    }
+    .cad-fund{
+        margin-left: 33.9rem;
+        margin-top: -2rem;
     }
     .btn-cad{
         padding: 13.5px 0 18.7px 75.6px;

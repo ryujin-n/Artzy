@@ -10,13 +10,14 @@
 
             try {
                 $sql = $conn->prepare('
-                insert into user
-                    (nome_usuario,senha_usuario,email_usuario,area_usuario)
-                    values(:nome_usuario,:senha_usuario,:email_usuario,:area_usuario)
+                insert into usuario
+                    (nome_usuario,login_usuario,senha_usuario,email_usuario,area_usuario)
+                    values(:nome_usuario,:login_usuario,:senha_usuario,:email_usuario,:area_usuario)
                 ');
         
                 $sql->execute(array(
                     ':nome_usuario'=>$_POST['nome'],
+                    ':login_usuario'=>$_POST['user'],
                     ':senha_usuario'=>$_POST['senha'],
                     ':email_usuario'=>$_POST['email'],
                     ':area_usuario'=>$_POST['tipo'],

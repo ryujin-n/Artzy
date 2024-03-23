@@ -11,7 +11,7 @@
     
     <?php include_once("php/_logar.php")?>
 
-    <form action="php/_logar.php" method="post" name="frmCad" id="frmCad">
+    <form action="" method="post" onsubmit="return false;" name="frmLog" id="frmLog">
         <div class="fundo">
             <div class="lado-esquerdo">
                 <div class="fundo2">
@@ -27,15 +27,15 @@
 
                     <input type="password" name="senha" id="senha"class="Senha" placeholder="Insira sua Senha">
 
-                    <a class="miss_pass" href="">Esqueci minha senha :c</a>
+                    <a class="miss_pass" href="forgor.html">Esqueci minha senha :c</a>
                 
                     <span id="btn">
-                        <button id="login" class="login" onclick="verify()">Entrar</button>
+                        <button id="login" class="login" onclick="loginn()">Entrar</button>
                         <span id="oua">ou</span>
                         <button id="cad" class="cad" onclick="cadss()">Cadastrar</button>
                     </span>
                     
-                    <div class="user-nf" style="">
+                    <div class="user-nf " id="nf" style="display: <?php echo $auth === 'false' ? 'block' : 'none'; ?>">
                         <span class="nf-text">Nome ou Senha incorretos</span>
                     </div>
                 </div>
@@ -48,28 +48,31 @@
 
     const nome = document.getElementById('nome');
     const senha = document.getElementById('senha');
-    const form = document.getElementById('frmCad');
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     function cadss(){
 
-        const destino = "/PHP/Artzy%20-%20Web/sign_up.php"
-        window.location.href = destino;
+        const destino = "sign_up.php"
+        window.location.href = dest;
 
     }
 
-    // function loginn(){
-    //     if (verify()) {
-            // const destino = "/PHP/Artzy%20-%20Web/php/_logar.php"
-    //         form.submit();
-    //         window.location.href = destino;
-    //     }
-       
-    // }
+    function loginn() {
+        if (verify()) {
+            const form = document.getElementById('frmLog');
+            const destino = "php/_logar.php";
+            const nf = document.getElementById('nf');
+
+                form.action = destino;
+                form.submit();
+
+           
+        }
+    }
 
     function verify() {
         if (nome.value == "") {
-            alert("Preencha um nome válido");
+            alert("Preencha um nome válida");
             nome.focus();
             return false;
        

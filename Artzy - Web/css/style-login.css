@@ -63,6 +63,7 @@ body{
     box-shadow: -5px 6px 0 0 #440929;
     background-color: #543838;
     position: relative;
+    display: none;
     left: 7.8rem;
     top: 31rem;
 }
