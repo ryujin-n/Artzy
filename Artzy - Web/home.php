@@ -9,6 +9,9 @@
     <title>Artzy</title>
 </head>
 <body>
+
+    <?php include_once("php/auth.php")?>
+
     <div style="margin-top:-1rem; padding:0 0.2rem 0  0.2rem;">
         <?php include_once("header&footer/header_signedoff.php")?>
     </div>

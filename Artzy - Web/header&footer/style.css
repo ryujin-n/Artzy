@@ -30,7 +30,7 @@
 .logo {
     width: 53.1px;
     height: 53.1px;
-    margin: 12px 53.9px 0.9px 2rem;
+    margin: 8.7px 40.2px 0px 2rem;
   }
   .menu-logo{
     list-style-type:none;
@@ -57,6 +57,8 @@
 }
 .menu_ li {
     flex-grow: 1;
+    width: 160px;
+    margin-right: 0rem;
 }
 
   .Explorar {
@@ -94,6 +96,7 @@
     flex-grow: 1;
     margin: 15px 22px;
     padding: 5px 634.8px 4px 34px;
+    padding-right: 60rem;
     border-radius: 50px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     border: solid 3px #fff;
@@ -137,15 +140,16 @@
     justify-content: flex-start;
     padding: 12px 0;
     margin-top: 0.9rem;
-    margin-left: 1rem; 
+    margin-left: 2.2rem; 
     text-decoration: none;
     font-size: 19.5pt;
 }
 .login{
-    width: 100px;
-    height: 33px;
+    width: 123.6px;
+    height: 38.1px;
+    margin: 1.3rem 1rem 0 3rem;
+    margin-left: -0.1rem;
     flex-grow: 1;
-    margin: 1.4rem 1rem 9px 3rem;
     padding: 8px 9.3px 8px 6px;
     border-radius: 9px;
     /* box-shadow: -4px 4px 0 0 #311b1b; */
@@ -156,16 +160,16 @@
 .icon-login{
     position: absolute;
     color: #543838;
-    font-size: 12pt;
+    font-size: 16pt;
     margin-top: -0.1rem;
-    margin-left: 0.5rem;
+    margin-left: 0.7rem;
 }
 .login-btn{
     position: absolute;
     flex-grow: 1;
-    margin: 0 0px 8px 32px;
+    margin: 1.9px 0px 0px 43px;
     font-family: KGRedHands;
-    font-size: 13px;
+    font-size: 15.1px;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -175,10 +179,10 @@
     position: absolute;
 }
 .cad{
-    width: 140px;
-    height: 33px;
+    width: 159px;
+    height: 38.1px;
     flex-grow: 1;
-    margin-top: 1.4rem;
+    margin-top: 1.3rem;
     margin-right: 2.3rem;
     padding: 8px 9.3px 8px 6px;
     border-radius: 9px;
@@ -189,16 +193,27 @@
 .icon-cad{
     position: absolute;
     color: #543838;
-    font-size: 12pt;
+    font-size: 15.4pt;
     margin-top: -0.1rem;
     margin-left: 0.5rem;
 }
+
+#loj{
+    margin-left: -0.1rem;
+    margin-right: 1.5rem;
+}
+
+#cadbt{
+    width: 9rem;
+    margin-right: 3rem;
+}
+
 .cad-btn{
     position: absolute;
     flex-grow: 1;
-    margin: 0 0px 8px 32px;
+    margin: 1px 0px 0px 35.3px;
     font-family: KGRedHands;
-    font-size: 13px;
+    font-size: 15.1px;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -223,6 +238,7 @@
 .dp{
     top: 4.9rem;
     left: 87.5rem;
+    margin-left: 20rem;
     width: 11rem;
     height: 20rem;
     border-radius: 0rem 0rem 1rem 1rem;
@@ -295,6 +311,7 @@
 
 .dp3{
     top: 4.9rem;
+    margin-left: 1.5rem;
     left: 13.3rem;
     width: 11rem;
     height: 9rem;
@@ -366,37 +383,94 @@
     height: 50px; width:5.5rem; margin-right:30px;
 }
 
-@media (min-width: 768px) {
-
-}
-
-@media (min-width: 992px) {
-
-}
-
-@media (min-width: 1900px) {
-
-    .dp{
-        margin-left: 20rem;
-    }
-    .dp3{
-        margin-left: 1.5rem;
-    }
-    .login{
-        margin-left: -0.1rem;
-    }
-    #loj{
-        margin-left: -0.1rem;
-        margin-right: 1.5rem;
-    }
-    #cadbt{
-        width: 9rem;
-        margin-right: 1rem;
-    }
+@media (max-width: 1800px) {
 
     .menu-search{
-        padding-right: 60rem;
+        padding-right: 47.5rem;
+        margin: 15px 0px;
+    }
+    .shop{
+        margin-top: 1rem;
+        margin-left: 1.2rem;
+        font-size: 17.5pt;
     }
 
-}
+    .login{
+        width: 97.6px;
+        height: 34.1px;
+        margin: 1.3rem -1rem 0px 0rem;
+    }
 
+    .cad{
+        width: 159px;
+        height: 34.1px;
+        flex-grow: 1;
+        margin-left: 2rem;
+        margin-right: 0rem;
+    }
+
+    .logo {
+        width: 43.1px;
+        height: 43.1px;
+        margin: 14.1px 39.2px 0px 2rem;
+    }
+
+    .Explorar{
+        font-size: 16.4px;
+    }
+    .Servios{
+        font-size: 16.4px;
+    }
+
+    #jb .menu-nav{
+        width: 70px;
+    }
+
+    .m-icon{
+        font-size: 19.5pt;
+        margin: 1rem 25.1px;
+
+    }
+
+    .icon-login{
+        font-size: 12.9pt;
+        margin-left: 0.5rem;
+
+    }
+    .login-btn{
+        margin: 0.9px 0px 0px 31.9px;;
+        font-size: 13.4px;
+
+    }
+
+    .cad{
+        width: 139px;
+    }
+
+    .icon-cad{
+        font-size: 14.8pt;
+        margin-top: -0.2rem;
+        margin-left: 0.4rem;
+    }
+
+    .cad-btn{
+        margin: 1px 0px 0px 34px;
+        font-size: 13.1px;
+    }
+
+    #cadbt {
+        width: 7rem;
+        margin-right: 7rem;
+    }
+
+    #borger{
+        width: 20px;
+    }
+
+    #loj {
+        margin-left: 0.2rem;
+        margin-right: -3rem;
+    }
+
+
+}

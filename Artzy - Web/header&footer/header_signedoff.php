@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>header</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header&footer/style.css">
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/2.2.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel='stylesheet'

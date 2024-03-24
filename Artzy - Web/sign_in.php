@@ -9,8 +9,7 @@
 </head>
 <body>
     
-    <?php include_once("php/_logar.php")?>
-
+    
     <form action="" method="post" onsubmit="return false;" name="frmLog" id="frmLog">
         <div class="fundo">
             <div class="lado-esquerdo">
@@ -22,20 +21,20 @@
             <div class="lado-direito">
                 <div class="log-fund">
                     <p class="login_p selecione-none ">Login</p>
-
+                    
                     <input type="text" name="nome" id="nome" class="Email" placeholder="Insira seu Usuário">
-
+                    
                     <input type="password" name="senha" id="senha"class="Senha" placeholder="Insira sua Senha">
-
+                    
                     <a class="miss_pass" href="forgor.html">Esqueci minha senha :c</a>
-                
+                    
                     <span id="btn">
                         <button id="login" class="login" onclick="loginn()">Entrar</button>
                         <span id="oua">ou</span>
-                        <button id="cad" class="cad" onclick="cadss()">Cadastrar</button>
+                        <button id="cad" class="cad" formaction="_logar.php" onclick="cadss()">Cadastrar</button>
                     </span>
                     
-                    <div class="user-nf " id="nf" style="display: <?php echo $auth === 'false' ? 'block' : 'none'; ?>">
+                    <div class="user-nf" id="nf" style="display: none;">
                         <span class="nf-text">Nome ou Senha incorretos</span>
                     </div>
                 </div>
@@ -44,11 +43,14 @@
     </form>
 </body>
 
-<script>
+<?php include_once("php/_logar.php")?>
 
+
+<script>
     const nome = document.getElementById('nome');
     const senha = document.getElementById('senha');
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const nf = document.getElementById('nf');
 
     function cadss(){
 
@@ -60,13 +62,7 @@
     function loginn() {
         if (verify()) {
             const form = document.getElementById('frmLog');
-            const destino = "php/_logar.php";
-            const nf = document.getElementById('nf');
-
-                form.action = destino;
-                form.submit();
-
-           
+            form.submit();
         }
     }
 
