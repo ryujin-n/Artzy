@@ -10,6 +10,8 @@ create table usuario
 	login_usuario varchar(50) null unique ,
 	senha_usuario varchar(20) not null,
 	fotoP_usuario varchar(200) null default 'fotopadrao.png',
+	banner_usuario varchar(200) null default 'bannerpadrao.png',
+	premium_usuario varchar(200) null default 'OFF',
 	email_usuario varchar (100) not null unique,
 	area_usuario varchar (100) not null,
 	data_usuario timestamp not null,
