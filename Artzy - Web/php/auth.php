@@ -1,14 +1,11 @@
 <?php
 
+    
 session_start();
 
-if(isset($_SESSION['idUsuarioLogin']))
-{
-    $idUsuarioSessao = $_SESSION['idUsuarioLogin'];
-    $nomeUsuarioSessao = $_SESSION['nomeUsuarioLogin'];
-    $loginUsuarioSessao = $_SESSION['loginUsuarioLogin'];
-}
-else
-{
-    header('Location:sign_in.php');
+if (isset($_SESSION['nomeUsuarioLogin'])) {
+    $menu = "header&footer/header_signedon.php";
+} else {
+    header('Location: sign_in.php');
+    $menu = "header&footer/header_signedoff.php";
 }

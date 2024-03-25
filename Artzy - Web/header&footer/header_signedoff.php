@@ -23,11 +23,9 @@
             </ul>
 
             <nav class="menu_">
-                <li class="menu-logo">
-                    <a href="http://localhost/T14_PHP/Artzy%20-%20Web/home.php">
+                <li id="logo" class="menu-logo">
                         <img src="src/logo.png" class="logo" onerror="this.onerror=null; this.src='../src/logo.png';">
                         
-                    </a>
                 </li>
                 <li id="exp" class="menu-nav">
                     <button class="menu-nav dropdown">
@@ -61,28 +59,30 @@
                     </div>
                 </li>
 
-                <li class="menu-search">
+                <li id="srch" class="menu-search">
                     <i class="fas fa-search search-icon"></i>
                     <input type="text" role="search" class="search-bar" placeholder="Pesquisar">
                 </li>
 
                 <li id="loj">
-                    <a href="" style="text-decoration:none;">
-                        <i class="fi fi-sr-shopping-cart icons shop"></i>
-                    </a>
+                    <i class="fi fi-sr-shopping-cart icons shop"></i>
                 </li>
 
-                <li>
-                    <div class="login">
-                        <i class="fi fi-br-pencil-paintbrush  icon-login"></i>
-                        <span class="login-btn">Entrar</span>
-                    </div>
+                <li id="logbt">
+                    <a href="sign_in.php">
+                        <div class="login">
+                            <i class="fi fi-br-pencil-paintbrush  icon-login"></i>
+                            <span class="login-btn">Entrar</span>
+                        </div>
+                    </a>
                 </li>
                 <li id="cadbt">
-                    <div class="cad">
-                        <i class="fi fi-br-address-card icon-cad"></i>
-                        <span class="cad-btn">Criar Conta</span>
-                    </div>
+                    <a href="sign_up.php">
+                        <div class="cad">
+                            <i class="fi fi-br-address-card icon-cad"></i>
+                            <span class="cad-btn">Criar Conta</span>
+                        </div>
+                    </a>
                 </li>
 
                 <li id="borger">
@@ -96,7 +96,7 @@
                                 </div>
                             </li>
                             <li>
-                                <hr style="margin-bottom: 10px;margin-top: 20px;">
+                                <div id="hr1" class="hr"></div>
                             </li>
                             <li style="margin-top: 12px;" class="dp-item">
                                 <div class="item-content">
@@ -111,7 +111,7 @@
                                 </div>
                             </li>
                             <li>
-                                <hr style="margin-bottom: 20px;margin-top: 20px;">
+                                <div id="hr2" class="hr"></div>
                             </li>
                             <li style="margin-top: 12px;" class="dp-item">
                                 <div class="item-content">

@@ -11,6 +11,7 @@
     
     
     <form action="" method="post" onsubmit="return false;" name="frmLog" id="frmLog">
+    
         <div class="fundo">
             <div class="lado-esquerdo">
                 <div class="fundo2">
@@ -54,7 +55,7 @@
 
     function cadss(){
 
-        const destino = "sign_up.php"
+        const dest = "sign_up.php"
         window.location.href = dest;
 
     }

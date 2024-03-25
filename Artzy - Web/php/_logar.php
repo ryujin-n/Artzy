@@ -15,13 +15,12 @@ if($_POST) {
         
         if($sql->rowCount() == 1)
         {
-            $auth = "teste";
-
             foreach($sql as $linha)
             {
                 session_start();
                 $_SESSION['nomeUsuarioLogin'] = $linha[1];
                 $_SESSION['loginUsuarioLogin'] = $linha[2];
+                $_SESSION['fotoPerfilUsuario'] = $linha[4];
                 $_SESSION['emailUsuarioLogin'] = $linha[5];
                 header('Location:home.php');
 

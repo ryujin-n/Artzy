@@ -25,9 +25,7 @@
 
                 if($sql->rowCount() > 0)
                 {
-                    $name = $_POST['nome'];
-
-                    header("Location:home.php?user=".$name);
+                    header("Location: php/auth.php");
                 }
         
             } 

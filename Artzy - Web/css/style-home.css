@@ -1,3 +1,10 @@
 body{
     background-color: #ecd9d1 ;
 }
+
+.off{
+    display: none;
+}
+.on{
+    display: block;
+}

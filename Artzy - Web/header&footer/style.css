@@ -58,7 +58,6 @@
 .menu_ li {
     flex-grow: 1;
     width: 160px;
-    margin-right: 0rem;
 }
 
   .Explorar {
@@ -73,6 +72,10 @@
     text-align: center;
     color: #fcfcfc;
   }
+
+  #borger{
+    width: 69px;
+}
 
   .Servios {
     font-family: HeyComic;
@@ -131,16 +134,13 @@
 .icons{
     color: white;
 }
-.shop{
-    align-items: center;
+.shop {
     color: #ffffff;
     cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    position: absolute;
     padding: 12px 0;
-    margin-top: 0.9rem;
-    margin-left: 2.2rem; 
+    margin-top: 0.7rem;
+    margin-left: 1.7rem;
     text-decoration: none;
     font-size: 19.5pt;
 }
@@ -152,7 +152,6 @@
     flex-grow: 1;
     padding: 8px 9.3px 8px 6px;
     border-radius: 9px;
-    /* box-shadow: -4px 4px 0 0 #311b1b; */
     background-color: #ffc369;
     position: relative;
     cursor: pointer;
@@ -240,7 +239,7 @@
     left: 87.5rem;
     margin-left: 20rem;
     width: 11rem;
-    height: 20rem;
+    height: 20.6rem;
     border-radius: 0rem 0rem 1rem 1rem;
     background-color: #442d2df3;
     position:absolute;
@@ -279,13 +278,14 @@
     text-decoration: none;
 }
 #exps .dp-menu{
-    margin-top: -0.01rem;
-    padding: 0.3rem 1rem 0rem 1rem;
+    margin-top: 1.09rem;
+    padding: 0rem 0rem 0rem 1rem;
 }
-#exps hr{
-    height: 2px; 
-    background-color: #726262;
-    border: none;
+.hr{
+    margin: 22px 0px 22px 6px;
+    width: 132px; 
+    border: solid 1px #726262  ;
+    border-radius:1px;
 }
 #men:active + .dp {
     display: inline-block;
@@ -344,6 +344,34 @@
     color: #ffc369;
 }
 
+.login:hover{
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: -4px 4px 0 0 #311b1b; 
+    transform: translate(3px, -3px);
+}
+
+.login:not(:hover){
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: 0px 0px 0 0 #ffc369;
+    transform: translate(0px, 0px);
+}
+
+.cad:hover{
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: -4px 4px 0 0 #311b1b; 
+    transform: translate(3px, -3px);
+}
+
+.cad:not(:hover){
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: 0px 0px 0 0 #ffc369;
+    transform: translate(0px, 0px);
+}
+
+#loj i:hover{
+    color: #ffc369;
+}
+
 #jbs span {
     font-family: MomcakePro;
     font-size: 22px; 
@@ -383,15 +411,34 @@
     height: 50px; width:5.5rem; margin-right:30px;
 }
 
+
+
 @media (max-width: 1800px) {
 
+
+    .dp{
+        left: 83.5rem;
+        margin-left: 0;
+    }
+    .menu_ li {
+        flex-grow: 1;
+        width: 68px;
+    }
+
+    .menu-nav{
+        justify-content: center;
+    }
+
     .menu-search{
-        padding-right: 47.5rem;
-        margin: 15px 0px;
+        padding-right: 36.5rem;
+        margin: 14px 0px;
+        margin-left: 8px;
+        margin-right: 0px;
     }
     .shop{
-        margin-top: 1rem;
-        margin-left: 1.2rem;
+        justify-content: center;
+        margin-top: 0.8rem;
+        margin-left: 2rem;
         font-size: 17.5pt;
     }
 
@@ -402,17 +449,17 @@
     }
 
     .cad{
-        width: 159px;
+        width: 109px;
         height: 34.1px;
         flex-grow: 1;
-        margin-left: 2rem;
+        margin-left: 0.9rem;
         margin-right: 0rem;
     }
 
     .logo {
         width: 43.1px;
         height: 43.1px;
-        margin: 14.1px 39.2px 0px 2rem;
+        margin: 14.1px 39.2px 0px 1.6rem;
     }
 
     .Explorar{
@@ -459,17 +506,69 @@
     }
 
     #cadbt {
-        width: 7rem;
-        margin-right: 7rem;
+        width:3.3rem;
+        margin-right: 0rem;
     }
 
     #borger{
-        width: 20px;
+        width: 8px;
     }
 
     #loj {
-        margin-left: 0.2rem;
-        margin-right: -3rem;
+        width: 0px;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    #logo{
+        width: 17px;
+    }
+
+    #logbt{
+        width: 6px;
+    }
+
+    #exp{
+        width: 0px;
+        margin-left: 0rem;
+        margin-right: 0.7rem;
+    }
+
+    #exp button {
+        margin-right: 0.5rem;
+    }
+
+    #jb{
+        width: 40px;
+        margin-right: 1rem;
+    }
+
+    #jb button {
+        height: 50px;
+        margin-right: 0px;
+    }
+
+    .dp3{
+        left: 10.7rem;
+    }
+
+    #jbs .dp-item {
+        margin-left: 24px;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    #jbs span {
+        font-family: MomcakePro;
+        font-size: 18px;
+    }
+
+    .hr{
+        border: solid 2px #726262  ;
+
+    }
+    #menu-b{
+        margin-left: 0.4rem;
     }
 
 
