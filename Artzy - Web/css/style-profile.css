@@ -1,0 +1,51 @@
+body{
+    background-color: #f5e7e1;
+}
+
+
+
+.perf-menu{
+    width: 29.6rem;
+    height: 70rem;
+    position: relative;
+}
+
+.perf-fundo{
+    width: 387px;
+    height: 1020px;
+    margin: 57px 41px 231px 39px;
+    padding: 63px 35px 142px 39px;
+    border-radius: 21px;
+    box-shadow: 12px 15px 0 0 #e8a542;
+    background-color: #3d2828;
+    position: relative;
+}
+
+.profile-p{
+    position: absolute ;
+    left: 4.5rem;
+    width: 218px;
+    height: 218px;
+    margin: 0 14px 19px 16px;
+    border-radius: 100%;
+}
+#profile-p img{
+    width: 218px;
+    height: 218px;
+}
+
+.nome-perfil{
+    display: absolute;
+    width: 239px;
+    height: 47px;
+    margin: 19px 6px 0 3px;
+    font-family: MomcakePro;
+    font-size: 43px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}

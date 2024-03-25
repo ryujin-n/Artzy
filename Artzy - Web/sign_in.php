@@ -32,10 +32,11 @@
                     <span id="btn">
                         <button id="login" class="login" onclick="loginn()">Entrar</button>
                         <span id="oua">ou</span>
-                        <button id="cad" class="cad" formaction="_logar.php" onclick="cadss()">Cadastrar</button>
+                        <button id="cad" class="cad" formaction="" onclick="cadss()">Cadastrar</button>
                     </span>
                     
-                    <div class="user-nf" id="nf" style="display: none;">
+                    <?php include_once("php/_logar.php")?>
+                    <div class="user-nf" id="nf" style="display:<?=$auth?>;">
                         <span class="nf-text">Nome ou Senha incorretos</span>
                     </div>
                 </div>
@@ -44,7 +45,6 @@
     </form>
 </body>
 
-<?php include_once("php/_logar.php")?>
 
 
 <script>

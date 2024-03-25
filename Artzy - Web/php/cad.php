@@ -25,7 +25,7 @@
 
                 if($sql->rowCount() > 0)
                 {
-                    header("Location: php/auth.php");
+                    header("Location: sign_in.php");
                 }
         
             } 

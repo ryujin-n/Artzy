@@ -1,8 +1,3 @@
-@font-face {
-    font-family: KGRedHands ;
-    src: url(../src//font/kg_red_hands/KGRedHands.ttf);
-}
-
 body {
     background-color: #FBCF85;
 }
@@ -43,144 +38,15 @@ body {
     color: #543838;
     margin: 0; /* Remover margem padrão */
 }
-
-.tx
-{
-    position: relative;
-}
-
-.tx2
-{
-    position: absolute;
-    font-family: Organic Relief;
-    font-size: 16pt;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 1.55pt;
-    color: #543838;
-    left: 4rem;
-    right: 0rem;
-    top: 11rem;
-    bottom: 0rem;
-}
-
-
 .qs
 {
-    position: absolute;
-    width: 36rem;
-    text-align: justify;
-    font-family: Honey Cute;
-    font-size: 30pt;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 1.5pt;
-    color: #543838;
-    left: 5rem;
-    right: 0rem;
-    top: 18rem;
-    bottom: 0rem;
-}
-
-#tx3 img
-{
-    width: 945px;
-    height: 76rem;
-}
-.tx3 {
-    position: absolute;
-    left: 39.9rem;
-    right: 0rem;
-    top: 6rem;
-    bottom: 0rem;
-}
-
-
-.bann 
-{
-    position: absolute;
-    max-width: 100%;
-    height: auto;
-    top: 89rem;
-}
-
-/* .ds
-{
-    text-align: end;
     font-family: Organic Relief;
-    font-size: pt;
+    font-size: 5pt;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: 1.55pt;
     color: #543838;
-    margin: 20px 0.2rem 0 -7rem;
-} */
-.it1
-{
-    position: relative;
+    margin: 0; 
 }
-
-.di 
-{
-    position: absolute;
-    height: auto;
-    left: 22%;
-    transform: translateX(-50%);
-    top: 147rem;
-}
-
-.es
-{
-    position: absolute;
-    font-family: Organic Relief;
-    font-size: 38pt;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 1.55pt;
-    color: #543838;
-    left: 51.9rem;
-    right: 0rem;
-    top: 147rem;
-    bottom: 0rem;
-}
-.es2
-{
-    position: absolute;
-    font-family: Organic Relief;
-    font-size: 37pt;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 1.55pt;
-    color: #543838;
-    left: 55.9rem;
-    right: 0rem;
-    top: 153rem;
-    bottom: 0rem;
-}
-
-.tx1 {
-    position: absolute;
-    text-align: left;
-    font-family: KGRedHands;
-    font-size: 23pt;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 1.55pt;
-    color: #543838;
-    left: 50.9rem;
-    right: 0rem;
-    top: 164rem;
-    bottom: 0rem;
-  }

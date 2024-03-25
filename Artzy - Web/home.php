@@ -17,11 +17,13 @@
         <?php include_once($menu)?>
     </div>
 
+    
+
+
+
+
 
     <script src="js/bootstrap.js"></script>
-
-
-
 
 </body>
 </html>

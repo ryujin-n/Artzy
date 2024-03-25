@@ -186,11 +186,16 @@
 
   height: 40px;
   width: 40px;
-  background-color: white;
+  /* background-color: white; */
   border-radius: 100%;
   margin: 17.6px 0px 0px 0.3rem;
-  
 
+}
+
+#pfp img{
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
 }
 
 
@@ -384,7 +389,7 @@
 
 
   .dp{
-      left: 83.5rem;
+      left: 87.8rem;
       margin-left: 0;
   }
   .menu_ li {
@@ -505,7 +510,7 @@
   .pfp {
     height: 32px;
     width: 32px;
-    margin: 20.6px 0px 0px 0.8rem;
+    margin: 17.6px 0px 0px 0.6rem;
   }
 
   #menu-b{

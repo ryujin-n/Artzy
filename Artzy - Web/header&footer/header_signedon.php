@@ -80,7 +80,13 @@
                 </li>
 
                 <li id="pfp">
-                    <div class="pfp"></div>
+                    
+                    <a href="profile.php">
+                        <div class="pfp">
+                            <img src="pfp/<?=$pfp?>" alt="">
+                        </div>
+                    </a>
+
                 </li>
 
                 <li id="borger">

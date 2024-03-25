@@ -1,6 +1,10 @@
 <?php
 
+    $auth = "";
+
 if($_POST) {
+    
+    $auth = "none";
 
     include_once("conn.php");
     
@@ -28,7 +32,7 @@ if($_POST) {
         }
         else
         {
-            echo '<script>alert("aaa")</script>';
+            $auth = "block";
         }
     } catch(PDOException $erro) {
         echo $erro->getMessage();
