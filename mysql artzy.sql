@@ -3,19 +3,20 @@ create database Artzy
 use artzy
 
 
-create table user
+create table usuario
 (
 	id_usuario int not null auto_increment primary key,
 	nome_usuario varchar(50) not null,
 	login_usuario varchar(50) null unique ,
 	senha_usuario varchar(20) not null,
-	fotoP_usuario varchar(200) null ,
+	fotoP_usuario varchar(200) null default 'fotopadrao.png',
 	email_usuario varchar (100) not null unique,
 	area_usuario varchar (100) not null,
 	data_usuario timestamp not null,
 	status_usuario varchar(20) not null default 'ATIVO'
 )
-select * from user
+select * from usuario
+drop table usuario
 
 drop table assinatura
 
