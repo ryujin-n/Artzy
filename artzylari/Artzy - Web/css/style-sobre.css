@@ -53,18 +53,18 @@ body {
 {
     position: absolute;
     font-family: Organic Relief;
-    font-size: 16pt;
+    font-size: 38pt;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: 1.55pt;
     color: #543838;
-    left: 4rem;
+    left: 7rem;
     right: 0rem;
-    top: 11rem;
+    top: 8rem;
     bottom: 0rem;
-}
+  }
 
 
 .qs
@@ -124,53 +124,79 @@ body {
 .it1
 {
     position: relative;
+    right: 0rem;
 }
 
-.di 
+.es 
+{
+    position: relative;
+    width: 795.6px;
+    height: 795.6px;
+    flex-grow: 0;
+    top: 146rem;
+    left: 11rem;
+}
+
+.miku
 {
     position: absolute;
-    height: auto;
-    left: 22%;
-    transform: translateX(-50%);
-    top: 147rem;
+    width: 550px;
+    height: 550px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 31px;
+    box-shadow: -20px 21px 0 0 #543838;
+}
+.cli
+{
+  position: absolute;
+  top: 176rem;
+  left: 12rem;
 }
 
-.es
+.cli2
+{
+    position: absolute;
+    top: 146.9rem;
+    left: 41.4rem;
+}
+
+.di
 {
     position: absolute;
     font-family: Organic Relief;
-    font-size: 38pt;
+    font-size: 46pt;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: 1.55pt;
     color: #543838;
-    left: 51.9rem;
+    left: 58.9rem;
     right: 0rem;
-    top: 147rem;
+    top: 151rem;
     bottom: 0rem;
 }
-.es2
+
+.di2
 {
     position: absolute;
     font-family: Organic Relief;
-    font-size: 37pt;
+    font-size: 46pt;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: 1.55pt;
     color: #543838;
-    left: 55.9rem;
+    left: 62.9rem;
     right: 0rem;
-    top: 153rem;
+    top: 158rem;
     bottom: 0rem;
 }
 
 .tx1 {
     position: absolute;
-    text-align: left;
+    text-align: right;
     font-family: KGRedHands;
     font-size: 23pt;
     font-weight: normal;
@@ -179,8 +205,96 @@ body {
     line-height: normal;
     letter-spacing: 1.55pt;
     color: #543838;
-    left: 50.9rem;
-    right: 0rem;
-    top: 164rem;
+    left: 48.9rem;
+    right: 11rem;
+    top: 169rem;
     bottom: 0rem;
-  }
+}
+
+
+/*item2 */
+
+.item2
+{
+    position: relative;
+    right: 0rem;
+}
+.esquerda2
+{
+    position: relative;
+    width: 795.6px;
+    height: 795.6px;
+    flex-grow: 0;
+    top: 146rem;
+    left: 56rem;
+}
+.dia
+{
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 31px;
+    box-shadow: -20px 21px 0 0 #543838;
+}
+.clip2
+{
+    position: absolute;
+    top: 176rem;
+    left: 57rem;
+}
+.clip3
+{
+    position: absolute;
+    top: 146.9rem;
+    left: 86.5rem;
+}
+.direita2
+{
+    position: absolute;
+    font-family: Organic Relief;
+    font-size: 46pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.55pt;
+    color: #543838;
+    left: 58.9rem;
+    right: 0rem;
+    top: 151rem;
+    bottom: 0rem;
+}
+.direita3
+{
+    position: absolute;
+    font-family: Organic Relief;
+    font-size: 46pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.55pt;
+    color: #543838;
+    left: 62.9rem;
+    right: 0rem;
+    top: 158rem;
+    bottom: 0rem;
+}
+.text2 
+{
+    position: absolute;
+    text-align: right;
+    font-family: KGRedHands;
+    font-size: 23pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.55pt;
+    color: #543838;
+    left: 48.9rem;
+    right: 11rem;
+    top: 169rem;
+    bottom: 0rem;
+}
