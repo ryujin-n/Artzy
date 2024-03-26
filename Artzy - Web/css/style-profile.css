@@ -2,11 +2,30 @@ body{
     background-color: #f5e7e1;
 }
 
+@font-face {
+    font-family: KGRedHands ;
+    src: url(../src//font/kg_red_hands/KGRedHands.ttf);
+}
+@font-face {
+    font-family: HeyComic ;
+    src: url(../src//font/hey_comic/Hey\ Comic.ttf);
+}
+@font-face {
+    font-family: Papernotes ;
+    src: url(../src//font/papernotes/Papernotes.ttf);
+}
+@font-face {
+    font-family: Minecraft ;
+    src: url(../src//font/minecraft/Minecraft.ttf);
+}
+@font-face {
+    font-family: MomcakePro ;
+    src: url(../src//font/momcakepro/MomcakePro-Regular.ttf);
+}
 
 
 .perf-menu{
     width: 29.6rem;
-    height: 70rem;
 }
 
 .perf-fundo{
@@ -15,7 +34,7 @@ body{
     margin: 57px 41px 231px 39px;
     padding: 63px 35px 142px 39px;
     border-radius: 21px;
-    box-shadow: 10px 20px 0 0 #e8a542;
+    box-shadow: 12px 15px 0 0 #e8a542;
     background-color: #3d2828;
 }
 
@@ -54,7 +73,7 @@ body{
     width: 198px;
     height: 23px;
     margin: 2px 6px 0 12px;
-    font-family: Minecraft;
+    
     font-size: 10.5pt;
     text-align: center;
     color: #e8a542;
@@ -297,4 +316,19 @@ body{
     box-shadow: none; 
     transform: none; 
     background-color: transparent; 
+}
+
+.banner{
+    position: relative;
+    bottom: 82rem;
+    left: 25.7rem;
+    width: 1110px;
+    height: 307px;
+    margin: 57px 29px 52px 41px;
+    border-radius: 31px;
+}
+
+.banner img{
+    width: 1110px;
+    height: 307px;
 }

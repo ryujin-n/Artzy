@@ -12,7 +12,9 @@
     }
     elseif ($area == "Audiovisual") {
         $prof = "Editor de Vídeos";
+        $font = "MomcakePro";
     }
     elseif ($area == "Escrita") {
         $prof = "Escritor";
+        $font = "Papernotes";
     }

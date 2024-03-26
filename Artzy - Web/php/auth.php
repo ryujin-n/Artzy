@@ -10,6 +10,7 @@ if (isset($_SESSION['nomeUsuarioLogin'])) {
     $user = $_SESSION['loginUsuarioLogin'];
     $nome = $_SESSION['nomeUsuarioLogin'];
     $area = $_SESSION['areaUsuarioLogin'];
+    $banner = $_SESSION['bannerPerfilUsuario'];
     $seguidores = $_SESSION['seguidores'];
     $seguindo = $_SESSION['seguindo'];
 
