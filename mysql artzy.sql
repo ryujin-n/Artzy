@@ -12,6 +12,8 @@ create table usuario
 	fotoP_usuario varchar(200) null default 'fotopadrao.png',
 	banner_usuario varchar(200) null default 'bannerpadrao.png',
 	premium_usuario varchar(200) null default 'OFF',
+	seguidores_usuario varchar(200) null default 0,
+	seguindo_usuario varchar(200) null default 0,
 	email_usuario varchar (100) not null unique,
 	area_usuario varchar (100) not null,
 	data_usuario timestamp not null,
