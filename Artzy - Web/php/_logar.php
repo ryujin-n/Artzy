@@ -25,7 +25,12 @@ if($_POST) {
                 $_SESSION['nomeUsuarioLogin'] = $linha[1];
                 $_SESSION['loginUsuarioLogin'] = $linha[2];
                 $_SESSION['fotoPerfilUsuario'] = $linha[4];
-                $_SESSION['emailUsuarioLogin'] = $linha[5];
+                $_SESSION['bannerPerfilUsuario'] = $linha[5];
+                $_SESSION['premium'] = $linha[6];
+                $_SESSION['seguidores'] = $linha[7];
+                $_SESSION['seguindo'] = $linha[8];
+                $_SESSION['emailUsuarioLogin'] = $linha[9];
+                $_SESSION['areaUsuarioLogin'] = $linha[10];
                 header('Location:home.php');
 
             }

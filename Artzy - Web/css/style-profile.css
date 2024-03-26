@@ -7,38 +7,37 @@ body{
 .perf-menu{
     width: 29.6rem;
     height: 70rem;
-    position: relative;
 }
 
 .perf-fundo{
-    width: 387px;
-    height: 1020px;
+    width: 380px;
+    height: 1080px;
     margin: 57px 41px 231px 39px;
     padding: 63px 35px 142px 39px;
     border-radius: 21px;
-    box-shadow: 12px 15px 0 0 #e8a542;
+    box-shadow: 10px 20px 0 0 #e8a542;
     background-color: #3d2828;
-    position: relative;
 }
 
 .profile-p{
     position: absolute ;
-    left: 4.5rem;
-    width: 218px;
-    height: 218px;
+    left: 6.5rem;
+    width: 198px;
+    height: 198px;
     margin: 0 14px 19px 16px;
     border-radius: 100%;
 }
 #profile-p img{
-    width: 218px;
-    height: 218px;
+    width: 160px;
+    height: 160px;
+    margin-left: 2.1rem;
 }
 
 .nome-perfil{
-    display: absolute;
-    width: 239px;
-    height: 47px;
-    margin: 19px 6px 0 3px;
+    display: block;
+    width: 198px;
+    height: 51px;
+    margin: 19px 6px 0 12.5px;
     font-family: MomcakePro;
     font-size: 43px;
     font-weight: bold;
@@ -46,6 +45,256 @@ body{
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.area-perfil{
+    display: block;
+    width: 198px;
+    height: 23px;
+    margin: 2px 6px 0 12px;
+    font-family: Minecraft;
+    font-size: 10.5pt;
+    text-align: center;
+    color: #e8a542;
+}
+
+.foll-perfil{
+    /* background-color: aqua; */
+    display: block;
+    width: 275px;
+    height: 53px;
+    margin: 5px 0px 0 -12px;
+}
+
+.Seguidores {
+    width: 84px;
+    height: 19px;
+    margin: 27px 9px 35px 41px;
+    font-family: MomcakePro;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+  }
+
+.Seguindo {
+    width: 74px;
+    height: 19px;
+    margin: 27px 34px 35px 2px;
+    font-family: MomcakePro;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+  }
+
+.text-style-1 {
+    color: #e8a542;
+  }
+.text-style-2 {
+    color: #b6b6b6;
+    margin-left: 2px;
+  }
+
+.info {
+    display: flex; /* Ativar flexbox */
+    align-items: center; /* Centralizar verticalmente */
+}
+
+.icones {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    margin-left: 10px;
+    font-size: 18.9pt;
+    color: #e8a542;
+}
+
+.text {
+    flex: 1; /* Crescer para ocupar o espaço restante */
+    margin-top: 10px;
+    font-family: MomcakePro;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
     text-align: left;
     color: #fff;
+}
+
+#infos{
+    margin-top: 2rem;
+    margin-left: -1.9rem;
+}
+#socials{
+    margin-top: -0.3rem;
+    margin-left: -0.6rem;
+}
+#contat{
+    margin-top: -0.3rem;
+    margin-left: -0.6rem;
+}
+
+#socials .text{
+    margin-top: 1rem;
+    font-size: 13pt;
+    font-weight: normal;
+}
+#socials a{
+    color: #fff;
+}
+
+#butao{
+    position: relative;
+    left: 0.9rem;
+}
+
+/* .seguir{
+    width: 130px;
+    height: 40px;
+    flex-grow: 0;
+    margin: 35px 12px 36px 3px;
+    padding:5.6px 34px 9px 28px;
+    border-radius: 6px;
+    background-color: #e8a542;
+    outline: none;
+    transition: box-shadow 0.4s ease, transform 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
+    border: solid 3px #00000000;
+} */
+.seguir{
+    width: 130px;
+    height: 40px;
+    flex-grow: 0;
+    margin: 35px 12px 36px 3px;
+    padding:5.6px 34px 9px 28px;
+    border-radius: 6px;
+    background-color: #e8a542;
+    outline: none;
+    border: solid 3px;
+    transition: box-shadow 0.4s ease, transform 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
+    border-color: #e8a542;
+    
+}
+.chat{
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    flex-grow: 0;
+    margin: 35px 12px 36px 3px;
+    padding: 7.4px 36px 9px 37px;
+    border-radius: 6px;
+    background-color: #00000000;
+    outline: none;
+    border: solid 3px;
+    transition: box-shadow 0.4s ease, transform 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
+    border-color: #e8a542;
+    
+}
+
+.chat-lbl{
+    position: relative;
+    width: 39px;
+    height: 14px;
+    font-family: MomcakePro;
+    font-size: 13pt;
+    font-weight: bold;
+    text-align: left;
+    color: #fff;
+    bottom: 0.27rem;
+    left: 0.1rem;
+    /* background-color: aqua; */
+}
+
+.seg-lbl{
+    position: relative;
+    width: 39px;
+    height: 14px;
+    font-family: MomcakePro;
+    font-size: 13pt;
+    font-weight: bold;
+    text-align: left;
+    color: #fff;
+    bottom: 0.12rem;
+    left: 0.1rem;
+    /* background-color: aqua; */
+}
+
+.bio{
+    resize: none;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    outline: none;
+    background-color: #00000000;
+    border: none;
+    font-family: MomcakePro;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #cfc7ba;
+    word-wrap: break-word;
+}
+
+.Line-27 {
+    width: 274px;
+    height: 2px;
+    margin: 22px 4px 20px 5px;
+    background-color: #543838;
+  }
+
+ #contat p {
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+}
+
+.seguir:hover{
+    box-shadow: -5px 3px 0 0 #ffffff;
+    transform: translate(3px, -3px);
+    background-color:#00000000;  /* Cor de fundo quando hover */
+    border-color: #e8a542;
+}
+
+.seguir:not(:hover){
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: 0px 0px 0 0 #e8a542;
+    transform: translate(0px, 0px);
+}
+
+.chat:hover {
+    box-shadow: -5px 3px 0 0 #ffffff;
+    transform: translate(3px, -3px);
+    background-color: #e8a542; /* Cor de fundo quando hover */
+    border-color: #ffffff;
+}
+
+.chat:not(:hover) {
+    box-shadow: none; 
+    transform: none; 
+    background-color: transparent; 
+}
+
+.seguir:hover {
+    box-shadow: -5px 3px 0 0 #ffffff;
+    transform: translate(3px, -3px);
+    background-color: #e8a542; 
+    border-color: #ffffff;
+}
+
+.seguir:not(:hover) {
+    box-shadow: none; 
+    transform: none; 
+    background-color: transparent; 
 }
