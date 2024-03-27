@@ -74,16 +74,16 @@
                         </div>
     
                         <div id="butao" class="botoes">
-                            <button class="seguir">
+                            <button class="seguir" id="seguir" data-userid="<?= $id?>">
                                 <span class="icons">
-                                    <i class="fa-solid fa-user-plus waw"></i>
-                                    <i class="fa-solid fa-user-minus" style="display:none;"></i>
+                                    <i id="f" class="fa-solid fa-user-plus waw"></i>
+                                    <i id="f2" class="fa-solid fa-user-minus"></i>
                                 </span>
-                                <span class="seg-lbl">
-                                    Seguir
-                                </span>
+                                <span id="seg-tit" class="seg-lbl">Seguir</span>
                             </button>
-    
+
+                            
+                            
                             <button class="chat">
                                 <span class="icons">
                                     <i class="fi fi-br-envelope"></i>
@@ -92,13 +92,13 @@
                                     Chat
                                 </span>
                             </button>
-    
+                            
                             <textarea class="bio" name="" id="" cols="37" rows="1">Bio
-                            </textarea>
-    
-                            <div class="Line-27"></div>
-    
-                            <p style="  font-family: MomcakePro;
+                                </textarea>
+                                
+                                <div class="Line-27"></div>
+                                
+                                <p style="  font-family: MomcakePro;
                                         font-size: 17px;
                                         font-weight: bold;
                                         font-stretch: normal;
@@ -109,7 +109,7 @@
                                         color: #e8a542;">
                                 Redes Sociais
                             </p>
-    
+                            
                             <div id="socials">
                                 <div id="job" class="info">
                                     <div class="icones">
@@ -151,11 +151,11 @@
                                         </a>
                                     </div>
                                 </div>
-    
+                                
                                 <div class="Line-27"></div>
-    
+                                
                             </div>
-    
+                            
                             <p style="  font-family: MomcakePro;
                                     font-size: 17px;
                                     font-weight: bold;
@@ -184,11 +184,51 @@
             </div>
         </div>
     </div>
-
-    <div class="banner">
-        <img src="pfp/banner/<?=$banner?>" alt="">
-    </div>
     
+ 
+    <input type="text" 
+    style="
+        position: absolute; 
+        top: 47.6rem;
+        left: 50rem;
+        display:none;
+        
+    "
+    name="follow"
+    id="follow">
+
+
+        <div class="banner">
+            <img src="pfp/banner/<?=$banner?>" alt="">
+        </div>
+
+        <span class="Portiflio">
+            Portifólio
+        </span>
+            
+    <script>
+        const seguir = document.getElementById('seguir');
+        const f = document.getElementById('f');
+        const f2 = document.getElementById('f2');
+        const t = document.getElementById('seg-tit');
+        const fo = document.getElementById('follow');
+        
+        seguir.addEventListener('click', function() {
+            if (f.style.display === 'none') {
+                f.style.display = 'inline-block';
+                f2.style.display = 'none';
+                t.textContent = 'Seguir';
+                fo.value=''
+                
+            } else {
+                f.style.display = 'none';
+                f2.style.display = 'inline-block';
+                t.textContent = 'Seguindo';
+                fo.value='ok'
+            }
+
+        });
+    </script>
 
 </body>
 </html>
