@@ -3,6 +3,19 @@ create database Artzy
 use artzy
 
 
+create table seguidores (
+    id_usuario int,
+    id_seguidor int,
+    FOREIGN KEY (id_seguidor) REFERENCES usuario(id_usuario),
+    FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
+);
+
+select count(id_usuario) from usuario where id_usuario = 
+
+select * from seguidores
+
+drop table seguidores
+
 create table usuario
 (
 	id_usuario int not null auto_increment primary key,
@@ -12,14 +25,15 @@ create table usuario
 	fotoP_usuario varchar(200) null default 'fotopadrao.png',
 	banner_usuario varchar(200) null default 'bannerpadrao.png',
 	premium_usuario varchar(200) null default 'OFF',
-	seguidores_usuario varchar(200) null default 0,
-	seguindo_usuario varchar(200) null default 0,
 	email_usuario varchar (100) not null unique,
 	area_usuario varchar (100) not null,
 	data_usuario timestamp not null,
 	status_usuario varchar(20) not null default 'ATIVO'
 )
 select * from usuario
+
+
+
 drop table usuario
 
 create table galeria
