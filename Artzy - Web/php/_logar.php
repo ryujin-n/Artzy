@@ -22,6 +22,7 @@ if($_POST) {
             foreach($sql as $linha)
             {
                 session_start();
+                $_SESSION['id'] = $linha[0];
                 $_SESSION['nomeUsuarioLogin'] = $linha[1];
                 $_SESSION['loginUsuarioLogin'] = $linha[2];
                 $_SESSION['fotoPerfilUsuario'] = $linha[4];
