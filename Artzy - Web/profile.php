@@ -3,6 +3,7 @@
 <head>
     <?php include_once("php/auth.php")?>
     <?php include_once("php/area.php")?>
+    <!-- <?php include_once("php/log.php")?> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -15,6 +16,20 @@
     </div>
 
     <div class="perf-menu">
+
+    <input type="text" 
+    style="
+        position: absolute; 
+        top: 5.2rem;
+        left: 9rem;
+        /* display:none; */
+        
+    "
+    name="perfill"
+    id="perfill"
+    value="<?=$id?>">
+
+
         <div class="perf-fundo scrollbar">
             <div id="profile-p" class="profile-p">
                 <img src="pfp/<?= $pfp ?>" alt="">
@@ -73,7 +88,7 @@
                             </div>
                         </div>
     
-                        <div id="butao" class="botoes">
+                        <div id="butao" class="botoes" style="display: none;">
                             <button class="seguir" id="seguir" data-userid="<?= $id?>">
                                 <span class="icons">
                                     <i id="f" class="fa-solid fa-user-plus waw"></i>
@@ -92,8 +107,9 @@
                                     Chat
                                 </span>
                             </button>
-                            
-                            <textarea class="bio" name="" id="" cols="37" rows="1">Bio
+                        </div>
+
+                        <textarea class="bio" name="" id="" cols="37" rows="1">Bio
                                 </textarea>
                                 
                                 <div class="Line-27"></div>
@@ -178,7 +194,6 @@
                                     </p>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>

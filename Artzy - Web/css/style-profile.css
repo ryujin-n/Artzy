@@ -29,9 +29,9 @@ body{
 }
 
 .perf-fundo{
-    position: relative;
+    position: fixed;
     width: 380px;
-    height: 567px;
+    height: 627px;
     margin: 34px 0px 0px 40px;
     padding: 30px 0px 0px 31px;
     border-radius: 21px;
@@ -275,10 +275,7 @@ body{
     font-family: MomcakePro;
     font-size: 17px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
+    margin-top: 2rem;
     text-align: left;
     color: #cfc7ba;
     word-wrap: break-word;
@@ -337,7 +334,7 @@ body{
 
 .banner{
     position: absolute;
-    bottom: 16.5rem;
+    bottom: 19.3rem;
     left: 26.7rem;
     width: 1110px;
     height: 307px;
@@ -352,7 +349,7 @@ body{
 
 .Portiflio {
     position: absolute;
-    bottom: 13rem;
+    bottom: 17rem;
     left: 30rem;
     width: 138px;
     height: 47px;
