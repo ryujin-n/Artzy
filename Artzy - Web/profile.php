@@ -11,7 +11,7 @@
     <title>Artzy - <?=$user?> </title>
 </head>
 <body>
-    <div style="margin-top:-1rem; padding:0 0.2rem 0  0.2rem; display:fixed;">
+    <div style="margin-top:-1rem; padding:0 0.2rem 0  0.2rem;">
         <?php include_once($menu)?>
     </div>
 

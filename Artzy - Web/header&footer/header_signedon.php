@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <nav class="logged">
+    <nav class="fixed-top " style="margin-top:-1rem; padding:0 0.2rem 0  0.2rem;">
         <div class="menu">
             <ul> <!-- mobile -->
 
@@ -24,7 +24,10 @@
 
             <nav class="menu_">
                 <li id="logo" class="menu-logo">
+                    <a href="home.php">
+
                         <img src="src/logo.png" class="logo" onerror="this.onerror=null; this.src='../src/logo.png';">
+                    </a>
                         
                 </li>
                 <li id="exp" class="menu-nav">

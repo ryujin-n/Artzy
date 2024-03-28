@@ -32,7 +32,7 @@ body{
     position: fixed;
     width: 380px;
     height: 627px;
-    margin: 34px 0px 0px 40px;
+    margin: 127px 0px 0px 40px;
     padding: 30px 0px 0px 31px;
     border-radius: 21px;
     box-shadow: 12px 15px 0 0 #e8a542;
@@ -380,4 +380,8 @@ body{
     margin: 0px 5px 28px 5px;
     border-radius: 8px;
     float: left;
+  }
+
+  .menuu{
+    
   }
