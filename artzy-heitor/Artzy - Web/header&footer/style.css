@@ -1,0 +1,575 @@
+*{
+    list-style-type:none;
+
+}
+
+@font-face {
+    font-family: HeyComic ;
+    src: url(../src/font/hey_comic/Hey\ Comic.ttf);
+}
+@font-face {
+    font-family: MomcakePro ;
+    src: url(../src//font/momcakepro/MomcakePro-Regular.ttf);
+}
+@font-face {
+    font-family: KGRedHands ;
+    src: url(../src//font/kg_red_hands/KGRedHands.ttf);
+}
+
+.menu{
+    height: 79px;
+    width: 100%;
+    border-radius: 0rem 0rem 1rem 1rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: #543838;
+    position: relative;
+}
+#men{
+    margin-right: 1.5rem;
+}
+.logo {
+    width: 53.1px;
+    height: 53.1px;
+    margin: 8.7px 40.2px 0px 2rem;
+  }
+  .menu-logo{
+    list-style-type:none;
+  }
+  .menu-nav{
+    align-items: center;
+    background: 0 0;
+    border: 0;
+    color: #96969a;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    height: 100%;
+    justify-content: flex-start;
+    outline: 0;
+    padding: 12px 0;
+    text-decoration: none;
+  }
+
+  .menu_{
+    display: flex;
+    flex-shrink: 0;
+}
+.menu_ li {
+    flex-grow: 1;
+    width: 160px;
+}
+
+  .Explorar {
+    margin-top: 1rem;
+    font-family: HeyComic;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.84px;
+    text-align: center;
+    color: #fcfcfc;
+  }
+
+  #borger{
+    width: 69px;
+}
+
+  .Servios {
+    font-family: HeyComic;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.84px;
+    text-align: center;
+    color: #fcfcfc;
+  }
+  .search-icon{
+    color: white;
+    font-size: 15pt;
+    padding: 0.45rem 0px 0px 0px;
+  }
+.menu-search{
+    height: 3rem;
+    width: 1rem;
+    flex-grow: 1;
+    margin: 15px 22px;
+    padding: 5px 634.8px 4px 34px;
+    padding-right: 60rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: solid 3px #fff;
+    background-color: rgba(217, 217, 217, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    outline: 0;
+    position: relative;
+}
+.search-bar{
+    font-family: MomcakePro;
+    background: #ffffff00;
+    border: none;
+    font-size: 19px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.76px;
+    text-align: left;
+    color: #ffffff;
+    width: 83%;
+    margin-left: 30px;
+    height: 76%;
+    position: absolute;
+    outline: none;
+}
+::placeholder {
+    color: rgb(255, 255, 255);
+  }
+.icons{
+    color: white;
+}
+.shop {
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    padding: 12px 0;
+    margin-top: 0.7rem;
+    margin-left: 1.7rem;
+    text-decoration: none;
+    font-size: 19.5pt;
+}
+.login{
+    width: 123.6px;
+    height: 38.1px;
+    margin: 1.3rem 1rem 0 3rem;
+    margin-left: -0.1rem;
+    flex-grow: 1;
+    padding: 8px 9.3px 8px 6px;
+    border-radius: 9px;
+    background-color: #ffc369;
+    position: relative;
+    cursor: pointer;
+}
+.icon-login{
+    position: absolute;
+    color: #543838;
+    font-size: 16pt;
+    margin-top: -0.1rem;
+    margin-left: 0.7rem;
+}
+.login-btn{
+    position: absolute;
+    flex-grow: 1;
+    margin: 1.9px 0px 0px 43px;
+    font-family: KGRedHands;
+    font-size: 15.1px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #543838;
+    position: absolute;
+}
+.cad{
+    width: 159px;
+    height: 38.1px;
+    flex-grow: 1;
+    margin-top: 1.3rem;
+    margin-right: 2.3rem;
+    padding: 8px 9.3px 8px 6px;
+    border-radius: 9px;
+    background-color: #ffc369;
+    position: relative;
+    cursor: pointer;
+}
+.icon-cad{
+    position: absolute;
+    color: #543838;
+    font-size: 15.4pt;
+    margin-top: -0.1rem;
+    margin-left: 0.5rem;
+}
+
+#loj{
+    margin-left: -0.1rem;
+    margin-right: 1.5rem;
+}
+
+#cadbt{
+    width: 9rem;
+    margin-right: 3rem;
+}
+
+.cad-btn{
+    position: absolute;
+    flex-grow: 1;
+    margin: 1px 0px 0px 35.3px;
+    font-family: KGRedHands;
+    font-size: 15.1px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #543838;
+    position: absolute;
+}
+.m-icon{
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0.6rem 0;
+    margin-top: 0.8rem;
+    text-decoration: none;
+    font-size: 25pt;
+}
+
+.dp{
+    top: 4.9rem;
+    left: 87.5rem;
+    margin-left: 20rem;
+    width: 11rem;
+    height: 20.6rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+    background-color: #442d2df3;
+    position:absolute;
+    display:none;
+    cursor: cell;
+}
+
+#exps .dp-item {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+#exps .item-content {
+    display: flex;
+    align-items: center;
+}
+
+#exps .item-content i {
+    margin-right: 10px; /* Adiciona um espaço entre o ícone e o texto */
+}
+#exps i {
+    margin: 3px;
+    font-size: 23px; /* Altere este valor para ajustar o tamanho da fonte */
+    color: #ffc369;
+}
+
+#exps span {
+    font-family: MomcakePro;
+    font-size: 22px; /* Altere este valor para ajustar o tamanho da fonte */
+    line-height: 1rem;
+    letter-spacing: 0.76px;
+    text-align: left;
+    color: #ffc369;
+}
+#exps  a{
+    text-decoration: none;
+}
+#exps .dp-menu{
+    margin-top: 1.09rem;
+    padding: 0rem 0rem 0rem 1rem;
+}
+.hr{
+    margin: 22px 0px 22px 6px;
+    width: 132px; 
+    border: solid 1px #726262  ;
+    border-radius:1px;
+}
+#men:active + .dp {
+    display: inline-block;
+}
+#exps {
+    cursor: default; 
+}
+.dp-menu a {
+    cursor: pointer; 
+}
+#menu-b{
+    background-color: #ffffff00;
+    border: none;
+    outline: none;
+    margin-top: 0.5rem;
+}
+
+#exps li:hover i,
+#exps li:hover span {
+    color: white;
+    cursor: pointer;
+}
+
+.dp3{
+    top: 4.9rem;
+    margin-left: 1.5rem;
+    left: 13.3rem;
+    width: 11rem;
+    height: 9rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+    background-color: #442d2d;
+    position:absolute;
+    display:none;
+    cursor: cell;
+}
+
+#jbs .dp-item {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+#jbs .item-content {
+    display: flex;
+    align-items: center;
+    margin-left: -1rem;
+    width: 135px;
+}
+
+#jbs .item-content i {
+    margin-right: 10px; /* Adiciona um espaço entre o ícone e o texto */
+}
+
+#jbs i {
+    margin: 10px;
+    font-size: 23px; 
+    color: #ffc369;
+}
+
+.login:hover{
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: -4px 4px 0 0 #311b1b; 
+    transform: translate(3px, -3px);
+}
+
+.login:not(:hover){
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: 0px 0px 0 0 #ffc369;
+    transform: translate(0px, 0px);
+}
+
+.cad:hover{
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: -4px 4px 0 0 #311b1b; 
+    transform: translate(3px, -3px);
+}
+
+.cad:not(:hover){
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: 0px 0px 0 0 #ffc369;
+    transform: translate(0px, 0px);
+}
+
+#loj i:hover{
+    color: #ffc369;
+}
+
+#jbs span {
+    font-family: MomcakePro;
+    font-size: 22px; 
+    line-height: 1rem;
+    letter-spacing: 0.76px;
+    text-align: left;
+    color: #ffc369;
+}
+#jbs  a{
+    text-decoration: none;
+}
+#jbs .dp-menu{
+    margin-top: -0.01em;
+   padding-left: -0.2rem;
+}
+#jb button:hover + .dp3 {
+    display: inline-block;
+}
+#jbs {
+    cursor: default; 
+}
+.dp-menu a {
+    cursor: pointer; 
+}
+
+#jbs li:hover i,
+#jbs li:hover span {
+    color: white;
+    cursor: pointer;
+}
+
+#exp button{
+    height: 50px; width:5.5rem; margin-right:2.5rem;
+}
+
+#jb button{
+    height: 50px; width:5.5rem; margin-right:30px;
+}
+
+
+
+@media (max-width: 1800px) {
+
+
+    .dp{
+        left: 83.5rem;
+        margin-left: 0;
+    }
+    .menu_ li {
+        flex-grow: 1;
+        width: 68px;
+    }
+
+    .menu-nav{
+        justify-content: center;
+    }
+
+    .menu-search{
+        padding-right: 36.5rem;
+        margin: 14px 0px;
+        margin-left: 8px;
+        margin-right: 0px;
+    }
+    .shop{
+        justify-content: center;
+        margin-top: 0.8rem;
+        margin-left: 2rem;
+        font-size: 17.5pt;
+    }
+
+    .login{
+        width: 97.6px;
+        height: 34.1px;
+        margin: 1.3rem -1rem 0px 0rem;
+    }
+
+    .cad{
+        width: 109px;
+        height: 34.1px;
+        flex-grow: 1;
+        margin-left: 0.9rem;
+        margin-right: 0rem;
+    }
+
+    .logo {
+        width: 43.1px;
+        height: 43.1px;
+        margin: 14.1px 39.2px 0px 1.6rem;
+    }
+
+    .Explorar{
+        font-size: 16.4px;
+    }
+    .Servios{
+        font-size: 16.4px;
+    }
+
+    #jb .menu-nav{
+        width: 70px;
+    }
+
+    .m-icon{
+        font-size: 19.5pt;
+        margin: 1rem 25.1px;
+
+    }
+
+    .icon-login{
+        font-size: 12.9pt;
+        margin-left: 0.5rem;
+
+    }
+    .login-btn{
+        margin: 0.9px 0px 0px 31.9px;;
+        font-size: 13.4px;
+
+    }
+
+    .cad{
+        width: 139px;
+    }
+
+    .icon-cad{
+        font-size: 14.8pt;
+        margin-top: -0.2rem;
+        margin-left: 0.4rem;
+    }
+
+    .cad-btn{
+        margin: 1px 0px 0px 34px;
+        font-size: 13.1px;
+    }
+
+    #cadbt {
+        width:3.3rem;
+        margin-right: 0rem;
+    }
+
+    #borger{
+        width: 8px;
+    }
+
+    #loj {
+        width: 0px;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    #logo{
+        width: 17px;
+    }
+
+    #logbt{
+        width: 6px;
+    }
+
+    #exp{
+        width: 0px;
+        margin-left: 0rem;
+        margin-right: 0.7rem;
+    }
+
+    #exp button {
+        margin-right: 0.5rem;
+    }
+
+    #jb{
+        width: 40px;
+        margin-right: 1rem;
+    }
+
+    #jb button {
+        height: 50px;
+        margin-right: 0px;
+    }
+
+    .dp3{
+        left: 10.7rem;
+    }
+
+    #jbs .dp-item {
+        margin-left: 24px;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    #jbs span {
+        font-family: MomcakePro;
+        font-size: 18px;
+    }
+
+    .hr{
+        border: solid 2px #726262  ;
+
+    }
+    #menu-b{
+        margin-left: 0.4rem;
+    }
+
+
+}

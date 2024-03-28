@@ -1,0 +1,52 @@
+body {
+    background-color: #FBCF85;
+}
+*{
+    list-style-type: none;
+}
+
+.sobre {
+    width: 181px;
+    height: 5rem;
+    margin: 20px 0.2rem 0 -7rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu-navsobre {
+    margin-right: 20px; /* Espaçamento entre os botões */
+}
+
+.menu-navsobre button {
+    border: none;
+    background-color: transparent;
+}
+
+.sobr {
+    font-family: Minecraft;
+    font-size: 16pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.84px;
+    text-align: left;
+    color: #543838;
+    margin: 0; /* Remover margem padrão */
+}
+.qs
+{
+    font-family: Organic Relief;
+    font-size: 5pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.55pt;
+    color: #543838;
+    margin: 0; 
+}
