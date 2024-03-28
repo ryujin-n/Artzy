@@ -11,23 +11,23 @@
     <title>Artzy - <?=$user?> </title>
 </head>
 <body>
-    <div style="margin-top:-1rem; padding:0 0.2rem 0  0.2rem; ">
+    <div style="margin-top:-1rem; padding:0 0.2rem 0  0.2rem; display:fixed;">
         <?php include_once($menu)?>
     </div>
 
     <div class="perf-menu">
 
-    <input type="text" 
-    style="
-        position: absolute; 
-        top: 5.2rem;
-        left: 9rem;
-        /* display:none; */
-        
-    "
-    name="perfill"
-    id="perfill"
-    value="<?=$id?>">
+        <input type="text" 
+        style="
+            position: absolute; 
+            top: 5.2rem;
+            left: 9rem;
+            /* display:none; */
+            
+        "
+        name="perfill"
+        id="perfill"
+        value="<?=$id?>">
 
 
         <div class="perf-fundo scrollbar">
@@ -221,6 +221,34 @@
             Portifólio
         </span>
             
+
+        <div class="gall">
+
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+
+        </div>
+
+
+
+
+
     <script>
         const seguir = document.getElementById('seguir');
         const f = document.getElementById('f');

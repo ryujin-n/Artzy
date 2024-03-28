@@ -364,3 +364,20 @@ body{
     text-align: left;
     color: #e8a542;
   }
+
+  .gall{
+    background-color: #e8a542;
+    width: 1086px;
+    position: relative;
+    left: 29.6rem;
+    top: 29rem;
+  }
+
+  .it{
+    background-color: #3d2828;
+    width: 352px;
+    height: 205px;
+    margin: 0px 5px 28px 5px;
+    border-radius: 8px;
+    float: left;
+  }
