@@ -2,6 +2,14 @@ create database Artzy
 
 use artzy
 
+drop table seguidores
+drop table galeria
+drop table usuario
+
+select * from seguidores
+select * from galeria
+select * from usuario
+
 
 create table seguidores (
     id_usuario int,
@@ -10,11 +18,22 @@ create table seguidores (
     FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
 );
 
+create table galeria
+(
+	id_galeria int auto_increment primary key ,
+    id_usuario_galeria int,
+    nome_galeria varchar(200) not null,
+    img_galeria  varchar(200) not null,
+    descr_galeria varchar(200) not null,
+    categoria_galeria varchar(200) not null,
+    tag_galeria varchar(200) not null,
+    data_galeria timestamp not null,
+    
+     FOREIGN KEY (id_usuario_galeria) REFERENCES usuario(id_usuario)
+)
+
 select count(id_usuario) from usuario where id_usuario = 
 
-select * from seguidores
-
-drop table seguidores
 
 create table usuario
 (
@@ -31,29 +50,6 @@ create table usuario
 	status_usuario varchar(20) not null default 'ATIVO'
 )
 select * from usuario
-
-
-
-drop table usuario
-
-create table galeria
-(
- id_usuario int not null auto_increment primary key,
-	nome_usuario varchar(50) not null,
-	login_usuario varchar(50) null unique ,
-	senha_usuario varchar(20) not null,
-	fotoP_usuario varchar(200) null default 'fotopadrao.png',
-	banner_usuario varchar(200) null default 'bannerpadrao.png',
-	premium_usuario varchar(200) null default 'OFF',
-	seguidores_usuario varchar(200) null default 0,
-	seguindo_usuario varchar(200) null default 0,
-	email_usuario varchar (100) not null unique,
-	area_usuario varchar (100) not null,
-	data_usuario timestamp not null,
-	status_usuario varchar(20) not null default 'ATIVO'
-
-
-}
 
 
 drop table assinatura
