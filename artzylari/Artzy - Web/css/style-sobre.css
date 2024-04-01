@@ -2,6 +2,10 @@
     font-family: KGRedHands ;
     src: url(../src//font/kg_red_hands/KGRedHands.ttf);
 }
+@font-face {
+    font-family: HeyComic ;
+    src: url(../src//font/hey_comic//Hey\ Comic.ttf);
+}
 
 body {
     background-color: #FBCF85;
@@ -533,12 +537,18 @@ body {
 
 /* 💦💦💦💦 ASSINATURAS 💦💦💦💦 */
 
+.as
+{
+    position: relative;
+    right: 0rem; 
+    top: 141rem;
+}
 .assin
 {
     position: absolute;
     text-align: center;
     font-family: Organic Relief;
-    font-size: 41pt;
+    font-size: 47pt;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -547,7 +557,238 @@ body {
     color: #57012F;
     left: 7.9rem;
     right: 6rem;
-    top: 358rem;
+    top: 3rem;
     bottom: 0rem;
-  }
+}
+.tet
+{
+    position: absolute;
+    text-align: center;
+    font-family: KGRedHands;
+    font-size: 16pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 3.6pt;
+    color: #57012F;
+    left: 10.9rem;
+    right: 10rem;
+    top: 19rem;
+    bottom: 0rem;
+}
 
+/* 💦💦💦💦 PLANOS 💦💦💦💦 */
+
+.plan
+{
+    position: relative;
+    right: 0rem; 
+    top: 141rem;
+}
+.ret
+{
+    position: absolute;
+    width: 469px;
+    height: 734px;
+    flex-grow: 0;
+    margin-top: -92px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border-radius: 58px;
+    background-color: #543838;
+    box-shadow: -11px 10px 0 0 #ffffff8c;
+    left: 16.9rem;
+    right: 3rem;
+    top: 39rem;
+    bottom: 0rem;
+}
+.ben 
+{
+    position: absolute;
+    font-family: KGRedHands;
+    font-size: 12.1pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.55pt;
+    color: #ffe287;
+    padding-top: 0px;
+    padding-right: 37px;
+    padding-bottom: 12px;
+    padding-left: 0px;
+    left: 0.3rem;
+    top: 18.7rem;
+}
+
+.ben ul li {
+    text-align: left;
+    margin-left: 0; /* Remova a margem esquerda */
+    line-height: 2.3;
+}
+
+.ret2
+{
+    position: absolute;
+    width: 469px;
+    height: 267.3px;
+    margin-top: -92px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border-radius: 53px;
+    left: 0rem;
+    right: 3rem;
+    top: 5rem;
+    bottom: 0rem;
+    background-color: #372424;
+}
+
+.premium
+{
+    position: relative;
+    width: 364px;
+    height: 305px;
+    margin: 0 175.4px 31px 0;
+    top: -2.3rem;
+    right: -3.3rem;
+}
+.p
+{
+    position: absolute;
+    font-family: HeyComic;
+    font-size: 19.7pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.55pt;
+    color: #ffffff;
+    padding-top: 0px;
+    padding-right: 37px;
+    padding-bottom: 12px;
+    padding-left: 0px;
+    left: 11rem;
+    top: 12.5rem;
+}
+.ret3
+{
+    position: absolute;
+    width: 469px;
+    height: 734px;
+    flex-grow: 0;
+    margin-top: -92px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border-radius: 58px;
+    background-color: #543838;
+    box-shadow: -11px 10px 0 0 #ffffff8c;
+    left: 53.9rem;
+    right: 3rem;
+    top: 39rem;
+    bottom: 0rem;
+}
+.ret4
+{
+    position: absolute;
+    width: 469px;
+    height: 267.3px;
+    margin-top: -92px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border-radius: 53px;
+    left: 0rem;
+    right: 3rem;
+    top: 5rem;
+    bottom: 0rem;
+    background-color: #372424; 
+}
+
+.ben2
+{
+    position: absolute;
+    font-family: KGRedHands;
+    font-size: 12.1pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.55pt;
+    color: #ffe287;
+    padding-top: 0px;
+    padding-right: 37px;
+    padding-bottom: 12px;
+    padding-left: 0px;
+    left: 0.3rem;
+    top: 18.4rem;
+}
+
+.ben2 ul li {
+    text-align: left;
+    margin-left: 0; /* Remova a margem esquerda */
+    line-height: 2.3;
+}
+.core
+{
+    position: relative;
+    width: 338px;
+    height: 305px;
+    margin: 0 175.4px 31px 0;
+    top: -2.3rem;
+    right: -4rem;
+}
+.c
+{
+    position: absolute;
+    font-family: HeyComic;
+    font-size: 22.4pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.55pt;
+    color: #ffffff;
+    padding-top: 0px;
+    padding-right: 37px;
+    padding-bottom: 12px;
+    padding-left: 0px;
+    left: 12.7rem;
+    top: 12.2rem;
+}
+
+/* 💦💦💦💦 TRABALHE CONOSCO 💦💦💦💦 */
+
+.lulu
+{
+    position: absolute;
+    left: 1.9rem;
+    right: 0rem;
+    top: 101.8rem;
+    bottom: 0rem;
+}
+
+#lulu img
+{
+    width: 735px;
+    height: 1002px;
+}
