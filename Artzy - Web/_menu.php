@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="header&footer/style.css">
     <link rel="stylesheet" href="header&footer/style2.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <title>Document</title>
 </head>
 <body>
@@ -32,12 +33,15 @@
         </div>
 
         <div class="menu__">
-            <a href="conf.php?tela=perfil" class="item-m">
+            <a id="user" href="conf.php?tela=perfil" onclick="select('user')" class="item-m ">
+                <i class="fi fi-br-user"></i>
                 <span>
                     Perfil
                 </span>
             </a>
-            <a href="conf.php?tela=redes-sociais">
+            
+            <a id="rs" href="conf.php?tela=redes-sociais" onclick="select('rs')" class="item-m">
+                <i class="fi fi-br-share"></i>
                 <span>
                     Redes Sociais
                 </span>
@@ -45,21 +49,49 @@
 
             <div id="hr2" class="hr"></div>
 
-            <a href="conf.php?tela=conta">
+            <a id="acc" href="conf.php?tela=conta" onclick="select('acc')" class="item-m">
+                <i class="fi fi-br-admin-alt"></i>   
                 <span>
                     Conta
                 </span>
             </a>
-            <a href="conf.php?tela=senha">
+            <a id="pss" href="conf.php?tela=senha" onclick="select('pss')" class="item-m">
+                <i class="fi fi-br-password"></i>
                 <span>
                     Senha
                 </span>
             </a>
         </div>
 
+       
+
         
     </div>
 
+    <script>
+        function select(option) {
+            // Remove a classe 'sel' de todos os itens do menu
+            document.querySelectorAll('.item-m').forEach(item => {
+                item.classList.remove('sel');
+            });
+
+            // Adiciona a classe 'sel' apenas ao item clicado
+            document.getElementById(option).classList.add('sel');
+
+            // Armazena o item selecionado no localStorage
+            localStorage.setItem('selectedMenuItem', option);
+        }
+
+        // Verifica se há um item selecionado no localStorage ao carregar a página
+        document.addEventListener("DOMContentLoaded", function() {
+            const selectedMenuItem = localStorage.getItem('selectedMenuItem');
+            if (selectedMenuItem) {
+                // Adiciona a classe 'sel' ao item selecionado armazenado
+                document.getElementById(selectedMenuItem).classList.add('sel');
+            }
+        });
+    </script>
+    
    
 
 

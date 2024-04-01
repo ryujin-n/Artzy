@@ -1,0 +1,157 @@
+@import url("/css/fonts.css");
+@import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
+
+.titulo-p{
+    width: 934px;
+    height: 140px;
+    flex-grow: 0;
+    margin: 0 0 20px 0px;
+    padding: 21px 523px 25px 51px;
+    border-radius: 19px;
+    box-shadow: 12px 14px 0 0 #e8a542;
+    background-color: #543838;
+}
+.Perfil {
+    width: 267px;
+    height: 51px;
+    flex-grow: 0;
+    margin: 0 93px 19px 0;
+    text-shadow: -3px 6px 0 #2d2020;
+    font-family: Superstar;
+    font-size: 47px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.88px;
+    text-align: left;
+    color: #e8a542;
+  }
+.sub-t{
+    width: 360px;
+    height: 24px;
+    flex-grow: 0;
+    font-family: 'VCR OSD Mono', sans-serif;
+    font-size: 11px;
+    display: block;
+    letter-spacing: 0.44px;
+    text-align: left;
+    color: rgba(232, 165, 66, 0.53);
+}
+
+.info-p{
+    width: 475px;
+    height: 370px;
+    margin: 10px 23px 0px 0px;
+    padding: 25px 58px 58px 51px;
+    border-radius: 19px;
+    box-shadow: 12px 14px 0 0 #e8a542;
+    background-color: #543838;
+}
+.user{
+    position: relative;
+    /* background-color: aqua; */
+    height: 2rem;
+    width: 2rem;
+}
+.bio{
+    position: relative;
+    /* background-color: aqua; */
+    height: 2rem;
+    width: 2rem;
+    top: 4.2rem;
+}
+.area-s{
+    position: relative;
+    /* background-color: aqua; */
+    height: 2rem;
+    width: 2rem;
+    top: 8.6rem;
+}
+.Usurio {
+    width: 126px;
+    height: 25px;
+    flex-grow: 0;
+    margin: 0 240px 10px 0;
+    text-shadow: -3px 6px 0 #2d2020;
+    font-family: Superstar;
+    font-size: 23px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.92px;
+    text-align: left;
+    color: #e8a542;
+  }
+.user-in{
+  width: 366px;
+  height: 39px;
+  flex-grow: 0;
+  margin: 10px 0 0;
+  border-radius: 9px;
+  /* box-shadow: -5px 8px 0 0 rgba(0, 0, 0, 0.53); */
+  border: solid 2px #6b4f4f;
+  background-color: #3e2929;
+}
+
+.bio-s{
+    width: 351px;
+    height: 25px;
+    flex-grow: 0;
+    margin: 0 15px 10px 0;
+    text-shadow: -3px 6px 0 #2d2020;
+    font-family: Superstar;
+    font-size: 23px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    display: block;
+    letter-spacing: 0.92px;
+    text-align: left;
+    color: #e8a542;
+}
+.bio-in{
+    width: 366px;
+    height: 39px;
+    flex-grow: 0;
+    margin: 10px 0 0;
+    border-radius: 9px;
+    /* box-shadow: -5px 8px 0 0 rgba(0, 0, 0, 0.53); */
+    border: solid 2px #6b4f4f;
+    background-color: #3e2929; 
+}
+.area{
+    width: 267px;
+    height: 51px;
+    border-radius: 9px;
+    /* box-shadow: -5px 8px 0 0 #281a1a; */
+    border: solid 2px #6b4f4f;
+    background-color: #3e2929; 
+    font-family: 'VCR OSD Mono', sans-serif;
+    font-size: 12px;
+    padding: 7px 14px;
+    letter-spacing: 0.48px;
+    text-align: left;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.37);
+}
+.arrow-rotated {
+    transform: rotate(180deg);
+    transform-origin: 50% 37%;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.arrow-initial {
+    transform: rotate(0deg);
+    transform-origin: 50% 37%;
+    transition: transform 0.3s ease-in-out; 
+}
+#seta{
+    font-size: 15pt;
+    position: absolute;
+    top: 3.48rem;
+    left: 13.9rem;
+    color: rgb(0, 0, 0);
+    
+}
