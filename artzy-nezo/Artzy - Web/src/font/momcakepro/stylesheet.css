@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Momcake Pro';
+    src: url('MomcakePro-Bold.eot');
+    src: local('Momcake Pro Bold'), local('MomcakePro-Bold'),
+        url('MomcakePro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('MomcakePro-Bold.woff2') format('woff2'),
+        url('MomcakePro-Bold.woff') format('woff'),
+        url('MomcakePro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Momcake Pro';
+    src: url('MomcakePro-Medium.eot');
+    src: local('Momcake Pro Medium'), local('MomcakePro-Medium'),
+        url('MomcakePro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('MomcakePro-Medium.woff2') format('woff2'),
+        url('MomcakePro-Medium.woff') format('woff'),
+        url('MomcakePro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Momcake Pro';
+    src: url('MomcakePro-Thin.eot');
+    src: local('Momcake Pro Thin'), local('MomcakePro-Thin'),
+        url('MomcakePro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('MomcakePro-Thin.woff2') format('woff2'),
+        url('MomcakePro-Thin.woff') format('woff'),
+        url('MomcakePro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Momcake Pro';
+    src: url('MomcakePro-Regular.eot');
+    src: local('Momcake Pro'), local('MomcakePro-Regular'),
+        url('MomcakePro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('MomcakePro-Regular.woff2') format('woff2'),
+        url('MomcakePro-Regular.woff') format('woff'),
+        url('MomcakePro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

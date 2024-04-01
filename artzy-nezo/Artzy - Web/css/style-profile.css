@@ -1,0 +1,404 @@
+body{
+    background-color: #f5e7e1;
+}
+
+@font-face {
+    font-family: KGRedHands ;
+    src: url(../src//font/kg_red_hands/KGRedHands.ttf);
+}
+@font-face {
+    font-family: HeyComic ;
+    src: url(../src//font/hey_comic/Hey\ Comic.ttf);
+}
+@font-face {
+    font-family: Papernotes ;
+    src: url(../src//font/papernotes/Papernotes.ttf);
+}
+@font-face {
+    font-family: Minecraft ;
+    src: url(../src//font/minecraft/Minecraft.ttf);
+}
+@font-face {
+    font-family: MomcakePro ;
+    src: url(../src//font/momcakepro/MomcakePro-Regular.ttf);
+}
+
+.scrollbar2 {
+  right: 20px; 
+  position: relative;
+
+}
+
+.scrollbar2::-webkit-scrollbar {
+  width: 19px;
+}
+
+.scrollbar2::-webkit-scrollbar-thumb {
+  background-color: #6b4949; 
+  border: 0.28em solid #f5e7e1; 
+  border-radius: 2rem; 
+}
+
+.scrollbar2::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(136, 106, 106); 
+}
+
+.scrollbar2::-webkit-scrollbar-track{
+  border-radius: 3rem;
+}
+.perf-menu{
+    width: 29.6rem;
+}
+
+.perf-fundo{
+    position: fixed;
+    width: 380px;
+    height: 627px;
+    margin: 127px 0px 0px 40px;
+    padding: 30px 0px 0px 31px;
+    border-radius: 21px;
+    box-shadow: 12px 15px 0 0 #e8a542;
+    background-color: #3d2828;
+    overflow: hidden;
+}
+
+.scrollbar {
+    overflow-y: scroll;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 19px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #e8a542; 
+    border: 0.48em solid #3d2828; 
+    border-radius: 2rem; 
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #e8a642b7; 
+}
+
+.scrollbar::-webkit-scrollbar-track{
+    border-radius: 3rem;
+    margin-top: 1.9rem;
+    margin-bottom: 1.6rem;
+}
+
+.profile-p{
+    position: relative ;
+    left: 1.9rem;
+    width: 198px;
+    height: 198px;
+    margin: 0 14px 19px 16px;
+    border-radius: 100%;
+}
+#profile-p img{
+    width: 160px;
+    height: 160px;
+    margin-left: 2.1rem;
+}
+
+.nome-perfil{
+    display: block;
+    width: 198px;
+    height: 51px;
+    margin: 19px 6px 0 12.5px;
+    font-family: MomcakePro;
+    font-size: 43px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.area-perfil{
+    display: block;
+    width: 198px;
+    height: 23px;
+    margin: 2px 6px 0 12px;
+    
+    font-size: 10.5pt;
+    text-align: center;
+    color: #e8a542;
+}
+
+.foll-perfil{
+    /* background-color: aqua; */
+    display: block;
+    width: 275px;
+    height: 53px;
+    margin: 5px 0px 0 -12px;
+}
+
+.Seguidores {
+    width: 84px;
+    height: 19px;
+    margin: 27px 9px 35px 41px;
+    font-family: MomcakePro;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+  }
+
+.Seguindo {
+    width: 74px;
+    height: 19px;
+    margin: 27px 34px 35px 2px;
+    font-family: MomcakePro;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+  }
+
+.text-style-1 {
+    color: #e8a542;
+  }
+.text-style-2 {
+    color: #b6b6b6;
+    margin-left: 2px;
+  }
+
+.info {
+    display: flex; /* Ativar flexbox */
+    align-items: center; /* Centralizar verticalmente */
+}
+
+.icones {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    margin-left: 10px;
+    font-size: 18.9pt;
+    color: #e8a542;
+}
+
+.text {
+    flex: 1; /* Crescer para ocupar o espaço restante */
+    margin-top: 10px;
+    font-family: MomcakePro;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+
+#infos{
+    margin-top: 2rem;
+    margin-left: -1.9rem;
+}
+#socials{
+    margin-top: -0.3rem;
+    margin-left: -0.6rem;
+}
+#contat{
+    margin-top: -0.3rem;
+    margin-left: -0.6rem;
+}
+
+#socials .text{
+    margin-top: 1rem;
+    font-size: 13pt;
+    font-weight: normal;
+}
+#socials a{
+    color: #fff;
+}
+
+#butao{
+    position: relative;
+    left: 0.9rem;
+}
+
+.seguir{
+    width: 130px;
+    height: 40px;
+    flex-grow: 0;
+    margin: 35px 12px 36px 3px;
+    padding: 5.6px 12px 9px 12px;
+    border-radius: 6px;
+    background-color: #e8a542;
+    outline: none;
+    border: solid 3px;
+    transition: box-shadow 0.4s ease, transform 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
+    border-color: #e8a542;
+    
+}
+.chat{
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    flex-grow: 0;
+    margin: 35px 12px 36px 3px;
+    padding: 7.4px 36px 9px 37px;
+    border-radius: 6px;
+    background-color: #00000000;
+    outline: none;
+    border: solid 3px;
+    transition: box-shadow 0.4s ease, transform 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
+    border-color: #e8a542;
+    
+}
+
+.chat-lbl{
+    position: relative;
+    width: 39px;
+    height: 14px;
+    font-family: MomcakePro;
+    font-size: 13pt;
+    font-weight: bold;
+    text-align: left;
+    color: #fff;
+    bottom: 0.27rem;
+    left: 0.1rem;
+}
+
+.seg-lbl{
+    position: relative;
+    width: 39px;
+    height: 14px;
+    font-family: MomcakePro;
+    font-size: 13pt;
+    font-weight: bold;
+    text-align: left;
+    color: #fff;
+    bottom: 0.12rem;
+    left: 0.1rem;
+    /* background-color: aqua; */
+}
+
+#f2{
+    display: none;
+}
+
+.bio{
+    resize: none;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    outline: none;
+    background-color: #00000000;
+    border: none;
+    font-family: MomcakePro;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 2rem;
+    text-align: left;
+    color: #cfc7ba;
+    word-wrap: break-word;
+}
+
+.Line-27 {
+    width: 274px;
+    height: 2px;
+    margin: 22px 4px 20px 5px;
+    background-color: #543838;
+  }
+
+ #contat p {
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+}
+
+.seguir:hover{
+    box-shadow: -5px 3px 0 0 #ffffff;
+    transform: translate(3px, -3px);
+    background-color:#00000000;  /* Cor de fundo quando hover */
+    border-color: #e8a542;
+}
+
+.seguir:not(:hover){
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: 0px 0px 0 0 #e8a542;
+    transform: translate(0px, 0px);
+}
+
+.chat:hover {
+    box-shadow: -5px 3px 0 0 #ffffff;
+    transform: translate(3px, -3px);
+    background-color: #e8a542; /* Cor de fundo quando hover */
+    border-color: #ffffff;
+}
+
+.chat:not(:hover) {
+    box-shadow: none; 
+    transform: none; 
+    background-color: transparent; 
+}
+
+.seguir:hover {
+    box-shadow: -5px 3px 0 0 #ffffff;
+    transform: translate(3px, -3px);
+    background-color: #e8a542; 
+    border-color: #ffffff;
+}
+
+.seguir:not(:hover) {
+    box-shadow: none; 
+    transform: none; 
+    background-color: transparent; 
+}
+
+.banner{
+    position: absolute;
+    top: 7.9rem;
+    left: 28rem;
+    width: 330px;
+    height: 307px;
+    border-radius: 31px;
+}
+
+.banner img{
+    width: 1087px;
+    height: 307px;
+}
+
+.Portiflio {
+    position: absolute;
+    top: 29rem;
+    left: 29rem;
+    width: 138px;
+    height: 47px;
+    text-shadow: -2px 4px 0 #543838;
+    font-family: MomcakePro;
+    font-size: 43px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #e8a542;
+  }
+
+  .gall{
+    background-color: #e8a542;
+    width: 1086px;
+    position: relative;
+    left: 27.9rem;
+    top: 37rem;
+  }
+
+  .it{
+    background-color: #3d2828;
+    width: 352px;
+    height: 205px;
+    margin: 0px 5px 10px 5px;
+    border-radius: 8px;
+    float: left;
+  }
