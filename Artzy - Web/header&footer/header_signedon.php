@@ -68,7 +68,9 @@
                 </li>
 
                 <li id="env">
+                    <a href="upload.php">
                     <i class="fa-solid fa-arrow-up-from-bracket icons env"></i>
+                    </a>
                 </li>
                 <li id="notf">
                     <i class="fi fi-br-bell icons notf"></i>
@@ -84,11 +86,33 @@
 
                 <li id="pfp">
                     
-                    <a href="profile.php">
-                        <div class="pfp">
-                            <img src="pfp/<?=$pfp?>" alt="">
+                    <div class="pfp" onclick="toggleMenu2()" id="pf">
+                        <img src="pfp/<?=$pfp?>" alt="">
+                        
+                        <div class="dp2" id="perf"> <!--style="display:none;" -->
+                        <ul class="dp-menu">
+                            <li style="margin-top: 12px;" class="dp-item">
+                                <a href="profile.php?user=<?=$user?>">
+                                    <div class="item-content">
+                                            <i class="fi fi-sr-user"></i>
+                                            <span>Ver Perfil</span>
+                                    </div>
+                                </a>
+                            
+                            </li>
+                            <li>
+                            </li>
+                            <li style="margin-top: 12px;" class="dp-item">
+                                <a href="conf.php">
+                                    <div class="item-content">
+                                        <i class="fi fi-sr-admin-alt"></i>
+                                        <span>Editar perfil</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                         </div>
-                    </a>
 
                 </li>
 
@@ -185,6 +209,19 @@
 
         function toggleMenu() {
             const dropdown = document.querySelector('.dp');
+            if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                dropdown.style.display = 'inline-block';
+                document.getElementById("menu-b").addEventListener("focusout", function (event) {
+                    if (!dropdown.contains(event.relatedTarget)) {
+                        dropdown.style.display = 'none';
+                    }
+                });
+            } else {
+                dropdown.style.display = 'none';
+            }
+        }
+        function toggleMenu2() {
+            const dropdown = document.querySelector('.dp2');
             if (dropdown.style.display === 'none' || dropdown.style.display === '') {
                 dropdown.style.display = 'inline-block';
                 document.getElementById("menu-b").addEventListener("focusout", function (event) {

@@ -23,7 +23,29 @@ body{
     src: url(../src//font/momcakepro/MomcakePro-Regular.ttf);
 }
 
+.scrollbar2 {
+  right: 20px; 
+  position: relative;
 
+}
+
+.scrollbar2::-webkit-scrollbar {
+  width: 19px;
+}
+
+.scrollbar2::-webkit-scrollbar-thumb {
+  background-color: #6b4949; 
+  border: 0.28em solid #f5e7e1; 
+  border-radius: 2rem; 
+}
+
+.scrollbar2::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(136, 106, 106); 
+}
+
+.scrollbar2::-webkit-scrollbar-track{
+  border-radius: 3rem;
+}
 .perf-menu{
     width: 29.6rem;
 }
@@ -334,23 +356,22 @@ body{
 
 .banner{
     position: absolute;
-    bottom: 19.3rem;
-    left: 26.7rem;
-    width: 1110px;
+    top: 7.9rem;
+    left: 28rem;
+    width: 330px;
     height: 307px;
-    margin: 57px 29px 52px 41px;
     border-radius: 31px;
 }
 
 .banner img{
-    width: 1110px;
+    width: 1087px;
     height: 307px;
 }
 
 .Portiflio {
     position: absolute;
-    bottom: 17rem;
-    left: 30rem;
+    top: 29rem;
+    left: 29rem;
     width: 138px;
     height: 47px;
     text-shadow: -2px 4px 0 #543838;
@@ -369,19 +390,15 @@ body{
     background-color: #e8a542;
     width: 1086px;
     position: relative;
-    left: 29.6rem;
-    top: 29rem;
+    left: 27.9rem;
+    top: 37rem;
   }
 
   .it{
     background-color: #3d2828;
     width: 352px;
     height: 205px;
-    margin: 0px 5px 28px 5px;
+    margin: 0px 5px 10px 5px;
     border-radius: 8px;
     float: left;
-  }
-
-  .menuu{
-    
   }

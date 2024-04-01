@@ -3,6 +3,10 @@
 
 }
 
+body{
+    background-color: #f5e7e1;
+}
+
 @font-face {
     font-family: HeyComic ;
     src: url(../src/font/hey_comic/Hey\ Comic.ttf);
@@ -241,7 +245,7 @@
     width: 11rem;
     height: 20.6rem;
     border-radius: 0rem 0rem 1rem 1rem;
-    background-color: #442d2df3;
+    background-color: #442d2d;
     position:absolute;
     display:none;
     cursor: cell;
@@ -417,7 +421,7 @@
 
 
     .dp{
-        left: 83.5rem;
+        left: 82.8rem;
         margin-left: 0;
     }
     .menu_ li {

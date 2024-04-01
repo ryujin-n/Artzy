@@ -3,6 +3,10 @@
 
 }
 
+body{
+  background-color: #f5e7e1;
+}
+
 @font-face {
   font-family: HeyComic ;
   src: url(../src/font/hey_comic/Hey\ Comic.ttf);
@@ -196,6 +200,7 @@
   height: 40px;
   width: 40px;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 
@@ -228,10 +233,22 @@
   width: 11rem;
   height: 24.2rem;
   border-radius: 0rem 0rem 1rem 1rem;
-  background-color: #442d2df3;
+  background-color: #442d2d;
   position:absolute;
   display:none;
   cursor: cell;
+}
+.dp2{
+  top: 4.9rem;
+  left: 67.3rem;
+  margin-left: 20rem;
+  width: 9rem;
+  height:8.2rem;
+  border-radius: 0rem 0rem 1rem 1rem;
+  background-color: #442d2d;
+  position: absolute;
+  display: none;
+  cursor:auto;
 }
 
 #exps .dp-item {
@@ -268,6 +285,41 @@
   margin-top: 1.09rem;
   padding: 0rem 0rem 0rem 1rem;
 }
+#perf .dp-item {
+  display: flex;
+  align-items: center; /* Alinha verticalmente os itens */
+}
+
+#perf .item-content {
+  display: flex;
+  align-items: center;
+}
+
+#perf .item-content i {
+  margin-right: 10px; /* Adiciona um espaço entre o ícone e o texto */
+}
+#perf i {
+  margin: 3px;
+  font-size: 23px; /* Altere este valor para ajustar o tamanho da fonte */
+  color: #ffc369;
+}
+
+#perf span {
+  font-family: MomcakePro;
+  font-size: 17pt;
+  line-height: 1rem;
+  letter-spacing: 0.76px;
+  display: inline-block;
+  color: #ffc369;
+  width: 6rem;
+}
+#perf  a{
+  text-decoration: none;
+}
+#perf .dp-menu{
+  margin-top: 0.09rem;
+  padding: 0rem 0rem 0rem 1rem;
+}
 .hr{
   margin: 22px 0px 22px 6px;
   width: 132px; 
@@ -292,6 +344,11 @@
 
 #exps li:hover i,
 #exps li:hover span {
+  color: white;
+  cursor: pointer;
+}
+#perf li:hover i,
+#perf li:hover span {
   color: white;
   cursor: pointer;
 }
@@ -389,7 +446,7 @@
 
 
   .dp{
-      left: 87.8rem;
+      left: 85.8rem;
       margin-left: 0;
   }
   .menu_ li {
@@ -508,8 +565,8 @@
   }
 
   .pfp {
-    height: 32px;
-    width: 32px;
+    height: 42px;
+    width: 42px;
     margin: 17.6px 0px 0px 0.6rem;
   }
 
