@@ -1,0 +1,103 @@
+@import url("fonts.css");
+
+.fundo{
+    width: 483px;
+    height: 501px;
+    flex-grow: 0;
+    margin: 140px 35px 0px 78px;
+    padding: 47px 40px 95.5px;
+    border-radius: 19px;
+    box-shadow: 12px 14px 0 0 #e8a542;
+    background-color: #543838;
+    position: relative;
+}
+.pfp{
+    width: 120px;
+    height: 120px;
+    margin: 0 16px 24.3px 0;
+    border-radius: 100%;
+}
+.pfp img{
+    width: 120px;
+    height: 120px;
+}
+
+.txt{
+    width: 11rem;
+    position: absolute;
+    left: 11.1rem;
+    top: 3.8rem;
+}
+
+.Configuraes {
+    width: 186px;
+    height: 23px;
+    margin: 23px 81px 0 16px;
+    font-family: Superstar;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #e8a542;
+    display:block
+  }
+  .nome{
+    width: 267px;
+    height: auto;
+    word-wrap: break-word;
+    margin: 0px 0px 3px 16px;
+    font-family: Superstar;
+    font-size: 34px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.36px;
+    text-align: left;
+    color: #fff;
+    display:block
+  }
+  .time {
+    width: 262px;
+    height: auto;
+    word-wrap: break-word;
+    margin: 3px 5px 45.3px 16px;
+    font-family: Superstar;
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.44px;
+    text-align: left;
+    color: #332323;
+    display:block
+  }
+  .info-container {
+    display: flex;
+    flex-direction: column;
+}
+.hr{
+    margin: 22px 0px 22px 6px;
+    width: 132px; 
+    border: solid 1px #726262  ;
+    border-radius:1px;
+  }
+  .menu__{
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+  }
+  .item-m{
+    width: 403px;
+    height: 40.9px;
+    flex-grow: 0;
+    margin: 24.3px 0 18.8px;
+    padding: 10.7px 25px 9.7px 19px;
+    border-radius: 3px;
+    border: solid 3px #e8a542;
+    background-color: #412727;
+  }

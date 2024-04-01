@@ -9,12 +9,26 @@
     <link rel="stylesheet" href="css/style-profile.css">
     <title>Artzy - <?=$user?> </title>
 </head>
-<body>
-    <div style="margin-top:-1rem; padding:0 0.2rem 0  0.2rem; ">
+<body class="scrollbar2">
+    <div style="margin-top:-1rem; padding:0 0.2rem 0  0.2rem;">
         <?php include_once($menu)?>
     </div>
 
     <div class="perf-menu">
+
+        <input type="text" 
+        style="
+            position: absolute; 
+            top: 5.2rem;
+            left: 9rem;
+            /* display:none; */
+            
+        "
+        name="perfill"
+        id="perfill"
+        value="<?=$id?>">
+
+
         <div class="perf-fundo scrollbar">
             <div id="profile-p" class="profile-p">
                 <img src="pfp/<?= $pfp ?>" alt="">
@@ -73,7 +87,7 @@
                             </div>
                         </div>
     
-                        <div id="butao" class="botoes">
+                        <div id="butao" class="botoes" style="display: none;">
                             <button class="seguir" id="seguir" data-userid="<?= $id?>">
                                 <span class="icons">
                                     <i id="f" class="fa-solid fa-user-plus waw"></i>
@@ -92,8 +106,9 @@
                                     Chat
                                 </span>
                             </button>
-                            
-                            <textarea class="bio" name="" id="" cols="37" rows="1">Bio
+                        </div>
+
+                        <textarea class="bio" name="" id="" cols="37" rows="1">Bio
                                 </textarea>
                                 
                                 <div class="Line-27"></div>
@@ -178,7 +193,6 @@
                                     </p>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -206,6 +220,34 @@
             Portifólio
         </span>
             
+
+        <div class="gall">
+
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+            <div class="it"></div>
+
+        </div>
+
+
+
+
+
     <script>
         const seguir = document.getElementById('seguir');
         const f = document.getElementById('f');

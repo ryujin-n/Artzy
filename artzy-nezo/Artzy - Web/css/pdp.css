@@ -1,0 +1,162 @@
+@import url("fonts.css");
+@import url('https://fonts.cdnfonts.com/css/squashy-flow');
+
+body {
+
+    background-color: #ecd8ba;
+    
+}
+
+  
+.Cubao {
+
+    width: 1041px;
+    height: 34479px;
+    margin: 51px 296px 213px 297px;
+    padding: 155px 97px 9833px 80px;
+    border-radius: 41px;
+    box-shadow: -13px 13px 0 0 #39486d;
+    border: solid 5px #000;
+    background-color: rgba(255, 241, 205, 0.89);
+    position: relative;
+    right: 7rem;
+    top: 0rem;
+  }
+
+  .termos {
+
+    width: 607px;
+    height: 119px;
+    margin: 0 216px 51.6px 241px;
+    font-family: 'Squashy Flow', sans-serif;
+    text-shadow: #000;
+    font-size: 39px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-align: left;
+    text-shadow: -8px 4px #39486d;
+    color: #c19b61;
+  
+  }
+
+  .txt1 {
+    width: 1055px;
+    height: 125.7px;
+    margin: 51.6px 0 40px 9px;
+    font-family: 'KGRedHands', sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.28px;
+    text-align: left;
+    color: #000;
+    text-decoration: underline;
+
+  }
+
+  
+.acordo {
+  width: 1055px;
+  height: 925.5px;
+  margin: 40px 0 315.1px 9px;
+  padding: 537.9px 0 55.1px;
+  font-family: 'KGRedHands', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.96px;
+  text-align: left;
+  color: #000;
+}
+
+.txt2 .text-style-1 {
+  font-size: 32px;
+  letter-spacing: 1.28px;
+}
+
+.txt3 {
+    width: 1041px;
+    height: 293.9px;
+    margin: 948.1px 14px 38.6px 9px;
+    font-family: 'KGRedHands', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-align: left;
+    color: #000;
+  }
+  .txt3 .text-style-1 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+  .txt3 .text-style-2 {
+    font-size: 12px;
+    letter-spacing: 0.48px;
+  }
+
+  .txt4 {
+    width: 604px;
+    height: 207.6px;
+    margin: 38.6px 451px 0.3px 9px;
+    font-family: 'KGRedHands', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-align: left;
+    color: #000;
+  }
+  .txt4 .text-style-1{
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txt5 {
+    width: 1034px;
+    height: 606.7px;
+    margin: 0.3px 21px 95.6px 9px;
+    font-family: 'KGRedHands', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-align: left;
+    color: #000;
+  }
+  .txt5 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txt6 {
+    width: 1034px;
+    height: 175px;
+    margin: 95.6px 21px 96px 9px;
+    font-family: ComicSansMS;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-align: left;
+    color: #000;
+  }
+  .txt6 .text-style-1 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
