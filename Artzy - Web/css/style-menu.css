@@ -3,10 +3,10 @@
 
 .fundo{
     width: 483px;
-    height: 501px;
+    height: 471px;
     flex-grow: 0;
     margin: 140px 35px 0px 78px;
-    padding: 47px 40px 95.5px;
+    padding: 28px 40px 95.5px;
     border-radius: 19px;
     box-shadow: 12px 14px 0 0 #e8a542;
     background-color: #543838;
@@ -27,7 +27,7 @@
     width: 11rem;
     position: absolute;
     left: 11.1rem;
-    top: 3.8rem;
+    top: 2.5rem;
 }
 
 .Configuraes {
@@ -89,7 +89,7 @@
   }
   .menu__{
     position: absolute;
-    top: 13.5rem;
+    top: 12.5rem;
     left: 2.6rem;
   }
   .item-m{

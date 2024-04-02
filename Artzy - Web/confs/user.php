@@ -36,38 +36,71 @@
             </span>
             <button name="area" id="areaa" class="area" onclick="rotateArrow()" onblur="resetArrow()">
                 <span id="bt_n">Selecione sua nova Área</span>
-                    <i class="fi fi-br-angle-down" id="seta"></i>
-                        <div class="dp scrollbar" id="ddp"> <!--style="display:none;" -->
-                            <ul class="dp-menu">
-                                <li class="dp-item">
+                    <i class="fi fi-br-angle-down" id="setaa"></i>
+                        <div class="dp- scrollbar3" id="ddp"> <!--style="display:none;" -->
+                            <ul class="ddp-menu">
+                                <li class="ddp-item">
                                     <div class="item-content">
                                         <div class="hov" id="da" onclick="area_sel('da')">Arte Digital</div>
                                     </div>
                                 </li>
                                 
-                                <li class="dp-item">
+                                <li class="ddp-item">
                                     <div class="item-content">
                                         <div class="hov" id="ta" onclick="area_sel('ta')">Arte Tradicional</div>
                                     </div>
                                 </li>
-                                <li class="dp-item">
+                                <li class="ddp-item">
                                     <div class="item-content">
                                         <div class="hov" id="av"onclick="area_sel('av')">Audiovisual</div>
                                     </div>
                                 </li>
                             
-                                <li class="dp-item">
+                                <li class="ddp-item">
                                         <div class="hov" id="wr" onclick="area_sel('wr')">Escrita</div>
                                 </li>
                             </ul>
                         </div>
             </button>
         </div>
+
+        <div class="foto-perfil">
+            <div class="profil-p">
+                <img src="pfp/<?= $pfp ?>" alt="">
+            </div>
+
+            <button class="arquivo">
+                <i class="fi fi-br-picture up-i"></i>
+                <span class="Envie-um-arquivo">
+                    Trocar de Avatar
+                </span>
+            </button>
+        </div>
+
+        <div class="banner-perfil">
+            <div class="banner-p">
+                <img src="pfp/banner/<?= $banner ?>" alt="">
+            </div>
+
+            <button class="arquivo">
+                <i class="fi fi-br-picture up-i"></i>
+                <span class="Envie-um-arquivo">
+                    Trocar de Banner
+                </span>
+            </button>
+        </div>
+
+        <button class="enviar">
+            <i class="fi fi-br-file-upload e-i"></i>
+            <span class="Alterar-Imagem">
+                Salvar
+            </span>
+        </button>
     </div>
 
     <script>
          function rotateArrow() {
-            const seta = document.getElementById('seta');
+            const seta = document.getElementById('setaa');
 
             if (seta.classList.contains("arrow-rotated")) {
                 seta.classList.add("arrow-initial");
@@ -81,30 +114,55 @@
         }
 
         function resetArrow() {
-            const seta = document.getElementById('seta');
+            const seta = document.getElementById('setaa');
             seta.classList.remove("arrow-rotated");
             seta.classList.add("arrow-initial");
             resetDropdown(); 
         }
 
-        // function toggleDropdown() {
-        //     const dropdown = document.getElementById('ddp');
-        //     dropdown.classList.toggle('show'); 
-        //     dropdown.classList.remove('hide');
-        //  }
+        function toggleDropdown() {
+            const dropdown = document.getElementById('ddp');
+            dropdown.classList.toggle('show'); 
+            dropdown.classList.remove('hide');
+         }
 
-        // function resetDropdown() {
-        //     const dropdown = document.getElementById('ddp');
-        //     const btn = document.getElementById('areaa');
+        function resetDropdown() {
+            const dropdown = document.getElementById('ddp');
+            const btn = document.getElementById('areaa');
 
-        //     dropdown.classList.add('hide'); 
-        //     btn.blur()
+            dropdown.classList.add('hide'); 
+            btn.blur()
 
 
-        //     setTimeout(function() {
-        //         dropdown.classList.remove('show');
-        //     }, 237);
-        // }
+            setTimeout(function() {
+                dropdown.classList.remove('show');
+            }, 237);
+        }
+
+        function area_sel(type) {
+
+            const btn = document.getElementById('bt_n');
+
+            console.log(type);
+
+
+            if (type == "da" ) {
+                btn.innerText = "Arte Digital"
+                tipo.value = "Arte Digital"
+            }
+            else if (type == "ta"){
+                btn.innerText = "Arte Tradicional"
+                tipo.value = "Arte Tradicional"
+            }
+            else if (type == "av"){
+                btn.innerText = "Audiovisual"
+                tipo.value = "Audiovisual"
+            }
+            else if (type == "wr"){
+                btn.innerText = "Escrita"
+                tipo.value = "Escrita"
+            }
+        }
     </script>
 </body>
 </html>

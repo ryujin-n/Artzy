@@ -10,8 +10,12 @@
     <link rel="stylesheet" href="header&footer/style.css">
     <link rel="stylesheet" href="header&footer/style2.css">
     <link rel="stylesheet" href="confs/user.css">
+    <link rel="stylesheet" href="confs/rs.css">
+    <link rel="stylesheet" href="confs/acc.css">
+    <link rel="stylesheet" href="confs/pss.css">
+    
 </head>
-<body>
+<body class="scrollbar2">
     <div style="margin-top:-1rem; padding:0 0.2rem 0  0.2rem; ">
         <?php include_once($menu)?>
     </div>
@@ -20,35 +24,34 @@
     </div>
     <div class="confs">
         <?php
+            if(isset($_GET['tela']))
+            {
+                $tela = $_GET['tela'];
 
-                if(isset($_GET['tela']))
+                if($tela=='perfil')
                 {
-                    $tela = $_GET['tela'];
-
-                    if($tela=='perfil')
-                    {
-                        include_once("confs/user.php");
-                    }
-                    if($tela=='redes-sociais')
-                    {
-                        include_once("confs/rs.php");
-                    }
-                    else if($tela=='conta')
-                    {
-                        include_once("confs/acc.php");
-                    }
-                    else if($tela=='senha')
-                    {
-                        include_once("confs/pss.php");
-                    }
-                    
+                    include_once("confs/user.php");
                 }
-                else
+                if($tela=='redes-sociais')
                 {
-                   include_once("confs/user.php");
-                   
+                    include_once("confs/rs.php");
                 }
-            ?>
+                else if($tela=='conta')
+                {
+                    include_once("confs/acc.php");
+                }
+                else if($tela=='senha')
+                {
+                    include_once("confs/pss.php");
+                }
+                
+            }
+            else
+            {
+                include_once("confs/user.php");
+                
+            }
+        ?>
     </div>
 </body>
 </html>
