@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <?php include_once("php/auth.php")?>
+    <?php include_once("php/galeria.php")?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artzy - Upload</title>
     <link rel="stylesheet" href="css/style-upload.css">
@@ -12,10 +13,12 @@
 </head>
 <body class="scrollbar">
 
+<form action="" method="post" onsubmit="return false;" enctype="multipart/form-data" id="frmUpload" name="frmUpload">
     <div style="margin-top:-1rem; padding:0 0.2rem 0  0.2rem; ">
         <?php include_once($menu)?>
     </div>
     <div class="upload-cont">
+
         <span class="ENVIAR-UMA-NOVA-ARTE">
             ENVIAR UMA NOVA ARTE
         </span>
@@ -32,20 +35,22 @@
             </div>
 
             <div class="Rectangle-284">
-                <input oninput="legal()" type="text" id="tit-i" name="" class="nome-in" placeholder="Qual o nome da sua arte?">
+                <input oninput="legal()" type="text" id="tit-i" name="titulo-arte" class="nome-in" placeholder="Qual o nome da sua arte?" required>
             </div>
 
-            <div class="Rectangle-285">
-                <button class="arquivo">
+            <div class="Rectangle-285" id="">
+                <div class="arquivo" id="enviar-foto" onclick="enviar_imagem('foto')">
                     <i class="fi fi-br-folder-upload up-i"></i>
-                    <span class="Envie-um-arquivo">
+                    <span class="Envie-um-arquivo" id="enviar-arquivo">
                         Envie um arquivo
                       </span>
-                </button>
+                </div>
+                <input type="file" id="file-input" name="imagem" class="file-input" accept="image/*">
+                <img id="image-preview" class="">
             </div>
 
             <div class="Rectangle-286">
-                <textarea name="" id="" name="" class="desc scrollbar2" placeholder="Descrição"></textarea>
+                <textarea name="desc" id="desc" name="desc" class="desc scrollbar2" placeholder="Descrição" required></textarea>
             </div>
 
             <div class="categ">
@@ -142,33 +147,47 @@
                 </span>
 
                 <div class="Rectangle-2851">
-                    <button class="arquivo2">
+                    <div class="arquivo2" id="enviar-foto2" onclick="enviar_imagem('thumb')">
                         <i class="fi fi-br-folder-upload up-i"></i>
-                        <span class="Envie-um-arquivo">
+                        <span class="Envie-um-arquivo" id="enviar-arquivo2">
                             Envie um arquivo
                           </span>
-                    </button>
+                    </div>
+                    <input type="file" id="file-input2" name="thumbnail" class="file-input" accept="image/*">
+                    <img id="thumb-preview">
                 </div>
             </div>
 
-            <button class="alt-img">
+            <button class="alt-img" id="alt_thumb" name="" onclick="enviar_imagem('alt_th')">
+                <i class="fi fi-br-replace a-i"></i>
+                <span class="Alterar-Imagem">
+                    Alterar Thumbnail
+                </span>
+            </button>
+
+            <button class="alt-img" id="" name="" onclick="enviar_imagem('alt')">
                 <i class="fi fi-br-replace a-i"></i>
                 <span class="Alterar-Imagem">
                     Alterar Imagem
                 </span>
             </button>
 
-            <button class="enviar">
+            <button class="enviar" id="pub" name="pub" onclick="publicar()">
                 <i class="fi fi-br-paper-plane e-i"></i>
                 <span class="Alterar-Imagem">
                    publicar
                 </span>
             </button>
         </div>
-
     </div>
+</form>
   
     <script>
+        const form = document.getElementById("frmUpload")
+            
+        function publicar() {
+            form.submit()
+        }
 
         function legal() {
             let tit = document.getElementById("titulo");
@@ -213,7 +232,52 @@
         opts.forEach(opt => {
             opt.addEventListener('click', categ);
         });
+        
+        function enviar_imagem(tipo) {
 
+            if (tipo == 'foto' || tipo == 'alt') {
+                document.getElementById('file-input').click()
+                // Adicione um ouvinte de evento para o input[type="file"]
+                document.getElementById('file-input').addEventListener('change', function() {
+                    // Verifica se um arquivo foi selecionado
+                    if (this.files && this.files[0]) {
+                        var reader = new FileReader();
+
+                        // Leitura do arquivo selecionado como URL de dados
+                        reader.onload = function(e) {
+                            // Exiba a imagem selecionada, substituindo '#image-preview' pelo ID do elemento onde deseja exibir a imagem
+                            document.getElementById('image-preview').src = e.target.result;
+                            // Oculta o botão após a seleção da imagem
+                            document.getElementById('enviar-foto').style.display = 'none';
+                        }
+
+                        // Leia o arquivo como uma URL de dados
+                        reader.readAsDataURL(this.files[0]);
+                    }
+                });
+            } else if (tipo == 'thumb' || tipo == 'alt_th') {
+                document.getElementById('file-input2').click()
+                // Adicione um ouvinte de evento para o input[type="file"]
+                document.getElementById('file-input2').addEventListener('change', function() {
+                    // Verifica se um arquivo foi selecionado
+                    if (this.files && this.files[0]) {
+                        var reader = new FileReader();
+
+                        // Leitura do arquivo selecionado como URL de dados
+                        reader.onload = function(e) {
+                            // Exiba a imagem selecionada, substituindo '#image-preview' pelo ID do elemento onde deseja exibir a imagem
+                            document.getElementById('thumb-preview').src = e.target.result;
+                            // Oculta o botão após a seleção da imagem
+                            document.getElementById('enviar-foto2').style.display = 'none';
+                        }
+
+                        // Leia o arquivo como uma URL de dados
+                        reader.readAsDataURL(this.files[0]);
+                    }
+                });
+            }
+        }
+   
     </script>
 
 </body>

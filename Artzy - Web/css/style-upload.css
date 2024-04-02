@@ -166,9 +166,11 @@ body{
     height: 448px;
     border-radius: 6px;
     border: dashed 3px #543838;
-    position: absolute;
+    position: relative;
     top: 7rem;
     left: 0.4rem;
+    justify-content: center;
+    align-items: center;
 
   }
   .Rectangle-2851 {
@@ -193,6 +195,8 @@ body{
     position: relative;
     left: 363px;
     top: 10.5rem;
+    cursor: pointer;
+
   }
   .arquivo2 {
     width: 298px;
@@ -205,13 +209,15 @@ body{
     position: relative;
     left: 45px;
     top: 6rem;
+    cursor: pointer;
+    
   }
 
   .Envie-um-arquivo {
-    width: 208px;
+    width: 228px;
     height: 18px;
-    flex-grow: 0;
-    margin: 6px 0 6px 45px;
+    display: block;
+    margin: 21px 0 6px 63px;
     text-shadow: 0 4px 0 #543838;
     font-family: Daydream;
     font-size: 13px;
@@ -289,7 +295,7 @@ body{
     background-color: #543838;
     border-radius: 0px 0px 12px 12px;
     position: relative;
-    top: 46.8rem;
+    top: 18.8rem;
 
   }
 
@@ -341,9 +347,11 @@ body{
   .thumb{
     width: 6rem;
     height: 6rem;
-    position: absolute;
+    position: relative;
     top: 14.5rem;
     left: 69rem;
+    justify-content: center;
+    align-items: center;
   }
   .thumbn{
     width: 400px;
@@ -411,7 +419,7 @@ body{
     border: solid 4px #4f6b4f;
     background-color: #8ca558;
     position: absolute;
-    top: 25.5rem;
+    top: 30rem;
     left: 0.3rem;
 }
 .e-i{
@@ -441,5 +449,34 @@ span{
     -moz-user-select: none; 
     -ms-user-select: none; 
     user-select: none; 
+}
+.file-input2{
+  display: none;
+}
+.file-input{
+  display: none;
+}
+
+#image-preview{
+  max-width: 100%; /* A largura máxima da imagem será 100% da largura da div */
+  max-height: 100%; /* A altura máxima da imagem será 100% da altura da div */
+  position: absolute; /* Para permitir que a imagem seja centralizada */
+  top: 50%; /* Posiciona o topo da imagem no meio da div */
+  left: 50%; /* Posiciona a esquerda da imagem no meio da div */
+  transform: translate(-50%, -50%); 
+}
+#alt_thumb{
+  top: 25.5rem;
+  width: 20rem;
+  background-color: #e8a542;
+  border-color: #9b6d28;
+}
+#thumb-preview{
+  max-width: 100%; /* A largura máxima da imagem será 100% da largura da div */
+  max-height: 100%; /* A altura máxima da imagem será 100% da altura da div */
+  position: absolute; /* Para permitir que a imagem seja centralizada */
+  top: 50%; /* Posiciona o topo da imagem no meio da div */
+  left: 50%; /* Posiciona a esquerda da imagem no meio da div */
+  transform: translate(-50%, -50%); 
 }
 
