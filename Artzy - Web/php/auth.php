@@ -9,7 +9,8 @@ if (isset($_SESSION['nomeUsuarioLogin'])) {
     $menu = "header&footer/header_signedon.php";
     $pfp = $_SESSION['fotoPerfilUsuario'];
     $data= $_SESSION['dataUsuario'];
-    $data = date("F j, Y");
+    $data_formatada = new DateTime($data);
+    $data_formatada_pt = $data_formatada->format("F \\d\\e Y");
     $email = $_SESSION['emailUsuarioLogin'];
     $user = $_SESSION['loginUsuarioLogin'];
     $nome = $_SESSION['nomeUsuarioLogin'];

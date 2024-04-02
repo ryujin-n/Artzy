@@ -27,7 +27,7 @@
                     <?= $nome ?>
                 </span>
                 <span class="time">
-                    Membro desde <?= $data ?>
+                    Membro desde <?= $data_formatada_pt ?>
                 </span>
             </div>
         </div>

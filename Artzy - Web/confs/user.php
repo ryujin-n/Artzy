@@ -7,96 +7,98 @@
     <link rel="stylesheet" href="user.css">
 </head>
 <body>
-    <div class="titulo-p">
-        <span class="Perfil">
-             Perfil
-        </span>
+    <form action="" method="post" onsubmit="return false;" id="frmUser" name="frmUser">
+        <div class="titulo-p">
+            <span class="Perfil">
+                Perfil
+            </span>
 
-        <span class="sub-t">
-            Preencha as informações nos campos para aparecerem nos resultados de pesquisa
-        </span>
-    </div>
+            <span class="sub-t">
+                Preencha as informações nos campos para aparecerem nos resultados de pesquisa
+            </span>
+        </div>
 
-    <div class="info-p">
-        <div class="user">
-            <span class="Usurio">
-               Usuário
-            </span>
-            <input type="text" name="" id="" class="user-in">
-        </div>
-        <div class="bio">
-            <span class="bio-s">
-                Bio - uma linha sobre você
-            </span>
-            <input type="text" name="" id="" class="bio-in" >
-        </div>
-        <div class="area-s">
-            <span class="bio-s">
-                Área
-            </span>
-            <button name="area" id="areaa" class="area" onclick="rotateArrow()" onblur="resetArrow()">
-                <span id="bt_n">Selecione sua nova Área</span>
-                    <i class="fi fi-br-angle-down" id="setaa"></i>
-                        <div class="dp- scrollbar3" id="ddp"> <!--style="display:none;" -->
-                            <ul class="ddp-menu">
-                                <li class="ddp-item">
-                                    <div class="item-content">
-                                        <div class="hov" id="da" onclick="area_sel('da')">Arte Digital</div>
-                                    </div>
-                                </li>
+        <div class="info-p">
+            <div class="user">
+                <span class="Usurio">
+                Usuário
+                </span>
+                <input type="text" name="" id="" class="user-in">
+            </div>
+            <div class="bio">
+                <span class="bio-s">
+                    Bio - uma linha sobre você
+                </span>
+                <input type="text" name="" id="" class="bio-in" >
+            </div>
+            <div class="area-s">
+                <span class="bio-s">
+                    Área
+                </span>
+                <button name="area" id="areaa" class="area" onclick="rotateArrow()" onblur="resetArrow()">
+                    <span id="bt_n">Selecione sua nova Área</span>
+                        <i class="fi fi-br-angle-down" id="setaa"></i>
+                            <div class="dp- scrollbar3" id="ddp"> <!--style="display:none;" -->
+                                <ul class="ddp-menu">
+                                    <li class="ddp-item">
+                                        <div class="item-content">
+                                            <div class="hov" id="da" onclick="area_sel('da')">Arte Digital</div>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="ddp-item">
+                                        <div class="item-content">
+                                            <div class="hov" id="ta" onclick="area_sel('ta')">Arte Tradicional</div>
+                                        </div>
+                                    </li>
+                                    <li class="ddp-item">
+                                        <div class="item-content">
+                                            <div class="hov" id="av"onclick="area_sel('av')">Audiovisual</div>
+                                        </div>
+                                    </li>
                                 
-                                <li class="ddp-item">
-                                    <div class="item-content">
-                                        <div class="hov" id="ta" onclick="area_sel('ta')">Arte Tradicional</div>
-                                    </div>
-                                </li>
-                                <li class="ddp-item">
-                                    <div class="item-content">
-                                        <div class="hov" id="av"onclick="area_sel('av')">Audiovisual</div>
-                                    </div>
-                                </li>
-                            
-                                <li class="ddp-item">
-                                        <div class="hov" id="wr" onclick="area_sel('wr')">Escrita</div>
-                                </li>
-                            </ul>
-                        </div>
-            </button>
-        </div>
-
-        <div class="foto-perfil">
-            <div class="profil-p">
-                <img src="pfp/<?= $pfp ?>" alt="">
+                                    <li class="ddp-item">
+                                            <div class="hov" id="wr" onclick="area_sel('wr')">Escrita</div>
+                                    </li>
+                                </ul>
+                            </div>
+                </button>
             </div>
 
-            <button class="arquivo">
-                <i class="fi fi-br-picture up-i"></i>
-                <span class="Envie-um-arquivo">
-                    Trocar de Avatar
+            <div class="foto-perfil">
+                <div class="profil-p">
+                    <img src="pfp/<?= $pfp ?>" alt="">
+                </div>
+
+                <button class="arquivo">
+                    <i class="fi fi-br-picture up-i"></i>
+                    <span class="Envie-um-arquivo">
+                        Trocar de Avatar
+                    </span>
+                </button>
+            </div>
+
+            <div class="banner-perfil">
+                <div class="banner-p">
+                    <img src="pfp/banner/<?= $banner ?>" alt="">
+                </div>
+
+                <button class="arquivo">
+                    <i class="fi fi-br-picture up-i"></i>
+                    <span class="Envie-um-arquivo">
+                        Trocar de Banner
+                    </span>
+                </button>
+            </div>
+
+            <button class="enviar">
+                <i class="fi fi-br-file-upload e-i"></i>
+                <span class="Alterar-Imagem">
+                    Salvar
                 </span>
             </button>
         </div>
-
-        <div class="banner-perfil">
-            <div class="banner-p">
-                <img src="pfp/banner/<?= $banner ?>" alt="">
-            </div>
-
-            <button class="arquivo">
-                <i class="fi fi-br-picture up-i"></i>
-                <span class="Envie-um-arquivo">
-                    Trocar de Banner
-                </span>
-            </button>
-        </div>
-
-        <button class="enviar">
-            <i class="fi fi-br-file-upload e-i"></i>
-            <span class="Alterar-Imagem">
-                Salvar
-            </span>
-        </button>
-    </div>
+    </form>
 
     <script>
          function rotateArrow() {
