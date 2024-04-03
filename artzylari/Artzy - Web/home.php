@@ -8,6 +8,7 @@
     <title>Artzy - Home</title>
 </head>
 <body>
+    
     <?php include_once("php/auth.php")?>
 
     <div style="margin-top:-1rem; padding:0 0.2rem 0  0.2rem; ">
