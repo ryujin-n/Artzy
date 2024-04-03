@@ -1,0 +1,126 @@
+@import url("fonts.css");
+@import url('https://fonts.cdnfonts.com/css/superstar-2');
+
+.fundo{
+    width: 483px;
+    height: 471px;
+    flex-grow: 0;
+    margin: 140px 35px 0px 78px;
+    padding: 28px 40px 95.5px;
+    border-radius: 19px;
+    box-shadow: 12px 14px 0 0 #e8a542;
+    background-color: #543838;
+    position: relative;
+}
+.pfp{
+    width: 120px;
+    height: 120px;
+    margin: 0 16px 24.3px 0;
+    border-radius: 100%;
+}
+.pfp img{
+    width: 120px;
+    height: 120px;
+}
+
+.txt{
+    width: 11rem;
+    position: absolute;
+    left: 11.1rem;
+    top: 2.5rem;
+}
+
+.Configuraes {
+    width: 186px;
+    height: 23px;
+    margin: 23px 81px 0 16px;
+    font-family: 'Superstar', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-align: left;
+    color: #e8a542;
+    display:block
+  }
+  .nome{
+    width: 267px;
+    height: auto;
+    word-wrap: break-word;
+    margin: 0px 0px 3px 16px;
+    font-family: Superstar;
+    font-size: 34px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.36px;
+    text-align: left;
+    color: #fff;
+    display:block
+  }
+  .time {
+    width: 262px;
+    height: auto;
+    word-wrap: break-word;
+    margin: 0px 5px 0px 16px;
+    font-family: Superstar;
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.44px;
+    text-align: left;
+    color: #ffffff8a;
+    display:block
+  }
+  .info-container {
+    display: flex;
+    flex-direction: column;
+}
+#hr2{
+    margin: 22px 0px 22px 6px;
+    width: 392px; 
+    border: solid 2px #726262  ;
+    border-radius:1px;
+  }
+  .menu__{
+    position: absolute;
+    top: 12.5rem;
+    left: 2.6rem;
+  }
+  .item-m{
+    width: 403px;
+    height: 40.9px;
+    margin: 0px 0 7.8px;
+    padding: 10.7px 25px 9.7px 48px;
+    border-radius: 3px;
+
+    text-decoration: none;
+    font-family: Superstar;
+    font-size: 14px;
+    display: inline-block;
+    letter-spacing: 0.56px;
+    text-align: left;
+    color: #e8a542;
+    position: relative;
+  }
+  .item-m i{
+    font-size: 19px;
+    position: absolute;
+    top: 0.7rem;
+    left: 1rem;
+  }
+
+  .sel{
+    border-left: solid 3px #e8a542;
+    background-color: #412727;
+  }
+
+  .item-m:hover{
+    transition: background-color ease 0.4s;
+    background-color: #412727;
+  }
