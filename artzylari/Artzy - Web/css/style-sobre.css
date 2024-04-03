@@ -14,6 +14,14 @@
     font-family: Justmore-PersonalUse;
     src: url(../src/font/justmore/Justmore\ -\ Personal\ Use.ttf);
 }
+@font-face {
+    font-family: UpWitchTheBirds;
+    src: url(../src/font/UpWithTheBirds/Up\ with\ the\ Birds.otf);
+}
+@font-face {
+    font-family: MomCakePro;
+    src: url(../src/font/momcakepro/MomcakePro-Regular.ttf);
+}
 
 body {
     background-color: #FBCF85;
@@ -894,7 +902,7 @@ body {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
-    background-color: #543838;
+    background-color: #543838c7;
     box-shadow: 0 -30px 0 0 #fff;
     left: 40rem;
     right: 0rem;
@@ -911,19 +919,19 @@ body {
     height: 71px;
     flex-grow: 3;
     margin: 0 272.7px 90px 272px;
-    -webkit-text-stroke: 1.2px #2e1e1e;    
-    font-family: KGRedHands;
-    font-size: 57.3px;
+    -webkit-text-stroke: 2.2px #2e1e1e;
+    font-family: HeyComic;
+    font-size: 63px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
-    color: #e8a542;
+    color: #fbcf85;
     left: 3rem;
     right: 0rem;
-    top: 2rem;
+    top: 1rem;
     z-index: 2;
 }
 .ec:hover + .linha {
@@ -939,7 +947,7 @@ body {
     flex-grow: 0;
     margin: 90px 139px 89px 138.3px;
     transform: rotate(-0.4deg);
-    background-color: #e8a542;
+    background-color: #fbcf85;
     border-radius: 16px;
     left: 28rem;
     right: 0rem;
@@ -962,7 +970,7 @@ body {
     font-size: 16.3px;
     border-radius: 16px;
     border: solid 3px #000;
-    box-shadow: -4px 5px 0 0 #e8a542;    
+    box-shadow: -4px 5px 0 0 #c9b598;
     padding-top: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
@@ -987,7 +995,7 @@ body {
     font-size: 16.3px;
     border-radius: 16px;
     border: solid 3px #000;
-    box-shadow: -4px 5px 0 0 #e8a542;    
+    box-shadow: -4px 5px 0 0 #c9b598;
     padding-top: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
@@ -1014,7 +1022,7 @@ body {
     font-size: 16.3px;
     border-radius: 16px;
     border: solid 3px #000;
-    box-shadow: -4px 5px 0 0 #e8a542;    
+    box-shadow: -4px 5px 0 0 #c9b598;
     padding-top: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
@@ -1052,47 +1060,177 @@ body {
     margin-left: -7px;
     top: 6.3rem;
     left: 45.7rem;
-    background-color: #e8a542;
-    transition: transform ease-in 0.4s;
+    background-color: #c9b598;
 }
 .confir:hover
 {
     width: 150px; 
-    transform: scaleX(1.2);
-    transition: transform ease-in 0.4s;
+    transform: translateY(-5px); /* Ergue o input suavemente quando o mouse passa sobre ele */
+    transition: transform 0.3s ease-in-out;
 }    
 
-.retan2
+
+/* 💦💦💦💦 FOOTER 💦💦💦💦 */
+
+.f
+{
+    position: relative;
+    left: 0rem;
+    right: 0rem;
+    top: -205.2rem;
+    bottom: 0rem;
+}
+.ft
 {
     position: absolute;
     width: 1583.4px;
-    height: 308px;
+    height: 286.5px;
     flex-grow: 0;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
     background-color: #402c2c;
-    left: 40rem;
-    right: 0rem;
-    top: 500.3rem;
-    bottom: 0rem;
-    z-index: 3;
-} 
-.fot
-{
-    position: relative;
-    width: 1583.4px;
-    height: 308px;
     left: 0rem;
     right: 0rem;
-    top: 316.8rem;
+    top: 526rem;
     bottom: 0rem;
-    z-index: 4;
+    z-index: 3;
 }
-.foots
+
+.logo
 {
-background-color: #402c2c;
-
+    position: absolute;
+    width: 99.6px;
+    height: 6.7rem;
+    margin: 20px 0.2rem 0 -7rem;
+    left: 12.6rem;
+}
+.nom
+{
+    position: relative;
+    font-family: UpWitchTheBirds;
+    text-align: center;
+    font-size: 44pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.55pt;
+    color: #c9b8a1;
+    left: -34rem;
+    right: 0rem;
+    top: 2.2rem;
+    bottom: 0rem;
+}
+.ct
+{
+    position: relative;
+    font-family: KGRedHands;
+    text-align: right;
+    font-size: 14pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.55pt;
+    color: #ffffff;
+    left: -9rem;
+    right: 0rem;
+    top: -0.8rem;
+    bottom: 0rem; 
+}
+.bi 
+{
+    position: relative;
+    width: 362px;
+    height: 48px;
+    font-family: Justmore-PersonalUse;
+    font-size: 15.5px;
+    border-radius: 16px;
+    border: solid 3px #000;
+    box-shadow: -4px 5px 0 0 #c9b598;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: -7px;
+    top: -1.8rem;
+    left: 71.4rem;
+    transition: transform 0.3s ease-in-out;
+}
+.bi:hover {
+    transform: translateY(-5px); /* Ergue o input suavemente quando o mouse passa sobre ele */
 }
 
+/* 💦💦💦💦 TRABALHE CONOSCO 💦💦💦💦  */
+.db {
+    position: relative;
+    z-index: 9999;
+}
+
+/* Estilos para o botão .bot */
+.bot {
+    position: fixed;
+    top: 42rem;
+    left: 91rem;
+    width: 82px;
+    height: 79px;
+    flex-grow: 0;
+    padding: 28px 32px;
+    border-radius: 67px;
+    box-shadow: -7px 7px 0 0 #000;
+    z-index: 999999;
+    background-color: #543838;
+    cursor: pointer;
+}
+
+.bot i{
+    color:#e8a542 ;
+    font-size: 20pt;
+    position: absolute;
+    right: 1.7rem;
+    bottom: 1.1rem;
+}   
+
+
+.cp
+{
+    position: absolute;
+    font-family: MomCakePro;
+    text-align: left;
+    font-size: 18pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.45pt;
+    color: #e1d5c2;
+    left: 42rem;
+    right: 0rem;
+    top: 542.2rem;
+    bottom: 0rem;
+    z-index: 3;
+}
+.link
+{
+    text-decoration: none;
+    position: absolute;
+    font-family: MomCakePro;
+    text-align: left;
+    font-size: 18pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.45pt;
+    color: #e1d5c2;
+    left: 9.9rem;
+    right: 0rem;
+    top: 0rem;
+    bottom: 0rem;
+    z-index: 3;
+}
