@@ -3,7 +3,7 @@
 <head>
     <?php include_once("php/auth.php")?>
     <?php include_once("php/area.php")?>
-    <?php include_once("php/galeria.php")?>
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -88,7 +88,7 @@
                             </div>
                         </div>
     
-                        <div id="butao" class="botoes" >
+                        <div id="butao" class="botoes" style="display:none;" >
                             <button class="seguir" id="seguir" data-userid="<?= $id?>">
                                 <span class="icons">
                                     <i id="f" class="fa-solid fa-user-plus waw"></i>
@@ -222,21 +222,8 @@
             
 
         <div class="gall">
-            <?php
-                if ($envio =="true") {
-                    $sql_select = $conn->prepare('SELECT * FROM arte WHERE id_usuario_arte ='.$id.' ORDER BY data_arte DESC');
-                    $sql_select->execute(array(':id' => $id));
-
-                    // Imprime as imagens
-                    while ($row = $sql_select->fetch(PDO::FETCH_ASSOC)) {
-                        echo '
-                        <div class="it">
-                            <img src="galeria/'.$id.'/'.$row['img_arte'].'" alt="">
-                        </div>
-                        ';
-                    }
-                }
-            ?>
+             <?php include_once("php/galeria_carregar.php")?>
+             <div style='clear:both'></div>
         </div>
 
     <script>

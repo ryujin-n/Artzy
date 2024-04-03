@@ -143,42 +143,29 @@
         <div class="thumb">
             <div class="thumbn">
                 <span class="Ttulo-da-arte" >
-                    Thumbnail
+                    Enviar ou Alterar
                 </span>
 
                 <div class="Rectangle-2851">
-                    <div class="arquivo2" id="enviar-foto2" onclick="enviar_imagem('thumb')">
-                        <i class="fi fi-br-folder-upload up-i"></i>
-                        <span class="Envie-um-arquivo" id="enviar-arquivo2">
-                            Envie um arquivo
-                          </span>
-                    </div>
-                    <input type="file" id="file-input2" name="thumbnail" class="file-input" accept="image/*">
-                    <img id="thumb-preview">
+                    
+                    <button class="alt-img" id="" name="" onclick="enviar_imagem('alt')">
+                        <i class="fi fi-br-replace a-i"></i>
+                        <span class="Alterar-Imagem">
+                            Alterar Imagem
+                        </span>
+                    </button>
+            
+                    <button class="enviar" id="pub" name="pub" onclick="publicar()">
+                        <i class="fi fi-br-paper-plane e-i"></i>
+                        <span class="Alterar-Imagem">
+                            publicar
+                        </span>
+                    </button>
                 </div>
             </div>
-
-            <button class="alt-img" id="alt_thumb" name="" onclick="enviar_imagem('alt_th')">
-                <i class="fi fi-br-replace a-i"></i>
-                <span class="Alterar-Imagem">
-                    Alterar Thumbnail
-                </span>
-            </button>
-
-            <button class="alt-img" id="" name="" onclick="enviar_imagem('alt')">
-                <i class="fi fi-br-replace a-i"></i>
-                <span class="Alterar-Imagem">
-                    Alterar Imagem
-                </span>
-            </button>
-
-            <button class="enviar" id="pub" name="pub" onclick="publicar()">
-                <i class="fi fi-br-paper-plane e-i"></i>
-                <span class="Alterar-Imagem">
-                   publicar
-                </span>
-            </button>
         </div>
+        
+
     </div>
 </form>
   

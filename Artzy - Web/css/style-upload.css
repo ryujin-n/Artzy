@@ -175,7 +175,7 @@ body{
   }
   .Rectangle-2851 {
     width: 390px;
-    height: 258px;
+    height: 168px;
     border-radius: 6px;
     border: dashed 3px #543838;
     position: absolute;
@@ -347,7 +347,7 @@ body{
   .thumb{
     width: 6rem;
     height: 6rem;
-    position: relative;
+    position:fixed;
     top: 14.5rem;
     left: 69rem;
     justify-content: center;
@@ -370,8 +370,8 @@ body{
     border: solid 4px #989fc3;
     background-color: #5877a5;
     position: absolute;
-    top: 21rem;
-    left: 0.3rem;
+    top: 1rem;
+    left: 3.3rem;
   }
   .Alterar-Imagem {
     width: 222px;
@@ -419,8 +419,8 @@ body{
     border: solid 4px #4f6b4f;
     background-color: #8ca558;
     position: absolute;
-    top: 30rem;
-    left: 0.3rem;
+    top: 5.5rem;
+    left: 5.3rem;
 }
 .e-i{
     font-size: 17pt;
@@ -450,9 +450,6 @@ span{
     -ms-user-select: none; 
     user-select: none; 
 }
-.file-input2{
-  display: none;
-}
 .file-input{
   display: none;
 }
@@ -465,18 +462,3 @@ span{
   left: 50%; /* Posiciona a esquerda da imagem no meio da div */
   transform: translate(-50%, -50%); 
 }
-#alt_thumb{
-  top: 25.5rem;
-  width: 20rem;
-  background-color: #e8a542;
-  border-color: #9b6d28;
-}
-#thumb-preview{
-  max-width: 100%; /* A largura máxima da imagem será 100% da largura da div */
-  max-height: 100%; /* A altura máxima da imagem será 100% da altura da div */
-  position: absolute; /* Para permitir que a imagem seja centralizada */
-  top: 50%; /* Posiciona o topo da imagem no meio da div */
-  left: 50%; /* Posiciona a esquerda da imagem no meio da div */
-  transform: translate(-50%, -50%); 
-}
-

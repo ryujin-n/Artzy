@@ -387,17 +387,43 @@ body{
   }
 
   .gall{
-    background-color: #e8a542;
+    /* background-color: #e8a542; */
     width: 1086px;
     position: relative;
     left: 27.9rem;
-    top: 37rem;
+    top: 35rem;
   }
 
-  .it img{
+  .it{
     width: 352px;
-    height: 205px;
+    height: 235px;
     margin: 0px 5px 10px 5px;
     border-radius: 8px;
     float: left;
+    position: relative;
+    overflow: hidden;
+  }
+  .it img{
+    position: absolute; /* Posicionamento absoluto em relação ao contêiner pai */
+    top: 50%; /* Posiciona o topo da imagem no meio do contêiner pai */
+    left: 50%; /* Posiciona a esquerda da imagem no meio do contêiner pai */
+    transform: translate(-50%, -50%); /* Move a imagem de volta metade de sua largura e metade de sua altura */
+    max-width: 100%; /* Para desabilitar a largura máxima definida anteriormente */
+    max-height: none;
+    outline: none;
+  }
+
+  .it img.tall {
+    transform: translate(-50%, -25%);
+}
+
+  .it:hover{
+    transition: box-shadow ease 0.5s, transform ease 0.4s;
+    box-shadow: -5px 6px 0 0 #3d2828;
+    transform: translate(3px, -3px);
+  }
+  .it:not(hover){
+    transition: box-shadow ease 0.5s, transform ease 0.4s;
+    box-shadow: 0px 0px 0 0 #3d2828;
+    transform: translate(0px, 0px);
   }
