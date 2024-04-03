@@ -3,11 +3,11 @@ create database Artzy
 use artzy
 
 drop table seguidores
-drop table galeria
+drop table arte
 drop table usuario
 
 select * from seguidores
-select * from galeria
+select * from arte
 select * from usuario
 
 
@@ -18,18 +18,17 @@ create table seguidores (
     FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
 );
 
-create table galeria
+create table arte
 (
-	id_galeria int auto_increment primary key ,
-    id_usuario_galeria int,
-    nome_galeria varchar(200) not null,
-    img_galeria  varchar(200) not null,
-    descr_galeria varchar(200) not null,
-    categoria_galeria varchar(200) not null,
-    tag_galeria varchar(200) not null,
-    data_galeria timestamp not null,
+	id_arte int auto_increment primary key ,
+    id_usuario_arte int not null,
+    nome_arte varchar(200) not null,
+    img_arte  varchar(200) not null,
+    descr_arte varchar(200) not null,
+    categoria_arte varchar(200) not null,
+    data_arte timestamp not null,
     
-     FOREIGN KEY (id_usuario_galeria) REFERENCES usuario(id_usuario)
+     FOREIGN KEY (id_usuario_arte) REFERENCES usuario(id_usuario)
 )
 
 select count(id_usuario) from usuario where id_usuario = 
