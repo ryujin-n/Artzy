@@ -1,15 +1,12 @@
-body{
-    background-color: #ecd9d1 ;
-}
-
-.off{
-    display: none;
-}
-.on{
-    display: block;
-}
-
-.scrollbar2 {
+.confs{
+    width: 5rem;
+    height: 5rem;
+    top: -29.46rem;
+    left: 37.5rem;
+    position: relative;
+    /* background-color: aqua; */
+  }
+  .scrollbar2 {
     right: 20px; 
     position: relative;
   
