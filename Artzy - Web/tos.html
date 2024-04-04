@@ -365,9 +365,31 @@
         Centro, Guarulhos - SP, 07110-000, Brasil.
     </span>
     
-    
+    <div class="bot" id="subir">
+        <i class="fi fi-br-chevron-double-up"></i>
+    </div>
     
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var btn = document.getElementById("subir");
+
+            window.onscroll = function() {
+                if (document.documentElement.scrollTop > 2000) {
+                    btn.style.display = "block";
+                } else {
+                    btn.style.display = "none";
+                }
+            };
+
+            btn.addEventListener("click", function() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+        });
+
+    </script>
     </body>
     
     </html>

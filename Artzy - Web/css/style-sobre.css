@@ -23,6 +23,11 @@
     src: url(../src/font/momcakepro/MomcakePro-Regular.ttf);
 }
 
+@font-face {
+    font-family: Minecraft;
+    src: url(../src/font/minecraft/Minecraft.ttf);
+}
+
 body {
     background-color: #FBCF85;
 }
@@ -52,7 +57,7 @@ body {
 }
 
 .sobr {
-    font-family: Minecraft;
+    font-family: 'Minecraft', sans-serif;
     font-size: 16pt;
     font-weight: normal;
     font-stretch: normal;
@@ -108,8 +113,7 @@ body {
 
 #tx3 img
 {
-    width: 945px;
-    height: 76rem;
+    height: 84rem;
 }
 .tx3 {
     position: absolute;

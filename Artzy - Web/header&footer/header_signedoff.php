@@ -93,40 +93,53 @@
                     <div class="dp" id="exps"> <!--style="display:none;" -->
                         <ul class="dp-menu">
                             <li style="margin-top: 12px;" class="dp-item">
-                                <div class="item-content">
-                                    <i class="fi fi-br-apartment"></i>
-                                    <span>Sobre Artzy</span>
-                                </div>
+                                <a href="about.html">
+                                    <div class="item-content">
+                                        <i class="fi fi-br-apartment"></i>
+                                        <span>Sobre Artzy</span>
+                                    </div>
+                                </a>
                             </li>
                             <li>
                                 <div id="hr1" class="hr"></div>
                             </li>
                             <li style="margin-top: 12px;" class="dp-item">
+                            <a href="">
                                 <div class="item-content">
                                     <i class="fa-brands fa-x-twitter"></i>
                                     <span>Twitter</span>
                                 </div>
+                            </a>
                             </li>
                             <li style="margin-top: 10px;" class="dp-item">
-                                <div class="item-content">
-                                    <i class="fa-brands fa-instagram"></i>
-                                    <span style="margin-left: 6px;">Instagram</span>
-                                </div>
+                                <a href="">
+
+                                    <div class="item-content">
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <span style="margin-left: 6px;">Instagram</span>
+                                    </div>
+                                </a>
                             </li>
                             <li>
                                 <div id="hr2" class="hr"></div>
                             </li>
                             <li style="margin-top: 12px;" class="dp-item">
-                                <div class="item-content">
-                                    <i class="fi fi-br-auction"></i>
-                                    <span>ToS</span>
-                                </div>
+                                <a href="tos.html">
+
+                                    <div class="item-content">
+                                        <i class="fi fi-br-auction"></i>
+                                        <span>ToS</span>
+                                    </div>
+                                </a>
                             </li>
                             <li style="margin-top: 12px;" class="dp-item">
-                                <div class="item-content">
-                                    <i class="fi fi-sr-lock"></i>
-                                    <span>Privacidade</span>
-                                </div>
+                                <a href="pdp.html">
+                                    
+                                    <div class="item-content">
+                                        <i class="fi fi-sr-lock"></i>
+                                        <span>Privacidade</span>
+                                    </div>
+                                </a>
                             </li>
                         </ul>
                     </div>
