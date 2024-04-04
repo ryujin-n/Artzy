@@ -166,14 +166,16 @@ body{
     height: 448px;
     border-radius: 6px;
     border: dashed 3px #543838;
-    position: absolute;
+    position: relative;
     top: 7rem;
     left: 0.4rem;
+    justify-content: center;
+    align-items: center;
 
   }
   .Rectangle-2851 {
     width: 390px;
-    height: 258px;
+    height: 168px;
     border-radius: 6px;
     border: dashed 3px #543838;
     position: absolute;
@@ -193,6 +195,8 @@ body{
     position: relative;
     left: 363px;
     top: 10.5rem;
+    cursor: pointer;
+
   }
   .arquivo2 {
     width: 298px;
@@ -205,13 +209,15 @@ body{
     position: relative;
     left: 45px;
     top: 6rem;
+    cursor: pointer;
+    
   }
 
   .Envie-um-arquivo {
-    width: 208px;
+    width: 228px;
     height: 18px;
-    flex-grow: 0;
-    margin: 6px 0 6px 45px;
+    display: block;
+    margin: 21px 0 6px 63px;
     text-shadow: 0 4px 0 #543838;
     font-family: Daydream;
     font-size: 13px;
@@ -289,7 +295,7 @@ body{
     background-color: #543838;
     border-radius: 0px 0px 12px 12px;
     position: relative;
-    top: 46.8rem;
+    top: 18.8rem;
 
   }
 
@@ -341,9 +347,11 @@ body{
   .thumb{
     width: 6rem;
     height: 6rem;
-    position: absolute;
+    position:fixed;
     top: 14.5rem;
     left: 69rem;
+    justify-content: center;
+    align-items: center;
   }
   .thumbn{
     width: 400px;
@@ -362,8 +370,8 @@ body{
     border: solid 4px #989fc3;
     background-color: #5877a5;
     position: absolute;
-    top: 21rem;
-    left: 0.3rem;
+    top: 1rem;
+    left: 3.3rem;
   }
   .Alterar-Imagem {
     width: 222px;
@@ -411,8 +419,8 @@ body{
     border: solid 4px #4f6b4f;
     background-color: #8ca558;
     position: absolute;
-    top: 25.5rem;
-    left: 0.3rem;
+    top: 5.5rem;
+    left: 5.3rem;
 }
 .e-i{
     font-size: 17pt;
@@ -442,4 +450,15 @@ span{
     -ms-user-select: none; 
     user-select: none; 
 }
+.file-input{
+  display: none;
+}
 
+#image-preview{
+  max-width: 100%; /* A largura máxima da imagem será 100% da largura da div */
+  max-height: 100%; /* A altura máxima da imagem será 100% da altura da div */
+  position: absolute; /* Para permitir que a imagem seja centralizada */
+  top: 50%; /* Posiciona o topo da imagem no meio da div */
+  left: 50%; /* Posiciona a esquerda da imagem no meio da div */
+  transform: translate(-50%, -50%); 
+}
