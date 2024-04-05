@@ -246,9 +246,6 @@
         </div>
 
 
-
-
-
     <script>
         const seguir = document.getElementById('seguir');
         const f = document.getElementById('f');
