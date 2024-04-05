@@ -1,9 +1,10 @@
+@import url('../css/fonts.css');
 .confs{
-    width: 5rem;
-    height: 5rem;
-    top: -29.46rem;
-    left: 37.5rem;
-    position: relative;
+  width: 5rem;
+  height: 5rem;
+  top: -29.86rem;
+  left: 37.5rem;
+  position: relative;
     /* background-color: aqua; */
   }
   .scrollbar2 {

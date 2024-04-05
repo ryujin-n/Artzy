@@ -23,35 +23,27 @@
         <?php include_once("_menu.php")?>
     </div>
     <div class="confs">
-        <?php
-            if(isset($_GET['tela']))
-            {
+         <?php
+            if(isset($_GET['tela'])) {
                 $tela = $_GET['tela'];
 
-                if($tela=='perfil')
-                {
+                if($tela=='perfil') {
                     include_once("confs/user.php");
-                }
-                if($tela=='redes-sociais')
-                {
+                } 
+                if($tela=='redes-sociais') {
                     include_once("confs/rs.php");
                 }
-                else if($tela=='conta')
-                {
+                if($tela=='conta') {
                     include_once("confs/acc.php");
                 }
-                else if($tela=='senha')
-                {
+                if($tela=='senha') {
                     include_once("confs/pss.php");
                 }
-                
-            }
-            else
-            {
+            } else {
                 include_once("confs/user.php");
-                
             }
         ?>
+        
     </div>
 </body>
 </html>

@@ -27,12 +27,11 @@ if($_POST) {
                 $_SESSION['loginUsuarioLogin'] = $linha[2];
                 $_SESSION['fotoPerfilUsuario'] = $linha[4];
                 $_SESSION['bannerPerfilUsuario'] = $linha[5];
-                $_SESSION['premium'] = $linha[6];
-                $_SESSION['seguidores'] = 0;
-                $_SESSION['seguindo'] = 0;
-                $_SESSION['emailUsuarioLogin'] = $linha[7];
-                $_SESSION['areaUsuarioLogin'] = $linha[8];
-                $_SESSION['dataUsuario'] = $linha[9];
+                $_SESSION['bioUsuarioLogin'] = $linha[6];
+                $_SESSION['premium'] = $linha[7];
+                $_SESSION['emailUsuarioLogin'] = $linha[8];
+                $_SESSION['areaUsuarioLogin'] = $linha[9];
+                $_SESSION['dataUsuario'] = $linha[10];
                 header('Location:home.php');
 
             }

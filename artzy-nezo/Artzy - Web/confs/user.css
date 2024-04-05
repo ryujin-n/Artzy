@@ -1,6 +1,9 @@
 @import url("/css/fonts.css");
 @import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
-
+@font-face {
+    font-family: Daydream ;
+    src: url("../src/font/daydream_3/Daydream.ttf");
+}
 .titulo-p{
     width: 934px;
     height: 140px;

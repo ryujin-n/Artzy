@@ -11,8 +11,9 @@
 <body>
 
 <?php include_once('del_acc.php')?>
+<?php include_once('email_acc.php')?>
 
-    <form action="" method="post" onsubmit="return:false;" id="acc" name="acc">
+    <form action="" method="post" onsubmit="return false;" id="account" name="account">
 
         <div class="cont-tit">
             <span class="conts">
@@ -25,9 +26,9 @@
                 Email
             </span>
     
-            <input type="text" class="cont-inp">
+            <input type="text" class="cont-inp" name="eemail" id="txtEmail">
     
-            <button class="enviar3">
+            <button class="enviar3" onclick="enviar('emaill')">
                 <i class="fi fi-br-file-upload e-i2"></i>
                 <span>
                     Salvar
@@ -44,8 +45,8 @@
             Observe que, depois de remover sua conta, todas as obras de arte que você postou serão excluídas
             </span>
     
-            <button class="Deletar-conta" id="del" name="del" onclick="del()">
-                <i class="fi fi-br-file-upload d-i"></i>
+            <button class="Deletar-conta" id="del" name="del" onclick="enviar('del')">
+                <i class="fi fi-br-x d-i"></i>
                 <span>
                     Deletar conta
                 </span>
@@ -57,23 +58,58 @@
             position: absolute; 
             top: 5.2rem;
             left: 9rem;
-            /* display:none; */
+            display:none;
             
         "
         name="perfill"
         id="perfill"
         value="<?=$id?>">
 
+        <input type="text" 
+            style="
+                position: absolute; 
+                top: 5.2rem;
+                left: 9rem;
+                display:none;
+                
+            "
+            name="accao"
+            id="accao">
+
     </form>
 
     <script>
-        function enviar(tipo) {
-            
-            const form =document.getElementById("acc")
-            form.submit()
+
+    const form = document.getElementById("account");
+    const accao = document.getElementById("accao");
+    const email = document.getElementById("txtEmail");
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    function enviar(tipo) {
+        if (tipo == "del") {
+            accao.value = 'del';
+        } else if (tipo == "emaill") {
+            if (verify()) {
+                accao.value = "email";
+            } else {
+                alert("Insira um Email válido");
+            }
         }
 
-    </script>
+        form.submit(); 
+    }
+
+    function verify() {
+        if (email.value == "" || !emailRegex.test(email.value)) {
+            email.focus();
+            return false;
+        } 
+        else{
+            return true; 
+        }
+    }
+</script>
+
 
 </body>
 </html>

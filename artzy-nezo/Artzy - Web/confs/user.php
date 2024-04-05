@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="user.css">
 </head>
 <body>
-    <form action="" method="post" onsubmit="return false;" id="frmUser" name="frmUser">
+    <?php include_once("user_alt.php")?>
+
+    <form action="" method="post" onsubmit="return false;" id="userr" name="userr">
         <div class="titulo-p">
             <span class="Perfil">
                 Perfil
@@ -23,13 +25,13 @@
                 <span class="Usurio">
                 Usuário
                 </span>
-                <input type="text" name="" id="" class="user-in">
+                <input type="text" name="usuario" id="usuario" class="user-in">
             </div>
             <div class="bio">
                 <span class="bio-s">
                     Bio - uma linha sobre você
                 </span>
-                <input type="text" name="" id="" class="bio-in" >
+                <input type="text" name="bio" id="bio" class="bio-in" maxlength="65" >
             </div>
             <div class="area-s">
                 <span class="bio-s">
@@ -76,6 +78,7 @@
                         Trocar de Avatar
                     </span>
                 </button>
+                <input type="file" name="avatar_alt" id="avatar_alt"style=" display:none;">
             </div>
 
             <div class="banner-perfil">
@@ -89,6 +92,8 @@
                         Trocar de Banner
                     </span>
                 </button>
+
+                <input type="file" name="banner_alt" id="banner_alt" style=" display:none;">
             </div>
 
             <button class="enviar">
@@ -98,9 +103,50 @@
                 </span>
             </button>
         </div>
+
+        <input type="text" 
+            style="
+                position: absolute; 
+                top: 40rem;
+                display:none;
+                
+            "
+            name="tipo"
+            id="tipo">
     </form>
 
     <script>
+
+        const form =document.getElementById=("userr")
+        const user = document.getElementById("usuario")
+        const bio =document.getElementById=("bio")
+        const banner =document.getElementById("banner_alt")
+        const avatar = document.getElementById("avatar_alt")
+
+
+        function enviar() {
+            
+        }
+
+        function verify() {
+            
+             if (user.value == "") {
+                alert("Preencha um Usuário válido");
+                user.focus();
+                return false;
+            } else if (tipo.value == "") {
+                alert("Preencha uma Área válida");
+                setTimeout(function() {
+                    area.focus();
+                    toggleDropdown()
+                }, 0);
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+
          function rotateArrow() {
             const seta = document.getElementById('setaa');
 

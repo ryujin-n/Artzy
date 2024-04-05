@@ -1,5 +1,7 @@
+@import url('https://fonts.cdnfonts.com/css/upheaval');
+@import url('../css/fonts.css');
 .cont-tit{
-    width: 461px;
+    width: 521px;
     height: 93px;
     padding: 14px 49px;
     border-radius: 19px;
@@ -21,7 +23,7 @@
     color: #e8a542;
   }
   .conta{
-    width: 461px;
+    width: 523px;
     height: 342px;
     margin: 20px 0px 46px 0px;
     padding: 16px 53px 82px 42px;
@@ -87,6 +89,8 @@
     letter-spacing: 1px;
     text-align: left;
     color: #fff;
+    cursor: pointer;
+    
 }
 .e-i2{
     font-size: 12pt;
@@ -107,13 +111,13 @@
     position: absolute;
   }
   .rea-perigosa {
-    width: 126px;
+    width: 188px;
     height: 20px;
     flex-grow: 0;
     margin: 14px 50px 0 0;
     text-shadow: -1px 3px 0 #350e0e;
     font-family: Superstar;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -126,25 +130,25 @@
     left: 3rem;
   }
   .alerta{
-    width: 124px;
+    width: 184px;
     height: 24px;
     margin: 9px 148px 0 1px;
     font-family: 'VCR OSD Mono', sans-serif;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.44px;
     text-align: left;
-    color: rgba(232, 66, 66, 0.53);
+    color: rgb(255 123 123 / 53%);
     position: absolute;
-    top: 13rem;
+    top: 13.9rem;
     left: 3rem;
   }
   .Deletar-conta {
-    width: 93px;
-    height: 42px;
+    width: 118px;
+    height: 50px;
     flex-grow: 0;
     margin: 193px 0 9px 148px;
     border-radius: 9px;
@@ -154,7 +158,7 @@
     margin: 0 0 3px 9px;
     text-shadow: -2px 2px 0 #6a2929;
     font-family: 'Upheaval TT (BRK)', sans-serif;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -163,17 +167,17 @@
     text-align: left;
     color: #ca7d7d;
     position: absolute;
-    padding-left: 30px;
+    padding-left: 39px;
     top: 12rem;
     right: 3rem;
   }
   .d-i{
     font-size: 12pt;
     margin: 0 18px 0 0;
-    color:  #ca7d7d;
+    color: #ca7d7d;
     position: absolute;
-    bottom: 0.4rem;
-    left: 0.4rem;
+    bottom: 0.6rem;
+    left: 0.8rem;
   }
 
   .Deletar-conta:hover{
@@ -185,4 +189,16 @@
     transition: box-shadow 0.4s ease, transform 0.4s ease;
     box-shadow: 0px 0px 0 0 #000000;
     transform: translate(0px, 0px);
+}
+
+
+.enviar3:hover{
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  box-shadow: -6px 7px 0 0 #20331c;
+  transform: translate(7px, -7px);
+}
+.enviar3:not(:hover){
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  box-shadow: 0px 0px 0 0 #000000;
+  transform: translate(0px, 0px);
 }
