@@ -42,11 +42,15 @@ create table usuario
 	senha_usuario varchar(20) not null,
 	fotoP_usuario varchar(200) null default 'fotopadrao.png',
 	banner_usuario varchar(200) null default 'bannerpadrao.png',
+	bio_usuario varchar(200) null default 'Bio',
 	premium_usuario varchar(200) null default 'OFF',
 	email_usuario varchar (100) not null unique,
 	area_usuario varchar (100) not null,
 	data_usuario timestamp not null,
-	status_usuario varchar(20) not null default 'ATIVO'
+    
+	profissao_usuario varchar(100) not null default 'ATIVO',
+	localizacao_usuario varchar(500) not null default 'ATIVO',
+	site_usuario varchar(200) not null default 'ATIVO'
 )
 select * from usuario
 
