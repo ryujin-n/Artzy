@@ -242,26 +242,6 @@
                         reader.readAsDataURL(this.files[0]);
                     }
                 });
-            } else if (tipo == 'thumb' || tipo == 'alt_th') {
-                document.getElementById('file-input2').click()
-                // Adicione um ouvinte de evento para o input[type="file"]
-                document.getElementById('file-input2').addEventListener('change', function() {
-                    // Verifica se um arquivo foi selecionado
-                    if (this.files && this.files[0]) {
-                        var reader = new FileReader();
-
-                        // Leitura do arquivo selecionado como URL de dados
-                        reader.onload = function(e) {
-                            // Exiba a imagem selecionada, substituindo '#image-preview' pelo ID do elemento onde deseja exibir a imagem
-                            document.getElementById('thumb-preview').src = e.target.result;
-                            // Oculta o botão após a seleção da imagem
-                            document.getElementById('enviar-foto2').style.display = 'none';
-                        }
-
-                        // Leia o arquivo como uma URL de dados
-                        reader.readAsDataURL(this.files[0]);
-                    }
-                });
             }
         }
    

@@ -32,7 +32,7 @@
                 {
                     include_once("confs/user.php");
                 }
-                if($tela=='redes-sociais')
+                if($tela=='social')
                 {
                     include_once("confs/rs.php");
                 }

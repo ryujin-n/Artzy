@@ -87,7 +87,7 @@
                 <li id="pfp">
                     
                     <div class="pfp" onclick="toggleMenu2()" id="pf">
-                        <img src="pfp/<?=$pfp?>" alt="">
+                        <img src="pfp/<?= $id?>/<?= $pfp ?>" alt="">
                         
                         <div class="dp2" id="perf"> <!--style="display:none;" -->
                         <ul class="dp-menu">
@@ -121,10 +121,12 @@
                     <div class="dp" id="exps"> <!--style="display:none;" -->
                         <ul class="dp-menu">
                             <li style="margin-top: 12px;" class="dp-item">
-                                <div class="item-content">
-                                    <i class="fi fi-br-apartment"></i>
-                                    <span>Sobre Artzy</span>
-                                </div>
+                                <a href="about.html">
+                                    <div class="item-content">
+                                        <i class="fi fi-br-apartment"></i>
+                                        <span>Sobre Artzy</span>
+                                    </div>
+                                </a>
                             </li>
                             <li>
                                 <div id="hr1" class="hr"></div>
@@ -145,16 +147,22 @@
                                 <div id="hr2" class="hr"></div>
                             </li>
                             <li style="margin-top: 12px;" class="dp-item">
-                                <div class="item-content">
-                                    <i class="fi fi-br-auction"></i>
-                                    <span>ToS</span>
-                                </div>
+                                <a href="tos.html">
+
+                                    <div class="item-content">
+                                        <i class="fi fi-br-auction"></i>
+                                        <span>ToS</span>
+                                    </div>
+                                </a>
                             </li>
                             <li style="margin-top: 12px;" class="dp-item">
-                                <div class="item-content">
-                                    <i class="fi fi-sr-lock"></i>
-                                    <span>Privacidade</span>
-                                </div>
+                                <a href="pdp.html">
+                                    
+                                    <div class="item-content">
+                                        <i class="fi fi-sr-lock"></i>
+                                        <span>Privacidade</span>
+                                    </div>
+                                </a>
                             </li>
                             <li style="margin-top: 12px;" class="dp-item">
                                <a href="logout.php">

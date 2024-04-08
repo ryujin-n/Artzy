@@ -32,7 +32,7 @@
 
         <div class="perf-fundo scrollbar">
             <div id="profile-p" class="profile-p">
-                <img src="pfp/<?= $pfp ?>" alt="">
+                <img src="pfp/<?= $id?>/<?= $pfp ?>" alt="">
     
                 <span class="nome-perfil">
                     <?= $nome ?>
@@ -46,7 +46,7 @@
     
                     <span class="Seguidores">
                         <span class="text-style-1">
-                            <?= $seguidores ?>
+                            0
                         </span>
                         <span class="text-style-2">
                             Seguidores
@@ -55,7 +55,7 @@
     
                     <span class="Seguindo">
                         <span class="text-style-1">
-                            <?= $seguindo ?>
+                           0
                         </span>
                         <span class="text-style-2">
                             Seguindo
@@ -88,8 +88,8 @@
                             </div>
                         </div>
     
-                        <div id="butao" class="botoes" style="display:none;" >
-                            <button class="seguir" id="seguir" data-userid="<?= $id?>">
+                        <div id="butao" class="botoes"  >
+                            <button class="seguir" id="seguir">
                                 <span class="icons">
                                     <i id="f" class="fa-solid fa-user-plus waw"></i>
                                     <i id="f2" class="fa-solid fa-user-minus"></i>
@@ -109,90 +109,33 @@
                             </button>
                         </div>
 
-                        <p class="bio" name="" id="" cols="37" rows="1" >wa</p>
+                        <p class="bio" name="" id="" cols="37" rows="1"><?= $bio?></p>
                                 
                                 <div class="Line-27"></div>
                                 
-                                <p style="  font-family: MomcakePro;
-                                        font-size: 17px;
-                                        font-weight: bold;
-                                        font-stretch: normal;
-                                        font-style: normal;
-                                        line-height: normal;
-                                        letter-spacing: normal;
-                                        text-align: left;
-                                        color: #e8a542;">
-                                Redes Sociais
-                            </p>
                             
-                            <div id="socials">
-                                <div id="job" class="info">
-                                    <div class="icones">
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </div>
-                                    <div class="text">
-                                        <a href="">
-                                            <p>@admin</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div id="loc" class="info">
-                                    <div class="icones">
-                                        <i class="fa-brands fa-tiktok"></i>
-                                    </div>
-                                    <div class="text">
-                                        <a href="">
-                                            <p>admin</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div id="info" class="info ">
-                                    <div class="icones">
-                                        <i class="fa-brands fa-x-twitter"></i>
-                                    </div>
-                                    <div class="text">
-                                        <a href="">
-                                            <p>@admin</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div id="site" class="info">
-                                    <div class="icones">
-                                        <i class="fi fi-br-site-alt"></i>
-                                    </div>
-                                    <div class="text">
-                                        <a href="">
-                                            <p>admin.com</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                
-                                <div class="Line-27"></div>
-                                
-                            </div>
-                            
-                            <p style="  font-family: MomcakePro;
-                                    font-size: 17px;
-                                    font-weight: bold;
-                                    font-stretch: normal;
-                                    font-style: normal;
-                                    line-height: normal;
-                                    letter-spacing: normal;
-                                    text-align: left;
-                                    color: #e8a542;">
-                                Contato
-                            </p>
+                        <p style="  font-family: MomcakePro;
+                                font-size: 17px;
+                                font-weight: bold;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #e8a542;">
+                            Contato
+                        </p>
     
-                            <div id="contat" class="info">
-                                <div class="icones">
-                                    <i class="fa-solid fa-at"></i>
-                                </div>
-                                <div class="text">
-                                    <p>
-                                        <?= $email ?>
-                                    </p>
-                                </div>
+                        <div id="contat" class="info">
+                            <div class="icones">
+                                <i class="fa-solid fa-at"></i>
                             </div>
+                            <div class="text">
+                                <p>
+                                    <?= $email ?>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -213,7 +156,7 @@
 
 
         <div class="banner">
-            <img src="pfp/banner/<?=$banner?>" alt="">
+            <img src="pfp/banner/<?= $id?>/<?=$banner?>" alt="">
         </div>
 
         <span class="Portiflio">

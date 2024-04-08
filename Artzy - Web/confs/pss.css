@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/upheaval');
+@import url('../css/fonts.css');
+
 .senha-titulo{
     width: 478px;
     height: 120px;
@@ -156,4 +159,30 @@
     transition: box-shadow 0.4s ease, transform 0.4s ease;
     box-shadow: 0px 0px 0 0 #989fc3;
     transform: translate(0px, 0px);
+}
+.aviso{
+    width: 199px;
+    height: 69.7px;
+    padding: 10px 0 0 19px;
+    border-radius: 12px;
+    box-shadow: -5px 6px 0 0 #d7993d;
+    background-color: #543838;
+    position: relative;
+    display: block;
+    left: 5rem;
+    top: 10rem;
+}
+
+
+.aviso-text{
+    font-family: 'Upheaval TT (BRK)', sans-serif;
+    font-size: 23px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.66px;
+    text-align: center;
+    color: #e8a542;
+
 }

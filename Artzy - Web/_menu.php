@@ -14,7 +14,7 @@
 <body>
     <div class="fundo">
         <div class="pfp">
-            <img src="pfp/<?= $pfp ?>" alt="">
+            <img src="pfp/<?= $id?>/<?= $pfp ?>" alt="">
         </div>
 
         <div class="txt">
@@ -40,14 +40,14 @@
                 </span>
             </a>
             
-            <a id="rs" href="conf.php?tela=redes-sociais" onclick="select('rs')" class="item-m">
+            <a id="rs" href="conf.php?tela=social" onclick="select('rs')" class="item-m">
                 <i class="fi fi-br-share"></i>
                 <span>
-                    Redes Sociais
+                    Social
                 </span>
             </a>
 
-            <div id="hr2" class="hr"></div>
+            <div id="hr5" class="hr"></div>
 
             <a id="acc" href="conf.php?tela=conta" onclick="select('acc')" class="item-m">
                 <i class="fi fi-br-admin-alt"></i>   

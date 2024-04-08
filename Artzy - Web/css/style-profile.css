@@ -98,6 +98,7 @@ body{
     width: 160px;
     height: 160px;
     margin-left: 2.1rem;
+    border-radius: 100%;
 }
 
 .nome-perfil{
@@ -366,6 +367,7 @@ body{
 .banner img{
     width: 1087px;
     height: 307px;
+    border-radius: 31px;
 }
 
 .Portiflio {

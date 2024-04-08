@@ -18,12 +18,7 @@
     </div>
 
     <div class="rs">
-        <select name="sites" id="sites" class="rs-b">
-            <option value="">Website</option>
-            <option value="">Twitter</option>
-            <option value="">Instagram</option>
-            <option value="">TikTok</option>
-        </select>
+       
         <input type="text" class="rs-i">
 
         <button class="enviarr">
