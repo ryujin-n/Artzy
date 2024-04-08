@@ -55,6 +55,10 @@ create table usuario
 select * from usuario
 
 
+//////////////////////////////////////////////////////////
+
+
+
 drop table assinatura
 
 create table assinatura
