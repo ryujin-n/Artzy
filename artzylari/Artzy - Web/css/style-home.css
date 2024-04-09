@@ -704,3 +704,10 @@ margin-top: 30px;
   left: -8.2rem;
 }
 
+.owl-nav{
+  display: none;
+}
+.owl-dots{
+  display:none;
+}
+
