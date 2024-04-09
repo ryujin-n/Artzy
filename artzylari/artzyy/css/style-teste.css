@@ -1,0 +1,32 @@
+/* Adicione o seu CSS personalizado abaixo */
+
+/* Estilo para o rodapé */
+.fot {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  /* Estilo para o título do rodapé */
+  .foots h6 {
+    color: #fff;
+  }
+  
+  /* Estilo para os links no rodapé */
+  .foots a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilo para os ícones de mídia social */
+  .btn-floating {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+  }
+  
+  /* Adicione mais estilos conforme necessário */
+  

@@ -80,7 +80,8 @@
           <img src="img/lalalalla.jfif" alt="">
         </div>
         <span class="descri"
-          >Conjunto de 20 Esboços de Árvores: Traços, Jogos e 2D</span>
+          >Conjunto de 20 Esboços de Árvores: Traços, Jogos e 2D</span
+        >
         <div class="av">
           <span class="avali">5.0</span>
           <span class="des">Baseado em 70 avaliações e 5 comentários</span>
@@ -130,6 +131,7 @@
       </div>
 
       <!-- 🐛🐛🐛🐛 IMAGENS ALEATORIAS 🐛🐛🐛🐛 -->
+      aaaaaaaaa
 
       <div style="clear: both"></div>
     </div>
