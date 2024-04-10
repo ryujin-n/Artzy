@@ -19,4 +19,6 @@ if (isset($_SESSION['nomeUsuarioLogin'])) {
 
 } else {
     $menu = "header&footer/header_signedoff.php";
+
+       
 }

@@ -8,22 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style-profile.css">
+    <link rel="stylesheet" href="style2.css">
     <title>Artzy - <?=$user?> </title>
 </head>
-<body class="scrollbar2">
+<body class="scrollbar2 ">
     <div style="margin-top:-1rem; padding:0 0.2rem 0  0.2rem;">
         <?php include_once($menu)?>
     </div>
 
     <div class="perf-menu">
-
-        <input type="text" 
+        <input type="text"
         style="
             position: absolute; 
             top: 5.2rem;
             left: 9rem;
             /* display:none; */
-            
         "
         name="perfill"
         id="perfill"
@@ -141,57 +140,3 @@
             </div>
         </div>
     </div>
-    
- 
-    <input type="text" 
-    style="
-        position: absolute; 
-        top: 47.6rem;
-        left: 50rem;
-        display:none;
-        
-    "
-    name="follow"
-    id="follow">
-
-
-        <div class="banner">
-            <img src="pfp/banner/<?= $id?>/<?=$banner?>" alt="">
-        </div>
-
-        <span class="Portiflio">
-            Portifólio
-        </span>
-            
-
-        <div class="gall">
-             <?php include_once("php/galeria_carregar.php")?>
-             <div style='clear:both'></div>
-        </div>
-
-    <script>
-        const seguir = document.getElementById('seguir');
-        const f = document.getElementById('f');
-        const f2 = document.getElementById('f2');
-        const t = document.getElementById('seg-tit');
-        const fo = document.getElementById('follow');
-        
-        seguir.addEventListener('click', function() {
-            if (f.style.display === 'none') {
-                f.style.display = 'inline-block';
-                f2.style.display = 'none';
-                t.textContent = 'Seguir';
-                fo.value=''
-                
-            } else {
-                f.style.display = 'none';
-                f2.style.display = 'inline-block';
-                t.textContent = 'Seguindo';
-                fo.value='ok'
-            }
-
-        });
-    </script>
-
-</body>
-</html>

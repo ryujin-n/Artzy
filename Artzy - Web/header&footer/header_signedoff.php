@@ -1,3 +1,37 @@
+<?php
+$servername = "127.0.0.1";
+$username = "root";
+$password = "";
+$database = "artzy";
+
+$conn = new mysqli($servername, $username, $password, $database);
+
+if ($conn->connect_error) {
+    die("Erro de conexão: " . $conn->connect_error);
+}
+
+$sql = "SELECT nome_usuario, fotoP_usuario FROM usuario";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    $users = array();
+
+    while($row = $result->fetch_assoc()) {
+        $user = array(
+            "nome_usuario" => $row['nome_usuario'],
+            "fotoP_usuario" => $row['fotoP_usuario']
+        );
+        $users[] = $user;
+    }
+
+    $users_json = json_encode($users);
+} else {
+    $users_json = json_encode(array());
+}
+
+$conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="br">
 
@@ -24,11 +58,9 @@
 
             <nav class="menu_">
                 <li id="logo" class="menu-logo">
-                <a href="home.php">
-
-                    <img src="src/logo.png" class="logo" onerror="this.onerror=null; this.src='../src/logo.png';">
-                </a>
-                        
+                    <a href="home.php">
+                        <img src="src/logo.png" class="logo" onerror="this.onerror=null; this.src='../src/logo.png';">
+                    </a>
                 </li>
                 <li id="exp" class="menu-nav">
                     <button class="menu-nav dropdown">
@@ -37,14 +69,13 @@
                         </p>
                     </button>
                 </li>
-               
                 <li id="jb" class="menu-nav">
                     <button class="menu-nav">
                         <span class="Servios">
                             Serviços
                         </span>
                     </button>
-                    <div class="dp3" id="jbs"> <!--style="display:none;" -->
+                    <div class="dp3" id="jbs">
                         <ul class="dp-menu">
                             <li style="margin-top: 12px;" class="dp-item">
                                 <div class="item-content">
@@ -64,7 +95,8 @@
 
                 <li id="srch" class="menu-search">
                     <i class="fas fa-search search-icon"></i>
-                    <input type="text" role="search" class="search-bar" placeholder="Pesquisar">
+                    <input type="text" id="searchInput" class="search-bar" placeholder="Pesquisar">
+                    <div id="searchResults" class="autocomplete-results scrollbar "></div>
                 </li>
 
                 <li id="loj">
@@ -90,7 +122,7 @@
 
                 <li id="borger">
                     <button id="menu-b" onclick="toggleMenu()"><i class="fi fi-br-menu-burger m-icon" id="men"></i></button>
-                    <div class="dp" id="exps"> <!--style="display:none;" -->
+                    <div class="dp" id="exps">
                         <ul class="dp-menu">
                             <li style="margin-top: 12px;" class="dp-item">
                                 <a href="about.html">
@@ -104,16 +136,15 @@
                                 <div id="hr1" class="hr"></div>
                             </li>
                             <li style="margin-top: 12px;" class="dp-item">
-                            <a href="">
-                                <div class="item-content">
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                    <span>Twitter</span>
-                                </div>
-                            </a>
+                                <a href="">
+                                    <div class="item-content">
+                                        <i class="fa-brands fa-x-twitter"></i>
+                                        <span>Twitter</span>
+                                    </div>
+                                </a>
                             </li>
                             <li style="margin-top: 10px;" class="dp-item">
                                 <a href="">
-
                                     <div class="item-content">
                                         <i class="fa-brands fa-instagram"></i>
                                         <span style="margin-left: 6px;">Instagram</span>
@@ -125,7 +156,6 @@
                             </li>
                             <li style="margin-top: 12px;" class="dp-item">
                                 <a href="tos.html">
-
                                     <div class="item-content">
                                         <i class="fi fi-br-auction"></i>
                                         <span>ToS</span>
@@ -134,7 +164,6 @@
                             </li>
                             <li style="margin-top: 12px;" class="dp-item">
                                 <a href="pdp.html">
-                                    
                                     <div class="item-content">
                                         <i class="fi fi-sr-lock"></i>
                                         <span>Privacidade</span>
@@ -146,11 +175,92 @@
                 </li>
             </nav>
             <br>
-
-
-
         </div>
     </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.querySelector(".search-bar");
+        const searchResults = document.querySelector(".autocomplete-results");
+        const users = <?php echo $users_json; ?>;
+
+        searchInput.addEventListener("input", function () {
+            const searchTerm = searchInput.value.trim().toLowerCase();
+            if (searchTerm === '') {
+                searchResults.style.display = 'none';
+                return;
+            }
+
+            searchResults.innerHTML = "";
+
+            const filteredUsers = users.filter(function (user) {
+                return user.nome_usuario.toLowerCase().includes(searchTerm);
+            });
+
+            if (filteredUsers.length > 0) {
+                filteredUsers.forEach(function (user) {
+                    const container = document.createElement("div");
+                    container.classList.add("user-container");
+
+                    const img = document.createElement("img");
+                    img.src = "pfp/<?= $id ?>/<?= $pfp ?>";
+                    container.appendChild(img);
+
+                    const span = document.createElement("span");
+                    span.textContent = user.nome_usuario;
+                    span.classList.add("nome-usuario");
+
+                    container.addEventListener("click", function () {
+                        window.location.href = `profile.php?name=${encodeURIComponent(user.nome_usuario)}`;
+                    });
+
+                    container.appendChild(img);
+                    container.appendChild(span);
+
+                    searchResults.appendChild(container);
+                });
+
+                searchResults.style.display = 'block';
+            } else {
+                searchResults.style.display = 'none';
+            }
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!searchResults.contains(event.target)) {
+                searchResults.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -183,7 +293,6 @@
     </script>
 
     <script>
-
         function toggleMenu() {
             const dropdown = document.querySelector('.dp');
             if (dropdown.style.display === 'none' || dropdown.style.display === '') {
@@ -198,9 +307,8 @@
             }
         }
     </script>
-    
-    <script src="https://kit.fontawesome.com/aa824ffc0c.js" crossorigin="anonymous"></script>
 
+    <script src="https://kit.fontawesome.com/aa824ffc0c.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
