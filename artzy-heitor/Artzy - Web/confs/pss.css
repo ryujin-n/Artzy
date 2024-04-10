@@ -1,0 +1,188 @@
+@import url('https://fonts.cdnfonts.com/css/upheaval');
+@import url('../css/fonts.css');
+
+.senha-titulo{
+    width: 478px;
+    height: 120px;
+    padding: 21px 67px 25px 51px;
+    border-radius: 19px;
+    box-shadow: 12px 14px 0 0 #e8a542;
+    background-color: #543838;
+}
+.senha {
+    width: 339px;
+    height: 51px;
+    margin: 0 21px 19px 0;
+    text-shadow: -3px 6px 0 #2d2020;
+    font-family: Superstar;
+    font-size: 47px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.88px;
+    text-align: left;
+    color: #e8a542;
+  }
+.Alterar-a-senha {
+    width: 360px;
+    height: 24px;
+    font-family: 'VCR OSD Mono', sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.44px;
+    text-align: left;
+    color: rgba(232, 165, 66, 0.53);
+    display: block;
+}
+.senha-fund{
+    width: 478px;
+    height: 317px;
+    margin-top: 19px ;
+    padding: 31px 56px 38.7px;
+    border-radius: 19px;
+    box-shadow: 12px 14px 0 0 #e8a542;
+    background-color: #543838;
+}
+.Nova-senha {
+    width: 161px;
+    height: 25px;
+    flex-grow: 0;
+    margin: 0 205px 10px 0;
+    text-shadow: -3px 6px 0 #2d2020;
+    font-family: Superstar;
+    font-size: 23px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.92px;
+    text-align: left;
+    color: #e8a542;
+  }
+.Nova-senha2 {
+    width: 185px;
+    height: 25px;
+    flex-grow: 0;
+    margin: 10px 205px 10px 0;
+    text-shadow: -3px 6px 0 #2d2020;
+    font-family: Superstar;
+    font-size: 23px;
+    font-weight: normal;
+    display: block;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.92px;
+    text-align: left;
+    color: #e8a542;
+  }
+.senha1{
+    width: 366px;
+    height: 39px;
+    flex-grow: 0;
+    margin: 10px 0 0;
+    border-radius: 9px;
+    box-shadow: -5px 8px 0 0 rgba(0, 0, 0, 0.53);
+    border: solid 2px #6b4f4f;
+    background-color: #3e2929;
+    font-family: Superstar;
+    padding-left: 10px;
+    font-size: 13pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    display: block;
+    letter-spacing: 0.92px;
+    color: #e8a542;
+    outline: none;
+}
+.senha2{
+    width: 366px;
+    height: 39px;
+    flex-grow: 0;
+    margin: 10px 0 0;
+    border-radius: 9px;
+    box-shadow: -5px 8px 0 0 rgba(0, 0, 0, 0.53);
+    border: solid 2px #6b4f4f;
+    background-color: #3e2929;
+    font-family: Superstar;
+    padding-left: 10px;
+    font-size: 13pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    display: block;
+    letter-spacing: 0.92px;
+    color: #e8a542;
+    outline: none;
+}
+
+.enviar4{
+    width: 135px;
+    height: 45px;
+    flex-grow: 0;
+    padding: 4px 42px;
+    border-radius: 9px;
+    /* box-shadow: -6px 7px 0 0 #38513a; */
+    border: solid 4px #4f6b4f;
+    background-color: #8ca558;
+    position: absolute;
+    top: 22.8rem;
+    left: 3.8rem;
+    text-shadow: -2px 2px 0 #393854;
+    font-family: 'Upheaval TT (BRK)', sans-serif;
+    font-size: 12pt;
+    line-height: 0.92;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #fff;
+}
+.e-i4{
+    font-size: 14pt;
+    margin: 0 18px 0 0;
+    color: #ffffff;
+    text-shadow: -4px 2px #393854;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.9rem;
+}
+
+.enviar4:hover{
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: -6px 7px 0 0 #383851;
+    transform: translate(7px, -7px);
+}
+  .enviar4:not(:hover){
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: 0px 0px 0 0 #989fc3;
+    transform: translate(0px, 0px);
+}
+.aviso{
+    width: 199px;
+    height: 69.7px;
+    padding: 10px 0 0 19px;
+    border-radius: 12px;
+    box-shadow: -5px 6px 0 0 #d7993d;
+    background-color: #543838;
+    position: relative;
+    display: block;
+    left: 5rem;
+    top: 10rem;
+}
+
+
+.aviso-text{
+    font-family: 'Upheaval TT (BRK)', sans-serif;
+    font-size: 23px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.66px;
+    text-align: center;
+    color: #e8a542;
+
+}

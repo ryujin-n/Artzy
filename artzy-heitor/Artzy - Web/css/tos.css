@@ -1,0 +1,173 @@
+@import url("fonts.css");
+@import url('https://fonts.cdnfonts.com/css/squashy-flow');
+@import url('https://fonts.cdnfonts.com/css/discreet');
+
+body {
+
+    background-color: #f5e1ed;
+    
+}
+
+.bot {
+    position: fixed;
+    top: 42rem;
+    left: 91rem;
+    width: 32px;
+    height: 39px;
+    flex-grow: 0;
+    padding: 28px 32px;
+    border-radius: 67px;
+    box-shadow: -7px 7px 0 0 #000;
+    z-index: 999999;
+    background-color: #543838;
+    cursor: pointer;
+}
+
+.bot i{
+    color:#e8a542 ;
+    font-size: 20pt;
+    position: relative;
+    right: 1.7rem;
+    bottom: 1.1rem;
+    z-index: 9999999;
+} 
+
+.Cubao {
+
+    width: 1041px;
+    height: 3300px;
+    margin: 51px 296px 213px 297px;
+    padding: 155px 97px 9833px 80px;
+    border-radius: 41px;
+    box-shadow: -13px 13px 0 0 #39486d;
+    border: solid 5px #000;
+    background-color: rgba(255, 205, 235, 0.89);
+    position: relative;
+    right: 7rem;
+    top: 0rem;
+    text-align: justify;
+  }
+
+  .priv {
+
+    width: 607px;
+    height: 119px;
+    margin:  216px 146.8px 242px;
+    font-family: 'Squashy Flow', sans-serif;
+    text-shadow: #000;
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-align: left;
+    text-shadow: -8px 4px #39486d;
+    color: #c1619b;
+    
+  }
+
+  .Termos {
+    width: 1055px;
+    height: 12884px;
+    margin: 316px 388px 0 100px;
+    font-family: 'discreet';
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-align: left;
+    color: #000;
+  }
+  
+  .Termos .text-style-1 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}
+
+.Termos .text-style-2 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}
+
+.Termos .text-style-3 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}
+
+.Termos .text-style-4 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}
+
+.Termos .text-style-5 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}
+
+.Termos .text-style-6 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}
+
+.Termos .text-style-7 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}
+
+.Termos .text-style-8 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}
+
+.Termos .text-style-9 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}
+
+.Termos .text-style-10 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}
+
+.Termos .text-style-11 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}
+
+.Termos .text-style-12 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}
+
+.Termos .text-style-13 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}
+
+.Termos .text-style-14 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}
+
+.Termos .text-style-15 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}
+
+.Termos .text-style-16 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}
+
+.Termos .text-style-17 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}
+
+.Termos .text-style-18 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+}

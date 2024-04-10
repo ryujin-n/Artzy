@@ -1,0 +1,464 @@
+@import url('https://fonts.cdnfonts.com/css/upheaval');
+@import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
+@import url('fonts.css');
+
+*{
+    outline: none;
+}
+
+body{
+    background-color: #f5e7e1;
+}
+.scrollbar {
+  right: 20px; 
+  position: relative;
+
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 19px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #6b4949; 
+  border: 0.28em solid #f5e7e1; 
+  border-radius: 2rem; 
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(136, 106, 106); 
+}
+
+.scrollbar::-webkit-scrollbar-track{
+  border-radius: 3rem;
+}
+.scrollbar2 {
+  right: 20px; 
+  position: relative;
+
+}
+
+.scrollbar2::-webkit-scrollbar {
+  width: 19px;
+}
+
+.scrollbar2::-webkit-scrollbar-thumb {
+  background-color: #e8a542;
+  border: 0.28em solid #3e2929;
+  border-radius: 2rem;
+}
+
+.scrollbar2::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(136, 106, 106); 
+}
+
+.scrollbar2::-webkit-scrollbar-track{
+  border-radius: 3rem;
+}
+
+
+
+.upload-cont{
+    position: relative;
+    top:1rem;
+    left: 0.4rem;
+}
+.ENVIAR-UMA-NOVA-ARTE {
+    width: 265px;
+    height: 20px;
+    margin: 0px 10px 16px 41px;
+    text-shadow: 0 4px 0 #e8a542;
+    font-family: 'Upheaval TT (BRK)', sans-serif;
+    font-size: 16.4pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.92;
+    letter-spacing: 0.88px;
+    text-align: left;
+    color: #543838;
+    position:absolute;
+    top: 8rem;
+  }
+
+  .art-nome{
+    width: 275px;
+    height: 48px;
+    font-family: Gamer;
+    font-size: 55pt;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.88;
+    letter-spacing: 2.2px;
+    text-align: left;
+    color: #000;
+    position: absolute;
+    top: 9.6rem;
+    left: 5rem;
+  }
+.upload{
+    height: 924px;
+    width: 890px;
+    position: absolute;
+    top: 14.5rem;
+    left: 3rem;
+}
+  .Rectangle-283 {
+    width: 1040px;
+    height: 47px;
+    margin: 0px 0px 4px 0px;
+    padding: 12px 0px 12px 49px;
+    background-color: #4d3131;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    border-radius: 12px 12px 0px 0px;
+  }
+
+  .Ttulo-da-arte {
+    width: 206px;
+    height: 23px;
+    font-family: 'Upheaval TT (BRK)', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.92;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #ffc369;
+  }
+
+  .Rectangle-284 {
+    width: 1040px;
+    height: 54px;
+    flex-grow: 0;
+    margin: 0px 41px 20px 0px;
+    padding: 6px 34.2px 0px 34.2px;
+    background-color: #543838;
+    position: absolute;
+    top: 3rem;
+  }
+  .nome-in{
+    width: 971px;
+    height: 41px;
+    border-radius: 9px;
+    border: solid 2px #6b4f4f;
+    background-color: #3e2929;
+    padding-left: 30px;
+    font-family: 'VCR OSD Mono', sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.98;
+    letter-spacing: 0.68px;
+    text-align: left;
+    color: #e8a542;
+  }
+
+  .nome-in::placeholder{
+    color: #6b4f4f;
+  }
+  .Rectangle-285 {
+    width: 1030px;
+    height: 448px;
+    border-radius: 6px;
+    border: dashed 3px #543838;
+    position: relative;
+    top: 7rem;
+    left: 0.4rem;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .Rectangle-2851 {
+    width: 390px;
+    height: 168px;
+    border-radius: 6px;
+    border: dashed 3px #543838;
+    position: absolute;
+    top: 3.6rem;
+    left: 0.4rem;
+
+  }
+
+  .arquivo {
+    width: 298px;
+    height: 66px;
+    flex-grow: 0;
+    border-radius: 9px;
+    box-shadow: 0 4px 4px 0 #e8a542;
+    border: solid 4px #6b4f4f;
+    background-color: #3e2929;
+    position: relative;
+    left: 363px;
+    top: 10.5rem;
+    cursor: pointer;
+
+  }
+  .arquivo2 {
+    width: 298px;
+    height: 66px;
+    flex-grow: 0;
+    border-radius: 9px;
+    box-shadow: 0 4px 4px 0 #e8a542;
+    border: solid 4px #6b4f4f;
+    background-color: #3e2929;
+    position: relative;
+    left: 45px;
+    top: 6rem;
+    cursor: pointer;
+    
+  }
+
+  .Envie-um-arquivo {
+    width: 228px;
+    height: 18px;
+    display: block;
+    margin: 21px 0 6px 63px;
+    text-shadow: 0 4px 0 #543838;
+    font-family: Daydream;
+    font-size: 13px;
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0.52px;
+    text-align: left;
+    color: #e8a542;
+    /* text-shadow: -3px 4px #000000; */
+  }
+  .up-i{
+    font-size: 30px;
+    margin: 0 18px 0 0;
+    color: #e8a542;
+    /* text-shadow: -3px 4px #000000; */
+    position: absolute;
+    bottom: 0.1rem;
+    left: 1.4rem;
+  }
+
+
+  .Rectangle-286 {
+    width: 1040px;
+    height: 127px;
+    flex-grow: 0;
+    padding: 23.5px 34.2px 23.5px 34.2px;
+    background-color: #543838;
+    border-radius: 0px 0px 12px 12px;
+    position: absolute;
+    left: 0rem;
+    top: 35.6rem;
+  }
+  .desc{
+    width: 971.6px;
+    height: 89px;
+    border-radius: 9px;
+    border: solid 2px #6b4f4f;
+    background-color: #3e2929;
+    font-family: 'VCR OSD Mono', sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.98;
+    letter-spacing: 0.68px;
+    text-align: left;
+    color: #e8a542;
+    padding-left: 30px;
+    padding-top: 10px;
+    outline: none;
+    resize: none;
+  }
+  .desc::placeholder{
+    color: #6b4f4f;
+  }
+
+  .categ{
+    width: 1040px;
+    height: 47px;
+    margin: 0px 0px 4px 0px;
+    padding: 13px 30px;
+    background-color: #4d3131;
+    position: absolute;
+    top: 44rem;
+    border-radius: 12px 12px 0px 0px;
+  }
+  .fundinh{
+    width: 1040px;
+    height: 158px;
+    flex-grow: 0;
+    margin: 4px 0 0;
+    padding: 11px 53px 9px;
+    background-color: #543838;
+    border-radius: 0px 0px 12px 12px;
+    position: relative;
+    top: 18.8rem;
+
+  }
+
+  .opt{
+    display: inline-block;
+    color: #e8a542;
+    flex-grow: 0;
+    margin: 0 10px 5px 0px;
+    padding: 8px 15px 8px;
+    border-radius: 9px;
+    border: solid 2px #6b4f4f;
+    background-color: #3e2929;
+    cursor: pointer;
+  }
+
+  .opt_s{
+    border: solid 2px #e8a542;
+    background-color: #ffc267;
+    color: #6b4949;
+  }
+
+  .check{
+    position: absolute;
+    font-size: 10pt;
+    left: 4.45rem;
+    bottom: 1.65rem;
+    color: #543838;
+    cursor: pointer;
+}
+.check_b{
+    text-shadow: -2px 2px 0px rgb(28, 38, 63);
+    font-size: 13pt;
+    color: #e8a542;
+    position: absolute;
+    cursor: pointer;
+    bottom: 1.5rem;
+}
+.Arte-2d {
+    height: 19px;
+    margin: 3px 0 0 0px;
+    font-family: Daydream;
+    font-size: 10px;
+    line-height: 1.4;
+    letter-spacing: 0.4px;
+    text-align: left;
+    display: block;
+  }
+
+  .thumb{
+    width: 6rem;
+    height: 6rem;
+    position:fixed;
+    top: 14.5rem;
+    left: 69rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .thumbn{
+    width: 400px;
+    height: 47px;
+    margin: 0px 0px 4px 0px;
+    padding: 13px 30px;
+    background-color: #4d3131;
+    position: absolute;
+    border-radius: 12px 12px 0px 0px;
+  }
+  .alt-img{
+    width: 272px;
+    height: 60px;
+    border-radius: 9px;
+  
+    border: solid 4px #989fc3;
+    background-color: #5877a5;
+    position: absolute;
+    top: 1rem;
+    left: 3.3rem;
+  }
+  .Alterar-Imagem {
+    width: 222px;
+    height: 23px;
+    flex-grow: 0;
+    margin: 5px 0 0px 36px;
+    text-shadow: -2px 2px 0 #393854;
+    font-family: 'Upheaval TT (BRK)', sans-serif;
+    font-size: 16pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.92;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #fff;
+  }
+  .a-i{
+    font-size: 17pt;
+    margin: 0 18px 0 0;
+    color: #ffffff;
+    text-shadow: -4px 2px #393854;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1.3rem;
+  }
+
+  .alt-img:hover{
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: -6px 7px 0 0 #383851;
+    transform: translate(7px, -7px);
+}
+  .alt-img:not(:hover){
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: 0px 0px 0 0 #989fc3;
+    transform: translate(0px, 0px);
+}
+.enviar{
+    width: 205px;
+    height: 55px;
+    flex-grow: 0;
+    padding: 10px 16px 20px 0px;
+    border-radius: 9px;
+    /* box-shadow: -6px 7px 0 0 #38513a; */
+    border: solid 4px #4f6b4f;
+    background-color: #8ca558;
+    position: absolute;
+    top: 5.5rem;
+    left: 5.3rem;
+}
+.e-i{
+    font-size: 17pt;
+    margin: 0 18px 0 0;
+    color: #ffffff;
+    text-shadow: -4px 2px #393854;
+    position: absolute;
+    bottom: 0.3rem;
+    left: 1.3rem;
+  }
+
+  .enviar:hover{
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: -6px 7px 0 0 #383851;
+    transform: translate(7px, -7px);
+}
+  .enviar:not(:hover){
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: 0px 0px 0 0 #989fc3;
+    transform: translate(0px, 0px);
+}
+span{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+}
+.file-input{
+  display: none;
+}
+
+#image-preview{
+  max-width: 100%; /* A largura máxima da imagem será 100% da largura da div */
+  max-height: 100%; /* A altura máxima da imagem será 100% da altura da div */
+  position: absolute; /* Para permitir que a imagem seja centralizada */
+  top: 50%; /* Posiciona o topo da imagem no meio da div */
+  left: 50%; /* Posiciona a esquerda da imagem no meio da div */
+  transform: translate(-50%, -50%); 
+}

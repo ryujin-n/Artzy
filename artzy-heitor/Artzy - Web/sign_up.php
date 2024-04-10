@@ -160,16 +160,16 @@
 
     <script>
 
-        const nome = document.getElementById('nome');
-        const email = document.getElementById('email');
-        const senha = document.getElementById('senha');
-        const user = document.getElementById('user');
-        const btn = document.getElementById('bt_n');
-        const area = document.getElementById('areaa');
-        const tipo = document.getElementById('tipo');
-        const ook = document.getElementById('ook');
-        const form = document.getElementById('frmCad');
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const nome = document.getElementById('nome');
+            const email = document.getElementById('email');
+            const senha = document.getElementById('senha');
+            const user = document.getElementById('user');
+            const btn = document.getElementById('bt_n');
+            const area = document.getElementById('areaa');
+            const tipo = document.getElementById('tipo');
+            const ook = document.getElementById('ook');
+            const form = document.getElementById('frmCad');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         function logn(){
             const destino = "sign_in.php"

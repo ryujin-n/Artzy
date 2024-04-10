@@ -1,0 +1,204 @@
+@import url('https://fonts.cdnfonts.com/css/upheaval');
+@import url('../css/fonts.css');
+.cont-tit{
+    width: 521px;
+    height: 93px;
+    padding: 14px 49px;
+    border-radius: 19px;
+    box-shadow: 12px 14px 0 0 #e8a542;
+    background-color: #543838;
+}
+.conts {
+    width: 327px;
+    height: 51px;
+    text-shadow: -3px 6px 0 #2d2020;
+    font-family: Superstar;
+    font-size: 47px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.88px;
+    text-align: left;
+    color: #e8a542;
+  }
+  .conta{
+    width: 523px;
+    height: 342px;
+    margin: 20px 0px 46px 0px;
+    padding: 16px 53px 82px 42px;
+    border-radius: 19px;
+    box-shadow: 12px 14px 0 0 #e8a542;
+    background-color: #543838;
+    position: relative;
+  }
+  .Email {
+    width: 126px;
+    height: 25px;
+    flex-grow: 0;
+    margin: 0 240px 10px 0;
+    text-shadow: -3px 6px 0 #2d2020;
+    font-family: Superstar;
+    font-size: 23px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.92px;
+    text-align: left;
+    color: #e8a542;
+  }
+  .cont-inp{
+    width: 366px;
+    height: 39px;
+    flex-grow: 0;
+    margin: 10px 0 0;
+    border-radius: 9px;
+    box-shadow: -5px 8px 0 0 rgba(0, 0, 0, 0.53);
+    border: solid 2px #6b4f4f;
+    background-color: #3e2929;
+    font-family: Superstar;
+    padding-left: 10px;
+    font-size: 13pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    display: block;
+    letter-spacing: 0.92px;
+    color: #e8a542;
+    outline: none;
+    outline: none;
+
+  }
+  .enviar3{
+    width: 98px;
+    height: 36.3px;
+    flex-grow: 0;
+    padding: 8px 28px;
+    border-radius: 9px;
+    /* box-shadow: -6px 7px 0 0 #38513a; */
+    border: solid 4px #4f6b4f;
+    background-color: #8ca558;
+    position: absolute;
+    top: 6.8rem;
+    left: 3rem;
+    text-shadow: -2px 2px 0 #393854;
+    font-family: 'Upheaval TT (BRK)', sans-serif;
+    font-size: 10pt;
+    line-height: 0.92;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #fff;
+    cursor: pointer;
+    
+}
+.e-i2{
+    font-size: 12pt;
+    margin: 0 18px 0 0;
+    color: #ffffff;
+    text-shadow: -4px 2px #393854;
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0.4rem;
+    
+  }
+
+  .Line-29 {
+    width: 355px;
+    height: 2px;
+    margin: 72.7px 8px 14px 3px;
+    background-color: #704e4e;
+    position: absolute;
+  }
+  .rea-perigosa {
+    width: 188px;
+    height: 20px;
+    flex-grow: 0;
+    margin: 14px 50px 0 0;
+    text-shadow: -1px 3px 0 #350e0e;
+    font-family: Superstar;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    text-align: left;
+    color: #903737;
+    position: absolute;
+    top: 11rem;
+    left: 3rem;
+  }
+  .alerta{
+    width: 184px;
+    height: 24px;
+    margin: 9px 148px 0 1px;
+    font-family: 'VCR OSD Mono', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.44px;
+    text-align: left;
+    color: rgb(255 123 123 / 53%);
+    position: absolute;
+    top: 13.9rem;
+    left: 3rem;
+  }
+  .Deletar-conta {
+    width: 118px;
+    height: 50px;
+    flex-grow: 0;
+    margin: 193px 0 9px 148px;
+    border-radius: 9px;
+    border: solid 4px #6b2a2a;
+    background-color: #903737;
+    flex-grow: 0;
+    margin: 0 0 3px 9px;
+    text-shadow: -2px 2px 0 #6a2929;
+    font-family: 'Upheaval TT (BRK)', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.92;
+    letter-spacing: 0.44px;
+    text-align: left;
+    color: #ca7d7d;
+    position: absolute;
+    padding-left: 39px;
+    top: 12rem;
+    right: 3rem;
+  }
+  .d-i{
+    font-size: 12pt;
+    margin: 0 18px 0 0;
+    color: #ca7d7d;
+    position: absolute;
+    bottom: 0.6rem;
+    left: 0.8rem;
+  }
+
+  .Deletar-conta:hover{
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: -6px 7px 0 0 #442121;
+    transform: translate(7px, -7px);
+}
+  .Deletar-conta:not(:hover){
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: 0px 0px 0 0 #000000;
+    transform: translate(0px, 0px);
+}
+
+
+.enviar3:hover{
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  box-shadow: -6px 7px 0 0 #20331c;
+  transform: translate(7px, -7px);
+}
+.enviar3:not(:hover){
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  box-shadow: 0px 0px 0 0 #000000;
+  transform: translate(0px, 0px);
+}

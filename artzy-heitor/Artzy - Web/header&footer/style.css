@@ -3,6 +3,10 @@
 
 }
 
+body{
+    background-color: #f5e7e1;
+}
+
 @font-face {
     font-family: HeyComic ;
     src: url(../src/font/hey_comic/Hey\ Comic.ttf);
@@ -236,12 +240,12 @@
 
 .dp{
     top: 4.9rem;
-    left: 87.5rem;
+    left: 86.8rem;
     margin-left: 20rem;
     width: 11rem;
     height: 20.6rem;
     border-radius: 0rem 0rem 1rem 1rem;
-    background-color: #442d2df3;
+    background-color: #442d2d;
     position:absolute;
     display:none;
     cursor: cell;
@@ -417,7 +421,7 @@
 
 
     .dp{
-        left: 83.5rem;
+        left: 82.8rem;
         margin-left: 0;
     }
     .menu_ li {
@@ -571,24 +575,30 @@
         margin-left: 0.4rem;
     }
 
+    .autocomplete-results {
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        max-height: 200px;
+        overflow-y: auto;
+        z-index: 1000;
+      }
+      
+      .autocomplete-item {
+        padding: 10px;
+        cursor: pointer;
+      }
+      
+      .autocomplete-item:hover {
+        background-color: #f0f0f0;
+      }
+      
+      .autocomplete-results img {
+        width: 30px;
+        height: 30px; 
+        border-radius: 50%; 
+        margin-right: 10px; 
+      }
 
-}
 
-.autocomplete-results {
-    position: absolute;
-    background-color: rgb(128, 0, 0);
-    border: 1px solid #493f3f;
-    width: 100%;
-    max-height: 200px;
-    overflow-y: auto;
-    z-index: 1000;
-}
-
-.autocomplete-item {
-    padding: 10px;
-    cursor: pointer;
-}
-
-.autocomplete-item:hover {
-    background-color: #f0f0f0;
 }
