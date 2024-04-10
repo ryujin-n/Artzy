@@ -68,23 +68,16 @@
                                 <i class="fi fi-sr-briefcase"></i>
                             </div>
                             <div class="text">
-                                <p>Profissão</p>
+                            <?=$profi?>
                             </div>
                         </div>
-                        <div id="loc" class="info">
-                            <div class="icones">
-                                <i class="fi fi-sr-marker"></i>
-                            </div>
-                            <div class="text">
-                                <p>Local</p>
-                            </div>
-                        </div>
+                       
                         <div id="info" class="info ">
                             <div class="icones">
                                 <i class="fi fi-br-globe"></i>
                             </div>
                             <div class="text">
-                                <p>Site</p>
+                            <?= $site?>
                             </div>
                         </div>
     

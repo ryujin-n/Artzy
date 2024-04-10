@@ -3,7 +3,7 @@
 @import url('../css/fonts.css');
 
 .rs-fundo{
-    width: 655px;
+    width: 575px;
     height: 140px;
     margin-bottom: 19px;
     padding: 21px 244px 25px 51px;
@@ -43,8 +43,8 @@
     outline: none;
 }
 .rs{
-    width: 655px;
-    height: 137px;
+    width: 575px;
+    height: 247px;
     padding: 21px 42px 47px 40px;
     border-radius: 19px;
     box-shadow: 12px 14px 0 0 #e8a542;
@@ -118,8 +118,8 @@
     border: solid 4px #4f6b4f;
     background-color: #8ca558;
     position: absolute;
-    top: 2.7rem;
-    left:32.7rem;
+    top: 3.9rem;
+    left: 26.4rem;
     text-shadow: -2px 2px 0 #393854;
     font-family: 'Upheaval TT (BRK)', sans-serif;
     font-size: 13pt;
@@ -143,4 +143,8 @@
     position: absolute;
     top: 0.5rem;
     left: 3rem;
+}
+
+#e2{
+    top: 9.6rem;
 }
