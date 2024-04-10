@@ -23,7 +23,29 @@ body{
     src: url(../src//font/momcakepro/MomcakePro-Regular.ttf);
 }
 
+.scrollbar2 {
+  right: 20px; 
+  position: relative;
 
+}
+
+.scrollbar2::-webkit-scrollbar {
+  width: 19px;
+}
+
+.scrollbar2::-webkit-scrollbar-thumb {
+  background-color: #6b4949; 
+  border: 0.28em solid #f5e7e1; 
+  border-radius: 2rem; 
+}
+
+.scrollbar2::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(136, 106, 106); 
+}
+
+.scrollbar2::-webkit-scrollbar-track{
+  border-radius: 3rem;
+}
 .perf-menu{
     width: 29.6rem;
 }
@@ -32,7 +54,7 @@ body{
     position: fixed;
     width: 380px;
     height: 627px;
-    margin: 34px 0px 0px 40px;
+    margin: 127px 0px 0px 40px;
     padding: 30px 0px 0px 31px;
     border-radius: 21px;
     box-shadow: 12px 15px 0 0 #e8a542;
@@ -76,6 +98,7 @@ body{
     width: 160px;
     height: 160px;
     margin-left: 2.1rem;
+    border-radius: 100%;
 }
 
 .nome-perfil{
@@ -334,23 +357,23 @@ body{
 
 .banner{
     position: absolute;
-    bottom: 19.3rem;
-    left: 26.7rem;
-    width: 1110px;
+    top: 7.9rem;
+    left: 28rem;
+    width: 330px;
     height: 307px;
-    margin: 57px 29px 52px 41px;
     border-radius: 31px;
 }
 
 .banner img{
-    width: 1110px;
+    width: 1087px;
     height: 307px;
+    border-radius: 31px;
 }
 
 .Portiflio {
     position: absolute;
-    bottom: 17rem;
-    left: 30rem;
+    top: 29rem;
+    left: 29rem;
     width: 138px;
     height: 47px;
     text-shadow: -2px 4px 0 #543838;
@@ -366,18 +389,42 @@ body{
   }
 
   .gall{
-    background-color: #e8a542;
     width: 1086px;
     position: relative;
-    left: 29.6rem;
-    top: 29rem;
+    left: 27.9rem;
+    top: 33rem;
   }
 
   .it{
-    background-color: #3d2828;
     width: 352px;
-    height: 205px;
-    margin: 0px 5px 28px 5px;
+    height: 235px;
+    margin: 0px 5px 10px 5px;
     border-radius: 8px;
     float: left;
+    position: relative;
+    overflow: hidden;
+  }
+  .it img{
+    position: absolute; /* Posicionamento absoluto em relação ao contêiner pai */
+    top: 50%; /* Posiciona o topo da imagem no meio do contêiner pai */
+    left: 50%; /* Posiciona a esquerda da imagem no meio do contêiner pai */
+    transform: translate(-50%, -50%); /* Move a imagem de volta metade de sua largura e metade de sua altura */
+    max-width: 100%; /* Para desabilitar a largura máxima definida anteriormente */
+    max-height: none;
+    outline: none;
+  }
+
+  .it img.tall {
+    transform: translate(-50%, -25%);
+}
+
+  .it:hover{
+    transition: box-shadow ease 0.5s, transform ease 0.4s;
+    box-shadow: -5px 6px 0 0 #3d2828;
+    transform: translate(3px, -3px);
+  }
+  .it:not(hover){
+    transition: box-shadow ease 0.5s, transform ease 0.4s;
+    box-shadow: 0px 0px 0 0 #3d2828;
+    transform: translate(0px, 0px);
   }

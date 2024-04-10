@@ -1,45 +1,3 @@
-<?php
-// Configurações de conexão com o banco de dados
-$servername = "127.0.0.1";
-$userzname = "root";
-$password = "";
-$database = "artzy";
-
-// Cria a conexão com o banco de dados
-$conn = new mysqli($servername, $userzname, $password, $database);
-
-// Verifica a conexão
-if ($conn->connect_error) {
-    die("Erro de conexão: " . $conn->connect_error);
-}
-
-// Consulta SQL para buscar nomes de usuários e suas fotos na tabela 'usuario'
-$sql = "SELECT nome_usuario, fotoP_usuario FROM usuario";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    // Array associativo para armazenar os nomes de usuários e suas fotos
-    $userzs = array();
-
-    // Itera sobre os resultados da consulta e adiciona os nomes de usuário e suas fotos ao array
-    while($row = $result->fetch_assoc()) {
-        $userz = array(
-            "nome_usuario" => $row['nome_usuario'],
-            "fotoP_usuario" => $row['fotoP_usuario']
-        );
-        $userzs[] = $userz;
-    }
-
-    // Retorna os dados dos usuários como um array JSON
-    $userzs_json = json_encode($userzs);
-} else {
-    $userzs_json = json_encode(array()); // Retorna um array vazio se não houver resultados
-}
-
-// Fecha a conexão com o banco de dados
-$conn->close();
-?>
-
 <!DOCTYPE html>
 <html lang="br">
 
@@ -106,8 +64,7 @@ $conn->close();
 
                 <li id="srch" class="menu-search">
                     <i class="fas fa-search search-icon"></i>
-                    <input type="text" id="searchInput" class="search-bar" placeholder="Pesquisar">
-                    <div id="searchResults" class="autocomplete-results scrollbar"></div>
+                    <input type="text" role="search" class="search-bar" placeholder="Pesquisar">
                 </li>
 
                 <li id="env">
@@ -221,98 +178,12 @@ $conn->close();
             </nav>
             <br>
 
+
+
         </div>
     </nav>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const searchInput = document.querySelector(".search-bar");
-        const searchResults = document.querySelector(".autocomplete-results");
-        const users = <?php echo $userzs_json; ?>;
-
-        searchInput.addEventListener("input", function () {
-            const searchTerm = searchInput.value.trim().toLowerCase();
-            if (searchTerm === '') {
-                searchResults.style.display = 'none';
-                return;
-            }
-
-            searchResults.innerHTML = "";
-
-            const filteredUsers = users.filter(function (user) {
-                return user.nome_usuario.toLowerCase().includes(searchTerm);
-            });
-
-            if (filteredUsers.length > 0) {
-                filteredUsers.forEach(function (user) {
-                    const container = document.createElement("div");
-                    container.classList.add("user-container");
-
-                    const img = document.createElement("img");
-                    img.src = "pfp/<?= $id ?>/<?= $pfp ?>";
-                    container.appendChild(img);
-
-                    const span = document.createElement("span");
-                    span.textContent = user.nome_usuario;
-                    span.classList.add("nome-usuario");
-
-                    container.addEventListener("click", function () {                        
-                        window.location.href = `profile.php?name=${encodeURIComponent(user.nome_usuario)}`;
-                    });
-
-                    container.appendChild(img);
-                    container.appendChild(span);
-
-                    searchResults.appendChild(container);
-                });
-
-                searchResults.style.display = 'block';
-            } else {
-                searchResults.style.display = 'none';
-            }
-        });
-
-        document.addEventListener("click", function (event) {
-            if (!searchResults.contains(event.target)) {
-                searchResults.style.display = 'none';
-            }
-        });
-    });
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
         document.addEventListener("DOMContentLoaded", function () {
             function controlDropdown(dropdownButton, dropdownMenu) {
                 dropdownButton.addEventListener("mouseenter", function () {
@@ -377,5 +248,3 @@ $conn->close();
 </body>
 
 </html>
-
-pq q qnd eu pesquiso o nome ele vai para o meu ID?? eu quero ir para o id do usuario q eu cliquei

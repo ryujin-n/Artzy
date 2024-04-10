@@ -1,0 +1,478 @@
+@import url("fonts.css");
+@import url('https://fonts.cdnfonts.com/css/squashy-flow');
+@import url('https://fonts.cdnfonts.com/css/discreet');
+
+body {
+
+    background-color: #ecd8ba;
+    
+}
+
+.Cubao {
+
+    width: 1041px;
+    height: 24650px;
+    margin: 51px 296px 213px 297px;
+    padding: 155px 97px 9833px 80px;
+    border-radius: 41px;
+    box-shadow: -13px 13px 0 0 #39486d;
+    border: solid 5px #000;
+    background-color: rgba(255, 241, 205, 0.89);
+    position: relative;
+    right: 7rem;
+    top: 0rem;
+    text-align: justify;
+  }
+
+  .termos {
+
+    width: 607px;
+    height: 119px;
+    margin: 0 216px 51.6px 241px;
+    font-family: 'Squashy Flow', sans-serif;
+    text-shadow: #000;
+    font-size: 39px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-align: left;
+    text-shadow: -8px 4px #39486d;
+    color: #c19b61;
+  
+  }
+
+  .txt1 {
+    width: 1055px;
+    height: 125.7px;
+    margin: 51.6px 0 40px 9px;
+    font-family:'discreet';
+    font-size: 32px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.28px;
+    text-align: left;
+    color: #000;
+    text-decoration: underline;
+
+  }
+
+  
+.acordo {
+  width: 1055px;
+  height: 925.5px;
+  margin: 40px 0 315.1px 9px;
+  padding: 537.9px 0 55.1px;
+  font-family: 'discreet';
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.96px;
+  text-align: left;
+  color: #000;
+}
+
+.txt2 .text-style-1 {
+  font-size: 32px;
+  letter-spacing: 1.28px;
+}
+
+.txt3 {
+    width: 1041px;
+    height: 293.9px;
+    margin: 948.1px 14px 38.6px 9px;
+    font-family: 'discreet';
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-align: left;
+    color: #000;
+  }
+  .txt3 .text-style-1 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+  .txt3 .text-style-2 {
+    font-size: 12px;
+    letter-spacing: 0.48px;
+  }
+
+  .txt4 {
+    width: 604px;
+    height: 207.6px;
+    margin: 38.6px 451px 0.3px 9px;
+    font-family: 'discreet';
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-align: left;
+    color: #000;
+  }
+  .txt4 .text-style-1{
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txt5 {
+    width: 1034px;
+    height: 606.7px;
+    margin: 0.3px 21px 95.6px 9px;
+    font-family: 'discreet';
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-align: left;
+    color: #000;
+  }
+  .txt5 .text-style-1{
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txt6 {
+    width: 1034px;
+    height: 175px;
+    margin: 95.6px 21px 96px 9px;
+    font-family: 'discreet';
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-align: left;
+    color: #000;
+  }
+  .txt6 .text-style-1 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txt7 {
+    width: 1019px;
+    height: 472px;
+    margin: 96px 45px 131px 0;
+    font-family: 'discreet';
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-align: left;
+    color: #000;
+  }
+  .txt7 .text-style-1 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txt8 {
+    width: 1007px;
+    height: 198px;
+    margin: 131px 57px 81px 0;
+    font-family: 'discreet';
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-align: left;
+    color: #000;
+  }
+  .txt8 .text-style-1 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+  .txt8 .text-style-2 {
+    font-size: 40px;
+    letter-spacing: 1.6px;
+  }
+
+  .txtabsurdo {
+    width: 1026px;
+    height: 20470px;
+    margin: 81px 26px 0 12px;
+    font-family: 'discreet';
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-align: left;
+    color: #000;
+  }
+  .txtabsurdo .text-style-1 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-2 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-3 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-4 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-5 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-6 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-7 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-8 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-9 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-10 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-11 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-12 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-13 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-14 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-15 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-16 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-17 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-18 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-19 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-20 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-21 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-22 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-23 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-24 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-25 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-26 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-27 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-28 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-29 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo .text-style-30 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+  .txtabsurdo2 {
+    width: 1018px;
+    height: 9980px;
+    margin: 24763px 427px 0 389px;
+    font-family: 'discreet';
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-align: left;
+    color: #000;
+  }
+  .txtabsurdo2 .text-style-1 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+    text-align: left;
+    display: block;
+  }
+    .txtabsurdo2 .text-style-2 {
+      font-size: 32px;
+      letter-spacing: 1.28px;
+
+  }
+  .txtabsurdo2 .text-style-3 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+  
+  .txtabsurdo2 .text-style-4 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+  
+  .txtabsurdo2 .text-style-5 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+  
+  .txtabsurdo2 .text-style-6 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+  
+  .txtabsurdo2 .text-style-7 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+  
+  .txtabsurdo2 .text-style-8 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+  
+  .txtabsurdo2 .text-style-9 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+  
+  .txtabsurdo2 .text-style-10 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+  
+  .txtabsurdo2 .text-style-11 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+  
+  .txtabsurdo2 .text-style-12 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+  
+  .txtabsurdo2 .text-style-13 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+  
+  .txtabsurdo2 .text-style-14 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+  
+  .txtabsurdo2 .text-style-15 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+  
+  .txtabsurdo2 .text-style-16 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+  
+  .txtabsurdo2 .text-style-17 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+  
+  .txtabsurdo2 .text-style-18 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }
+
+  .txtabsurdo2 .text-style-19 {
+    font-size: 32px;
+    letter-spacing: 1.28px;
+  }

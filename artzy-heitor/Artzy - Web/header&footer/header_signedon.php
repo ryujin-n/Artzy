@@ -1,12 +1,12 @@
 <?php
 // Configurações de conexão com o banco de dados
 $servername = "127.0.0.1";
-$username = "root";
+$userzname = "root";
 $password = "";
 $database = "artzy";
 
 // Cria a conexão com o banco de dados
-$conn = new mysqli($servername, $username, $password, $database);
+$conn = new mysqli($servername, $userzname, $password, $database);
 
 // Verifica a conexão
 if ($conn->connect_error) {
@@ -19,21 +19,21 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // Array associativo para armazenar os nomes de usuários e suas fotos
-    $users = array();
+    $userzs = array();
 
     // Itera sobre os resultados da consulta e adiciona os nomes de usuário e suas fotos ao array
     while($row = $result->fetch_assoc()) {
-        $user = array(
+        $userz = array(
             "nome_usuario" => $row['nome_usuario'],
             "fotoP_usuario" => $row['fotoP_usuario']
         );
-        $users[] = $user;
+        $userzs[] = $userz;
     }
 
     // Retorna os dados dos usuários como um array JSON
-    $users_json = json_encode($users);
+    $userzs_json = json_encode($userzs);
 } else {
-    $users_json = json_encode(array()); // Retorna um array vazio se não houver resultados
+    $userzs_json = json_encode(array()); // Retorna um array vazio se não houver resultados
 }
 
 // Fecha a conexão com o banco de dados
@@ -42,6 +42,7 @@ $conn->close();
 
 <!DOCTYPE html>
 <html lang="br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,10 +54,11 @@ $conn->close();
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+
 </head>
 
 <body>
-    <nav class="logged">
+    <nav class="fixed-top " style="margin-top:-1rem; padding:0 0.2rem 0  0.2rem;">
         <div class="menu">
             <ul> <!-- mobile -->
 
@@ -64,7 +66,10 @@ $conn->close();
 
             <nav class="menu_">
                 <li id="logo" class="menu-logo">
+                    <a href="home.php">
+
                         <img src="src/logo.png" class="logo" onerror="this.onerror=null; this.src='../src/logo.png';">
+                    </a>
                         
                 </li>
                 <li id="exp" class="menu-nav">
@@ -81,7 +86,7 @@ $conn->close();
                             Serviços
                         </span>
                     </button>
-                    <div class="dp3" id="jbs">
+                    <div class="dp3" id="jbs"> <!--style="display:none;" -->
                         <ul class="dp-menu">
                             <li style="margin-top: 12px;" class="dp-item">
                                 <div class="item-content">
@@ -100,13 +105,15 @@ $conn->close();
                 </li>
 
                 <li id="srch" class="menu-search">
-                        <i class="fas fa-search search-icon"></i>
-                        <input type="text" id="searchInput" class="search-bar" placeholder="Pesquisar">
-                        <div id="searchResults" class="autocomplete-results"></div>
-                    </li>
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" class="search-bar" placeholder="Pesquisar">
+                    <div id="searchResults" class="autocomplete-results scrollbar"></div>
+                </li>
 
                 <li id="env">
+                    <a href="upload.php">
                     <i class="fa-solid fa-arrow-up-from-bracket icons env"></i>
+                    </a>
                 </li>
                 <li id="notf">
                     <i class="fi fi-br-bell icons notf"></i>
@@ -122,11 +129,33 @@ $conn->close();
 
                 <li id="pfp">
                     
-                    <a href="profile.php">
-                        <div class="pfp">
-                            <img src="pfp/<?=$pfp?>" alt="">
+                    <div class="pfp" onclick="toggleMenu2()" id="pf">
+                        <img src="pfp/<?= $id?>/<?= $pfp ?>" alt="">
+                        
+                        <div class="dp2" id="perf"> <!--style="display:none;" -->
+                        <ul class="dp-menu">
+                            <li style="margin-top: 12px;" class="dp-item">
+                                <a href="profile.php?user=<?=$user?>">
+                                    <div class="item-content">
+                                            <i class="fi fi-sr-user"></i>
+                                            <span>Ver Perfil</span>
+                                    </div>
+                                </a>
+                            
+                            </li>
+                            <li>
+                            </li>
+                            <li style="margin-top: 12px;" class="dp-item">
+                                <a href="conf.php">
+                                    <div class="item-content">
+                                        <i class="fi fi-sr-admin-alt"></i>
+                                        <span>Editar perfil</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                         </div>
-                    </a>
 
                 </li>
 
@@ -135,10 +164,12 @@ $conn->close();
                     <div class="dp" id="exps"> <!--style="display:none;" -->
                         <ul class="dp-menu">
                             <li style="margin-top: 12px;" class="dp-item">
-                                <div class="item-content">
-                                    <i class="fi fi-br-apartment"></i>
-                                    <span>Sobre Artzy</span>
-                                </div>
+                                <a href="about.html">
+                                    <div class="item-content">
+                                        <i class="fi fi-br-apartment"></i>
+                                        <span>Sobre Artzy</span>
+                                    </div>
+                                </a>
                             </li>
                             <li>
                                 <div id="hr1" class="hr"></div>
@@ -159,16 +190,22 @@ $conn->close();
                                 <div id="hr2" class="hr"></div>
                             </li>
                             <li style="margin-top: 12px;" class="dp-item">
-                                <div class="item-content">
-                                    <i class="fi fi-br-auction"></i>
-                                    <span>ToS</span>
-                                </div>
+                                <a href="tos.html">
+
+                                    <div class="item-content">
+                                        <i class="fi fi-br-auction"></i>
+                                        <span>ToS</span>
+                                    </div>
+                                </a>
                             </li>
                             <li style="margin-top: 12px;" class="dp-item">
-                                <div class="item-content">
-                                    <i class="fi fi-sr-lock"></i>
-                                    <span>Privacidade</span>
-                                </div>
+                                <a href="pdp.html">
+                                    
+                                    <div class="item-content">
+                                        <i class="fi fi-sr-lock"></i>
+                                        <span>Privacidade</span>
+                                    </div>
+                                </a>
                             </li>
                             <li style="margin-top: 12px;" class="dp-item">
                                <a href="logout.php">
@@ -183,25 +220,28 @@ $conn->close();
                 </li>
             </nav>
             <br>
+
         </div>
     </nav>
-<div>
-    <li id="pfp">   
-    <a href="profile.php">
-        <div class="pfp">
-            <img src="<?php echo $pfp; ?>" alt="Foto de Perfil">
-        </div>
-    </a>
-</li>
-</div>
 
-<script>
 
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
     document.addEventListener("DOMContentLoaded", function () {
-        const searchInput = document.getElementById("searchInput");
-        const searchResults = document.getElementById("searchResults");
-
-        const users = <?php echo $users_json; ?>;
+        const searchInput = document.querySelector(".search-bar");
+        const searchResults = document.querySelector(".autocomplete-results");
+        const users = <?php echo $userzs_json; ?>;
 
         searchInput.addEventListener("input", function () {
             const searchTerm = searchInput.value.trim().toLowerCase();
@@ -218,16 +258,25 @@ $conn->close();
 
             if (filteredUsers.length > 0) {
                 filteredUsers.forEach(function (user) {
-                    const li = document.createElement("li");
+                    const container = document.createElement("div");
+                    container.classList.add("user-container");
+
                     const img = document.createElement("img");
-                    img.src = user.fotoP_usuario !== '' ? user.fotoP_usuario : '<?php echo $pfp; ?>';
-                    img.alt = "Foto de perfil de " + user.nome_usuario;
-                    li.appendChild(img);
-                    li.appendChild(document.createTextNode(user.nome_usuario));
-                    li.addEventListener("click", function () {                        
+                    img.src = "pfp/<?= $id ?>/<?= $pfp ?>";
+                    container.appendChild(img);
+
+                    const span = document.createElement("span");
+                    span.textContent = user.nome_usuario;
+                    span.classList.add("nome-usuario");
+
+                    container.addEventListener("click", function () {                        
                         window.location.href = `profile.php?name=${encodeURIComponent(user.nome_usuario)}`;
                     });
-                    searchResults.appendChild(li);
+
+                    container.appendChild(img);
+                    container.appendChild(span);
+
+                    searchResults.appendChild(container);
                 });
 
                 searchResults.style.display = 'block';
@@ -235,75 +284,35 @@ $conn->close();
                 searchResults.style.display = 'none';
             }
         });
+
         document.addEventListener("click", function (event) {
             if (!searchResults.contains(event.target)) {
                 searchResults.style.display = 'none';
             }
         });
     });
-
 </script>
 
 
-    <script>
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const searchInput = document.getElementById("searchInput");
-            const searchResults = document.getElementById("searchResults");
 
-            const users = <?php echo $users_json; ?>;
 
-            searchInput.addEventListener("input", function () {
-                const searchTerm = searchInput.value.trim().toLowerCase();
-                if (searchTerm === '') {
-                    searchResults.style.display = 'none';
-                    return;
-                }
 
-                // Limpa os resultados anteriores
-                searchResults.innerHTML = "";
 
-                // Filtra os usuários cujos nomes correspondem ao termo de pesquisa
-                const filteredUsers = users.filter(function (user) {
-                    return user.nome_usuario.toLowerCase().includes(searchTerm);
-                });
 
-                if (filteredUsers.length > 0) {
-                    // Adiciona resultados à lista de resultados
-                    filteredUsers.forEach(function (user) {
-                        const li = document.createElement("li");
-                        const img = document.createElement("img");
-                        img.src = user.fotoP_usuario !== '' ? user.fotoP_usuario : 'pfp/fotopadrao.png';
-                        img.alt = "Foto de perfil de " + user.nome_usuario;
-                        li.appendChild(img);
-                        li.appendChild(document.createTextNode(user.nome_usuario));
-                        li.addEventListener("click", function () {                        
-                            // Redireciona o usuário para a página "profile.php" com o nome do usuário como parâmetro de consulta
-                            window.location.href = `profile.php?name=${encodeURIComponent(user.nome_usuario)}`;
-                        });
-                        searchResults.appendChild(li);
-                    });
 
-                    // Exibe a lista de resultados
-                    searchResults.style.display = 'block';
-                } else {
-                    // Se não houver resultados, oculta a lista de resultados
-                    searchResults.style.display = 'none';
-                }
-            });
 
-            // Fechar a lista de resultados ao clicar em qualquer lugar fora dela
-            document.addEventListener("click", function (event) {
-                if (!searchResults.contains(event.target)) {
-                    searchResults.style.display = 'none';
-                }
-            });
-        });
 
-    </script>
 
-    <script>
 
+
+
+
+
+
+
+
+<script>
         document.addEventListener("DOMContentLoaded", function () {
             function controlDropdown(dropdownButton, dropdownMenu) {
                 dropdownButton.addEventListener("mouseenter", function () {
@@ -331,7 +340,6 @@ $conn->close();
                 }
             });
         });
-
     </script>
 
     <script>
@@ -349,10 +357,25 @@ $conn->close();
                 dropdown.style.display = 'none';
             }
         }
-
+        function toggleMenu2() {
+            const dropdown = document.querySelector('.dp2');
+            if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                dropdown.style.display = 'inline-block';
+                document.getElementById("menu-b").addEventListener("focusout", function (event) {
+                    if (!dropdown.contains(event.relatedTarget)) {
+                        dropdown.style.display = 'none';
+                    }
+                });
+            } else {
+                dropdown.style.display = 'none';
+            }
+        }
     </script>
-
+    
     <script src="https://kit.fontawesome.com/aa824ffc0c.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
+
+pq q qnd eu pesquiso o nome ele vai para o meu ID?? eu quero ir para o id do usuario q eu cliquei
