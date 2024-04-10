@@ -1,1 +1,0 @@
-Através de chamados que serão efetuados pelos funcionários caso tenha recebido algo quebrado ou com algum outro tipo de defeito, o financeiro será encarregado de fazer uma ordem de serviço para que outro produto seja enviado para o artista. 

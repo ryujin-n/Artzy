@@ -1,1 +1,0 @@
-Aqui será feito o controle de negociação de contratos, monitoramento de estoque, qualidade de produtos e prazo de entregas. Além da antecipação de necessidade de produtos futuros, permitindo que a CreateQ planeje os prêmios dos usuários da plataforma. 

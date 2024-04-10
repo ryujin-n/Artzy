@@ -1,1 +1,0 @@
-Na CreateQ as finança irão fazer a gestão de receitas e despesas referente as vendas, além de, fazer a demonstração de relatórios referentes a saúde financeira da empresa que ajudará na tomada de decisões estratégicas.

@@ -1,0 +1,194 @@
+@font-face 
+{
+font-family: KGRedHands ;
+src: url(../src//font/kg_red_hands/KGRedHands.ttf);
+}
+@font-face 
+{
+font-family: Retropulse;
+    src: url(../src/font/retropulse/Retropulse.ttf);
+}
+@font-face 
+{
+font-family: HeyComic ;
+src: url(../src//font/hey_comic//Hey\ Comic.ttf);
+}
+@font-face 
+{
+font-family: Organic Relief;
+src: url(../src/font/organic_relief/Organic\ Relief.ttf);
+}
+@font-face 
+{
+font-family: Justmore-PersonalUse;
+src: url(../src/font/justmore/Justmore\ -\ Personal\ Use.ttf);
+}
+@font-face 
+{
+font-family: BebasNeue;
+src: url(../src/font/bebas_neue/BebasNeue-Regular.ttf);
+}  
+@font-face 
+{
+font-family: SuperBoys;  
+src: url(../src/font/super_boys/Super\ Boys.ttf);
+}
+@font-face 
+{
+font-family: UpWitchTheBirds;
+src: url(../src/font/UpWithTheBirds/Up\ with\ the\ Birds.otf);
+}
+@font-face 
+{
+font-family: MomCakePro;
+src: url(../src/font/momcakepro/MomcakePro-Regular.ttf);
+}
+@font-face 
+{
+font-family: SuperBoys-Regular;
+src: url(../src/font/super_boys/Super\ Boys.ttf);
+}
+
+/* 🐛🐛🐛🐛Ele apaga as coisas, faz sumir🐛🐛🐛🐛 */
+.off
+{
+    display: none; 
+}
+/* 🐛🐛🐛🐛Ele faz aparecer🐛🐛🐛🐛 */
+.on
+{
+    display: block;
+}
+/* 🐛🐛🐛🐛barra de rolagem🐛🐛🐛🐛 */
+.scrollbar::-webkit-scrollbar 
+{
+  width: 19px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb 
+{
+  background-color: #6b4949; 
+  border: 0.28em solid #f5e7e1; 
+  border-radius: 2rem; 
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover 
+{
+  background-color: rgb(136, 106, 106); 
+}
+
+.scrollbar::-webkit-scrollbar-track
+{
+  border-radius: 3rem;
+}
+
+body
+{
+    background-color: #ecd9d1;
+}
+
+.dicarrinho
+{
+    position: relative;
+    left: 25.7rem;
+    top: 14rem;
+    width: 52rem;
+    height: 19rem;
+}
+
+.carrinho img
+{
+    position: absolute;
+    left: 20.2rem;
+    top: -3rem;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 82px;
+    box-shadow: -11px 6px 0 0 #442d2d;
+}
+
+.pare
+{
+    position: absolute;
+    text-align: center;
+    font-family: MomCakePro;
+    font-size: 36pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.55pt;
+    color: #442d2d;
+    left: -7.1rem;
+    right: -6rem;
+    top: 9.3rem;
+    bottom: 0rem;
+}
+.confira
+{
+    position: absolute;
+    text-align: center;
+    font-family: MomCakePro;
+    font-size: 19.5pt;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.55pt;
+    color: #442d2d;
+    left: -7.4rem;
+    right: -6rem;
+    top: 13.4rem;
+    bottom: 0rem;
+}
+
+
+.carrr
+{
+    position: absolute;
+    top: 32rem;
+    left: 4.8rem;
+    width: 94.5rem;
+    height: 60px;
+}
+.cartaoo
+{
+    margin: 10px 19px;
+    overflow: hidden;
+    float: left;
+    width: 441.4px;
+    height: 239px;
+    border-radius: 13px;
+    background: #ffc369;
+    box-shadow: -11px 6px 0 0 #442d2d;
+}
+
+.daimgg
+{
+    width: 443.2px;
+    height: 242.2px;
+    margin: 10px 5px;
+    margin-bottom: 10px;
+    border-radius: 13px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: absolute;
+    left: 0.9rem;
+    top: -0.1rem;
+}
+.daimgg img
+{
+    left: -0.3rem;
+    top: -0.9rem;
+    height: auto;
+    width: 28.1rem;
+    position: absolute;
+}
+#daimg2
+{
+    left: 30.8rem;
+}
+#daimg3
+{
+    left: 60.8rem;
+}
