@@ -32,10 +32,9 @@ if($_POST) {
                 $_SESSION['emailUsuarioLogin'] = $linha[8];
                 $_SESSION['areaUsuarioLogin'] = $linha[9];
                 $_SESSION['dataUsuario'] = $linha[10];
-
+                
                 $_SESSION['profissaoUsuario'] = $linha[11];
-                $_SESSION['localizacaoUsuario'] = $linha[12];
-                $_SESSION['siteUsuario'] = $linha[13];
+                $_SESSION['siteUsuario'] = $linha[12];
                 header('Location:home.php');
 
             }

@@ -231,7 +231,7 @@ body{
     width: 130px;
     height: 40px;
     flex-grow: 0;
-    margin: 35px 12px 36px 3px;
+    margin: 25px 12px 25px 3px;
     padding: 5.6px 12px 9px 12px;
     border-radius: 6px;
     background-color: #e8a542;
@@ -246,7 +246,7 @@ body{
     width: 130px;
     height: 40px;
     flex-grow: 0;
-    margin: 35px 12px 36px 3px;
+    margin: 25px 12px 25px 3px;
     padding: 7.4px 36px 9px 37px;
     border-radius: 6px;
     background-color: #00000000;

@@ -1,5 +1,4 @@
 <?php
-
     
 session_start();
 
@@ -15,10 +14,11 @@ if (isset($_SESSION['nomeUsuarioLogin'])) {
     $nome = $_SESSION['nomeUsuarioLogin'];
     $area = $_SESSION['areaUsuarioLogin'];
     $banner = $_SESSION['bannerPerfilUsuario'];
-    $bio =  $_SESSION['bioUsuarioLogin'];    
+    $bio =  $_SESSION['bioUsuarioLogin'];  
+    $profi =  $_SESSION['profissaoUsuario'];
+    $site = $_SESSION['siteUsuario'];
+    
 
 } else {
     $menu = "header&footer/header_signedoff.php";
-
-       
 }
