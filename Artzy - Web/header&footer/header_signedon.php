@@ -124,7 +124,9 @@ $conn->close();
                 <i class="fi fi-sr-paper-plane-top icons msg"></i>
                 </li>
                 <li id="loj">
-                    <i class="fi fi-sr-shopping-cart icons shop"></i>
+                    <a href="loja.php">
+                        <i class="fi fi-sr-shopping-cart icons shop"></i>
+                    </a>
                 </li>
 
                 <li id="pfp">

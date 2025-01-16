@@ -100,7 +100,9 @@ $conn->close();
                 </li>
 
                 <li id="loj">
-                    <i class="fi fi-sr-shopping-cart icons shop"></i>
+                    <a href="loja.php">
+                        <i class="fi fi-sr-shopping-cart icons shop"></i>
+                    </a>
                 </li>
 
                 <li id="logbt">

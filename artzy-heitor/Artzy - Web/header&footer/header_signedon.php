@@ -121,10 +121,14 @@ $conn->close();
 
                 </li>
                 <li id="msg">
-                <i class="fi fi-sr-paper-plane-top icons msg"></i>
+                    <a href="_chat.php">
+                        <i class="fi fi-sr-paper-plane-top icons msg"></i>
+                    </a>
                 </li>
                 <li id="loj">
-                    <i class="fi fi-sr-shopping-cart icons shop"></i>
+                    <a href="loja.php">
+                        <i class="fi fi-sr-shopping-cart icons shop"></i>
+                    </a>
                 </li>
 
                 <li id="pfp">
